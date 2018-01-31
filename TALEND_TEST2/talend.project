@@ -538,6 +538,9 @@
       <relatedItems xmi:id="_W9ozEQYbEei6VOhIxaZR5g" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_W9ozEgYbEei6VOhIxaZR5g" id="GetRandomPhoneNum" version="Latest" type="routine"/>
       <relatedItems xmi:id="_W9ozEwYbEei6VOhIxaZR5g" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_erEckAbNEeilz61saeaUgw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_erEckQbNEeilz61saeaUgw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_erEckgbNEeilz61saeaUgw" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_W9ozFAYbEei6VOhIxaZR5g">
       <baseItem xmi:id="_W9ozFQYbEei6VOhIxaZR5g" id="_8ATkgNTUEdy7Z5AsSdUTvQ" version="0.1" type="job"/>
