@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_NakVcQYaEei6VOhIxaZR5g" label="Talend-Test2" description="Talend-Test2" language="java" technicalLabel="TALEND_TEST2" creationDate="2018-01-30T16:02:23.657-0800" author="_NakVcgYaEei6VOhIxaZR5g" productVersion="Talend Data Management Platform-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/mchu-medpoint/Talend-Test2.git&quot;,&quot;login&quot;:&quot;mchu-medpoint&quot;,&quot;passwd&quot;:&quot;3filt3mhxQ7XSQyunKxF0g==&quot;,&quot;settings&quot;:&quot;100&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+  <TalendProperties:Project xmi:id="_NakVcQYaEei6VOhIxaZR5g" label="Talend-Test2" description="Talend-Test2" language="java" technicalLabel="TALEND_TEST2" creationDate="2018-01-30T16:02:23.657-0800" author="_NakVcgYaEei6VOhIxaZR5g" productVersion="Talend Data Management Platform-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/mchu-medpoint/Talend-Test2.git&quot;,&quot;login&quot;:&quot;mchu-medpoint&quot;,&quot;passwd&quot;:&quot;3filt3mhxQ7XSQyunKxF0g==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
     <technicalStatus xmi:id="_No2pEAYaEei6VOhIxaZR5g" label="development" code="DEV"/>
     <technicalStatus xmi:id="_No2pEQYaEei6VOhIxaZR5g" label="testing" code="TEST"/>
     <technicalStatus xmi:id="_No2pEgYaEei6VOhIxaZR5g" label="production" code="PROD"/>
@@ -2780,5 +2780,8 @@
     <migrationTask xmi:id="_N9bMIAYaEei6VOhIxaZR5g" id="org.talend.repository.model.migration.SetSparkDataframeAlphabeticalSortOrder" breaks="6.1.0" version="6.1.0" status="noimpact"/>
     <migrationTask xmi:id="_N9bMIQYaEei6VOhIxaZR5g" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
-  <TalendProperties:User xmi:id="_NakVcgYaEei6VOhIxaZR5g" login="nbothe@talend.com" firstName="Nitin" lastName="Bothe" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_NakVcgYaEei6VOhIxaZR5g" login="nbothe@talend.com" firstName="nitin" lastName="bothe" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_m31xEAbKEeigNv2Y2SiISA" login="security@company.com" firstName="security" lastName="security" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_m31xEQbKEeigNv2Y2SiISA" login="MChu@medpointmanagement.com" firstName="Mary" lastName="Chu" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_m31xEgbKEeigNv2Y2SiISA" login="svc_TalendDW@medpointmanagement.com" firstName="Talend" lastName="Service" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
