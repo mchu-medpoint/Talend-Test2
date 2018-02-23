@@ -2796,4 +2796,6 @@
   <TalendProperties:User xmi:id="_m31xEgbKEeigNv2Y2SiISA" login="svc_TalendDW@medpointmanagement.com" firstName="Talend" lastName="Service" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_rfNboRgfEeigAoMPwAQUzQ" login="CSkelton@medpointmanagement.com" firstName="Caitlin" lastName="Skelton" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_rfNbohgfEeigAoMPwAQUzQ" login="DCarroll@MedpointManagement.com" firstName="Doug" lastName="Carroll" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_ZPFrcRjpEeiiHIVZPbjg5Q" login="HighPoint6@medpointmanagement.com" firstName="High" lastName="Point" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_ZPFrchjpEeiiHIVZPbjg5Q" login="HighPoint3@medpointmanagement.com" firstName="High" lastName="Point" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
