@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_Bh8MUBvsEeiXROaUviyM_A" label="MPM_EDW" description="EDW" language="java" technicalLabel="MPM_EDW" creationDate="2018-02-27T10:15:56.697-0500" author="_Bh8MURvsEeiXROaUviyM_A" productVersion="Talend Data Management Platform-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/mchu-medpoint/Talend-Test2.git&quot;,&quot;login&quot;:&quot;svc_TalendDW@medpointmanagement.com&quot;,&quot;passwd&quot;:&quot;uiqUy245XVdmeLUCJT0x2g==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false"/>
+  <TalendProperties:User xmi:id="_Bh8MURvsEeiXROaUviyM_A" login="svc_TalendDW@medpointmanagement.com" firstName="Talend" lastName="Service" type="DQ" additionnalData="{}"/>
+</xmi:XMI>
