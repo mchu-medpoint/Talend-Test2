@@ -348,4 +348,5 @@
     <migrationTask xmi:id="_CJ0FQBvsEeiXROaUviyM_A" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_Bh8MURvsEeiXROaUviyM_A" login="svc_TalendDW@medpointmanagement.com" firstName="Talend" lastName="Service" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_K8FgoBvuEei5m5YMyYdANg" login="HighPoint6@medpointmanagement.com" firstName="High" lastName="Point" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
