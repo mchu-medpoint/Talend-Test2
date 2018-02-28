@@ -12,6 +12,7 @@
     <taggedValue xmi:id="_uBcK8BZ2EeiXLpnYmmVhSg" tag="DB ProductName" value="Ucanaccess for access db(Jet) using hasqldb"/>
     <taggedValue xmi:id="_uBcK8RZ2EeiXLpnYmmVhSg" tag="DB ProductVersion" value="V2000 [VERSION_4]"/>
     <taggedValue xmi:id="_uBcK8hZ2EeiXLpnYmmVhSg" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_yKHiUBzeEeiu2tPRl7fmgg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema xmi:id="_u0KL4BZ3EeiXLpnYmmVhSg" name="testaccessconnection" dataManager="_tzE-0BZ2EeiXLpnYmmVhSg">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_u0KL4RZ3EeiXLpnYmmVhSg" name="CITIES" id="_tsUaEBZ3EeiXLpnYmmVhSg" label="CITIES" tableType="TABLE">
