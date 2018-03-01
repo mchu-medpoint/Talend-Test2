@@ -2550,7 +2550,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_CE0-oBz3Eeig38Z0TG6cYA">
       <baseItem xmi:id="_CE0-oRz3Eeig38Z0TG6cYA" id="_UE8AABz1Eeig38Z0TG6cYA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_CE0-ohz3Eeig38Z0TG6cYA" id="_j1XvsBzxEeig38Z0TG6cYA" version="Latest" type="property"/>
       <relatedItems xmi:id="_CE0-oxz3Eeig38Z0TG6cYA" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_CE0-pBz3Eeig38Z0TG6cYA" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_CE0-pRz3Eeig38Z0TG6cYA" id="TalendString" version="Latest" type="routine"/>
@@ -2566,7 +2565,6 @@
       <relatedItems xmi:id="_CE0-rxz3Eeig38Z0TG6cYA" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_CE0-sBz3Eeig38Z0TG6cYA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_CE0-sRz3Eeig38Z0TG6cYA" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_CE0-shz3Eeig38Z0TG6cYA" id="_j1XvsBzxEeig38Z0TG6cYA - LAND_MEMBER" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NoL6sAYaEei6VOhIxaZR5g" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NoL6sQYaEei6VOhIxaZR5g" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
