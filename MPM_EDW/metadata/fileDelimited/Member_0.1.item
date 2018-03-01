@@ -33,7 +33,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PXh1lEeixVuYPSxfLeg" label="STATE" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PXx1lEeixVuYPSxfLeg" label="ZIP" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYB1lEeixVuYPSxfLeg" label="PHONE" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYR1lEeixVuYPSxfLeg" label="COUNTY" length="10" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYR1lEeixVuYPSxfLeg" label="COUNTY" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYh1lEeixVuYPSxfLeg" label="MEMB_KEYID" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYx1lEeixVuYPSxfLeg" label="Column32" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
