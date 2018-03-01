@@ -16,15 +16,6 @@
     <parameters xmi:id="_ELWYgBzyEeig38Z0TG6cYA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_-VXnIBzyEeig38Z0TG6cYA" name="mpm_edw_sb" dataManager="_z6W2QBzxEeig38Z0TG6cYA">
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnIRzyEeig38Z0TG6cYA" name="db_accessadmin"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnIhzyEeig38Z0TG6cYA" name="db_backupoperator"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnIxzyEeig38Z0TG6cYA" name="db_datareader"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnJBzyEeig38Z0TG6cYA" name="db_datawriter"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnJRzyEeig38Z0TG6cYA" name="db_ddladmin"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnJhzyEeig38Z0TG6cYA" name="db_denydatareader"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnJxzyEeig38Z0TG6cYA" name="db_denydatawriter"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnKBzyEeig38Z0TG6cYA" name="db_owner"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnKRzyEeig38Z0TG6cYA" name="db_securityadmin"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnKhzyEeig38Z0TG6cYA" name="dbo">
       <ownedElement xsi:type="relational:TdTable" xmi:id="_JEKPoBz0Eeig38Z0TG6cYA" name="LAND_AUTHORIZATION" id="_JD-pcBz0Eeig38Z0TG6cYA" label="LAND_AUTHORIZATION" tableType="TABLE">
         <taggedValue xmi:id="_JEKPoRz0Eeig38Z0TG6cYA" tag="Comment" value=""/>
@@ -1054,8 +1045,17 @@
         </feature>
       </ownedElement>
     </ownedElement>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnKxzyEeig38Z0TG6cYA" name="guest"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnLBzyEeig38Z0TG6cYA" name="INFORMATION_SCHEMA"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-VXnLRzyEeig38Z0TG6cYA" name="sys"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK4Bz2Eeig38Z0TG6cYA" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK4Rz2Eeig38Z0TG6cYA" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK4hz2Eeig38Z0TG6cYA" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK4xz2Eeig38Z0TG6cYA" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK5Bz2Eeig38Z0TG6cYA" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK5Rz2Eeig38Z0TG6cYA" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK5hz2Eeig38Z0TG6cYA" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK5xz2Eeig38Z0TG6cYA" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK6Bz2Eeig38Z0TG6cYA" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK6Rz2Eeig38Z0TG6cYA" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK6hz2Eeig38Z0TG6cYA" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_KzRK6xz2Eeig38Z0TG6cYA" name="sys"/>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
