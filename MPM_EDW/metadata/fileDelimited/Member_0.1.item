@@ -4,25 +4,25 @@
   <orgomg.cwm.resource.record:RecordFile xmi:id="_1i_PQR1lEeixVuYPSxfLeg" name="default" dataManager="_1i_PQB1lEeixVuYPSxfLeg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_1i_PQh1lEeixVuYPSxfLeg" id="_WrFjcB1kEeixVuYPSxfLeg" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PQx1lEeixVuYPSxfLeg" label="IPA" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PRB1lEeixVuYPSxfLeg" label="MEMBID" length="9" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PRB1lEeixVuYPSxfLeg" label="MEMBID" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PRR1lEeixVuYPSxfLeg" label="LASTNM" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PRh1lEeixVuYPSxfLeg" label="FIRSTNM" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PRx1lEeixVuYPSxfLeg" label="DOB" length="23" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PSB1lEeixVuYPSxfLeg" label="GENDER" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PRx1lEeixVuYPSxfLeg" label="DOB" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PSB1lEeixVuYPSxfLeg" label="GENDER" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PSR1lEeixVuYPSxfLeg" label="MEMBSSN" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PSh1lEeixVuYPSxfLeg" label="DECEASEDDT" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PSx1lEeixVuYPSxfLeg" label="PATID" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PTB1lEeixVuYPSxfLeg" label="MLANGUAGE" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PTR1lEeixVuYPSxfLeg" label="HPCODE" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PTh1lEeixVuYPSxfLeg" label="LOB" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PTx1lEeixVuYPSxfLeg" label="OPT_STATUS" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PTx1lEeixVuYPSxfLeg" label="OPT_STATUS" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PUB1lEeixVuYPSxfLeg" label="OPT" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PUR1lEeixVuYPSxfLeg" label="AIDGRP" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PUh1lEeixVuYPSxfLeg" label="OPFROMDT" length="23" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PUh1lEeixVuYPSxfLeg" label="OPFROMDT" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PUx1lEeixVuYPSxfLeg" label="OPTHRUDT" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PVB1lEeixVuYPSxfLeg" label="PCP_STATUS" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PVR1lEeixVuYPSxfLeg" label="PCP" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PVh1lEeixVuYPSxfLeg" label="PCPFROMDT" length="23" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PVB1lEeixVuYPSxfLeg" label="PCP_STATUS" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PVR1lEeixVuYPSxfLeg" label="PCP" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PVh1lEeixVuYPSxfLeg" label="PCPFROMDT" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PVx1lEeixVuYPSxfLeg" label="PCPTHRUDT" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PWB1lEeixVuYPSxfLeg" label="PCP_NAME" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PWR1lEeixVuYPSxfLeg" label="CONTACT_TYPE" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
@@ -32,7 +32,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PXR1lEeixVuYPSxfLeg" label="CITY" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PXh1lEeixVuYPSxfLeg" label="STATE" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PXx1lEeixVuYPSxfLeg" label="ZIP" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYB1lEeixVuYPSxfLeg" label="PHONE" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYB1lEeixVuYPSxfLeg" label="PHONE" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYR1lEeixVuYPSxfLeg" label="COUNTY" length="10" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYh1lEeixVuYPSxfLeg" label="MEMB_KEYID" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1i_PYx1lEeixVuYPSxfLeg" label="Column32" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
