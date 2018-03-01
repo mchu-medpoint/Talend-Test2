@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_8_foIBwoEeiTHIRHeuHqBQ" name="mpm_edw_sb" id="_3uHDgBwnEeiTHIRHeuHqBQ" label="mpm_edw_sb" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;integratedSecurity=true" dbVersionString="JTDS" Port="1433" Username="highpoint6" Password="B/HARFVmWa147cx0ajuMew==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="integratedSecurity=true" StandardSQL="true" SQLMode="false" UiSchema="">
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_8_foIBwoEeiTHIRHeuHqBQ" name="mpm_edw_sb" id="_3uHDgBwnEeiTHIRHeuHqBQ" label="mpm_edw_sb" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;integratedSecurity=true" dbVersionString="JTDS" Port="1433" Username="" Password="" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="integratedSecurity=true" StandardSQL="true" SQLMode="false" UiSchema="">
   <taggedValue xmi:id="_8_gPMBwoEeiTHIRHeuHqBQ" tag="Is Conn Need Reload" value="false"/>
   <taggedValue xmi:id="_8_r1YBwoEeiTHIRHeuHqBQ" tag="package filter" value=""/>
   <taggedValue xmi:id="_8_0_UBwoEeiTHIRHeuHqBQ" tag="Status" value=""/>
@@ -8,5 +8,6 @@
   <taggedValue xmi:id="_8_0_UxwoEeiTHIRHeuHqBQ" tag="Description" value=""/>
   <taggedValue xmi:id="_8_0_VBwoEeiTHIRHeuHqBQ" tag="Author" value=""/>
   <taggedValue xmi:id="_8_0_VRwoEeiTHIRHeuHqBQ" tag="otherParameter"/>
-  <parameters xmi:id="_8_gPMRwoEeiTHIRHeuHqBQ" key="CONN_PARA_KEY_USERNAME" value="highpoint6"/>
+  <parameters xmi:id="_8_gPMRwoEeiTHIRHeuHqBQ" key="CONN_PARA_KEY_USERNAME" value=""/>
+  <parameters xmi:id="_goPqIB2mEeiSLMW7P_emyA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
 </TalendMetadata:DatabaseConnection>
