@@ -406,15 +406,15 @@
       <column comment="" key="false" length="36" name="Column32" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
-        <mapperTableEntries name="IPA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LASTNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIRSTNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPA" expression="row1.IPA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBID" expression="row1.MEMBID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LASTNM" expression="row1.LASTNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIRSTNM" expression="row1.FIRSTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="DOB" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GENDER" type="id_Character" nullable="true"/>
+        <mapperTableEntries name="GENDER" expression="row1.GENDER " type="id_Character" nullable="true"/>
         <mapperTableEntries name="MEMBSSN" type="id_String" nullable="true"/>
         <mapperTableEntries name="DECEASEDDT" type="id_String" nullable="true"/>
         <mapperTableEntries name="PATID" type="id_String" nullable="true"/>
