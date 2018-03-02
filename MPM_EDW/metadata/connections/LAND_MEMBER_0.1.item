@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_mQKbcB3TEei5wNX_1VeFyQ" name="LAND_MEMBER" id="_VKvLkB3TEei5wNX_1VeFyQ" label="LAND_MEMBER" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;noDatetimeStringSync=true" dbVersionString="JTDS" Port="1433" Username="svc_TalendDW" Password="WcYIyn95HB4PPFbF2l0Y7A==" ServerName="MPMEDWDEVQA1" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" UiSchema="">
-  <taggedValue xmi:id="_mQKbcR3TEei5wNX_1VeFyQ" tag="Is Conn Need Reload" value="true"/>
+  <taggedValue xmi:id="_mQKbcR3TEei5wNX_1VeFyQ" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_mSjoIB3TEei5wNX_1VeFyQ" tag="package filter" value=""/>
+  <taggedValue xmi:id="_mSpHsB3TEei5wNX_1VeFyQ" tag="Status" value=""/>
+  <taggedValue xmi:id="_mSpHsR3TEei5wNX_1VeFyQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_mSpHsh3TEei5wNX_1VeFyQ" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_mSpHsx3TEei5wNX_1VeFyQ" tag="Description" value=""/>
+  <taggedValue xmi:id="_mSpHtB3TEei5wNX_1VeFyQ" tag="Author" value=""/>
+  <taggedValue xmi:id="_mSpHtR3TEei5wNX_1VeFyQ" tag="otherParameter"/>
   <parameters xmi:id="_mQKbch3TEei5wNX_1VeFyQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   <parameters xmi:id="_mQKbcx3TEei5wNX_1VeFyQ" key="CONN_PARA_KEY_USERNAME" value="svc_TalendDW"/>
 </TalendMetadata:DatabaseConnection>
