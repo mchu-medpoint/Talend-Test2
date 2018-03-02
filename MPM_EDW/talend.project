@@ -44,6 +44,7 @@
       <relatedItems xmi:id="_LcMb_h3OEei5wNX_1VeFyQ" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_LcMb_x3OEei5wNX_1VeFyQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_LcMcAB3OEei5wNX_1VeFyQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6oIzcB3OEei5wNX_1VeFyQ" id="_1i1eQB1lEeixVuYPSxfLeg - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
