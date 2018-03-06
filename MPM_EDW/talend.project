@@ -65,6 +65,7 @@
       <relatedItems xmi:id="_u7A9sB3REei5wNX_1VeFyQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_u7A9sR3REei5wNX_1VeFyQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_u7A9sh3REei5wNX_1VeFyQ" id="_1i1eQB1lEeixVuYPSxfLeg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_tChaYCGUEeiZJJcL1G6Fmw" id="_3uHDgBwnEeiTHIRHeuHqBQ" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_5KGLUB3SEei5wNX_1VeFyQ">
       <baseItem xmi:id="_5KGLUR3SEei5wNX_1VeFyQ" id="_5JuX4B3SEei5wNX_1VeFyQ" version="0.1" type="job"/>
