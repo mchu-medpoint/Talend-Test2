@@ -111,7 +111,7 @@
     <routinesParameter id="_Btq7MBvsEeiXROaUviyM_A" name="TalendStringUtil"/>
     <routinesParameter id="_BtmCsBvsEeiXROaUviyM_A" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_1i1eQB1lEeixVuYPSxfLeg" show="false"/>
@@ -355,7 +355,7 @@
       <column comment="" key="false" length="36" name="Column32" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="false"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -552,7 +552,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_3uHDgBwnEeiTHIRHeuHqBQ" show="false"/>
