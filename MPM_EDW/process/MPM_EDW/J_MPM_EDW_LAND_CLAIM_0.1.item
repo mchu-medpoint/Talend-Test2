@@ -783,7 +783,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="SQL_Claim">
-        <mapperTableEntries name="IPA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPA" expression="row1.IPA" type="id_String" nullable="true"/>
         <mapperTableEntries name="CLMTYPE" expression="row1.CLMTYPE" type="id_String" nullable="true"/>
         <mapperTableEntries name="CLAIMNO" expression="row1.CLAIMNO" type="id_String" nullable="true"/>
         <mapperTableEntries name="CLMSTATUS_CD" expression="row1.CLMSTATUS_CD" type="id_String" nullable="true"/>
