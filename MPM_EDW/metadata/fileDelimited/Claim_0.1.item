@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_J4Lh0CG7EeioYeI0pFUjwQ" name="Claim" dataPackage="_J4Lh0SG7EeioYeI0pFUjwQ" Server="Localhost 127.0.0.1" FilePath="//mpmfileserver01.mpm.local/Zeus/EDW Project/HighPoint/Phase II/Dashboards/Prototype Data/clms.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" UseLimit="true" LimitValue="1000" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_J4Lh0SG7EeioYeI0pFUjwQ" name="default" dataManager="_J4Lh0CG7EeioYeI0pFUjwQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_J4Lh0iG7EeioYeI0pFUjwQ" id="_kErgYCG6EeioYeI0pFUjwQ" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J4Lh0yG7EeioYeI0pFUjwQ" label="_IPA" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J4Lh0yG7EeioYeI0pFUjwQ" label="IPA" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J4Lh1CG7EeioYeI0pFUjwQ" label="CLMTYPE" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J4Lh1SG7EeioYeI0pFUjwQ" label="CLAIMNO" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_J4Lh1iG7EeioYeI0pFUjwQ" label="CLMSTATUS_CD" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
