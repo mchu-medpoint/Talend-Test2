@@ -145,6 +145,7 @@
       <relatedItems xmi:id="_sXTocSG7EeioYeI0pFUjwQ" id="_3uHDgBwnEeiTHIRHeuHqBQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_sXTociG7EeioYeI0pFUjwQ" id="_J4GpUCG7EeioYeI0pFUjwQ - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_sXTocyG7EeioYeI0pFUjwQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - LAND_CLAIM" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_1u5YACG9EeioYeI0pFUjwQ" id="_J4GpUCG7EeioYeI0pFUjwQ" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
