@@ -122,7 +122,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ecd&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;mpm\highpoint6&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mpm\Highpoint6&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="B/HARFVmWa147cx0ajuMew=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ACCT_MASTERS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
