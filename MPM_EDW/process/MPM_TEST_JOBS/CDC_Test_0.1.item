@@ -814,7 +814,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="row4.ID==null?0:&#xD;&#xA;row4.ID: " type="id_String"/>
+        <mapperTableEntries name="var1" expression="row4.ID==null?0:row4.ID " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="OUT1">
         <mapperTableEntries name="IPA" type="id_String" nullable="true"/>
