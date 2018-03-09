@@ -817,40 +817,40 @@
         <mapperTableEntries name="var1" expression="row4.ID==null?0:row4.ID " type="id_Integer"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="OUT1">
-        <mapperTableEntries name="IPA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPA" expression="CDCOUT.IPA" type="id_String" nullable="true"/>
         <mapperTableEntries name="ID" expression="Numeric.sequence(&quot;Var.var1&quot;,1,1) " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="MEMBID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LASTNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIRSTNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DOB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GENDER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBSSN" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DECEASEDDT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MLANGUAGE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="HPCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPT_STATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AIDGRP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPFROMDT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPTHRUDT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCP_STATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCPFROMDT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCPTHRUDT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCP_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONTACT_TYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADDRESSTYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STREET" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STREET2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CITY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ZIP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PHONE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COUNTY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMB_KEYID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Column32" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBID" expression="CDCOUT.MEMBID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LASTNM" expression="CDCOUT.LASTNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIRSTNM" expression="CDCOUT.FIRSTNM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOB" expression="CDCOUT.DOB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GENDER" expression="CDCOUT.GENDER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBSSN" expression="CDCOUT.MEMBSSN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DECEASEDDT" expression="CDCOUT.DECEASEDDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATID" expression="CDCOUT.PATID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MLANGUAGE" expression="CDCOUT.MLANGUAGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HPCODE" expression="CDCOUT.HPCODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOB" expression="CDCOUT.LOB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPT_STATUS" expression="CDCOUT.OPT_STATUS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPT" expression="CDCOUT.OPT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AIDGRP" expression="CDCOUT.AIDGRP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPFROMDT" expression="CDCOUT.OPFROMDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPTHRUDT" expression="CDCOUT.OPTHRUDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PCP_STATUS" expression="CDCOUT.PCP_STATUS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PCP" expression="CDCOUT.PCP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PCPFROMDT" expression="CDCOUT.PCPFROMDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PCPTHRUDT" expression="CDCOUT.PCPTHRUDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PCP_NAME" expression="CDCOUT.PCP_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTACT_TYPE" expression="CDCOUT.CONTACT_TYPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADDRESSTYPE" expression="CDCOUT.ADDRESSTYPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STREET" expression="CDCOUT.STREET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STREET2" expression="CDCOUT.STREET2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CITY" expression="CDCOUT.CITY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STATE" expression="CDCOUT.STATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZIP" expression="CDCOUT.ZIP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PHONE" expression="CDCOUT.PHONE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COUNTY" expression="CDCOUT.COUNTY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMB_KEYID" expression="CDCOUT.MEMB_KEYID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Column32" expression="CDCOUT.Column32" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="CDCOUT" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="IPA" type="id_String" nullable="true"/>
