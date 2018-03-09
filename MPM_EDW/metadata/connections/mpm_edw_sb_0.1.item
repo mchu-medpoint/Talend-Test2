@@ -916,7 +916,7 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_jbHqZCGzEeioYeI0pFUjwQ" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_jbHqZSGzEeioYeI0pFUjwQ" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_jbHqZiGzEeioYeI0pFUjwQ" name="CLASS" label="_CLASS" length="255" sourceType="VARCHAR" talendType="id_String">
+        <feature xsi:type="relational:TdColumn" xmi:id="_jbHqZiGzEeioYeI0pFUjwQ" name="CLASS" label="CLASS" length="255" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_jbHqZyGzEeioYeI0pFUjwQ" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_jbHqaCGzEeioYeI0pFUjwQ" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_jbHqaSGzEeioYeI0pFUjwQ" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
