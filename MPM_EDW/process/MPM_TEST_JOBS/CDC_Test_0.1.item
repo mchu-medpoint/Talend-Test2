@@ -813,10 +813,12 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="row4.ID==null?0:&#xD;&#xA;row4.ID: " type="id_String"/>
+      </varTables>
       <outputTables sizeState="INTERMEDIATE" name="OUT1">
         <mapperTableEntries name="IPA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ID" expression="row4.ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ID" expression="Numeric.sequence(&quot;Var.var1&quot;,1,1) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MEMBID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTNM" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRSTNM" type="id_String" nullable="true"/>
