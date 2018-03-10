@@ -404,7 +404,7 @@
       <column comment="" key="false" length="36" name="Column32" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CDCOUT" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="IPA" expression="row1.IPA " type="id_String" nullable="true"/>
