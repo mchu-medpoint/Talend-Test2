@@ -1147,7 +1147,7 @@
     <elementParameter field="TABLE" name="GROUPBYS"/>
     <elementParameter field="TABLE" name="OPERATIONS">
       <elementValue elementRef="OUTPUT_COLUMN" value="ID"/>
-      <elementValue elementRef="FUNCTION" value="max"/>
+      <elementValue elementRef="FUNCTION" value="distinct"/>
       <elementValue elementRef="INPUT_COLUMN" value="ID"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
     </elementParameter>
