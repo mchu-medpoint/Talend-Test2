@@ -1269,7 +1269,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
-  <note opaque="false" posX="384" posY="96" sizeHeight="64" sizeWidth="385" text="Lookup and Sequence generator Implimetation"/>
+  <note opaque="false" posX="384" posY="96" sizeHeight="64" sizeWidth="385" text="Lookup and Sequence generator Implemetation"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
