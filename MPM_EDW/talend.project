@@ -143,9 +143,9 @@
       <relatedItems xmi:id="_9inlUSG4EeioYeI0pFUjwQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_9inlUiG4EeioYeI0pFUjwQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_sXTocSG7EeioYeI0pFUjwQ" id="_3uHDgBwnEeiTHIRHeuHqBQ" version="Latest" type="property"/>
-      <relatedItems xmi:id="_sXTociG7EeioYeI0pFUjwQ" id="_J4GpUCG7EeioYeI0pFUjwQ - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_sXTocyG7EeioYeI0pFUjwQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - LAND_CLAIM" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_1u5YACG9EeioYeI0pFUjwQ" id="_J4GpUCG7EeioYeI0pFUjwQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_kdlCICTnEeieRsLBSSWfxA" id="_Ev9Z0CTnEeieRsLBSSWfxA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_kdlCISTnEeieRsLBSSWfxA" id="_Ev9Z0CTnEeieRsLBSSWfxA - Claims" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Oh9zcCNHEei8_uD_so7J8g">
       <baseItem xmi:id="_Oh9zcSNHEei8_uD_so7J8g" id="_jyJpACNGEei8_uD_so7J8g" version="0.1" type="job"/>
