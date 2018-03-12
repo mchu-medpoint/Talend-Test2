@@ -18,7 +18,7 @@
       <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/FINAL_OUT_0.1.item#_NRImFCWqEei0otQM0z9bvw"/>
     </context>
     <results xmi:id="_ZlpEpyWqEei0otQM0z9bvw">
-      <resultMetadata xmi:id="_ZlpEqCWqEei0otQM0z9bvw" executionDate="2018-03-12T09:02:35.655-0400" executionDuration="257" message="" executionNumber="3" lastRunOk="true" lastExecutionNumberOk="3"/>
+      <resultMetadata xmi:id="_ZlpEqCWqEei0otQM0z9bvw" executionDate="2018-03-12T09:27:28.928-0400" executionDuration="334" message="" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="4"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Z72lMCWqEei0otQM0z9bvw" count="339" computed="true">
         <parameters xmi:id="_Z72lMSWqEei0otQM0z9bvw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/FINAL_OUT_0.1.item#_NRImEyWqEei0otQM0z9bvw"/>
@@ -388,6 +388,21 @@
             <sqlGenericExpression xmi:id="_4vaZDiWqEei0otQM0z9bvw" body="SELECT SUM(CHAR_LENGTH(CASE WHEN   CHAR_LENGTH( TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'')) ) =0  THEN '' ELSE  ISNULL(&lt;%=__COLUMN_NAMES__%>,'') END)), COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </avgLengthWithBlankNullIndicator>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_GQgDACX5Eei0otQM0z9bvw" count="339" computed="true" distinctValueCount="10" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740001317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000147400013271007E000574000253467371007E000300000000000000137400013371007E00057400013471007E00057400013571007E00057400013671007E00057400013771007E0005740002484271007E0005740002454371007E000578">
+        <parameters xmi:id="_GQgDASX5Eei0otQM0z9bvw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/FINAL_OUT_0.1.item#_NRImEyWqEei0otQM0z9bvw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Low_Frequency_Table_0.1.definition#_-0C00JOtEd2Iyo0dtkB9pA"/>
+        <builtInIndicatorDefinition xmi:id="_HG8i0CX5Eei0otQM0z9bvw" name="Low Frequency Table" label="Low Frequency Table">
+          <taggedValue xmi:id="_HG8i0SX5Eei0otQM0z9bvw" tag="Description" value="counts the number of records for each distinct record"/>
+          <taggedValue xmi:id="_HG8i0iX5Eei0otQM0z9bvw" tag="Purpose" value="evaluates the less frequent records"/>
+          <sqlGenericExpression xmi:id="_HG8i0yX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_HG8i1CX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_HG8i1SX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_HG8i1iX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_HG8i1yX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_HG8i2CX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
+        </builtInIndicatorDefinition>
       </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Z75BciWqEei0otQM0z9bvw" count="339" computed="true">
         <parameters xmi:id="_Z75BcyWqEei0otQM0z9bvw"/>
@@ -759,6 +774,21 @@
           </builtInIndicatorDefinition>
         </avgLengthWithBlankNullIndicator>
       </indicators>
+      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_GQgDAiX5Eei0otQM0z9bvw" count="339" computed="true" distinctValueCount="10" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400034948507372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000001174000448434C4171007E000574000848574450474C4F4271007E000574000345434471007E0005740006474C4F42414C71007E000574000A43414C4D4544474C4F4271007E000574000542454C4C417371007E0003000000000000001074000742524F544D414E71007E000574000A43414C4D454448434C4171007E0005740005435649504171007E000578">
+        <parameters xmi:id="_GQgDAyX5Eei0otQM0z9bvw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/FINAL_OUT_0.1.item#_NRImFSWqEei0otQM0z9bvw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Low_Frequency_Table_0.1.definition#_-0C00JOtEd2Iyo0dtkB9pA"/>
+        <builtInIndicatorDefinition xmi:id="_HHD3kCX5Eei0otQM0z9bvw" name="Low Frequency Table" label="Low Frequency Table">
+          <taggedValue xmi:id="_HHD3kSX5Eei0otQM0z9bvw" tag="Description" value="counts the number of records for each distinct record"/>
+          <taggedValue xmi:id="_HHD3kiX5Eei0otQM0z9bvw" tag="Purpose" value="evaluates the less frequent records"/>
+          <sqlGenericExpression xmi:id="_HHD3kyX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_HHD3lCX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_HHD3lSX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_HHD3liX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_HHD3lyX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_HHD3mCX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Z75BpyWqEei0otQM0z9bvw" count="339" computed="true">
         <parameters xmi:id="_Z75BqCWqEei0otQM0z9bvw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/FINAL_OUT_0.1.item#_NRImFCWqEei0otQM0z9bvw"/>
@@ -1128,6 +1158,21 @@
             <sqlGenericExpression xmi:id="_40oQPiWqEei0otQM0z9bvw" body="SELECT SUM(CHAR_LENGTH(CASE WHEN   CHAR_LENGTH( TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'')) ) =0  THEN '' ELSE  ISNULL(&lt;%=__COLUMN_NAMES__%>,'') END)), COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </avgLengthWithBlankNullIndicator>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_GQgDBCX5Eei0otQM0z9bvw" count="339" computed="true" distinctValueCount="10" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74001147524F555020414646494C494154494F4E7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000001474001D4845414C544820504C414E20434F4E545241435445442056454E444F5271007E000574001E4845414C5448504C414E205245434950524F4349545920434F4E5452414371007E0005740014434F4E545241435420572F4F555420424F4E555371007E0005740017434F4E5452414354454420415420495041204C4556454C71007E0005740017484F53504954414C2042415345442050524F564944455271007E000574000F53495354455220464143494C4954597371007E0003000000000000001374000E4520434F4E53554C54204F4E4C5971007E0005740011434F4E545241435420572F20424F4E555371007E000574001A484F53504954414C20434F4E545241435445442056454E444F5271007E000578">
+        <parameters xmi:id="_GQgDBSX5Eei0otQM0z9bvw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/FINAL_OUT_0.1.item#_NRImFCWqEei0otQM0z9bvw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Low_Frequency_Table_0.1.definition#_-0C00JOtEd2Iyo0dtkB9pA"/>
+        <builtInIndicatorDefinition xmi:id="_HHKlQCX5Eei0otQM0z9bvw" name="Low Frequency Table" label="Low Frequency Table">
+          <taggedValue xmi:id="_HHKlQSX5Eei0otQM0z9bvw" tag="Description" value="counts the number of records for each distinct record"/>
+          <taggedValue xmi:id="_HHKlQiX5Eei0otQM0z9bvw" tag="Purpose" value="evaluates the less frequent records"/>
+          <sqlGenericExpression xmi:id="_HHKlQyX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_HHKlRCX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_HHKlRSX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_HHKlRiX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_HHKlRyX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_HHKlSCX5Eei0otQM0z9bvw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
+        </builtInIndicatorDefinition>
       </indicators>
     </results>
     <parameters xmi:id="_ZlpEqSWqEei0otQM0z9bvw" dataFilter="_atWTkCWqEei0otQM0z9bvw" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
