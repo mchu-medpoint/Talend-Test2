@@ -210,6 +210,64 @@
       <relatedItems xmi:id="_32LjoCTpEeieRsLBSSWfxA" id="_LF4IICTpEeieRsLBSSWfxA" version="Latest" type="property"/>
       <relatedItems xmi:id="_32LjoSTpEeieRsLBSSWfxA" id="_LF4IICTpEeieRsLBSSWfxA - Provs" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_AT4_cCWdEei0otQM0z9bvw">
+      <baseItem xmi:id="_AT4_cSWdEei0otQM0z9bvw" id="_AOZfoCWWEei0otQM0z9bvw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_AT4_ciWdEei0otQM0z9bvw" id="_k1NWYCWUEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_cyWdEei0otQM0z9bvw" id="_csDogCWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_dCWdEei0otQM0z9bvw" id="_0Tw5oCWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_dSWdEei0otQM0z9bvw" id="_Po5wsCWUEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_diWdEei0otQM0z9bvw" id="_dDP18CWUEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_dyWdEei0otQM0z9bvw" id="_Q3AGECWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_eCWdEei0otQM0z9bvw" id="_W4IXgCWUEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_eSWdEei0otQM0z9bvw" id="_bB1xICWPEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_eiWdEei0otQM0z9bvw" id="_EJaZICWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_eyWdEei0otQM0z9bvw" id="_W4-2oCWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_fCWdEei0otQM0z9bvw" id="_h5IKUCWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_fSWdEei0otQM0z9bvw" id="_u3shQCWPEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_fiWdEei0otQM0z9bvw" id="_4HgGcCWUEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_fyWdEei0otQM0z9bvw" id="_vDhIACWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_gCWdEei0otQM0z9bvw" id="_yuASMCWUEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_gSWdEei0otQM0z9bvw" id="_9br84CWUEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_giWdEei0otQM0z9bvw" id="_KuUQkCWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_gyWdEei0otQM0z9bvw" id="_riL60CWLEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_hCWdEei0otQM0z9bvw" id="__Yy8ECWPEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_hSWdEei0otQM0z9bvw" id="_ofyVQCWVEei0otQM0z9bvw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_AT4_hiWdEei0otQM0z9bvw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_hyWdEei0otQM0z9bvw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_iCWdEei0otQM0z9bvw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_iSWdEei0otQM0z9bvw" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_iiWdEei0otQM0z9bvw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_iyWdEei0otQM0z9bvw" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_jCWdEei0otQM0z9bvw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_jSWdEei0otQM0z9bvw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_jiWdEei0otQM0z9bvw" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_jyWdEei0otQM0z9bvw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_kCWdEei0otQM0z9bvw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_kSWdEei0otQM0z9bvw" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_kiWdEei0otQM0z9bvw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_kyWdEei0otQM0z9bvw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_lCWdEei0otQM0z9bvw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AT4_lSWdEei0otQM0z9bvw" id="_h5IKUCWVEei0otQM0z9bvw - SCHS" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_liWdEei0otQM0z9bvw" id="_bB1xICWPEei0otQM0z9bvw - BROTMAN" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_lyWdEei0otQM0z9bvw" id="_9br84CWUEei0otQM0z9bvw - LACH" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_mCWdEei0otQM0z9bvw" id="_W4-2oCWVEei0otQM0z9bvw - PRUDENT" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_mSWdEei0otQM0z9bvw" id="_u3shQCWPEei0otQM0z9bvw - CALMEDGLOB" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_miWdEei0otQM0z9bvw" id="_W4IXgCWUEei0otQM0z9bvw - ECD" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_myWdEei0otQM0z9bvw" id="_riL60CWLEei0otQM0z9bvw - BELLA" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_nCWdEei0otQM0z9bvw" id="_k1NWYCWUEei0otQM0z9bvw - HCLA" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_nSWdEei0otQM0z9bvw" id="_Q3AGECWVEei0otQM0z9bvw - PROSPECT" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_niWdEei0otQM0z9bvw" id="_csDogCWVEei0otQM0z9bvw - REDWOOD" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_nyWdEei0otQM0z9bvw" id="__Yy8ECWPEei0otQM0z9bvw - CALMEDHCLA" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_oCWdEei0otQM0z9bvw" id="_ofyVQCWVEei0otQM0z9bvw - SFMCAC" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_oSWdEei0otQM0z9bvw" id="_dDP18CWUEei0otQM0z9bvw - GLOBAL" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_oiWdEei0otQM0z9bvw" id="_vDhIACWVEei0otQM0z9bvw - SFMCHCLA" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_oyWdEei0otQM0z9bvw" id="_4HgGcCWUEei0otQM0z9bvw - IHP" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_pCWdEei0otQM0z9bvw" id="_Po5wsCWUEei0otQM0z9bvw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_pSWdEei0otQM0z9bvw" id="_KuUQkCWVEei0otQM0z9bvw - PPN" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_piWdEei0otQM0z9bvw" id="_0Tw5oCWVEei0otQM0z9bvw - WATTS" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_pyWdEei0otQM0z9bvw" id="_yuASMCWUEei0otQM0z9bvw - HWDPGLOB" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AT4_qCWdEei0otQM0z9bvw" id="_EJaZICWVEei0otQM0z9bvw - PIONEER" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84hvsEeiXROaUviyM_A" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
