@@ -762,4 +762,5 @@
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_Bh8MURvsEeiXROaUviyM_A" login="svc_TalendDW@medpointmanagement.com" firstName="Talend" lastName="Service" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_K8FgoBvuEei5m5YMyYdANg" login="HighPoint6@medpointmanagement.com" firstName="High" lastName="Point" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_yFXhQSYKEeitGbI5mVZGGA" login="user@talend.com"/>
 </xmi:XMI>
