@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:DelimitedFileConnection xmi:id="_NRImECWqEei0otQM0z9bvw" name="FINAL_OUT" dataPackage="_NRImESWqEei0otQM0z9bvw" Server="Localhost 127.0.0.1" FilePath="M:/EDW Project/HighPoint/Phase II/Dashboards/Prototype Data/SourceFiles4Talend/EZCAP/FinalOut.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_NRImECWqEei0otQM0z9bvw" name="FINAL_OUT" supplierDependency="_Z75BcCWqEei0otQM0z9bvw" dataPackage="_NRImESWqEei0otQM0z9bvw" Server="Localhost 127.0.0.1" FilePath="M:/EDW Project/HighPoint/Phase II/Dashboards/Prototype Data/SourceFiles4Talend/EZCAP/FinalOut.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" HeaderValue="0" EscapeType="CSV" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_NRImESWqEei0otQM0z9bvw" name="default" dataManager="_NRImECWqEei0otQM0z9bvw">
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_NRImEiWqEei0otQM0z9bvw" id="_DL9s4CWqEei0otQM0z9bvw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NRImEyWqEei0otQM0z9bvw" label="CODE" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NRImFCWqEei0otQM0z9bvw" label="DESC" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NRImFSWqEei0otQM0z9bvw" label="DB" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_NRImEiWqEei0otQM0z9bvw" id="_DL9s4CWqEei0otQM0z9bvw" label="J_MPM_EDW_MERGE_EZCAP_PROFILE">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NRImEyWqEei0otQM0z9bvw" id="CODE" label="CODE" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_Z75BcSWqEei0otQM0z9bvw" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NRImFCWqEei0otQM0z9bvw" id="DESC" label="DESC" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_Z75B2yWqEei0otQM0z9bvw" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NRImFSWqEei0otQM0z9bvw" id="DB" label="DB" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_Z75BpiWqEei0otQM0z9bvw" tag="Content Type" value="Nominal"/>
+      </feature>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_Z75BcCWqEei0otQM0z9bvw" kind="Usage" supplier="_NRImECWqEei0otQM0z9bvw">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/MPM_EDW/J_MPM_EDW_MERGE_EZCAP_PROFILE_0.1.ana#_ZlpEoCWqEei0otQM0z9bvw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
