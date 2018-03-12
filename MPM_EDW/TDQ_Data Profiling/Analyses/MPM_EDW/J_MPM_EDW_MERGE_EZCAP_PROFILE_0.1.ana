@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_ZlpEoCWqEei0otQM0z9bvw" name="J_MPM_EDW_MERGE_EZCAP_PROFILE" creationDate="2018-03-12T00:04:01.759-0400">
+  <taggedValue xmi:id="_ZlpEoSWqEei0otQM0z9bvw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_ZlpEoiWqEei0otQM0z9bvw" tag="Author" value="HighPoint6@medpointmanagement.com"/>
+  <taggedValue xmi:id="_ZlpEoyWqEei0otQM0z9bvw" tag="Purpose"/>
+  <taggedValue xmi:id="_ZlpEpCWqEei0otQM0z9bvw" tag="Description"/>
+  <taggedValue xmi:id="_ZlpEpSWqEei0otQM0z9bvw" tag="Version" value="0.1"/>
+  <context xmi:id="_ZlpEpiWqEei0otQM0z9bvw"/>
+  <results xmi:id="_ZlpEpyWqEei0otQM0z9bvw">
+    <resultMetadata xmi:id="_ZlpEqCWqEei0otQM0z9bvw"/>
+  </results>
+  <parameters xmi:id="_ZlpEqSWqEei0otQM0z9bvw" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
