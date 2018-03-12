@@ -188,12 +188,12 @@
       <column comment="" key="false" length="-1" name="DB" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Code" expression="row1.Code" type="id_String" nullable="true"/>
         <mapperTableEntries name="DESCR" expression="row1.DESCR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DB" expression="&quot;LACH&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DB" expression="&quot;REDWOOD&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Code" type="id_String" nullable="true"/>
@@ -315,12 +315,12 @@
       <column comment="" key="false" length="-1" name="DB" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="Code" expression="row2.Code" type="id_String" nullable="true"/>
         <mapperTableEntries name="DESCR" expression="row2.DESCR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DB" expression="&quot;PIONEER&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DB" expression="&quot;SCHS&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Code" type="id_String" nullable="true"/>
@@ -442,12 +442,12 @@
       <column comment="" key="false" length="-1" name="DB" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="Code" expression="row3.Code" type="id_String" nullable="true"/>
         <mapperTableEntries name="DESCR" expression="row3.DESCR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DB" expression="&quot;PPN&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DB" expression="&quot;SFMCAC&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Code" type="id_String" nullable="true"/>
@@ -569,12 +569,12 @@
       <column comment="" key="false" length="-1" name="DB" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="Code" expression="row4.Code" type="id_String" nullable="true"/>
         <mapperTableEntries name="DESCR" expression="row4.DESCR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DB" expression="&quot;PROSPECT&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DB" expression="&quot;SFMCHCLA&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Code" type="id_String" nullable="true"/>
@@ -696,12 +696,12 @@
       <column comment="" key="false" length="-1" name="DB" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out5">
         <mapperTableEntries name="Code" expression="row5.Code" type="id_String" nullable="true"/>
         <mapperTableEntries name="DESCR" expression="row5.DESCR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DB" expression="&quot;PRUDENT&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DB" expression="&quot;WATTS&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Code" type="id_String" nullable="true"/>
