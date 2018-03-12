@@ -26,6 +26,8 @@
       <relatedItems xmi:id="_irOPgBvuEei5m5YMyYdANg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Yv9PIB1tEeiCoe9rQZYxug" id="_1i1eQB1lEeixVuYPSxfLeg" version="Latest" type="property"/>
       <relatedItems xmi:id="_Yv9PIR1tEeiCoe9rQZYxug" id="_1i1eQB1lEeixVuYPSxfLeg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_QXyRICWuEei0otQM0z9bvw" id="_KuUQkCWVEei0otQM0z9bvw - PPN" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_QXyRISWuEei0otQM0z9bvw" id="_EJaZICWVEei0otQM0z9bvw - PIONEER" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_LcMb8B3OEei5wNX_1VeFyQ">
       <baseItem xmi:id="_LcMb8R3OEei5wNX_1VeFyQ" id="_U5nOEB3NEei5wNX_1VeFyQ" version="0.1" type="job"/>
