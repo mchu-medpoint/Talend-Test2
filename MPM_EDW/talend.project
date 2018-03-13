@@ -498,6 +498,55 @@
       <relatedItems xmi:id="_M53G4SWwEei0otQM0z9bvw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_M53G4iWwEei0otQM0z9bvw" id="_riL60CWLEei0otQM0z9bvw - BELLA" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_alSSUCbfEeiUfJ4RFAKh3g">
+      <baseItem xmi:id="_alSSUSbfEeiUfJ4RFAKh3g" id="_akwt4CbfEeiUfJ4RFAKh3g" version="0.1" type="job"/>
+      <relatedItems xmi:id="_alSSUibfEeiUfJ4RFAKh3g" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSUybfEeiUfJ4RFAKh3g" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSVCbfEeiUfJ4RFAKh3g" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSVSbfEeiUfJ4RFAKh3g" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSVibfEeiUfJ4RFAKh3g" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSVybfEeiUfJ4RFAKh3g" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSWCbfEeiUfJ4RFAKh3g" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSWSbfEeiUfJ4RFAKh3g" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSWibfEeiUfJ4RFAKh3g" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSWybfEeiUfJ4RFAKh3g" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSXCbfEeiUfJ4RFAKh3g" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSXSbfEeiUfJ4RFAKh3g" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSXibfEeiUfJ4RFAKh3g" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSXybfEeiUfJ4RFAKh3g" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_alSSYCbfEeiUfJ4RFAKh3g" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_aotZwCbfEeiUfJ4RFAKh3g" id="_BkxxMBwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZwSbfEeiUfJ4RFAKh3g" id="_BvmhIRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZwibfEeiUfJ4RFAKh3g" id="_BsTVgRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZwybfEeiUfJ4RFAKh3g" id="_rQ9FwCbcEei4fo-FRwI99A" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZxCbfEeiUfJ4RFAKh3g" id="_Brv74RwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZxSbfEeiUfJ4RFAKh3g" id="_BtXFcRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZxibfEeiUfJ4RFAKh3g" id="_BpSdwRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZxybfEeiUfJ4RFAKh3g" id="_Bp7-ARwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZyCbfEeiUfJ4RFAKh3g" id="_BoVbgRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZySbfEeiUfJ4RFAKh3g" id="_Bp0CMRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZyibfEeiUfJ4RFAKh3g" id="_BooWcRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZyybfEeiUfJ4RFAKh3g" id="_ZdVdMCWqEei0otQM0z9bvw" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZzCbfEeiUfJ4RFAKh3g" id="_NJtvcCWqEei0otQM0z9bvw" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZzSbfEeiUfJ4RFAKh3g" id="_BtgPYRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZzibfEeiUfJ4RFAKh3g" id="_BoelcRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZzybfEeiUfJ4RFAKh3g" id="_BpIswBwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ0CbfEeiUfJ4RFAKh3g" id="_BpocARwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ0SbfEeiUfJ4RFAKh3g" id="_BtyjQBwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ0ibfEeiUfJ4RFAKh3g" id="_Bs9c0RwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ0ybfEeiUfJ4RFAKh3g" id="_Br5F0RwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ1CbfEeiUfJ4RFAKh3g" id="_Bt5Q8RwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ1SbfEeiUfJ4RFAKh3g" id="_BowSQRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ1ibfEeiUfJ4RFAKh3g" id="_BsdtkRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ1ybfEeiUfJ4RFAKh3g" id="_BtpZUBwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ2CbfEeiUfJ4RFAKh3g" id="_Bsm3gRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ2SbfEeiUfJ4RFAKh3g" id="_BoE80RwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ2ibfEeiUfJ4RFAKh3g" id="_Bvt14BwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ2ybfEeiUfJ4RFAKh3g" id="_BperARwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ3CbfEeiUfJ4RFAKh3g" id="_BoM4oBwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ3SbfEeiUfJ4RFAKh3g" id="_Bo3nABwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+      <relatedItems xmi:id="_aotZ3ibfEeiUfJ4RFAKh3g" id="_BkO-oRwpEeiTHIRHeuHqBQ" version="Latest" type="report"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84hvsEeiXROaUviyM_A" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
