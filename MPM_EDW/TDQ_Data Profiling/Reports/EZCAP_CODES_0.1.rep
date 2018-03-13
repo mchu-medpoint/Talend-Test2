@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_rREagCbcEei4fo-FRwI99A" name="EZCAP_CODES" creationDate="2018-03-13T12:36:27.284-0400">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.reports="http://dataquality.reports" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_rREagCbcEei4fo-FRwI99A" name="EZCAP_CODES" creationDate="2018-03-13T12:36:27.284-0400" defaultContext="Default">
+  <clientDependency href="../Analyses/MPM_EDW/J_MPM_EDW_MERGE_EZCAP_PROFILE_0.1.ana#_Ds5QMCbdEei4fo-FRwI99A"/>
   <taggedValue xmi:id="_rREagSbcEei4fo-FRwI99A" tag="Status" value="development"/>
   <taggedValue xmi:id="_rREagibcEei4fo-FRwI99A" tag="Author" value="HighPoint6@medpointmanagement.com"/>
-  <taggedValue xmi:id="_rREagybcEei4fo-FRwI99A" tag="Purpose"/>
-  <taggedValue xmi:id="_rREahCbcEei4fo-FRwI99A" tag="Description"/>
+  <taggedValue xmi:id="_rREagybcEei4fo-FRwI99A" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_rREahCbcEei4fo-FRwI99A" tag="Description" value=""/>
   <taggedValue xmi:id="_rREahSbcEei4fo-FRwI99A" tag="Version" value="0.1"/>
-  <taggedValue xmi:id="_rREahibcEei4fo-FRwI99A" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_rREahibcEei4fo-FRwI99A" tag="OutputFolder" value="C:\Users\highpoint\Documents\MPM_EDW\EZCAP"/>
   <taggedValue xmi:id="_rREahybcEei4fo-FRwI99A" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
   <taggedValue xmi:id="_rREaiCbcEei4fo-FRwI99A" tag="REP_DBINFO_DBVERSION" value=""/>
   <taggedValue xmi:id="_rREaiSbcEei4fo-FRwI99A" tag="REP_DBINFO_HOST" value=""/>
@@ -14,8 +15,27 @@
   <taggedValue xmi:id="_rREajCbcEei4fo-FRwI99A" tag="REP_DBINFO_SCHEMA" value=""/>
   <taggedValue xmi:id="_rREajSbcEei4fo-FRwI99A" tag="REP_DBINFO_USER" value="sa"/>
   <taggedValue xmi:id="_rREajibcEei4fo-FRwI99A" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
-  <taggedValue xmi:id="_rREajybcEei4fo-FRwI99A" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Users\highpoint\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_rREajybcEei4fo-FRwI99A" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:/C:\Users\highpoint\workspace\TDQ_reporting_db\talend_dq"/>
   <taggedValue xmi:id="_rREakCbcEei4fo-FRwI99A" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
   <taggedValue xmi:id="_rREakSbcEei4fo-FRwI99A" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
   <taggedValue xmi:id="_rREakibcEei4fo-FRwI99A" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_DstC8CbdEei4fo-FRwI99A" tag="OutputFileName" value=""/>
+  <taggedValue xmi:id="_DstC8SbdEei4fo-FRwI99A" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_DstC8ibdEei4fo-FRwI99A" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_DstC8ybdEei4fo-FRwI99A" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_Ds0XsCbdEei4fo-FRwI99A" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <presentationParams xmi:id="_Dsx7cCbdEei4fo-FRwI99A" type="TOP_LEFT_PRESENTATIONKEY">
+    <formula xmi:id="_Dsx7cSbdEei4fo-FRwI99A">
+      <expression xsi:type="relational:TdExpression" xmi:id="_Dsx7cibdEei4fo-FRwI99A" body="Creation Date"/>
+    </formula>
+  </presentationParams>
+  <presentationParams xmi:id="_Dsx7cybdEei4fo-FRwI99A" type="TOP_RIGHT_PRESENTATIONKEY">
+    <formula xmi:id="_Dsx7dCbdEei4fo-FRwI99A">
+      <expression xsi:type="relational:TdExpression" xmi:id="_Dsx7dSbdEei4fo-FRwI99A" body="Creation Date"/>
+    </formula>
+  </presentationParams>
+  <analysisMap xmi:id="_Ds0XsSbdEei4fo-FRwI99A" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/MPM_EDW/J_MPM_EDW_MERGE_EZCAP_PROFILE_0.1.ana#_ZlpEoCWqEei0otQM0z9bvw"/>
+  </analysisMap>
+  <context xmi:id="_Dsx7dibdEei4fo-FRwI99A" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
