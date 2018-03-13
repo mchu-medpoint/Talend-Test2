@@ -18,7 +18,7 @@
       <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/FINAL_OUT_0.1.item#_NRImFCWqEei0otQM0z9bvw"/>
     </context>
     <results xmi:id="_ZlpEpyWqEei0otQM0z9bvw">
-      <resultMetadata xmi:id="_ZlpEqCWqEei0otQM0z9bvw" executionDate="2018-03-13T12:20:54.909-0400" executionDuration="1035" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="6"/>
+      <resultMetadata xmi:id="_ZlpEqCWqEei0otQM0z9bvw" executionDate="2018-03-13T12:39:32.677-0400" executionDuration="813" message="" executionNumber="7" lastRunOk="true" lastExecutionNumberOk="7"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Z72lMCWqEei0otQM0z9bvw" count="339" computed="true">
         <parameters xmi:id="_Z72lMSWqEei0otQM0z9bvw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../../metadata/fileDelimited/FINAL_OUT_0.1.item#_NRImEyWqEei0otQM0z9bvw"/>
