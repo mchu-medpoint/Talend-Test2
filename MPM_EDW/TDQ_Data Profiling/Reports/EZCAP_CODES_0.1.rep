@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_rREagCbcEei4fo-FRwI99A" name="EZCAP_CODES" creationDate="2018-03-13T12:36:27.284-0400">
+  <taggedValue xmi:id="_rREagSbcEei4fo-FRwI99A" tag="Status" value="development"/>
+  <taggedValue xmi:id="_rREagibcEei4fo-FRwI99A" tag="Author" value="HighPoint6@medpointmanagement.com"/>
+  <taggedValue xmi:id="_rREagybcEei4fo-FRwI99A" tag="Purpose"/>
+  <taggedValue xmi:id="_rREahCbcEei4fo-FRwI99A" tag="Description"/>
+  <taggedValue xmi:id="_rREahSbcEei4fo-FRwI99A" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_rREahibcEei4fo-FRwI99A" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_rREahybcEei4fo-FRwI99A" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_rREaiCbcEei4fo-FRwI99A" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_rREaiSbcEei4fo-FRwI99A" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_rREaiibcEei4fo-FRwI99A" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_rREaiybcEei4fo-FRwI99A" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_rREajCbcEei4fo-FRwI99A" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_rREajSbcEei4fo-FRwI99A" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_rREajibcEei4fo-FRwI99A" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
+  <taggedValue xmi:id="_rREajybcEei4fo-FRwI99A" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Users\highpoint\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_rREakCbcEei4fo-FRwI99A" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_rREakSbcEei4fo-FRwI99A" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_rREakibcEei4fo-FRwI99A" tag="REP_PASSWORD_CONTEXT" value="false"/>
+</dataquality.reports:TdReport>
