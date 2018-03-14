@@ -634,7 +634,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_POPAQCc8EeicDK3qhszZSg">
       <baseItem xmi:id="_POPAQSc8EeicDK3qhszZSg" id="_PMhJACc8EeicDK3qhszZSg" version="0.1" type="job"/>
-      <relatedItems xmi:id="_POPAQic8EeicDK3qhszZSg" id="_Po5wsCWUEei0otQM0z9bvw" version="Latest" type="property"/>
       <relatedItems xmi:id="_POPAQyc8EeicDK3qhszZSg" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_POPARCc8EeicDK3qhszZSg" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_POPARSc8EeicDK3qhszZSg" id="TalendString" version="Latest" type="routine"/>
@@ -650,11 +649,7 @@
       <relatedItems xmi:id="_POPATyc8EeicDK3qhszZSg" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_POPAUCc8EeicDK3qhszZSg" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_POPAUSc8EeicDK3qhszZSg" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_POPAUic8EeicDK3qhszZSg" id="_bB1xICWPEei0otQM0z9bvw - BROTMAN" version="Latest" type="schema"/>
       <relatedItems xmi:id="_POPAUyc8EeicDK3qhszZSg" id="_riL60CWLEei0otQM0z9bvw - BELLA" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_POPAVCc8EeicDK3qhszZSg" id="__Yy8ECWPEei0otQM0z9bvw - CALMEDHCLA" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_POPAVSc8EeicDK3qhszZSg" id="_u3shQCWPEei0otQM0z9bvw - CALMEDGLOB" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_POPAVic8EeicDK3qhszZSg" id="_Po5wsCWUEei0otQM0z9bvw - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
