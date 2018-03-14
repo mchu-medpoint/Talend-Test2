@@ -103,9 +103,9 @@
       <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
       <elementParameter field="CHECK" name="TRIMALL" value="false"/>
       <elementParameter field="TABLE" name="TRIMSELECT">
-        <elementValue elementRef="SCHEMA_COLUMN" value="Key"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
         <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="Value"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
         <elementValue elementRef="TRIM" value="false"/>
       </elementParameter>
       <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
@@ -115,9 +115,9 @@
       <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
       <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
       <elementParameter field="TABLE" name="DECODE_COLS" show="false">
-        <elementValue elementRef="SCHEMA_COLUMN" value="Key"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
         <elementValue elementRef="DECODE" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="Value"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
         <elementValue elementRef="DECODE" value="false"/>
       </elementParameter>
       <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
