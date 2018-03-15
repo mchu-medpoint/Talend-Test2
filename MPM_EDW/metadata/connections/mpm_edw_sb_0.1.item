@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_8_foIBwoEeiTHIRHeuHqBQ" name="mpm_edw_sb" id="_3uHDgBwnEeiTHIRHeuHqBQ" label="mpm_edw_sb" dataPackage="_8YAMGyGTEeiZJJcL1G6Fmw" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;" dbVersionString="JTDS" Port="1433" Username="highpoint" Password="DBvGmZYox5E89kXS58JZlw==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+  <TalendMetadata:DatabaseConnection xmi:id="_8_foIBwoEeiTHIRHeuHqBQ" name="mpm_edw_sb" id="_3uHDgBwnEeiTHIRHeuHqBQ" label="mpm_edw_sb" dataPackage="_8YAMGyGTEeiZJJcL1G6Fmw" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;" dbVersionString="JTDS" Port="1433" Username="highpoint6" Password="B/HARFVmWa147cx0ajuMew==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
     <taggedValue xmi:id="_8_gPMBwoEeiTHIRHeuHqBQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_8_r1YBwoEeiTHIRHeuHqBQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_8_0_UBwoEeiTHIRHeuHqBQ" tag="Status" value=""/>
@@ -12,7 +12,7 @@
     <taggedValue xmi:id="_8Zh2ECGTEeiZJJcL1G6Fmw" tag="DB ProductName" value="Microsoft SQL Server"/>
     <taggedValue xmi:id="_8Zh2ESGTEeiZJJcL1G6Fmw" tag="DB ProductVersion" value="13.00.4001"/>
     <taggedValue xmi:id="_aJPMgCcAEei8g7LgX-EMow" tag="DB IdentifierQuoteString" value="&quot;"/>
-    <parameters xmi:id="_8_gPMRwoEeiTHIRHeuHqBQ" key="CONN_PARA_KEY_USERNAME" value="highpoint"/>
+    <parameters xmi:id="_8_gPMRwoEeiTHIRHeuHqBQ" key="CONN_PARA_KEY_USERNAME" value="highpoint6"/>
     <parameters xmi:id="_goPqIB2mEeiSLMW7P_emyA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_8YAMGyGTEeiZJJcL1G6Fmw" name="mpm_edw_sb" dataManager="_8_foIBwoEeiTHIRHeuHqBQ">
