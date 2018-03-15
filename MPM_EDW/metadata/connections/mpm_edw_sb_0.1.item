@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_8_foIBwoEeiTHIRHeuHqBQ" name="mpm_edw_sb" id="_3uHDgBwnEeiTHIRHeuHqBQ" label="mpm_edw_sb" dataPackage="_8YAMGyGTEeiZJJcL1G6Fmw" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;" dbVersionString="JTDS" Port="1433" Username="highpoint" Password="DBvGmZYox5E89kXS58JZlw==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+  <TalendMetadata:DatabaseConnection xmi:id="_8_foIBwoEeiTHIRHeuHqBQ" name="mpm_edw_sb" id="_3uHDgBwnEeiTHIRHeuHqBQ" label="mpm_edw_sb" dataPackage="_8YAMGyGTEeiZJJcL1G6Fmw" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;" dbVersionString="JTDS" Port="1433" Username="highpoint" Password="DBvGmZYox5E89kXS58JZlw==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
     <taggedValue xmi:id="_8_gPMBwoEeiTHIRHeuHqBQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_8_r1YBwoEeiTHIRHeuHqBQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_8_0_UBwoEeiTHIRHeuHqBQ" tag="Status" value=""/>
@@ -1232,17 +1232,5 @@
         </feature>
       </ownedElement>
     </ownedElement>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zYCcAEei8g7LgX-EMow" name="db_accessadmin"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zYScAEei8g7LgX-EMow" name="db_backupoperator"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zYicAEei8g7LgX-EMow" name="db_datareader"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zYycAEei8g7LgX-EMow" name="db_datawriter"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zZCcAEei8g7LgX-EMow" name="db_ddladmin"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zZScAEei8g7LgX-EMow" name="db_denydatareader"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zZicAEei8g7LgX-EMow" name="db_denydatawriter"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zZycAEei8g7LgX-EMow" name="db_owner"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zaCcAEei8g7LgX-EMow" name="db_securityadmin"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zaScAEei8g7LgX-EMow" name="guest"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zaicAEei8g7LgX-EMow" name="INFORMATION_SCHEMA"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aJ-zaycAEei8g7LgX-EMow" name="sys"/>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
