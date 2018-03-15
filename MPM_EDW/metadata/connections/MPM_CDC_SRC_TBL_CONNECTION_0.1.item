@@ -25,7 +25,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_TogM0CiUEeim2KVzdyCj9w" name="mpm_edw_sb" dataManager="_Tnm08CiUEeim2KVzdyCj9w">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_TogM0SiUEeim2KVzdyCj9w" name="TEMP">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_WUB-8CiUEeim2KVzdyCj9w" name="MEMBER_TEST_CDC" id="_WUAJwCiUEeim2KVzdyCj9w" label="MEMBER_TEST_CDC" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_WUB-8CiUEeim2KVzdyCj9w" name="MEMBER_TEST_CDC" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_WUAJwCiUEeim2KVzdyCj9w" label="MEMBER_TEST_CDC" tableType="TABLE">
         <taggedValue xmi:id="_WUB-8SiUEeim2KVzdyCj9w" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_WUB-8iiUEeim2KVzdyCj9w" name="MEMBER_ID" label="MEMBER_ID" length="19" sourceType="BIGINT IDENTITY" talendType="id_Long" nullable="false">
           <taggedValue xmi:id="_WUB-8yiUEeim2KVzdyCj9w" tag="Comment" value=""/>
