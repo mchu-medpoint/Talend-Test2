@@ -679,7 +679,7 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_jXpfdSGzEeioYeI0pFUjwQ" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_jXpfdiGzEeioYeI0pFUjwQ" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_jXpfdyGzEeioYeI0pFUjwQ" name="MEMBID" label="MEMBID" length="255" sourceType="VARCHAR" talendType="id_String">
+        <feature xsi:type="relational:TdColumn" xmi:id="_jXpfdyGzEeioYeI0pFUjwQ" name="MEMBID" label="MEMBID" length="255" sourceType="VARCHAR" talendType="id_String" key="true">
           <taggedValue xmi:id="_jXpfeCGzEeioYeI0pFUjwQ" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_jXpfeSGzEeioYeI0pFUjwQ" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_jXpfeiGzEeioYeI0pFUjwQ" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
