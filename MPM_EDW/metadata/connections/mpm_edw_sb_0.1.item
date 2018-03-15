@@ -1053,7 +1053,7 @@
           <sqlDataType xmi:id="_jbHq0SGzEeioYeI0pFUjwQ" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
         </feature>
       </ownedElement>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_QAoXYSgJEeiqJNHOiHiIZg" name="LAND_MEMBER_TEST_CDC" id="_QAoXYCgJEeiqJNHOiHiIZg" label="LAND_MEMBER_TEST_CDC" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_QAoXYSgJEeiqJNHOiHiIZg" name="LAND_MEMBER_TEST_CDC" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_QAoXYCgJEeiqJNHOiHiIZg" label="LAND_MEMBER_TEST_CDC" tableType="TABLE">
         <taggedValue xmi:id="_QAoXYigJEeiqJNHOiHiIZg" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_QAoXYygJEeiqJNHOiHiIZg" name="IPA" label="IPA" length="255" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_QAoXZCgJEeiqJNHOiHiIZg" tag="Comment" value=""/>
