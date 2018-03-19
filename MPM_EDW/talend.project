@@ -702,7 +702,6 @@
       <relatedItems xmi:id="_OjiJPysoEeijKtBsWgNnQw" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_OjiJQCsoEeijKtBsWgNnQw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_OjiJQSsoEeijKtBsWgNnQw" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_OjiJQisoEeijKtBsWgNnQw" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
       <relatedItems xmi:id="_qNdAoCsqEeijKtBsWgNnQw" id="_3uHDgBwnEeiTHIRHeuHqBQ - SCD_SOURCE" version="Latest" type="schema"/>
       <relatedItems xmi:id="_qNdAoSsqEeijKtBsWgNnQw" id="_3uHDgBwnEeiTHIRHeuHqBQ - SCD_TARGET" version="Latest" type="schema"/>
     </ItemsRelations>
