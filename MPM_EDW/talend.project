@@ -726,7 +726,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_kTAtUCvsEeio6oUndaDCsA">
       <baseItem xmi:id="_kTAtUSvsEeio6oUndaDCsA" id="_bXSW8PjnEearxo_WSQMNyw" version="0.1" type="job"/>
-      <relatedItems xmi:id="_kTAtUivsEeio6oUndaDCsA" id="_H4UtsPm0EeaU4NaBdGq2iA" version="Latest" type="property"/>
       <relatedItems xmi:id="_kTAtUyvsEeio6oUndaDCsA" id="KeyValueField" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kTAtVCvsEeio6oUndaDCsA" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kTAtVSvsEeio6oUndaDCsA" id="StringHandlingExtended" version="Latest" type="routine"/>
@@ -738,6 +737,13 @@
       <relatedItems xmi:id="_kTAtWyvsEeio6oUndaDCsA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kTAtXCvsEeio6oUndaDCsA" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kTAtXSvsEeio6oUndaDCsA" id="DateTransformations" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0Y1hYCvsEeio6oUndaDCsA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0Y1hYSvsEeio6oUndaDCsA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0Y1hYivsEeio6oUndaDCsA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0Y1hYyvsEeio6oUndaDCsA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0Y1hZCvsEeio6oUndaDCsA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0Y1hZSvsEeio6oUndaDCsA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0Y1hZivsEeio6oUndaDCsA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
