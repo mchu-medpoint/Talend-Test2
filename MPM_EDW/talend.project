@@ -707,7 +707,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_kS-RECvsEeio6oUndaDCsA">
       <baseItem xmi:id="_kS-RESvsEeio6oUndaDCsA" id="_aDnVQAEOEeeUINeN9DhtqA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_kS-REivsEeio6oUndaDCsA" id="_0nRvQAEQEeeUINeN9DhtqA" version="Latest" type="property"/>
       <relatedItems xmi:id="_kS-REyvsEeio6oUndaDCsA" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kS-RFCvsEeio6oUndaDCsA" id="StringHandlingExtended" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kS-RFSvsEeio6oUndaDCsA" id="Relational" version="Latest" type="routine"/>
@@ -717,6 +716,13 @@
       <relatedItems xmi:id="_kS-RGSvsEeio6oUndaDCsA" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kS-RGivsEeio6oUndaDCsA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kS-RGyvsEeio6oUndaDCsA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_osP-cCvsEeio6oUndaDCsA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_osP-cSvsEeio6oUndaDCsA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_osP-civsEeio6oUndaDCsA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_osP-cyvsEeio6oUndaDCsA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_osP-dCvsEeio6oUndaDCsA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_osP-dSvsEeio6oUndaDCsA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_osP-divsEeio6oUndaDCsA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_kTAtUCvsEeio6oUndaDCsA">
       <baseItem xmi:id="_kTAtUSvsEeio6oUndaDCsA" id="_bXSW8PjnEearxo_WSQMNyw" version="0.1" type="job"/>
