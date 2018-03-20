@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_kQE4oCvtEeio6oUndaDCsA" name="EZCAP" id="_ZFJRQCvtEeio6oUndaDCsA" label="EZCAP" dataPackage="_kRCh8CvtEeio6oUndaDCsA" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://EZCAP-SQL-DEV:1433/HCLA;" dbVersionString="JTDS" Port="1433" Username="highpoint6" Password="B/HARFVmWa147cx0ajuMew==" ServerName="EZCAP-SQL-DEV" DatasourceName="" FileFieldName="" SID="HCLA" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+    <taggedValue xmi:id="_kQE4oSvtEeio6oUndaDCsA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_kQLmUCvtEeio6oUndaDCsA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_kQLmUSvtEeio6oUndaDCsA" tag="Status" value=""/>
+    <taggedValue xmi:id="_kQLmUivtEeio6oUndaDCsA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_kQLmUyvtEeio6oUndaDCsA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_kQLmVCvtEeio6oUndaDCsA" tag="Description" value=""/>
+    <taggedValue xmi:id="_kQLmVSvtEeio6oUndaDCsA" tag="Author" value=""/>
+    <taggedValue xmi:id="_kQLmVivtEeio6oUndaDCsA" tag="otherParameter"/>
+    <taggedValue xmi:id="_kQjZwCvtEeio6oUndaDCsA" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_kQjZwSvtEeio6oUndaDCsA" tag="DB ProductVersion" value="10.50.6220"/>
+    <taggedValue xmi:id="_kQjZwivtEeio6oUndaDCsA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_kQE4oivtEeio6oUndaDCsA" key="CONN_PARA_KEY_USERNAME" value="highpoint6"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_kRCh8CvtEeio6oUndaDCsA" name="HCLA" dataManager="_kQE4oCvtEeio6oUndaDCsA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_kRCh8SvtEeio6oUndaDCsA" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
