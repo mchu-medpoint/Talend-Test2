@@ -115,26 +115,6 @@
     <routinesParameter id="_Br9D8BvsEeiXROaUviyM_A" name="SQLike"/>
     <routinesParameter id="_Btq7MBvsEeiXROaUviyM_A" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="100" show="false"/>
-    <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
-      <elementValue elementRef="ARRAY" value="Numeric.sequence(&quot;s1&quot; ,1 ,1 )"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
-      <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="updated_at"/>
-      <elementValue elementRef="ARRAY" value="TalendDate.addDate(TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,&quot;2017-01-30 00:00:00&quot;) ,Numeric.sequence(&quot;s2&quot;,0,1) ,&quot;dd&quot; )"/>
-    </elementParameter>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="Simulate source system"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRowGenerator_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="value" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="if (globalMap.get(&quot;delta_date&quot;) == null) {&#xA;    System.out.println(&quot;First execution of &quot;+jobName)  ;&#xA;&#x9;globalMap.put(&quot;delta_date&quot;, &quot;1990-01-01 00:00:01&quot;) ;&#xA;&#x9;globalMap.put(&quot;execution_date&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) ) ;&#xA;}&#xA;&#xA;&#xA;"/>
@@ -2262,7 +2242,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="448">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -2283,7 +2263,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.DELTA_LOAD.\&quot;ID\&quot;,&#xA;&#x9;&#x9;dbo.DELTA_LOAD.JOB_NAME,&#xA;&#x9;&#x9;dbo.DELTA_LOAD.LOADED_UNTIL,&#xA;&#x9;&#x9;dbo.DELTA_LOAD.EXECUTION_TIME,&#xA;&#x9;&#x9;dbo.DELTA_LOAD.EXECUTION_STATUS&#xA;FROM&#x9;dbo.DELTA_LOAD&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&#xD;&#xA;&quot;&#xD;&#xA;insert into dbo.DELTA_LOAD(job_name, loaded_until, etl_execution_time, execution_status) &#xD;&#xA;VALUES &#xD;&#xA;(\'&quot;+jobName+&quot;\',&#xD;&#xA;\'&quot;+(String) globalMap.get(&quot;delta_date_new&quot;)+&quot;\',&#xD;&#xA;\'&quot;+(String) globalMap.get(&quot;execution_date&quot;)+&quot;\',&#xD;&#xA;\'success\') ;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2337,7 +2317,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="448">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -2358,7 +2338,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.DELTA_LOAD.\&quot;ID\&quot;,&#xA;&#x9;&#x9;dbo.DELTA_LOAD.JOB_NAME,&#xA;&#x9;&#x9;dbo.DELTA_LOAD.LOADED_UNTIL,&#xA;&#x9;&#x9;dbo.DELTA_LOAD.EXECUTION_TIME,&#xA;&#x9;&#x9;dbo.DELTA_LOAD.EXECUTION_STATUS&#xA;FROM&#x9;dbo.DELTA_LOAD&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;insert into dbo.DELTA_LOAD(job_name, loaded_until, etl_execution_time, execution_status) &#xD;&#xA;VALUES &#xD;&#xA;(\'&quot;+jobName+&quot;\',&#xD;&#xA;\'&quot;+(String) globalMap.get(&quot;delta_date_new&quot;)+&quot;\',&#xD;&#xA;\'&quot;+(String) globalMap.get(&quot;execution_date&quot;)+&quot;\',&#xD;&#xA;\'failure\') ;&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2442,6 +2422,12 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMSSqlRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMSSqlRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
   <connection connectorName="FILTER" label="filtered_data" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="filtered_data" show="false"/>
@@ -2469,13 +2455,6 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_2" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_2" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Actual data job and last updated catpure"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
