@@ -767,6 +767,7 @@
       <relatedItems xmi:id="_f_-1IyvwEeio6oUndaDCsA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_NqhOwCvyEeio6oUndaDCsA" id="_3uHDgBwnEeiTHIRHeuHqBQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_Q8iHMCv0Eeio6oUndaDCsA" id="_ZFJRQCvtEeio6oUndaDCsA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_Q5mnoCv3Eeio6oUndaDCsA" id="_3uHDgBwnEeiTHIRHeuHqBQ - LAND_MEMBER" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
