@@ -230,7 +230,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="loaded_until" expression="Relational.ISNULL(row1.loaded_until)?&#xD;&#xA;TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,&quot;1990-01-01 00:00:01&quot;)&#xD;&#xA;:row1.loaded_until " type="id_Date"/>
+        <mapperTableEntries name="loaded_until" expression="Relational.ISNULL(last_success_integ.loaded_until)?&#xD;&#xA;TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,&quot;1990-01-01 00:00:01&quot;)&#xD;&#xA;:last_success_integ.loaded_until " type="id_Date"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_gmap">
         <mapperTableEntries name="loaded_until" expression="Var.loaded_until " type="id_Date"/>
@@ -239,7 +239,7 @@
         <mapperTableEntries name="job_name" expression="last_success_integ.job_name " type="id_String"/>
         <mapperTableEntries name="loaded_until" expression="Var.loaded_until " type="id_Date" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="last_success_integ" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="JOB_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LOADED_UNTIL" type="id_Date" nullable="true"/>
       </inputTables>
@@ -2701,9 +2701,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlConnection_1" target="tMSSqlConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
+  <connection connectorName="FLOW" label="last_success_integ" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="last_success_integ" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="to_gmap" lineStyle="0" metaname="to_gmap" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tSetGlobalVar_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
