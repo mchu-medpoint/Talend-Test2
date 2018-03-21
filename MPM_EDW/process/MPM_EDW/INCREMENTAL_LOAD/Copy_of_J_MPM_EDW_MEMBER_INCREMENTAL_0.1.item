@@ -1489,7 +1489,7 @@
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="9" name="MEMBSSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1740,7 +1740,7 @@
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT">
         <mapperTableEntries name="MEMB_COMPANY_V_SK" type="id_Long"/>
         <mapperTableEntries name="MEMB_KEYID" expression="filtered_data.MEMB_KEYID" type="id_Object"/>
-        <mapperTableEntries name="MEMB_MPI_NO" expression="filtered_data.MEMB_MPI_NO" type="id_String"/>
+        <mapperTableEntries name="MEMB_MPI_NO" expression="filtered_data.MEMB_MPI_NO" type="id_Object"/>
         <mapperTableEntries name="MEMBSSN" expression="filtered_data.MEMBSSN" type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTNM" expression="filtered_data.LASTNM" type="id_String"/>
         <mapperTableEntries name="FIRSTNM" expression="filtered_data.FIRSTNM" type="id_String" nullable="true"/>
@@ -2451,7 +2451,7 @@
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="9" name="MEMBSSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -2700,7 +2700,7 @@
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="9" name="MEMBSSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
