@@ -769,6 +769,7 @@
       <relatedItems xmi:id="_Q8iHMCv0Eeio6oUndaDCsA" id="_ZFJRQCvtEeio6oUndaDCsA" version="Latest" type="property"/>
       <relatedItems xmi:id="_bM800Cv5Eeio6oUndaDCsA" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
       <relatedItems xmi:id="_1ZWnUCypEeiJetnqWhFd7A" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
+      <relatedItems xmi:id="_6sGDkCy6EeiJetnqWhFd7A" id="_KcGd0CypEeiJetnqWhFd7A - MEMB_COMPANY_V" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
