@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_YmITkCypEeiJetnqWhFd7A" name="mpm_edw_dev" id="_KcGd0CypEeiJetnqWhFd7A" label="mpm_edw_dev" dataPackage="_YntA4CypEeiJetnqWhFd7A" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw;" dbVersionString="JTDS" Port="1433" Username="highpoint6" Password="B/HARFVmWa147cx0ajuMew==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+    <taggedValue xmi:id="_YmITkSypEeiJetnqWhFd7A" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_YmQPYCypEeiJetnqWhFd7A" tag="package filter" value=""/>
+    <taggedValue xmi:id="_YmWWACypEeiJetnqWhFd7A" tag="Status" value=""/>
+    <taggedValue xmi:id="_YmWWASypEeiJetnqWhFd7A" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_YmWWAiypEeiJetnqWhFd7A" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_YmWWAyypEeiJetnqWhFd7A" tag="Description" value=""/>
+    <taggedValue xmi:id="_YmWWBCypEeiJetnqWhFd7A" tag="Author" value=""/>
+    <taggedValue xmi:id="_YmWWBSypEeiJetnqWhFd7A" tag="otherParameter"/>
+    <taggedValue xmi:id="_YmwlsCypEeiJetnqWhFd7A" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_YmwlsSypEeiJetnqWhFd7A" tag="DB ProductVersion" value="13.00.4001"/>
+    <taggedValue xmi:id="_YmwlsiypEeiJetnqWhFd7A" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_YmITkiypEeiJetnqWhFd7A" key="CONN_PARA_KEY_USERNAME" value="highpoint6"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_YntA4CypEeiJetnqWhFd7A" name="mpm_edw" dataManager="_YmITkCypEeiJetnqWhFd7A">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_YntA4SypEeiJetnqWhFd7A" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
