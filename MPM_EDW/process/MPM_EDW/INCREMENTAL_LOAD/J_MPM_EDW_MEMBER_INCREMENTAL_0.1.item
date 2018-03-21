@@ -228,9 +228,9 @@
       <column comment="" key="false" length="-1" name="loaded_until" nullable="true" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="loaded_until" expression="Relational.ISNULL(last_success_integ.loaded_until)?&#xA;TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,&quot;1990-01-01 00:00:01&quot;)&#xA;:last_success_integ.loaded_until " type="id_Date"/>
+        <mapperTableEntries name="loaded_until" expression="Relational.ISNULL(row1.loaded_until)?&#xD;&#xA;TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,&quot;1990-01-01 00:00:01&quot;)&#xD;&#xA;:row1.loaded_until " type="id_Date"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_gmap">
         <mapperTableEntries name="loaded_until" expression="Var.loaded_until " type="id_Date"/>
