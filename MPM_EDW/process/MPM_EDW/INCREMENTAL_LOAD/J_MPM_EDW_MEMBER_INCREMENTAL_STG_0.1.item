@@ -2747,7 +2747,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="AR_MEMB_COMPANY_V" name="AR_MEMBER_COMPANY">
-      <column comment="" key="true" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -3593,7 +3593,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="AR_MEMB_COMPANY_V" name="tMSSqlOutput_2">
-      <column comment="" key="true" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -3833,7 +3833,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="AR_MEMB_COMPANY_V" name="REJECT">
-      <column comment="" key="true" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
