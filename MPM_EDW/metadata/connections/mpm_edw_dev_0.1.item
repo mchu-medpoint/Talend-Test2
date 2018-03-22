@@ -1703,7 +1703,7 @@
       </ownedElement>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_vY3FoC2HEeiUU_XuS6SkMg" name="AR_MEMB_COMPANY_V" id="_vY13gC2HEeiUU_XuS6SkMg" label="AR_MEMB_COMPANY_V" tableType="TABLE">
         <taggedValue xmi:id="_vY3FoS2HEeiUU_XuS6SkMg" tag="Comment" value=""/>
-        <feature xsi:type="relational:TdColumn" xmi:id="_vY3Foi2HEeiUU_XuS6SkMg" name="AR_MEMB_COMPANY_V_SK" label="AR_MEMB_COMPANY_V_SK" length="19" sourceType="BIGINT IDENTITY" talendType="id_Long" key="true" nullable="false">
+        <feature xsi:type="relational:TdColumn" xmi:id="_vY3Foi2HEeiUU_XuS6SkMg" name="AR_MEMB_COMPANY_V_SK" label="AR_MEMB_COMPANY_V_SK" length="19" sourceType="BIGINT IDENTITY" talendType="id_Long" nullable="false">
           <taggedValue xmi:id="_vY3Foy2HEeiUU_XuS6SkMg" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_vY3FpC2HEeiUU_XuS6SkMg" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_vY3FpS2HEeiUU_XuS6SkMg" name="BIGINT IDENTITY" numericPrecisionRadix="10" javaDataType="-5"/>
