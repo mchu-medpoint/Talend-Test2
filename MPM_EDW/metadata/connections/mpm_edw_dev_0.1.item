@@ -2126,11 +2126,6 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_IoQpJS2PEeiUU_XuS6SkMg" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_IoQpJi2PEeiUU_XuS6SkMg" name="BIGINT" numericPrecisionRadix="10" javaDataType="-5"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_IoQpJy2PEeiUU_XuS6SkMg" name="MEMB_COMPANY_V_SK" label="MEMB_COMPANY_V_SK" length="19" sourceType="BIGINT" talendType="id_Long">
-          <taggedValue xmi:id="_IoQpKC2PEeiUU_XuS6SkMg" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_IoQpKS2PEeiUU_XuS6SkMg" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_IoQpKi2PEeiUU_XuS6SkMg" name="BIGINT" numericPrecisionRadix="10" javaDataType="-5" nullable="columnNullable"/>
-        </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_IoQpKy2PEeiUU_XuS6SkMg" name="MEMB_KEYID" label="MEMB_KEYID" length="255" sourceType="VARCHAR" talendType="id_String" nullable="false">
           <taggedValue xmi:id="_IoQpLC2PEeiUU_XuS6SkMg" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_IoQpLS2PEeiUU_XuS6SkMg" language="COLUMN_DEF"/>
