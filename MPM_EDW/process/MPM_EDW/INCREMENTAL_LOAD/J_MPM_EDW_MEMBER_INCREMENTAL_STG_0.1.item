@@ -2750,9 +2750,6 @@
       <column comment="" key="true" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="19" name="MEMB_COMPANY_V_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -2994,7 +2991,6 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="AR_MEMBER_COMPANY">
         <mapperTableEntries name="AR_MEMB_COMPANY_V_SK" type="id_Long"/>
-        <mapperTableEntries name="MEMB_COMPANY_V_SK" type="id_Long" nullable="true"/>
         <mapperTableEntries name="MEMB_KEYID" type="id_String"/>
         <mapperTableEntries name="MEMB_MPI_NO" type="id_String"/>
         <mapperTableEntries name="MEMBSSN" type="id_String" nullable="true"/>
@@ -3192,11 +3188,6 @@
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="AR_MEMB_COMPANY_V_SK"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_COMPANY_V_SK"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -3603,9 +3594,6 @@
       <column comment="" key="true" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="19" name="MEMB_COMPANY_V_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -3844,9 +3832,6 @@
     </metadata>
     <metadata connector="REJECT" label="AR_MEMB_COMPANY_V" name="REJECT">
       <column comment="" key="true" length="19" name="AR_MEMB_COMPANY_V_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="MEMB_COMPANY_V_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
