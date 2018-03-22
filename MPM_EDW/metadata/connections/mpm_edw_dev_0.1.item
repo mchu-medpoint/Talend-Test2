@@ -2516,21 +2516,6 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_IoQqYS2PEeiUU_XuS6SkMg" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_IoQqYi2PEeiUU_XuS6SkMg" name="BIT" javaDataType="-7" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_IoQqYy2PEeiUU_XuS6SkMg" name="ACTIVE_FLAG" label="ACTIVE_FLAG" length="1" sourceType="BIT" talendType="id_Boolean">
-          <taggedValue xmi:id="_IoQqZC2PEeiUU_XuS6SkMg" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_IoQqZS2PEeiUU_XuS6SkMg" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_IoQqZi2PEeiUU_XuS6SkMg" name="BIT" javaDataType="-7" nullable="columnNullable"/>
-        </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_IoQqZy2PEeiUU_XuS6SkMg" name="REC_EFF_DTM" label="REC_EFF_DTM" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
-          <taggedValue xmi:id="_IoQqaC2PEeiUU_XuS6SkMg" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_IoQqaS2PEeiUU_XuS6SkMg" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_IoQqai2PEeiUU_XuS6SkMg" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
-        </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_IoQqay2PEeiUU_XuS6SkMg" name="REC_TERM_DTM" label="REC_TERM_DTM" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
-          <taggedValue xmi:id="_IoQqbC2PEeiUU_XuS6SkMg" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_IoQqbS2PEeiUU_XuS6SkMg" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_IoQqbi2PEeiUU_XuS6SkMg" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
-        </feature>
       </ownedElement>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
