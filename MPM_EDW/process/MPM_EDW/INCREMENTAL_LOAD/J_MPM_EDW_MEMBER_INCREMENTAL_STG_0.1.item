@@ -4077,7 +4077,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="Date d = new Date();&#xA;SimpleDateFormat form = new SimpleDateFormat(&quot;yyyyMMddHHmmss&quot;);&#xA;String TS = form.format(d);&#xA;(Long) globalMap.put(&quot;ETL_RUN_ID&quot;,TS);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="Date d = new Date();&#xA;SimpleDateFormat form = new SimpleDateFormat(&quot;yyyyMMddHHmmss&quot;);&#xA;String TS = form.format(d);&#xA;globalMap.put(&quot;ETL_RUN_ID&quot;,TS);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
