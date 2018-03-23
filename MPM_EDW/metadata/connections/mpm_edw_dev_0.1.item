@@ -2516,10 +2516,10 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_WbBKOC18EeiUU_XuS6SkMg" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_WbBKOS18EeiUU_XuS6SkMg" name="BIT" javaDataType="-7" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_degv6i7hEeilZtYbzON7Pw" name="ACTIVE_FLAG" label="ACTIVE_FLAG" length="1" sourceType="BIT" talendType="id_Boolean">
+        <feature xsi:type="relational:TdColumn" xmi:id="_degv6i7hEeilZtYbzON7Pw" name="ACTIVE_FLAG" label="ACTIVE_FLAG" length="10" sourceType="INT" talendType="id_Integer">
           <taggedValue xmi:id="_degv6y7hEeilZtYbzON7Pw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_degv7C7hEeilZtYbzON7Pw" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_degv7S7hEeilZtYbzON7Pw" name="BIT" javaDataType="-7" nullable="columnNullable"/>
+          <sqlDataType xmi:id="_degv7S7hEeilZtYbzON7Pw" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_degv7i7hEeilZtYbzON7Pw" name="REC_EFF_DTM" label="REC_EFF_DTM" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
           <taggedValue xmi:id="_degv7y7hEeilZtYbzON7Pw" tag="Comment" value=""/>
