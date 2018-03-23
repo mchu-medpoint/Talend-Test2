@@ -901,7 +901,6 @@
     <ItemsRelations xmi:id="_xs92kC6VEeiL9Zrh1RPphQ">
       <baseItem xmi:id="_xs92kS6VEeiL9Zrh1RPphQ" id="_xrGOUC6VEeiL9Zrh1RPphQ" version="0.1" type="job"/>
       <relatedItems xmi:id="_xs92ki6VEeiL9Zrh1RPphQ" id="_ZFJRQCvtEeio6oUndaDCsA" version="Latest" type="property"/>
-      <relatedItems xmi:id="_xs92ky6VEeiL9Zrh1RPphQ" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
       <relatedItems xmi:id="_xs92lC6VEeiL9Zrh1RPphQ" id="_3uHDgBwnEeiTHIRHeuHqBQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_xs92lS6VEeiL9Zrh1RPphQ" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_xs92li6VEeiL9Zrh1RPphQ" id="Numeric" version="Latest" type="routine"/>
@@ -923,7 +922,6 @@
       <relatedItems xmi:id="_xs92pi6VEeiL9Zrh1RPphQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_xs92py6VEeiL9Zrh1RPphQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - MEMB_COMPANY_V" version="Latest" type="schema"/>
       <relatedItems xmi:id="_xs92qC6VEeiL9Zrh1RPphQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_xs92qS6VEeiL9Zrh1RPphQ" id="_KcGd0CypEeiJetnqWhFd7A - MEMB_COMPANY_V_STG" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
