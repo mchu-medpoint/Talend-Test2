@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_8_foIBwoEeiTHIRHeuHqBQ" name="mpm_edw_sb" id="_3uHDgBwnEeiTHIRHeuHqBQ" label="mpm_edw_sb" dataPackage="_8YAMGyGTEeiZJJcL1G6Fmw" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;" dbVersionString="JTDS" Port="1433" Username="highpoint6" Password="B/HARFVmWa147cx0ajuMew==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+  <TalendMetadata:DatabaseConnection xmi:id="_8_foIBwoEeiTHIRHeuHqBQ" name="mpm_edw_sb" id="_3uHDgBwnEeiTHIRHeuHqBQ" label="mpm_edw_sb" dataPackage="_8YAMGyGTEeiZJJcL1G6Fmw" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw_sb;" dbVersionString="JTDS" Port="1433" Username="highpoint6" Password="B/HARFVmWa147cx0ajuMew==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw_sb" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_8_gPMBwoEeiTHIRHeuHqBQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_8_r1YBwoEeiTHIRHeuHqBQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_8_0_UBwoEeiTHIRHeuHqBQ" tag="Status" value=""/>
@@ -25,6 +25,15 @@
     <parameters xmi:id="_goPqIB2mEeiSLMW7P_emyA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_8YAMGyGTEeiZJJcL1G6Fmw" name="mpm_edw_sb" dataManager="_8_foIBwoEeiTHIRHeuHqBQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhSC4_EeiwPbXT3zwqtQ" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhSS4_EeiwPbXT3zwqtQ" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhSi4_EeiwPbXT3zwqtQ" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhSy4_EeiwPbXT3zwqtQ" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhTC4_EeiwPbXT3zwqtQ" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhTS4_EeiwPbXT3zwqtQ" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhTi4_EeiwPbXT3zwqtQ" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhTy4_EeiwPbXT3zwqtQ" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhUC4_EeiwPbXT3zwqtQ" name="db_securityadmin"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8YAMJSGTEeiZJJcL1G6Fmw" name="dbo">
       <ownedElement xsi:type="relational:TdTable" xmi:id="_OGiFUCjREei_sYcCJXIq0A" name="SCD_TARGET" id="_OGfpECjREei_sYcCJXIq0A" label="SCD_TARGET" tableType="TABLE">
         <taggedValue xmi:id="_OGiFUSjREei_sYcCJXIq0A" tag="Comment" value=""/>
@@ -1458,5 +1467,10 @@
         </feature>
       </ownedElement>
     </ownedElement>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhUi4_EeiwPbXT3zwqtQ" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhUy4_EeiwPbXT3zwqtQ" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhVC4_EeiwPbXT3zwqtQ" name="LAND"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhVS4_EeiwPbXT3zwqtQ" name="sys"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_d9KhVi4_EeiwPbXT3zwqtQ" name="TEMP"/>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
