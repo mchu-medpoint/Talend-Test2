@@ -476,8 +476,6 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;mpm_edw_sb&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_3uHDgBwnEeiTHIRHeuHqBQ - MEMB_COMPANY_V" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMB_COMPANY_V&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -653,10 +651,10 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MEMB_COMPANY_V" name="tMSSqlInput_2">
-      <column comment="" key="false" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
+      <column comment="" key="true" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="36" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
+      <column comment="" key="true" length="36" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="9" name="MEMBSSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1323,8 +1321,8 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MEMB_KEYID_1" expression="row1.MEMB_KEYID " type="id_Object"/>
-        <mapperTableEntries name="MEMB_KEYID" type="id_Object"/>
-        <mapperTableEntries name="MEMB_MPI_NO" type="id_Object"/>
+        <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_MPI_NO " type="id_Object"/>
+        <mapperTableEntries name="MEMB_MPI_NO" expression="" type="id_Object"/>
       </inputTables>
     </nodeData>
   </node>
@@ -2421,7 +2419,7 @@
       <column comment="" key="true" length="36" name="MEMB_KEYID_1" nullable="false" originalDbColumnName="MEMB_KEYID" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+      <column comment="" key="true" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
