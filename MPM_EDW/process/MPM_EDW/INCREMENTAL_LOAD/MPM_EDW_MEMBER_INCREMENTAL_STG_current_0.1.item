@@ -1692,7 +1692,7 @@
       <column comment="" key="false" length="-1" name="next_updated_at" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="max_update">
         <mapperTableEntries name="updated_at" expression="row3.updated_at " type="id_Date" nullable="true"/>
