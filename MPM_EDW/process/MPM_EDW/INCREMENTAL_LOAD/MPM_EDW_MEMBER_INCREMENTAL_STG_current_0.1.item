@@ -1153,7 +1153,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="ACTIVE_FLAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="REC_TERM_DTM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REC_TERM_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="LAND_UPDATE">
       <column comment="" key="true" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
@@ -1400,7 +1400,7 @@
       <outputTables sizeState="INTERMEDIATE" name="to_agg">
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row1.CREATEDATE.equals(row1.LASTCHANGEBY)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row1.CREATEDATE.equals(row1.LASTCHANGEDATE)" activateExpressionFilter="true">
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_Object"/>
         <mapperTableEntries name="MEMB_MPI_NO" expression="row1.MEMB_MPI_NO " type="id_Object"/>
         <mapperTableEntries name="MEMBSSN" expression="row1.MEMBSSN " type="id_String" nullable="true"/>
@@ -1483,13 +1483,13 @@
         <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
         <mapperTableEntries name="REC_TERM_DTM" expression="" type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="ARCH_UPDATE" expressionFilter="row1.CREATEDATE &lt; (row1.LASTCHANGEBY)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="ARCH_UPDATE" expressionFilter="row1.CREATEDATE &lt; (row1.LASTCHANGEDATE)" activateExpressionFilter="true">
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_Object"/>
         <mapperTableEntries name="MEMB_MPI_NO" expression="row1.MEMB_MPI_NO " type="id_Object"/>
         <mapperTableEntries name="ACTIVE_FLAG" expression="0" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REC_TERM_DTM" expression="TalendDate.getCurrentDate() " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REC_TERM_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="LAND_UPDATE" expressionFilter="row1.CREATEDATE &lt; (row1.LASTCHANGEBY)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="LAND_UPDATE" expressionFilter="row1.CREATEDATE &lt; (row1.LASTCHANGEDATE)" activateExpressionFilter="true">
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_Object"/>
         <mapperTableEntries name="MEMB_MPI_NO" expression="row1.MEMB_MPI_NO " type="id_Object"/>
         <mapperTableEntries name="MEMBSSN" expression="row1.MEMBSSN " type="id_String" nullable="true"/>
@@ -2736,7 +2736,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="ACTIVE_FLAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="REC_TERM_DTM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REC_TERM_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="true" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
@@ -2746,7 +2746,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="ACTIVE_FLAG" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="REC_TERM_DTM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REC_TERM_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
