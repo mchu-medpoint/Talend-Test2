@@ -991,13 +991,13 @@
       <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LTRDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="OTHCOV" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="OTHCOV" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="OTHPRIM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1429,9 +1429,9 @@
         <mapperTableEntries name="PATID" expression="row1.PATID " type="id_String" nullable="true"/>
         <mapperTableEntries name="CONTRACTS" expression="row1.CONTRACTS " type="id_String" nullable="true"/>
         <mapperTableEntries name="STATUS" expression="row1.STATUS " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LTRSENT" expression="row1.LTRSENT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LTRSENT" expression="row1.LTRSENT " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="LTRDATE" expression="row1.LTRDATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OTHCOV" expression="row1.OTHCOV " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHCOV" expression="row1.OTHCOV " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="OTHPRIM" expression="row1.OTHPRIM " type="id_String" nullable="true"/>
         <mapperTableEntries name="OTHNAME" expression="row1.OTHNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="LOADDATE" expression="row1.LOADDATE " type="id_Date" nullable="true"/>
@@ -2272,13 +2272,13 @@
       <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LTRDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="OTHCOV" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="OTHCOV" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="OTHPRIM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -2511,13 +2511,13 @@
       <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LTRDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="OTHCOV" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="OTHCOV" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="OTHPRIM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
