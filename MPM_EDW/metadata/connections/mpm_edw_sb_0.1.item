@@ -1450,15 +1450,15 @@
           <initialValue xsi:type="relational:TdExpression" xmi:id="_r_nwmCskEeijKtBsWgNnQw" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_r_nwmSskEeijKtBsWgNnQw" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_r_nwmiskEeijKtBsWgNnQw" name="LOADED_UNTIL" label="LOADED_UNTIL" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_r_nwmiskEeijKtBsWgNnQw" name="LOADED_UNTIL" label="LOADED_UNTIL" length="20" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_r_nwmyskEeijKtBsWgNnQw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_r_nwnCskEeijKtBsWgNnQw" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_r_nwnSskEeijKtBsWgNnQw" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
+          <sqlDataType xmi:id="_r_nwnSskEeijKtBsWgNnQw" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_r_nwniskEeijKtBsWgNnQw" name="EXECUTION_TIME" label="EXECUTION_TIME" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <feature xsi:type="relational:TdColumn" xmi:id="_r_nwniskEeijKtBsWgNnQw" name="EXECUTION_TIME" label="EXECUTION_TIME" length="20" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_r_nwnyskEeijKtBsWgNnQw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_r_nwoCskEeijKtBsWgNnQw" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_r_nwoSskEeijKtBsWgNnQw" name="DATETIME" numericPrecision="3" javaDataType="93" nullable="columnNullable"/>
+          <sqlDataType xmi:id="_r_nwoSskEeijKtBsWgNnQw" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_r_nwoiskEeijKtBsWgNnQw" name="EXECUTION_STATUS" label="EXECUTION_STATUS" length="30" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_r_nwoyskEeijKtBsWgNnQw" tag="Comment" value=""/>
