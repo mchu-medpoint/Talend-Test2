@@ -1391,7 +1391,7 @@
       <column comment="" key="false" length="-1" name="REC_TERM_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="to_agg">
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
@@ -1688,7 +1688,7 @@
       <column comment="" key="false" length="-1" name="next_updated_at" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="max_update">
         <mapperTableEntries name="updated_at" expression="row3.updated_at " type="id_Date" nullable="true"/>
@@ -1705,7 +1705,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;delta_date_new&quot;"/>
-      <elementValue elementRef="VALUE" value="TalendDate.parsedate(&quot;yyyy-MM-dd HH:mm:ss&quot;,max_update.updated_at)"/>
+      <elementValue elementRef="VALUE" value="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.parsedate(&quot;yyyy-MM-dd HH:mm:ss&quot;,max_update.updated_at))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="Next run updated_at"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
