@@ -1685,7 +1685,7 @@
       <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="to_log_max">
-      <column comment="" key="false" length="-1" name="next_updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="next_updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
@@ -1735,7 +1735,7 @@
     <elementParameter field="TEXT" name="LABEL" value="last updated_at value"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_2">
-      <column comment="" key="false" length="-1" name="next_updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="next_updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="384">
