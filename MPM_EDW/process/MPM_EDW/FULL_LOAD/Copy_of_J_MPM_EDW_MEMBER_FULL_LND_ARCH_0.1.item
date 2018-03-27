@@ -355,7 +355,7 @@
     <elementParameter field="TEXT" name="LABEL" value="This run >= updated_at"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_1">
-      <column comment="" key="false" length="-1" name="loaded_until_2" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="loaded_until_2" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-32">
@@ -373,7 +373,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Route to outputs"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="to_gmap">
-      <column comment="" key="false" length="-1" name="loaded_until_2" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="loaded_until_2" nullable="false" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="to_log">
       <column comment="" key="false" length="-1" name="job_name" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -382,10 +382,10 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="loaded_until1" expression=" last_success_integ.LOADED_UNTIL " type="id_Date"/>
+        <mapperTableEntries name="loaded_until1" expression=" last_success_integ.LOADED_UNTIL " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_gmap">
-        <mapperTableEntries name="loaded_until_2" expression="Var.loaded_until1 " type="id_Date"/>
+        <mapperTableEntries name="loaded_until_2" expression="Var.loaded_until1 " type="id_String"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="to_log">
         <mapperTableEntries name="job_name" expression="last_success_integ.JOB_NAME " type="id_String"/>
