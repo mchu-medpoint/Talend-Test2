@@ -382,7 +382,7 @@
       <column comment="" key="false" length="-1" name="loaded_until" nullable="true" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="loaded_until" expression="Relational.ISNULL(last_success_integ.LOADED_UNTIL)?&#xD;&#xA;TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,&quot;1990-01-01 00:00:01&quot;)&#xD;&#xA;:last_success_integ.LOADED_UNTIL " type="id_Date"/>
       </varTables>
@@ -454,7 +454,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="if (globalMap.get(&quot;delta_date&quot;) == null) {&#xA;    System.out.println(&quot;First execution of &quot;+jobName)  ;&#xA;&#x9;globalMap.put(&quot;delta_date&quot;, &quot;1990-01-01 00:00:01&quot;) ;&#xA;&#x9;globalMap.put(&quot;execution_date&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) ) ;&#xA;}&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (globalMap.get(&quot;delta_date&quot;) == null) {&#xA;    System.out.println(&quot;First execution of &quot;+jobName)  ;&#xA;&#x9;globalMap.put(&quot;delta_date&quot;, &quot;1990-01-01 00:00:01&quot;) ;&#xA;&#x9;globalMap.put(&quot;execution_date&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) ) ;&#xA;}&#xA;&#xA;System.out.println(globalMap.get(&quot;delta_date&quot;));&#xA;&#xA;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="if never runs before"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
