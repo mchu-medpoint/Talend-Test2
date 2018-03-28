@@ -458,31 +458,29 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;HCLA&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA - MEMB_HPHISTS" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;HCLA&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g==" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMB_HPHISTS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.MEMB_HPHISTS.MEMB_KEYID,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.OPFROMDT,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.EMPGROUP,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.HPCODE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.HP_MAINTCODE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.PAYERRESPONIBILITY,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.BENEFIT_TYPE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.CURRHIST,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.OPTHRUDT,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.HPFROMDT,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.OPT,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.TRANDATE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.TRANCODE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.LOADDATE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.CREATEBY,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.CREATEDATE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.LASTCHANGEBY,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.LASTCHANGEDATE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.ISHPGLOBAL,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.ISNEVEREFFECTIVE&#xA;FROM&#x9;dbo.MEMB_HPHISTS&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -531,28 +529,28 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MEMB_HPHISTS" name="tMSSqlInput_2">
-      <column comment="" key="true" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEID" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="true" length="23" name="OPFROMDT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="EMPGROUP" nullable="true" pattern="" precision="0" sourceType="VCNAME1" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="40" name="EMPGROUP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="HPCODE" nullable="false" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="HPCODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="HP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="IKEYINT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="HP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PAYERRESPONIBILITY" nullable="true" pattern="" precision="0" sourceType="IKEYINT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PAYERRESPONIBILITY" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="'('A')'" key="false" length="10" name="BENEFIT_TYPE" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="'('A')'" key="false" length="10" name="BENEFIT_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="CURRHIST" nullable="true" pattern="" precision="0" sourceType="VCSINGLECHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="CURRHIST" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="OPTHRUDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -561,25 +559,25 @@
       <column comment="" key="false" length="23" name="HPFROMDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VCTYPE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="TRANDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="TRANCODE" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="TRANCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LOADDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
