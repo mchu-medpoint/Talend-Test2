@@ -317,7 +317,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; &#xD;&#xA; SELECT&#xD;&#xA;  job_name,&#xD;&#xA;  max(loaded_until) as loaded_until&#xD;&#xA;from dbo.DELTA_LOAD&#xD;&#xA;where job_name = 'Copy_of_J_MPM_EDW_MEMBER_FULL_LND_ARCH'&#xD;&#xA;and execution_status = 'success' &#xD;&#xA;group by job_name ;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; &#xD;&#xA; SELECT&#xD;&#xA;  job_name,&#xD;&#xA;  max(loaded_until) as loaded_until&#xD;&#xA;from dbo.DELTA_LOAD&#xD;&#xA;where job_name = \'&quot;+jobName+&quot;\'&#xD;&#xA;and execution_status = 'success' &#xD;&#xA;group by job_name ;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -380,7 +380,7 @@
       <column comment="" key="false" length="-1" name="loaded_until_2" nullable="true" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="loaded_until1" expression=" last_success_integ.LOADED_UNTIL " type="id_String"/>
       </varTables>
