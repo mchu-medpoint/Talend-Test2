@@ -475,7 +475,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.MEMB_HPHISTS.MEMB_KEYID,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.OPFROMDT,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.EMPGROUP,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.HPCODE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.HP_MAINTCODE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.PAYERRESPONIBILITY,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.BENEFIT_TYPE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.CURRHIST,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.OPTHRUDT,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.HPFROMDT,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.OPT,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.TRANDATE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.TRANCODE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.LOADDATE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.CREATEBY,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.CREATEDATE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.LASTCHANGEBY,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.LASTCHANGEDATE,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.ISHPGLOBAL,&#xA;&#x9;&#x9;dbo.MEMB_HPHISTS.ISNEVEREFFECTIVE&#xA;FROM&#x9;dbo.MEMB_HPHISTS&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT MEMB_HPHISTS.MEMB_KEYID,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.OPFROMDT,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.EMPGROUP,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.HPCODE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.HP_MAINTCODE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.PAYERRESPONIBILITY,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.BENEFIT_TYPE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.CURRHIST,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.OPTHRUDT,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.HPFROMDT,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.OPT,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.TRANDATE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.TRANCODE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.LOADDATE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.CREATEBY,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.CREATEDATE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.LASTCHANGEBY,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.LASTCHANGEDATE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.ISHPGLOBAL,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.ISNEVEREFFECTIVE&#xD;&#xA;FROM&#x9;MEMB_HPHISTS&#xD;&#xA;WHERE &#xD;&#xA;MEMB_HPHISTS.LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -535,7 +535,7 @@
       <column comment="" key="true" length="23" name="OPFROMDT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="40" name="EMPGROUP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="40" name="EMPGROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="HPCODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -544,7 +544,7 @@
       <column comment="" key="false" length="10" name="HP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PAYERRESPONIBILITY" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PAYERRESPONIBILITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" defaultValue="'('A')'" key="false" length="10" name="BENEFIT_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
