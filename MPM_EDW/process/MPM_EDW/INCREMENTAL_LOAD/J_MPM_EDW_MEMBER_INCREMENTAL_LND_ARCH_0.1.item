@@ -3861,7 +3861,7 @@
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MEMB_COMPANY_V" name="tMSSqlInput_3">
-      <column comment="" key="false" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="36" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
@@ -4118,7 +4118,7 @@
       <outputTables sizeState="INTERMEDIATE" name="INSERT_ARCH"/>
       <outputTables sizeState="INTERMEDIATE" name="DELETE_LAND"/>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="MEMB_KEYID" type="id_String"/>
+        <mapperTableEntries name="MEMB_KEYID" type="id_Object"/>
         <mapperTableEntries name="MEMB_MPI_NO" type="id_Object"/>
         <mapperTableEntries name="MEMBSSN" type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTNM" type="id_String"/>
