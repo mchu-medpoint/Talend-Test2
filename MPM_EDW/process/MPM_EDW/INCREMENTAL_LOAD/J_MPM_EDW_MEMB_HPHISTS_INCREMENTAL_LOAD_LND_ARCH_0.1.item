@@ -425,7 +425,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="if (globalMap.get(&quot;delta_date&quot;) == null) {&#xA;    System.out.println(&quot;First execution of &quot;+jobName)  ;&#xA;&#x9;globalMap.put(&quot;delta_date1&quot;, &quot;1990-01-01 00:00:01&quot;) ;&#xA;&#x9;globalMap.put(&quot;execution_date&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) ) ;&#xA;}&#xA;&#xA;&#xA;&#xA;a=globalMap.get(&quot;delta_date&quot;);&#xA;&#xA;Date deltala_date1= TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,a);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (globalMap.get(&quot;delta_date&quot;) == null) {&#xA;    System.out.println(&quot;First execution of &quot;+jobName)  ;&#xA;&#x9;globalMap.put(&quot;delta_date1&quot;, &quot;1990-01-01 00:00:01&quot;) ;&#xA;&#x9;globalMap.put(&quot;execution_date&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) ) ;&#xA;}&#xA;&#xA;&#xA;&#xA;a= new globalMap.get(&quot;delta_date&quot;);&#xA;&#xA;Date deltala_date1= TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,a);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="if never runs before"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
