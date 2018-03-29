@@ -379,15 +379,13 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="loaded_until1" expression="Relational.ISNULL(last_success_integ.LOADED_UNTIL)?&#xD;&#xA;&#xA;TalendDate.parsedate(&quot;yyyy-MM-dd HH:mm:ss:SSS&quot;,&quot;1990-01-01 00:00:01:000&quot;)&#xA;&#xD;&#xA;:last_success_integ.LOADED_UNTIL " type="id_Date"/>
-      </varTables>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="to_gmap">
-        <mapperTableEntries name="loaded_until_2" expression="Var.loaded_until1 " type="id_Date"/>
+        <mapperTableEntries name="loaded_until_2" expression="last_success_integ.LOADED_UNTIL " type="id_Date"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="to_log">
         <mapperTableEntries name="job_name" expression="last_success_integ.JOB_NAME " type="id_String"/>
-        <mapperTableEntries name="loaded_until_2" expression="Var.loaded_until1 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="loaded_until_2" expression="last_success_integ.LOADED_UNTIL " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="last_success_integ" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="JOB_NAME" type="id_String" nullable="true"/>
