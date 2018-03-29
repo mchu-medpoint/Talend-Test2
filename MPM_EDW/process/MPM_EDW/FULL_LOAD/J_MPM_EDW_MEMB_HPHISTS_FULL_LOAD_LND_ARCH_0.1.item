@@ -378,7 +378,7 @@
       <column comment="" key="false" length="-1" name="loaded_until_2" nullable="true" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="loaded_until1" expression="Relational.ISNULL(last_success_integ.LOADED_UNTIL)?&#xD;&#xA;&quot;1990-01-01 00:00:01&quot;&#xD;&#xA;:last_success_integ.LOADED_UNTIL " type="id_String"/>
       </varTables>
