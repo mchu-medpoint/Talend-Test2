@@ -609,7 +609,7 @@
       <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="MEMB_HPHISTS" name="SQL_INSERT">
-      <column comment="" key="true" length="19" name="MEMB_HPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
+      <column comment="" key="true" length="19" name="MEMB_HPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -686,13 +686,13 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="globalMap.get(&quot;ETL_RUN_ID&quot;) " type="id_String"/>
+        <mapperTableEntries name="var1" expression="globalMap.get(&quot;ETL_RUN_ID&quot;) " type="id_Object"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_agg">
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT">
-        <mapperTableEntries name="MEMB_HPHISTS_SK" expression="Var.var1 " type="id_Long"/>
+        <mapperTableEntries name="MEMB_HPHISTS_SK" expression="Var.var1 " type="id_Object"/>
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_String"/>
         <mapperTableEntries name="OPFROMDT" expression="row1.OPFROMDT " type="id_Date"/>
         <mapperTableEntries name="EMPGROUP" expression="row1.EMPGROUP " type="id_String" nullable="true"/>
@@ -713,7 +713,7 @@
         <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE " type="id_Date"/>
         <mapperTableEntries name="ISHPGLOBAL" expression="row1.ISHPGLOBAL " type="id_Boolean"/>
         <mapperTableEntries name="ISNEVEREFFECTIVE" expression="row1.ISNEVEREFFECTIVE " type="id_Boolean"/>
-        <mapperTableEntries name="ACTIVE_FLAG" expression="T" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="ACTIVE_FLAG" expression="&quot;T&quot;" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
         <mapperTableEntries name="REC_TERM_DTM" expression="" type="id_Date" nullable="true"/>
       </outputTables>
@@ -993,7 +993,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MEMB_HPHISTS" name="tMSSqlOutput_2">
-      <column comment="" key="true" length="19" name="MEMB_HPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
+      <column comment="" key="true" length="19" name="MEMB_HPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1068,7 +1068,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="MEMB_HPHISTS" name="REJECT">
-      <column comment="" key="true" length="19" name="MEMB_HPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
+      <column comment="" key="true" length="19" name="MEMB_HPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
