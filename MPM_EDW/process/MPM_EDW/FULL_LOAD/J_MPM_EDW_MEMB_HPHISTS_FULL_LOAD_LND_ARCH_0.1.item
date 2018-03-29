@@ -654,7 +654,7 @@
       <column comment="" key="false" length="23" name="LOADDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -707,7 +707,7 @@
         <mapperTableEntries name="TRANDATE" expression="row1.TRANDATE " type="id_Date" nullable="true"/>
         <mapperTableEntries name="TRANCODE" expression="row1.TRANCODE " type="id_String" nullable="true"/>
         <mapperTableEntries name="LOADDATE" expression="row1.LOADDATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CREATEBY" expression="row1.CREATEBY " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CREATEBY" expression="row1.CREATEBY " type="id_String" nullable="true"/>
         <mapperTableEntries name="CREATEDATE" expression="row1.CREATEDATE " type="id_Date"/>
         <mapperTableEntries name="LASTCHANGEBY" expression="row1.LASTCHANGEBY " type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE " type="id_Date"/>
@@ -1038,7 +1038,7 @@
       <column comment="" key="false" length="23" name="LOADDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -1113,7 +1113,7 @@
       <column comment="" key="false" length="23" name="LOADDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
