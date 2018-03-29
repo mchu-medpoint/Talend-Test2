@@ -346,7 +346,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;delta_date&quot;"/>
-      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,to_gmap.loaded_until_2)"/>
+      <elementValue elementRef="VALUE" value="to_gmap.loaded_until_2"/>
       <elementValue elementRef="KEY" value="&quot;execution_date&quot;"/>
       <elementValue elementRef="VALUE" value="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate())"/>
     </elementParameter>
@@ -380,7 +380,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="loaded_until1" expression="Relational.ISNULL(last_success_integ.LOADED_UNTIL)?&#xD;&#xA;&quot;1990-01-01 00:00:01:000&quot;&#xD;&#xA;:last_success_integ.LOADED_UNTIL " type="id_Date"/>
+        <mapperTableEntries name="loaded_until1" expression="Relational.ISNULL(last_success_integ.LOADED_UNTIL)?&#xD;&#xA;1990-01-01 00:00:01:000&#xD;&#xA;:last_success_integ.LOADED_UNTIL " type="id_Date"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_gmap">
         <mapperTableEntries name="loaded_until_2" expression="Var.loaded_until1 " type="id_Date"/>
@@ -425,7 +425,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;&#x9;globalMap.put(&quot;delta_date1&quot;, &quot;1990-01-01 00:00:01&quot;) ;&#xA;&#x9;globalMap.put(&quot;execution_date&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) ) ;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#x9;globalMap.put(&quot;execution_date&quot;, TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) ) ;&#xA;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="if never runs before"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
