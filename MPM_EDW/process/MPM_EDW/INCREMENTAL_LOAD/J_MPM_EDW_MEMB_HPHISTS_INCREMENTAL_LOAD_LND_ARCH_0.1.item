@@ -344,9 +344,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;delta_date&quot;"/>
-      <elementValue elementRef="VALUE" value="to_gmap.loaded_until_2"/>
+      <elementValue elementRef="VALUE" value="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss:SSS&quot;,to_gmap.loaded_until_2)"/>
       <elementValue elementRef="KEY" value="&quot;execution_date&quot;"/>
-      <elementValue elementRef="VALUE" value="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate())"/>
+      <elementValue elementRef="VALUE" value="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss:SSS&quot;,TalendDate.getCurrentDate())"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="This run >= updated_at"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
