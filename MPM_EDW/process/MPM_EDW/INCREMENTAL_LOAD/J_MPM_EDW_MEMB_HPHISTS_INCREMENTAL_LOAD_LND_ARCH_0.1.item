@@ -380,7 +380,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="loaded_until1" expression="Relational.ISNULL(last_success_integ.LOADED_UNTIL)?&#xD;&#xA;1990-01-01 00:00:01:000&#xD;&#xA;:last_success_integ.LOADED_UNTIL " type="id_Date"/>
+        <mapperTableEntries name="loaded_until1" expression="Relational.ISNULL(last_success_integ.LOADED_UNTIL)?&#xD;&#xA;&#xA;TalendDate.parsedate(&quot;yyyy-MM-dd HH:mm:ss;SSS&quot;,&quot;1990-01-01 00:00:01:000&quot;)&#xA;&#xD;&#xA;:last_success_integ.LOADED_UNTIL " type="id_Date"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_gmap">
         <mapperTableEntries name="loaded_until_2" expression="Var.loaded_until1 " type="id_Date"/>
