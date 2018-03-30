@@ -983,7 +983,7 @@
       <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LTRDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -1013,19 +1013,19 @@
       <column comment="" key="false" length="23" name="OUTLOADDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="PCP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1067,7 +1067,7 @@
       <column comment="" key="false" length="10" name="BENEFIT_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PAYERRESP" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PAYERRESP" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="30" name="GRPNUM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1088,10 +1088,10 @@
       <column comment="" key="false" length="1000" name="HoldDescription" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="STATUSID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="STATUSID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -1181,7 +1181,7 @@
         <mapperTableEntries name="PATID" expression="row1.PATID" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONTRACTS" expression="row1.CONTRACTS" type="id_String" nullable="true"/>
         <mapperTableEntries name="STATUS" expression="row1.STATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LTRSENT" expression="row1.LTRSENT" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="LTRSENT" expression="row1.LTRSENT" type="id_String" nullable="true"/>
         <mapperTableEntries name="LTRDATE" expression="row1.LTRDATE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="OTHCOV" expression="row1.OTHCOV" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="OTHPRIM" expression="row1.OTHPRIM" type="id_String" nullable="true"/>
@@ -1191,11 +1191,11 @@
         <mapperTableEntries name="XPSTATUS" expression="row1.XPSTATUS" type="id_String" nullable="true"/>
         <mapperTableEntries name="XPTRAN" expression="row1.XPTRAN" type="id_String" nullable="true"/>
         <mapperTableEntries name="OUTLOADDT" expression="row1.OUTLOADDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CREATEBY" expression="row1.CREATEBY " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CREATEBY" expression="row1.CREATEBY " type="id_String" nullable="true"/>
         <mapperTableEntries name="CREATEDATE" expression="row1.CREATEDATE " type="id_Date"/>
-        <mapperTableEntries name="LASTCHANGEBY" expression="row1.LASTCHANGEBY " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LASTCHANGEBY" expression="row1.LASTCHANGEBY " type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE " type="id_Date"/>
-        <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID" type="id_String" nullable="true"/>
         <mapperTableEntries name="PCP" expression="row1.PCP" type="id_String" nullable="true"/>
         <mapperTableEntries name="PCPFROMDT" expression="row1.PCPFROMDT" type="id_Date" nullable="true"/>
         <mapperTableEntries name="PCPTHRUDT" expression="row1.PCPTHRUDT" type="id_Date" nullable="true"/>
@@ -1209,15 +1209,15 @@
         <mapperTableEntries name="HPCODE" expression="row1.HPCODE " type="id_String"/>
         <mapperTableEntries name="OPT" expression="row1.OPT " type="id_String" nullable="true"/>
         <mapperTableEntries name="BENEFIT_TYPE" expression="row1.BENEFIT_TYPE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PAYERRESP" expression="row1.PAYERRESP" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PAYERRESP" expression="row1.PAYERRESP" type="id_String" nullable="true"/>
         <mapperTableEntries name="GRPNUM" expression="row1.GRPNUM" type="id_String" nullable="true"/>
         <mapperTableEntries name="MLANGUAGE" expression="row1.MLANGUAGE" type="id_String" nullable="true"/>
         <mapperTableEntries name="MEMBEPOSTITS" expression="row1.MEMBEPOSTITS" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="HoldCodeID" expression="row1.HoldCodeID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="HoldCode" expression="row1.HoldCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="HoldDescription" expression="row1.HoldDescription" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STATUSID" expression="row1.STATUSID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="RLSHIPID" expression="row1.RLSHIPID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="STATUSID" expression="row1.STATUSID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RLSHIPID" expression="row1.RLSHIPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONTRACTID" expression="row1.CONTRACTID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="USERFIELD1" expression="row1.USERFIELD1" type="id_String" nullable="true"/>
         <mapperTableEntries name="USERFIELD2" expression="row1.USERFIELD2" type="id_String" nullable="true"/>
@@ -1938,7 +1938,7 @@
       <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LTRDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -1968,19 +1968,19 @@
       <column comment="" key="false" length="23" name="OUTLOADDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="PCP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -2022,7 +2022,7 @@
       <column comment="" key="false" length="10" name="BENEFIT_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PAYERRESP" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PAYERRESP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="30" name="GRPNUM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -2043,10 +2043,10 @@
       <column comment="" key="false" length="1000" name="HoldDescription" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="STATUSID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="STATUSID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -2184,7 +2184,7 @@
       <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="LTRSENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LTRDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -2214,19 +2214,19 @@
       <column comment="" key="false" length="23" name="OUTLOADDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
+      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="PCP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -2268,7 +2268,7 @@
       <column comment="" key="false" length="10" name="BENEFIT_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PAYERRESP" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PAYERRESP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="30" name="GRPNUM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -2289,10 +2289,10 @@
       <column comment="" key="false" length="1000" name="HoldDescription" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="STATUSID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="STATUSID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
