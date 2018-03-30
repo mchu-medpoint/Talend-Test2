@@ -459,7 +459,7 @@
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_3" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;" show="false"/>
@@ -470,14 +470,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g==" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA - PROV_COMPANY_V" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;PROV_COMPANY_V&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.PROV_COMPANY_V.PROV_KEYID,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.PROV_MPI_NO,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.FIRSTNAME,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.LASTNAME,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.MI,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.FULLNAME,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.REV_FULLNAME,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.SUFFIX,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.BIRTHDATE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.SEX,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.EMAIL,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.ETHNICITY,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.CONTACT,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.ASSOCIATE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.REMARK,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.CREATEBY,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.CREATEDATE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.LASTCHANGEBY,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.LASTCHANGEDATE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.PROVID,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.COMPANY_ID,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.ACCOUNT,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.SUBACCT,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.CLASS,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.CLASSDESC,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.CONTRACT,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.FROMDATE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.TERMDATE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.MAXENROLL,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.OUTPATDISCOUNT,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.PAYMENT,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.WITHSET,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.WITHSETDESC,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.CARRIER,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.LOCALITY,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.FLAGGEDDATE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.OUTLDSTATUS,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.OUTLDDATE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.OUTLDCODE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.PROVTYPE,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.NPINO,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.USERFIELD1,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.USERFIELD2,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.PROVSTATUS,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.PROVSTATUSDESC,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.ISTEMPPROVIDER,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.ISDRG,&#xA;&#x9;&#x9;dbo.PROV_COMPANY_V.ISAPC&#xA;FROM&#x9;dbo.PROV_COMPANY_V&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT PROV_COMPANY_V.PROV_KEYID,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROV_MPI_NO,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.FIRSTNAME,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.LASTNAME,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.MI,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.FULLNAME,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.REV_FULLNAME,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.SUFFIX,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.BIRTHDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.SEX,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.EMAIL,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ETHNICITY,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CONTACT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ASSOCIATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.REMARK,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CREATEBY,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CREATEDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.LASTCHANGEBY,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.LASTCHANGEDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROVID,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.COMPANY_ID,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ACCOUNT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.SUBACCT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CLASS,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CLASSDESC,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CONTRACT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.FROMDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.TERMDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.MAXENROLL,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.OUTPATDISCOUNT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PAYMENT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.WITHSET,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.WITHSETDESC,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CARRIER,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.LOCALITY,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.FLAGGEDDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.OUTLDSTATUS,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.OUTLDDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.OUTLDCODE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROVTYPE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.NPINO,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.USERFIELD1,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.USERFIELD2,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROVSTATUS,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROVSTATUSDESC,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ISTEMPPROVIDER,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ISDRG,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ISAPC&#xD;&#xA;FROM&#x9;PROV_COMPANY_V&#xD;&#xA;WHERE &#xD;&#xA;MEMB_PCPHISTS.LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -587,7 +585,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="PROV_COMPANY_V" name="tMSSqlInput_3">
-      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEID" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="36" name="PROV_MPI_NO" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
@@ -632,28 +630,28 @@
       <column comment="" key="false" length="50" name="REMARK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="25" name="PROVID" nullable="true" pattern="" precision="0" sourceType="VCTYPE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="PROVID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="COMPANY_ID" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="COMPANY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ACCOUNT" nullable="false" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ACCOUNT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="SUBACCT" nullable="false" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="SUBACCT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="_CLASS" nullable="true" originalDbColumnName="CLASS" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -671,7 +669,7 @@
       <column comment="" key="false" length="23" name="TERMDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="MAXENROLL" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="MAXENROLL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="OUTPATDISCOUNT" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -686,22 +684,22 @@
       <column comment="" key="false" length="1000" name="WITHSETDESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CARRIER" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CARRIER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LOCALITY" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LOCALITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="FLAGGEDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="OUTLDSTATUS" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="OUTLDSTATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="OUTLDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="OUTLDCODE" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="OUTLDCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="PROVTYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
