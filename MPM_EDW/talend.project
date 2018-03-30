@@ -1146,7 +1146,6 @@
       <relatedItems xmi:id="_YIEslDQmEeimNKUvgR9UOQ" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_YIEslTQmEeimNKUvgR9UOQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_YIEsljQmEeimNKUvgR9UOQ" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_YIEslzQmEeimNKUvgR9UOQ" id="_KcGd0CypEeiJetnqWhFd7A - AID_CATEGORY" version="Latest" type="schema"/>
       <relatedItems xmi:id="_YIEsmTQmEeimNKUvgR9UOQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
       <relatedItems xmi:id="_ly4PoDQmEeimNKUvgR9UOQ" id="_KcGd0CypEeiJetnqWhFd7A - MEMB_PCPHISTS" version="Latest" type="schema"/>
     </ItemsRelations>
