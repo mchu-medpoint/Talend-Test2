@@ -997,6 +997,8 @@
       <relatedItems xmi:id="_TyJ4VjJ9Eei09KIzYb9ygA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_TyJ4WDJ9Eei09KIzYb9ygA" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
       <relatedItems xmi:id="_p3CJcDLlEeiOPskoLzggwQ" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
+      <relatedItems xmi:id="_RTNGcDQmEeimNKUvgR9UOQ" id="_KcGd0CypEeiJetnqWhFd7A - AID_CATEGORY" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_RTNGcTQmEeimNKUvgR9UOQ" id="_ZFJRQCvtEeio6oUndaDCsA - AID_CATEGORY" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_RK4vEDMBEeiOPskoLzggwQ">
       <baseItem xmi:id="_RK4vETMBEeiOPskoLzggwQ" id="_RJ6esDMBEeiOPskoLzggwQ" version="0.1" type="job"/>
