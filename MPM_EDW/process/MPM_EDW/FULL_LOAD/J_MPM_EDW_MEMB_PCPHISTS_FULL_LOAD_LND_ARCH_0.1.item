@@ -693,7 +693,7 @@
         <mapperTableEntries name="MEMB_PCPHISTID" expression="row1.MEMB_PCPHISTID" type="id_Integer"/>
         <mapperTableEntries name="ACTIVE_FLAG" expression="" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="REC_TERM_DTM" expression="row1.REC_TERM_DTM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REC_TERM_DTM" expression="" type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PCPFROMDT" type="id_Date"/>
