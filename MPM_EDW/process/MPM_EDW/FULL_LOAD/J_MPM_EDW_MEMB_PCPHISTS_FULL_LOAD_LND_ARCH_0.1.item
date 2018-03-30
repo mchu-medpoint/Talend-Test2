@@ -458,31 +458,29 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA - MEMB_PCPHISTS" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g==" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMB_PCPHISTS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.MEMB_PCPHISTS.PCPFROMDT,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.MEMB_KEYID,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.PROV_KEYID,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.PCP_MAINTCODE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.CURRHIST,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.PCP,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.PCPTHRUDT,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.TRANDATE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.TRANCODE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.LOADDATE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.ADDNOTFY,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.DROPNOTFY,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.CREATEBY,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.CREATEDATE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.LASTCHANGEBY,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.LASTCHANGEDATE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.ISNEVEREFFECTIVE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.MEMB_PCPHISTID&#xA;FROM&#x9;dbo.MEMB_PCPHISTS&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT MEMB_PCPHISTS.MEMB_PCPHISTS_SK,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PCPFROMDT,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.MEMB_KEYID,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PROV_KEYID,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PCP_MAINTCODE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.CURRHIST,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PCP,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PCPTHRUDT,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.TRANDATE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.TRANCODE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.LOADDATE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.ADDNOTFY,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.DROPNOTFY,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.CREATEBY,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.CREATEDATE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.LASTCHANGEBY,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.LASTCHANGEDATE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.ISNEVEREFFECTIVE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.MEMB_PCPHISTID,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.ACTIVE_FLAG,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.REC_EFF_DTM,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.REC_TERM_DTM&#xD;&#xA;FROM&#x9;MEMB_PCPHISTS&#xD;&#xA;WHERE &#xD;&#xA;MEMB_PCPHISTS.LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -530,19 +528,19 @@
       <column comment="" key="true" length="23" name="PCPFROMDT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="true" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEID" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="UNIQUEID" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PCP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="IKEYINT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PCP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="CURRHIST" nullable="true" pattern="" precision="0" sourceType="VCSINGLECHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="CURRHIST" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="25" name="PCP" nullable="true" pattern="" precision="0" sourceType="VCTYPE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="PCP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="PCPTHRUDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -551,7 +549,7 @@
       <column comment="" key="false" length="23" name="TRANDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="TRANCODE" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="TRANCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LOADDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -563,13 +561,13 @@
       <column comment="" key="false" length="23" name="DROPNOTFY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
