@@ -458,29 +458,27 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_3" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g==" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;GLOBAL&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;PROV_COMPANY_V&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT PROV_COMPANY_V.PROV_KEYID,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROV_MPI_NO,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.FIRSTNAME,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.LASTNAME,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.MI,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.FULLNAME,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.REV_FULLNAME,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.SUFFIX,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.BIRTHDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.SEX,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.EMAIL,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ETHNICITY,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CONTACT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ASSOCIATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.REMARK,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CREATEBY,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CREATEDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.LASTCHANGEBY,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.LASTCHANGEDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROVID,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.COMPANY_ID,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ACCOUNT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.SUBACCT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CLASS,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CLASSDESC,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CONTRACT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.FROMDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.TERMDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.MAXENROLL,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.OUTPATDISCOUNT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PAYMENT,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.WITHSET,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.WITHSETDESC,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.CARRIER,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.LOCALITY,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.FLAGGEDDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.OUTLDSTATUS,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.OUTLDDATE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.OUTLDCODE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROVTYPE,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.NPINO,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.USERFIELD1,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.USERFIELD2,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROVSTATUS,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.PROVSTATUSDESC,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ISTEMPPROVIDER,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ISDRG,&#xD;&#xA;&#x9;&#x9;PROV_COMPANY_V.ISAPC&#xD;&#xA;FROM&#x9;PROV_COMPANY_V&#xD;&#xA;WHERE &#xD;&#xA;MEMB_PCPHISTS.LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
