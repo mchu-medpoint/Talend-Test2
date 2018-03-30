@@ -1223,6 +1223,7 @@
       <relatedItems xmi:id="_71fT1jQ9EeimNKUvgR9UOQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_71fT1zQ9EeimNKUvgR9UOQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
       <relatedItems xmi:id="_JYYewDRDEeimNKUvgR9UOQ" id="_ZFJRQCvtEeio6oUndaDCsA - HP_CONTRACTS" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_gxprQDRDEeimNKUvgR9UOQ" id="_KcGd0CypEeiJetnqWhFd7A - HP_CONTRACTS" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
