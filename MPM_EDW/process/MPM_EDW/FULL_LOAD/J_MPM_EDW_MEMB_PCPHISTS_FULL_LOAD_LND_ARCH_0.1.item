@@ -456,35 +456,37 @@
     <elementParameter field="TEXT" name="LABEL" value="mpm_edw_dev"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g==" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ZFJRQCvtEeio6oUndaDCsA - MEMB_PCPHISTS" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMB_PCPHISTS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT MEMB_PCPHISTS.MEMB_PCPHISTS_SK,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PCPFROMDT,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.MEMB_KEYID,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PROV_KEYID,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PCP_MAINTCODE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.CURRHIST,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PCP,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.PCPTHRUDT,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.TRANDATE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.TRANCODE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.LOADDATE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.ADDNOTFY,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.DROPNOTFY,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.CREATEBY,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.CREATEDATE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.LASTCHANGEBY,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.LASTCHANGEDATE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.ISNEVEREFFECTIVE,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.MEMB_PCPHISTID,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.ACTIVE_FLAG,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.REC_EFF_DTM,&#xD;&#xA;&#x9;&#x9;MEMB_PCPHISTS.REC_TERM_DTM&#xD;&#xA;FROM&#x9;MEMB_PCPHISTS&#xD;&#xA;WHERE &#xD;&#xA;MEMB_PCPHISTS.LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;&#xD;&#xA;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.MEMB_PCPHISTS.PCPFROMDT,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.MEMB_KEYID,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.PROV_KEYID,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.PCP_MAINTCODE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.CURRHIST,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.PCP,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.PCPTHRUDT,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.TRANDATE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.TRANCODE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.LOADDATE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.ADDNOTFY,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.DROPNOTFY,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.CREATEBY,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.CREATEDATE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.LASTCHANGEBY,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.LASTCHANGEDATE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.ISNEVEREFFECTIVE,&#xA;&#x9;&#x9;dbo.MEMB_PCPHISTS.MEMB_PCPHISTID&#xA;FROM&#x9;dbo.MEMB_PCPHISTS&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_PCPHISTS_SK"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PCPFROMDT"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_KEYID"/>
@@ -521,35 +523,26 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_PCPHISTID"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACTIVE_FLAG"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REC_EFF_DTM"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REC_TERM_DTM"/>
-      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MEMB_PCPHISTS" name="tMSSqlInput_2">
-      <column comment="" key="true" length="19" name="MEMB_PCPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
+      <column comment="" key="true" length="23" name="PCPFROMDT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="PCPFROMDT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="true" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEID" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="36" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="UNIQUEID" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PCP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="IKEYINT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PCP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="1" name="CURRHIST" nullable="true" pattern="" precision="0" sourceType="VCSINGLECHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="CURRHIST" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="PCP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="PCP" nullable="true" pattern="" precision="0" sourceType="VCTYPE" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="PCPTHRUDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -558,7 +551,7 @@
       <column comment="" key="false" length="23" name="TRANDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="TRANCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="TRANCODE" nullable="true" pattern="" precision="0" sourceType="VCCODE" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LOADDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -570,31 +563,22 @@
       <column comment="" key="false" length="23" name="DROPNOTFY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INUMBER" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="ISNEVEREFFECTIVE" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" defaultValue="'((0))'" key="false" length="1" name="ISNEVEREFFECTIVE" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="MEMB_PCPHISTID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ACTIVE_FLAG" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="REC_TERM_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="10" name="MEMB_PCPHISTID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -718,11 +702,10 @@
         <mapperTableEntries name="REC_TERM_DTM" expression="row1.REC_TERM_DTM" type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="MEMB_PCPHISTS_SK" type="id_Long"/>
         <mapperTableEntries name="PCPFROMDT" type="id_Date"/>
         <mapperTableEntries name="MEMB_KEYID" type="id_String"/>
         <mapperTableEntries name="PROV_KEYID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCP_MAINTCODE" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PCP_MAINTCODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="CURRHIST" type="id_String" nullable="true"/>
         <mapperTableEntries name="PCP" type="id_String" nullable="true"/>
         <mapperTableEntries name="PCPTHRUDT" type="id_Date" nullable="true"/>
@@ -731,15 +714,12 @@
         <mapperTableEntries name="LOADDATE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="ADDNOTFY" type="id_Date" nullable="true"/>
         <mapperTableEntries name="DROPNOTFY" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CREATEBY" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CREATEBY" type="id_String" nullable="true"/>
         <mapperTableEntries name="CREATEDATE" type="id_Date"/>
-        <mapperTableEntries name="LASTCHANGEBY" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LASTCHANGEBY" type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTCHANGEDATE" type="id_Date"/>
         <mapperTableEntries name="ISNEVEREFFECTIVE" type="id_Boolean"/>
         <mapperTableEntries name="MEMB_PCPHISTID" type="id_Integer"/>
-        <mapperTableEntries name="ACTIVE_FLAG" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="REC_EFF_DTM" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="REC_TERM_DTM" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
