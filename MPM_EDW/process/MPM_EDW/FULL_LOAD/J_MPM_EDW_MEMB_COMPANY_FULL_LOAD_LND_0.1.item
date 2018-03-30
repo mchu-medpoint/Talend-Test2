@@ -1094,7 +1094,7 @@
       <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="USERFIELD1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1218,7 +1218,7 @@
         <mapperTableEntries name="HoldDescription" expression="row1.HoldDescription" type="id_String" nullable="true"/>
         <mapperTableEntries name="STATUSID" expression="row1.STATUSID" type="id_String" nullable="true"/>
         <mapperTableEntries name="RLSHIPID" expression="row1.RLSHIPID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONTRACTID" expression="row1.CONTRACTID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CONTRACTID" expression="row1.CONTRACTID" type="id_String" nullable="true"/>
         <mapperTableEntries name="USERFIELD1" expression="row1.USERFIELD1" type="id_String" nullable="true"/>
         <mapperTableEntries name="USERFIELD2" expression="row1.USERFIELD2" type="id_String" nullable="true"/>
         <mapperTableEntries name="ISHPGLOBAL" expression="row1.ISHPGLOBAL " type="id_Boolean"/>
@@ -2049,7 +2049,7 @@
       <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="USERFIELD1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -2295,7 +2295,7 @@
       <column comment="" key="false" length="10" name="RLSHIPID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="USERFIELD1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
