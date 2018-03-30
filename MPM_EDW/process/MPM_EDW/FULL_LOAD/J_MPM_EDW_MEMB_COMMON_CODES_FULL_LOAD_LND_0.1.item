@@ -702,7 +702,7 @@
         <mapperTableEntries name="var1" expression="101 " type="id_Object"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_agg">
-        <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE  row1.LastChangeDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT">
         <mapperTableEntries name="common_code_id" expression="row1.common_code_id" type="id_String"/>
