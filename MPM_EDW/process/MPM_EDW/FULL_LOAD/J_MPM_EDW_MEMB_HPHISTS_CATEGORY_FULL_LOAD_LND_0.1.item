@@ -442,7 +442,6 @@
   </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_3" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;MPMEDWDEVQA1&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
