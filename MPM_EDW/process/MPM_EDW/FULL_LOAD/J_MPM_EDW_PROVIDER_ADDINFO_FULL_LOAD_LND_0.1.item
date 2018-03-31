@@ -802,7 +802,7 @@
       <column comment="" key="false" length="1" name="SATURDAY" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="SUNDAY" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="SUNDAY" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="STARTTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -880,7 +880,7 @@
         <mapperTableEntries name="THURSDAY" expression="row1.THURSDAY" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="FRIDAY" expression="row1.FRIDAY" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="SATURDAY" expression="row1.SATURDAY" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="SUNDAY" expression="row1.SUNDAY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUNDAY" expression="row1.SUNDAY" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="STARTTIME" expression="row1.STARTTIME" type="id_String" nullable="true"/>
         <mapperTableEntries name="ENDTIME" expression="row1.ENDTIME" type="id_String" nullable="true"/>
         <mapperTableEntries name="EXTENSION" expression="row1.EXTENSION" type="id_String" nullable="true"/>
@@ -1377,7 +1377,7 @@
       <column comment="" key="false" length="1" name="SATURDAY" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="SUNDAY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="SUNDAY" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="STARTTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1509,7 +1509,7 @@
       <column comment="" key="false" length="1" name="SATURDAY" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="SUNDAY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="SUNDAY" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="STARTTIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
