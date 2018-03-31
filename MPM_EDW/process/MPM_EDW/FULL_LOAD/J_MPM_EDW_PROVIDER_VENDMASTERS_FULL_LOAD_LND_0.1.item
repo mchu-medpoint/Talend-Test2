@@ -636,7 +636,7 @@
       <column comment="" key="false" length="25" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="ANSI" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="3" name="ANSI" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="3" name="EOB" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_String" usefulColumn="true">
@@ -717,7 +717,7 @@
         <mapperTableEntries name="VTYPE" expression="row1.VTYPE" type="id_String" nullable="true"/>
         <mapperTableEntries name="VENDORNM" expression="row1.VENDORNM" type="id_String" nullable="true"/>
         <mapperTableEntries name="SSN" expression="row1.SSN" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ANSI" expression="row1.ANSI" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="ANSI" expression="row1.ANSI" type="id_String" nullable="true"/>
         <mapperTableEntries name="EOB" expression="row1.EOB" type="id_String" nullable="true"/>
         <mapperTableEntries name="SUBMITTERNO" expression="row1.SUBMITTERNO" type="id_String" nullable="true"/>
         <mapperTableEntries name="VENDEREXTID" expression="row1.VENDEREXTID" type="id_String" nullable="true"/>
@@ -1041,7 +1041,7 @@
       <column comment="" key="false" length="25" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="ANSI" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="3" name="ANSI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="3" name="EOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1122,7 +1122,7 @@
       <column comment="" key="false" length="25" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="ANSI" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+      <column comment="" key="false" length="3" name="ANSI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="3" name="EOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
