@@ -1098,6 +1098,7 @@
       <relatedItems xmi:id="_dJFMhTQfEeimNKUvgR9UOQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_dJFMhjQfEeimNKUvgR9UOQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_dJFMhzQfEeimNKUvgR9UOQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_hXrPMDSgEeiA5eC6W0k7dg" id="_T14fIDSVEeiA5eC6W0k7dg" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_xOFkIDQlEeimNKUvgR9UOQ">
       <baseItem xmi:id="_xOFkITQlEeimNKUvgR9UOQ" id="_xNYZgDQlEeimNKUvgR9UOQ" version="0.1" type="job"/>
