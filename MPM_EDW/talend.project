@@ -1298,6 +1298,7 @@
       <relatedItems xmi:id="_1yo19zUAEei9K_stbeCJgg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1yo1-DUAEei9K_stbeCJgg" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
       <relatedItems xmi:id="_O6IpUDUCEei9K_stbeCJgg" id="_hNJT0DSYEeiA5eC6W0k7dg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_bbsqoDU9Eei9K_stbeCJgg" id="_Sggq0DSZEeiA5eC6W0k7dg" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_srrVwDUeEei9K_stbeCJgg">
       <baseItem xmi:id="_srrVwTUeEei9K_stbeCJgg" id="_srCckDUeEei9K_stbeCJgg" version="0.1" type="job"/>
