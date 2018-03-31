@@ -611,7 +611,7 @@
         <mapperTableEntries name="var1" expression="&quot;1&quot;" type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_agg">
-        <mapperTableEntries name="updated_at" expression="row1.LastChangeDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="updated_at" expression="row1.LastChangeDate  row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT">
         <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID" type="id_Object"/>
