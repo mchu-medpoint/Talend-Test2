@@ -1152,7 +1152,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_3_hd4DQ0EeimNKUvgR9UOQ">
       <baseItem xmi:id="_3_hd4TQ0EeimNKUvgR9UOQ" id="_3-4ksDQ0EeimNKUvgR9UOQ" version="0.1" type="job"/>
-      <relatedItems xmi:id="_3_hd4jQ0EeimNKUvgR9UOQ" id="_ZFJRQCvtEeio6oUndaDCsA" version="Latest" type="property"/>
       <relatedItems xmi:id="_3_hd4zQ0EeimNKUvgR9UOQ" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
       <relatedItems xmi:id="_3_hd5DQ0EeimNKUvgR9UOQ" id="_3uHDgBwnEeiTHIRHeuHqBQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_3_hd5TQ0EeimNKUvgR9UOQ" id="SQLike" version="Latest" type="routine"/>
@@ -1174,6 +1173,7 @@
       <relatedItems xmi:id="_3_hd9TQ0EeimNKUvgR9UOQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3_hd9jQ0EeimNKUvgR9UOQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3_hd9zQ0EeimNKUvgR9UOQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_jYbwkDShEeiA5eC6W0k7dg" id="_T14fIDSVEeiA5eC6W0k7dg" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_tRtTgDQ4EeimNKUvgR9UOQ">
       <baseItem xmi:id="_tRtTgTQ4EeimNKUvgR9UOQ" id="_tQxfYDQ4EeimNKUvgR9UOQ" version="0.1" type="job"/>
