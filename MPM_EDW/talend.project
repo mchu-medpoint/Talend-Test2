@@ -1474,6 +1474,7 @@
       <relatedItems xmi:id="_aGeiBTUuEei9K_stbeCJgg" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_aGeiBjUuEei9K_stbeCJgg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_aGeiBzUuEei9K_stbeCJgg" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_DxXrsDUvEei9K_stbeCJgg" id="_T14fIDSVEeiA5eC6W0k7dg - RV_PROV_HOSPINFO" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
