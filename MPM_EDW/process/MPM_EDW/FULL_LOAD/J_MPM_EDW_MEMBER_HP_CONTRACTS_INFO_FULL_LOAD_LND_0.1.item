@@ -732,7 +732,7 @@
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CLAIMADJSET" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CLAIMADJSET" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="LOBID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -830,7 +830,7 @@
         <mapperTableEntries name="CREATEDATE" expression="row1.CREATEDATE" type="id_Date"/>
         <mapperTableEntries name="LASTCHANGEBY" expression="row1.LASTCHANGEBY" type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE" type="id_Date"/>
-        <mapperTableEntries name="CLAIMADJSET" expression="row1.CLAIMADJSET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CLAIMADJSET" expression="row1.CLAIMADJSET" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LOBID" expression="row1.LOBID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="ANES_CALC_ANESCALCTYPE1" expression="row1.ANES_CALC_ANESCALCTYPE1" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="ANES_ROUNDED_THRESHOLD1" expression="row1.ANES_ROUNDED_THRESHOLD1" type="id_Integer" nullable="true"/>
@@ -1267,7 +1267,7 @@
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CLAIMADJSET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CLAIMADJSET" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="LOBID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -1387,7 +1387,7 @@
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CLAIMADJSET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CLAIMADJSET" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="LOBID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
