@@ -606,7 +606,7 @@
       <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="PROV_SPECINFO_V" name="SQL_INSERT">
-      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="SEQUENCE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -683,7 +683,7 @@
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT">
-        <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID" type="id_String"/>
+        <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID" type="id_Object"/>
         <mapperTableEntries name="SEQUENCE" expression="row1.SEQUENCE" type="id_Integer"/>
         <mapperTableEntries name="CERTIFIER" expression="row1.CERTIFIER" type="id_String" nullable="true"/>
         <mapperTableEntries name="CERTDATE" expression="row1.CERTDATE" type="id_Date" nullable="true"/>
@@ -971,7 +971,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="PROV_SPECINFO_V" name="tMSSqlOutput_1">
-      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="SEQUENCE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -1040,7 +1040,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="PROV_SPECINFO_V" name="REJECT">
-      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="SEQUENCE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
