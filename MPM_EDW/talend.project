@@ -1198,7 +1198,7 @@
       <relatedItems xmi:id="_tRtTlTQ4EeimNKUvgR9UOQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_tRtTljQ4EeimNKUvgR9UOQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_tRtTlzQ4EeimNKUvgR9UOQ" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_WFCV8DSjEeiA5eC6W0k7dg" id="_hNJT0DSYEeiA5eC6W0k7dg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_oIWq0DU6Eei9K_stbeCJgg" id="_Sggq0DSZEeiA5eC6W0k7dg" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_71fTwDQ9EeimNKUvgR9UOQ">
       <baseItem xmi:id="_71fTwTQ9EeimNKUvgR9UOQ" id="_70z-UDQ9EeimNKUvgR9UOQ" version="0.1" type="job"/>
