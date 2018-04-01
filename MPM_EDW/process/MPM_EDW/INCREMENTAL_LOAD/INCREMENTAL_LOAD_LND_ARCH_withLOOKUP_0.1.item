@@ -1330,10 +1330,10 @@
       <column comment="" key="false" length="10" name="HPCODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="HP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="HP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PAYERRESPONIBILITY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PAYERRESPONIBILITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="BENEFIT_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1360,13 +1360,13 @@
       <column comment="" key="false" length="23" name="LOADDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -1378,7 +1378,7 @@
       <column comment="" key="false" length="1" name="ISNEVEREFFECTIVE" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="ACTIVE_FLAG" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="1" name="ACTIVE_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
