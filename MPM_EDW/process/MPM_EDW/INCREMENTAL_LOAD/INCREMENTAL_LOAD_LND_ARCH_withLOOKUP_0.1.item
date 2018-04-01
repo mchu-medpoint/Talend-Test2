@@ -734,7 +734,7 @@
       <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_String" operator="="/>
         <mapperTableEntries name="OPFROMDT" expression="row1.OPFROMDT " type="id_Date" operator="="/>
-        <mapperTableEntries name="EMPGROUP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EMPGROUP" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="HPCODE" type="id_String"/>
         <mapperTableEntries name="HP_MAINTCODE" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="PAYERRESPONIBILITY" type="id_Integer" nullable="true"/>
