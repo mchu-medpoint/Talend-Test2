@@ -1792,7 +1792,7 @@
         <mapperTableEntries name="ISHPGLOBAL" type="id_Boolean"/>
         <mapperTableEntries name="ISNEVEREFFECTIVE" type="id_Boolean"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row4" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row4" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="RELOAD">
         <mapperTableEntries name="MEMB_KEYID" expression="SQL_ARCH.MEMB_KEYID " type="id_String"/>
         <mapperTableEntries name="OPFROMDT" expression="SQL_ARCH.OPFROMDT " type="id_Date" operator="="/>
         <mapperTableEntries name="EMPGROUP" type="id_String" nullable="true"/>
