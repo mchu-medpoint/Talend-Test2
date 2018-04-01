@@ -781,7 +781,7 @@
         <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
         <mapperTableEntries name="REC_TERM_DTM" expression="" type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="SQL_Update">
+      <outputTables sizeState="INTERMEDIATE" name="SQL_Update" expressionFilter="row2.MEMB_KEYID != null" activateExpressionFilter="true">
         <mapperTableEntries name="MEMB_KEYID" expression=" row1.MEMB_KEYID " type="id_String"/>
         <mapperTableEntries name="OPFROMDT" expression="row1.OPFROMDT " type="id_Date"/>
         <mapperTableEntries name="EMPGROUP" expression="row1.EMPGROUP " type="id_String" nullable="true"/>
