@@ -756,7 +756,7 @@
       <outputTables sizeState="INTERMEDIATE" name="to_agg">
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row1.CREATEDATE.compareTo(row1.LASTCHANGEDATE) == 0">
+      <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row2.MEMB_KEYID == null" activateExpressionFilter="true">
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_String"/>
         <mapperTableEntries name="OPFROMDT" expression="row1.OPFROMDT " type="id_Date"/>
         <mapperTableEntries name="EMPGROUP" expression="row1.EMPGROUP " type="id_String" nullable="true"/>
