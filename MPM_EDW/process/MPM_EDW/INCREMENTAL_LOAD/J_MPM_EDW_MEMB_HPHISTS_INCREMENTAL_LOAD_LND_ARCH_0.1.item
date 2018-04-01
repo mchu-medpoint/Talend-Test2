@@ -334,7 +334,7 @@
       <column comment="" key="false" length="500" name="JOB_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="LOADED_UNTIL" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss:SSS&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="20" name="LOADED_UNTIL" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss:SSS&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
