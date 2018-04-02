@@ -5345,7 +5345,7 @@
         <mapperTableEntries name="REFERRINGPROVFIRSTNM" expression="row1.REFERRINGPROVFIRSTNM" type="id_String" nullable="true"/>
         <mapperTableEntries name="ORDERINGPROVFIRSTNM" expression="row1.ORDERINGPROVFIRSTNM" type="id_String" nullable="true"/>
         <mapperTableEntries name="SUPERVISINGPROVFIRSTNM" expression="row1.SUPERVISINGPROVFIRSTNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P27" type="id_String" nullable="true"/>
+        <mapperTableEntries name="P27" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="P28" type="id_String" nullable="true"/>
         <mapperTableEntries name="P29" type="id_String" nullable="true"/>
         <mapperTableEntries name="REFERENCENO" expression="row1.REFERENCENO" type="id_String" nullable="true"/>
