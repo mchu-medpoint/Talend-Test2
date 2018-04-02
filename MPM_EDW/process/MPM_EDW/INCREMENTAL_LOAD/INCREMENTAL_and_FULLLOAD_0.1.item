@@ -2295,27 +2295,27 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_4" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g==" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;HCLA&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMB_HPHISTS&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT MEMB_HPHISTS.MEMB_KEYID,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.OPFROMDT,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.EMPGROUP,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.HPCODE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.HP_MAINTCODE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.PAYERRESPONIBILITY,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.BENEFIT_TYPE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.CURRHIST,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.OPTHRUDT,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.HPFROMDT,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.OPT,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.TRANDATE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.TRANCODE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.LOADDATE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.CREATEBY,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.CREATEDATE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.LASTCHANGEBY,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.LASTCHANGEDATE,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.ISHPGLOBAL,&#xD;&#xA;&#x9;&#x9;MEMB_HPHISTS.ISNEVEREFFECTIVE&#xD;&#xA;FROM&#x9;MEMB_HPHISTS&quot;&#xD;&#xA;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
