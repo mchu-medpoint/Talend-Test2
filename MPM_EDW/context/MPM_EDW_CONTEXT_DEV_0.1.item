@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_dh2ssDYrEeirYPZYxxFdjg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_dh2ssTYrEeirYPZYxxFdjg" comment="" name="MPM_EDW_LoadType" prompt="MPM_EDW_LoadType?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_dh2ssjYrEeirYPZYxxFdjg" comment="" name="MPM_EDW_Context_Path" prompt="MPM_EDW_Context_Path?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>
