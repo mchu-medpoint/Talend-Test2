@@ -128,13 +128,13 @@
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_hNJT0DSYEeiA5eC6W0k7dg" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_T14fIDSVEeiA5eC6W0k7dg" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;GLOBAL&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ECD&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -362,7 +362,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_l655UDaOEeiWN7dwBTqvhw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_iaZzwDaeEeiWN7dwBTqvhw-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -456,158 +456,50 @@
     <elementParameter field="TEXT" name="LABEL" value="mpm_edw_dev"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_hNJT0DSYEeiA5eC6W0k7dg" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_T14fIDSVEeiA5eC6W0k7dg" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;EZCAP-SQL-DEV&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;GLOBAL&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g==" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AUTH_MASTERS&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ECD&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_T14fIDSVEeiA5eC6W0k7dg - AUTH_DIAGS_V" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AUTH_DIAGS_V&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT AUTH_MASTERS.AUTHNO,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ACCT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.SUBACCT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.CERTTYPE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.SVCTYPE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.STATUS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.PSTATUS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.PRIORITY,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.PLACESVC,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.CASENO,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.HPAUTHNO,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQSPEC,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.MEMBID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.MEMBNAME,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.HPCODE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.OPT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQDATE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTHDATE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.EXPRDATE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.LOS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.CONTRVAL,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.WITHHOLD,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.COPAY,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.NET,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.EDIREF,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.XPDATE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.XPSTATUS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.XPTRAN,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.OUTLOADDT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.BATCH,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTHPCP,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTHUNITS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQPROV,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ISUNITLIMIT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ISDOLLARLIMIT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTOSTATUS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P1,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P2,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P3,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P4,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P5,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P6,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P7,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P8,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P9,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P10,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.HOSPBILL,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.COB,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.COMPANY_ID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.VENDOR,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ACCIDDT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.LMPDT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ESTDOB,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ONSETDT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.EDI_AUTH_ID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ASPCODE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.SUGGESTED_STATUS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.GENERATED_BY,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.FACPROVID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.SVCFACID_KEYID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.BMSETWINRULE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQCAT,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.CREATEBY,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.CREATEDATE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.LASTCHANGEBY,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.LASTCHANGEDATE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.MEMB_KEYID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTHPCP_KEYID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQPROV_KEYID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P11,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P12,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P13,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P14,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.WF_QUEUED,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ADJUDICATION_ID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.P15,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.PRICESTATUS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.IsEZNET,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ISHPGLOBAL,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQPROVLOB,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQPROVLOBNETWORK,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTHPROVLOB,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTHPROVLOBNETWORK,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ISPROVPAR,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ISUNITLIMITDETAIL,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.ISDOLLARLIMITDETAIL,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQDUNITS,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQUEST_TYPE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.COINSURANCE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.WFRULE_ID,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTH_SOURCE,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.MEMB_PCP_SERVICE_AREA,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.AUTH_PCP_SERVICE_AREA,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.REQ_PROV_SERVICE_AREA,&#xD;&#xA;&#x9;&#x9;AUTH_MASTERS.OVERLAP_ADJIDS&#xD;&#xA;FROM&#x9;AUTH_MASTERS&#xD;&#xA;WHERE &#xD;&#xA;AUTH_MASTERS.LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.AUTH_DIAGS_V.AUTHNO,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.DIAGREFNO,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.DIAG,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.DIAGCODE,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.DIAGDESC,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.DIAGFROMDATE,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.DIAGTODATE,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.CREATEBY,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.CREATEDATE,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.LASTCHANGEBY,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.LASTCHANGEDATE,&#xA;&#x9;&#x9;dbo.AUTH_DIAGS_V.COMPANY_ID&#xA;FROM&#x9;dbo.AUTH_DIAGS_V&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="AUTHNO"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGREFNO"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SUBACCT"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAG"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CERTTYPE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGCODE"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SVCTYPE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGDESC"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGFROMDATE"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PSTATUS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRIORITY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PLACESVC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CASENO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HPAUTHNO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQSPEC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMBID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMBNAME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HPCODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OPT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTHDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXPRDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CONTRVAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WITHHOLD"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COPAY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NET"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EDIREF"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="XPDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="XPSTATUS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="XPTRAN"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUTLOADDT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTHPCP"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTHUNITS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQPROV"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISUNITLIMIT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISDOLLARLIMIT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTOSTATUS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P1"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P2"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P3"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P4"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P5"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P6"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P7"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P8"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P9"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P10"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HOSPBILL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COB"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COMPANY_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VENDOR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCIDDT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LMPDT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ESTDOB"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ONSETDT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EDI_AUTH_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ASPCODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SUGGESTED_STATUS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GENERATED_BY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FACPROVID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SVCFACID_KEYID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BMSETWINRULE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQCAT"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIAGTODATE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CREATEBY"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -617,351 +509,46 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LASTCHANGEDATE"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_KEYID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTHPCP_KEYID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQPROV_KEYID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P11"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P12"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P13"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P14"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WF_QUEUED"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ADJUDICATION_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="P15"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRICESTATUS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IsEZNET"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISHPGLOBAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQPROVLOB"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQPROVLOBNETWORK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTHPROVLOB"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTHPROVLOBNETWORK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISPROVPAR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISUNITLIMITDETAIL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISDOLLARLIMITDETAIL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQDUNITS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQUEST_TYPE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COINSURANCE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WFRULE_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTH_SOURCE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_PCP_SERVICE_AREA"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTH_PCP_SERVICE_AREA"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REQ_PROV_SERVICE_AREA"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OVERLAP_ADJIDS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMPANY_ID"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="AUTH_MASTERS" name="tMSSqlInput_2">
-      <column comment="" key="true" length="25" name="AUTHNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+    <metadata connector="FLOW" label="AUTH_DIAGS_V" name="tMSSqlInput_2">
+      <column comment="" key="false" length="25" name="AUTHNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ACCT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="5" name="DIAGREFNO" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="SUBACCT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="DIAG" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CERTTYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="DIAGCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="SVCTYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="300" name="DIAGDESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="23" name="DIAGFROMDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PSTATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="23" name="DIAGTODATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PRIORITY" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="PLACESVC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="CASENO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="HPAUTHNO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="REQSPEC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="MEMBID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="120" name="MEMBNAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="HPCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="REQDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="AUTHDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="EXPRDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="LOS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="15" name="CONTRVAL" nullable="true" pattern="" precision="3" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="15" name="WITHHOLD" nullable="true" pattern="" precision="3" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="15" name="COPAY" nullable="true" pattern="" precision="3" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="15" name="NET" nullable="true" pattern="" precision="3" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="EDIREF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="XPDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="XPSTATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="XPTRAN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="OUTLOADDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="BATCH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="AUTHPCP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="5" name="AUTHUNITS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="REQPROV" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ISUNITLIMIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ISDOLLARLIMIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="AUTOSTATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P8" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P9" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P10" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="HOSPBILL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="COB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="COMPANY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="VENDOR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="ACCIDDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="LMPDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="ESTDOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="ONSETDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="40" name="EDI_AUTH_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ASPCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="SUGGESTED_STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="GENERATED_BY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="FACPROVID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="36" name="SVCFACID_KEYID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'((0))'" key="false" length="10" name="BMSETWINRULE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="REQCAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="36" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="36" name="AUTHPCP_KEYID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="36" name="REQPROV_KEYID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P13" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P14" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'((0))'" key="false" length="1" name="WF_QUEUED" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ADJUDICATION_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P15" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="5" name="PRICESTATUS" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'((0))'" key="false" length="1" name="IsEZNET" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'((1))'" key="false" length="1" name="ISHPGLOBAL" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="REQPROVLOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="REQPROVLOBNETWORK" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="AUTHPROVLOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="AUTHPROVLOBNETWORK" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ISPROVPAR" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'((0))'" key="false" length="1" name="ISUNITLIMITDETAIL" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'((0))'" key="false" length="1" name="ISDOLLARLIMITDETAIL" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="REQDUNITS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="'('A')'" key="false" length="1" name="REQUEST_TYPE" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="15" name="COINSURANCE" nullable="true" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="WFRULE_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="AUTH_SOURCE" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="MEMB_PCP_SERVICE_AREA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="AUTH_PCP_SERVICE_AREA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="REQ_PROV_SERVICE_AREA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="500" name="OVERLAP_ADJIDS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="COMPANY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -972,7 +559,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_l655UDaOEeiWN7dwBTqvhw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_iaZzwDaeEeiWN7dwBTqvhw-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -1281,7 +868,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="&quot;1&quot;" type="id_String"/>
       </varTables>
@@ -1390,100 +977,17 @@
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="AUTHNO" type="id_String"/>
-        <mapperTableEntries name="ACCT" type="id_String"/>
-        <mapperTableEntries name="SUBACCT" type="id_String"/>
-        <mapperTableEntries name="CERTTYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCTYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STATUS" type="id_String"/>
-        <mapperTableEntries name="PSTATUS" type="id_String"/>
-        <mapperTableEntries name="PRIORITY" type="id_String"/>
-        <mapperTableEntries name="PLACESVC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CASENO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="HPAUTHNO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REQSPEC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBNAME" type="id_String"/>
-        <mapperTableEntries name="HPCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REQDATE" type="id_Date"/>
-        <mapperTableEntries name="AUTHDATE" type="id_Date"/>
-        <mapperTableEntries name="EXPRDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LOS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONTRVAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WITHHOLD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COPAY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NET" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EDIREF" type="id_String" nullable="true"/>
-        <mapperTableEntries name="XPDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="XPSTATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="XPTRAN" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OUTLOADDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="BATCH" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AUTHPCP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AUTHUNITS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REQPROV" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ISUNITLIMIT" type="id_String"/>
-        <mapperTableEntries name="ISDOLLARLIMIT" type="id_String"/>
-        <mapperTableEntries name="AUTOSTATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P8" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P9" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P10" type="id_String" nullable="true"/>
-        <mapperTableEntries name="HOSPBILL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COMPANY_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VENDOR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACCIDDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LMPDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ESTDOB" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ONSETDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="EDI_AUTH_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ASPCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUGGESTED_STATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GENERATED_BY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FACPROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACID_KEYID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BMSETWINRULE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REQCAT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CREATEBY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGREFNO" type="id_Short"/>
+        <mapperTableEntries name="DIAG" type="id_Integer"/>
+        <mapperTableEntries name="DIAGCODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGDESC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAGFROMDATE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DIAGTODATE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CREATEBY" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CREATEDATE" type="id_Date"/>
-        <mapperTableEntries name="LASTCHANGEBY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LASTCHANGEBY" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LASTCHANGEDATE" type="id_Date"/>
-        <mapperTableEntries name="MEMB_KEYID" type="id_Object"/>
-        <mapperTableEntries name="AUTHPCP_KEYID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REQPROV_KEYID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P11" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P12" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P13" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P14" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WF_QUEUED" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="ADJUDICATION_ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="P15" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PRICESTATUS" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="IsEZNET" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="ISHPGLOBAL" type="id_Boolean"/>
-        <mapperTableEntries name="REQPROVLOB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REQPROVLOBNETWORK" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="AUTHPROVLOB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AUTHPROVLOBNETWORK" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="ISPROVPAR" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="ISUNITLIMITDETAIL" type="id_Boolean"/>
-        <mapperTableEntries name="ISDOLLARLIMITDETAIL" type="id_Boolean"/>
-        <mapperTableEntries name="REQDUNITS" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="REQUEST_TYPE" type="id_String"/>
-        <mapperTableEntries name="COINSURANCE" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="WFRULE_ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="AUTH_SOURCE" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="MEMB_PCP_SERVICE_AREA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AUTH_PCP_SERVICE_AREA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REQ_PROV_SERVICE_AREA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OVERLAP_ADJIDS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMPANY_ID" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1511,7 +1015,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_l655UDaOEeiWN7dwBTqvhw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_iaZzwDaeEeiWN7dwBTqvhw-tMap_3-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
