@@ -1546,6 +1546,8 @@
       <relatedItems xmi:id="_B4KHkzVUEei9K_stbeCJgg" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_B4KHlDVUEei9K_stbeCJgg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_M2eqoDYiEeirYPZYxxFdjg" id="_0AC8kDYhEeirYPZYxxFdjg" version="Latest" type="joblet"/>
+      <relatedItems xmi:id="_YMsYIDYmEeirYPZYxxFdjg" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
+      <relatedItems xmi:id="_YMsYITYmEeirYPZYxxFdjg" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_0vmqgDXPEeirYPZYxxFdjg">
       <baseItem xmi:id="_0vmqgTXPEeirYPZYxxFdjg" id="_0tsmADXPEeirYPZYxxFdjg" version="0.1" type="job"/>
