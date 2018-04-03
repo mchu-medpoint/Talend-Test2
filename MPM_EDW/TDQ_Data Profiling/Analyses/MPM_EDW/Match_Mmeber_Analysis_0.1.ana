@@ -1,18 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_rBMHsDeAEeionMhtIoBHVw" name="Match_Mmeber_Analysis" creationDate="2018-04-03T16:50:38.570-0400">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_rBMHsDeAEeionMhtIoBHVw" name="Match_Mmeber_Analysis" creationDate="2018-04-03T16:50:38.570-0400" defaultContext="Default">
+  <clientDependency href="../../../metadata/connections/EZCAP_ECD_0.1.item#_thRe0DeAEeionMhtIoBHVw"/>
   <taggedValue xmi:id="_rBMHsTeAEeionMhtIoBHVw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_rBMHsjeAEeionMhtIoBHVw" tag="Status" value="development"/>
   <taggedValue xmi:id="_rBMHszeAEeionMhtIoBHVw" tag="Author" value="HighPoint6@medpointmanagement.com"/>
-  <taggedValue xmi:id="_rBMHtDeAEeionMhtIoBHVw" tag="Purpose"/>
-  <taggedValue xmi:id="_rBMHtTeAEeionMhtIoBHVw" tag="Description"/>
+  <taggedValue xmi:id="_rBMHtDeAEeionMhtIoBHVw" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_rBMHtTeAEeionMhtIoBHVw" tag="Description" value=""/>
   <taggedValue xmi:id="_rBMHtjeAEeionMhtIoBHVw" tag="Version" value="0.1"/>
-  <context xmi:id="_rBMHtzeAEeionMhtIoBHVw"/>
+  <taggedValue xmi:id="_rqBpUDeAEeionMhtIoBHVw" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_rqBpUTeAEeionMhtIoBHVw" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_rqBpUjeAEeionMhtIoBHVw" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_thMmUTeAEeionMhtIoBHVw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_rBMHtzeAEeionMhtIoBHVw">
+    <connection href="../../../metadata/connections/EZCAP_ECD_0.1.item#_mrtVoDSVEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll4jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll5jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll6jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll9jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll-jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll_jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmAjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmBjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmCjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmDjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmEjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmGjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmHjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmIjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmJjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmKjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmLjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmMjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmNjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmOjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmPjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmQjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmRjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmSjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmTjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmUjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmVjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmWjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmXjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmYjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmZjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmajSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmbjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmcjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmdjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmejSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmfjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmgjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmhjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmijSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmjjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmkjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmljSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmmjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmnjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmojSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmpjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmqjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmrjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmsjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmtjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmujSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmvjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmwjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmxjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmyjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmzjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm0jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm1jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm2jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm3jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm4jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm5jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm6jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm7jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm8jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm9jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm-jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflm_jSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflnAjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflnBjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflnCjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflnDjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflnEjSXEeiA5eC6W0k7dg"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflnFjSXEeiA5eC6W0k7dg"/>
+  </context>
   <results xmi:id="_rBMHuDeAEeionMhtIoBHVw">
     <resultMetadata xmi:id="_rBMHuTeAEeionMhtIoBHVw"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_rBOj8DeAEeionMhtIoBHVw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_rBOj8TeAEeionMhtIoBHVw">
-      <builtInMatchRuleDefinition xmi:id="_rBOj8jeAEeionMhtIoBHVw"/>
+      <builtInMatchRuleDefinition xmi:id="_rBOj8jeAEeionMhtIoBHVw">
+        <matchRules xmi:id="_rnc2cDeAEeionMhtIoBHVw" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_rBOj8zeAEeionMhtIoBHVw" analysisType="Match Analysis"/>
+  <contextType xmi:id="_thMmUDeAEeionMhtIoBHVw" confirmationNeeded="false" name="Default"/>
 </dataquality.analysis:Analysis>
