@@ -1690,6 +1690,7 @@
       <relatedItems xmi:id="_0HfqODaqEeiWN7dwBTqvhw" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
       <relatedItems xmi:id="_bog3IDbIEeiBeeYnfxB0TQ" id="_hNJT0DSYEeiA5eC6W0k7dg" version="Latest" type="property"/>
       <relatedItems xmi:id="_x9-AwDbJEeiBeeYnfxB0TQ" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
+      <relatedItems xmi:id="_uTQcYDczEeionMhtIoBHVw" id="_Sggq0DSZEeiA5eC6W0k7dg" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_u8rIEDbLEeiBeeYnfxB0TQ">
       <baseItem xmi:id="_u8rIETbLEeiBeeYnfxB0TQ" id="_u6SicDbLEeiBeeYnfxB0TQ" version="0.1" type="job"/>
