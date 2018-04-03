@@ -3221,7 +3221,7 @@
       <column comment="" key="false" length="23" name="DATEPAID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="INTEREST" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="INTEREST" nullable="false" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="CHPREFIX" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -3245,13 +3245,13 @@
       <column comment="" key="false" length="50" name="OUTCOME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="BILLED" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="BILLED" nullable="false" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="CONTRVAL" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="CONTRVAL" nullable="false" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="NET" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="NET" nullable="false" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="CASENO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -3278,10 +3278,10 @@
       <column comment="" key="false" length="23" name="OUTLOADDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="PCPEN" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="1" name="PCPEN" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="COB" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="1" name="COB" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="DATEFROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -3440,7 +3440,7 @@
       <column comment="" key="false" length="10" name="COMPANY_ID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="IS_UNCLEAN" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="1" name="IS_UNCLEAN" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="STMTFROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -3557,73 +3557,73 @@
       <column comment="" key="false" length="2" name="VALUECODE1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT1" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT1" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT2" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT2" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT3" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT3" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT4" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT4" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT5" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT5" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT6" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT6" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT7" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT7" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE8" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT8" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT8" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE9" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT9" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT9" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE10" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT10" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT10" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT11" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT11" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2" name="VALUECODE12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="VALUEAMT12" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="VALUEAMT12" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="PAYER1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -3662,28 +3662,28 @@
       <column comment="" key="false" length="1" name="BENEFITASSGN3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PRIORPYMT1" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PRIORPYMT1" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PRIORPYMT2" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PRIORPYMT2" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PRIORPYMT3" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PRIORPYMT3" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="PRIORPYMT4" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="PRIORPYMT4" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ESTAMTDUE1" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ESTAMTDUE1" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ESTAMTDUE2" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ESTAMTDUE2" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ESTAMTDUE3" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ESTAMTDUE3" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="ESTAMTDUE4" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ESTAMTDUE4" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="40" name="RESPPARTYNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -3953,10 +3953,10 @@
       <column comment="" key="false" length="100" name="USERFIELD2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="PATPAID" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="PATPAID" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="PURCHAMT" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="PURCHAMT" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="FACILITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -3974,28 +3974,28 @@
       <column comment="" key="false" length="20" name="SVCFACID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="DRGOUTLIER" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="DRGOUTLIER" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="MEDICAREPAID" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="MEDICAREPAID" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="MEDICAREPD_100" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="MEDICAREPD_100" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="MEDICAREPD_80" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="MEDICAREPD_80" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="MEDICAREPD_A" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="MEDICAREPD_A" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="MEDICAREPD_B" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="MEDICAREPD_B" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="COBNONCOV" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="COBNONCOV" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="COBDENIED" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="COBDENIED" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="20" name="OTHPAYERAUTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -4010,7 +4010,7 @@
       <column comment="" key="false" length="5" name="REMITT_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1000" name="REMITT_DESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="REMITT_DESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="REVERSED" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -4112,10 +4112,10 @@
       <column comment="" key="false" length="83" name="MiscLocalUse" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="18" name="MiscCharges1" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="18" name="MiscCharges1" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="MiscCharges2" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="20" name="MiscCharges2" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="MiscOriginalRef" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -4298,7 +4298,7 @@
       <column comment="" key="false" length="100" name="USERFIELD4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="9" name="TOTCHARGE" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="9" name="TOTCHARGE" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="1" name="DXVERSIONQUAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -4514,10 +4514,10 @@
       <column comment="" key="false" length="1" name="PRVPOA3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="CLAIMFINADJNETAMOUNT" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="CLAIMFINADJNETAMOUNT" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="CLAIMFINNETPAYAMOUNT" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="CLAIMFINNETPAYAMOUNT" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="3" name="P19" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -4733,10 +4733,10 @@
       <column comment="" key="false" length="15" name="FEDTAXIDONCLAIM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="TOTALCHARGE" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="TOTALCHARGE" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="15" name="AMOUNTPAID" nullable="true" pattern="" precision="2" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="15" name="AMOUNTPAID" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="SRVFACILITYNPI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -4778,25 +4778,7 @@
       <column comment="" key="false" length="35" name="SUPERVISINGPROVFIRSTNM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="3" name="P27" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P28" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="P29" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="20" name="REFERENCENO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ACTIVE_FLAG" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="REC_TERM_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -4810,546 +4792,540 @@
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT">
-        <mapperTableEntries name="PHCODE" expression="row1.PHCODE" type="id_String"/>
-        <mapperTableEntries name="CLAIMNO" expression="row1.CLAIMNO" type="id_String"/>
-        <mapperTableEntries name="ACCT" expression="row1.ACCT" type="id_String"/>
-        <mapperTableEntries name="SUBACCT" expression="row1.SUBACCT" type="id_String"/>
-        <mapperTableEntries name="PLACESVC" expression="row1.PLACESVC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AUTHNO" expression="row1.AUTHNO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVID" expression="row1.PROVID" type="id_String"/>
-        <mapperTableEntries name="REFPROVID" expression="row1.REFPROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VENDOR" expression="row1.VENDOR" type="id_String"/>
-        <mapperTableEntries name="MEMBID" expression="row1.MEMBID" type="id_String"/>
-        <mapperTableEntries name="MEMBNAME" expression="row1.MEMBNAME" type="id_String"/>
-        <mapperTableEntries name="NUMEN" expression="row1.NUMEN" type="id_Integer"/>
-        <mapperTableEntries name="DATERECD" expression="row1.DATERECD" type="id_Date"/>
-        <mapperTableEntries name="DATEPAID" expression="row1.DATEPAID" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INTEREST" expression="row1.INTEREST" type="id_BigDecimal"/>
-        <mapperTableEntries name="CHPREFIX" expression="row1.CHPREFIX" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="NBRUNITS" expression="row1.NBRUNITS" type="id_Integer"/>
-        <mapperTableEntries name="HPCODE" expression="row1.HPCODE" type="id_String"/>
-        <mapperTableEntries name="OPT" expression="row1.OPT" type="id_String"/>
-        <mapperTableEntries name="SPEC" expression="row1.SPEC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STATUS" expression="row1.STATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OUTCOME" expression="row1.OUTCOME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLED" expression="row1.BILLED" type="id_BigDecimal"/>
-        <mapperTableEntries name="CONTRVAL" expression="row1.CONTRVAL" type="id_BigDecimal"/>
-        <mapperTableEntries name="NET" expression="row1.NET" type="id_BigDecimal"/>
-        <mapperTableEntries name="CASENO" expression="row1.CASENO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BATCH" expression="row1.BATCH" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="PROVCLAIM" expression="row1.PROVCLAIM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EDIREF" expression="row1.EDIREF" type="id_String" nullable="true"/>
-        <mapperTableEntries name="XPDATE" expression="row1.XPDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="XPSTATUS" expression="row1.XPSTATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="XPTRAN" expression="row1.XPTRAN" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OUTLOADDT" expression="row1.OUTLOADDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PCPEN" expression="row1.PCPEN" type="id_BigDecimal"/>
-        <mapperTableEntries name="COB" expression="row1.COB" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="DATEFROM" expression="row1.DATEFROM" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="DATETO" expression="row1.DATETO" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="P0" expression="row1.P0" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P1" expression="row1.P1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P2" expression="row1.P2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P3" expression="row1.P3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P4" expression="row1.P4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P5" expression="row1.P5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P6" expression="row1.P6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P7" expression="row1.P7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P8" expression="row1.P8" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P9" expression="row1.P9" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CHECKNO" expression="row1.CHECKNO" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="HRID" expression="row1.HRID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADMDATE" expression="row1.ADMDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ADMHOUR" expression="row1.ADMHOUR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADMTYPE" expression="row1.ADMTYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADMSOURCE" expression="row1.ADMSOURCE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DSCHDATE" expression="row1.DSCHDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INPATDAYS" expression="row1.INPATDAYS" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="HOSPAT" expression="row1.HOSPAT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVPAT" expression="row1.PROVPAT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEDRECNO" expression="row1.MEDRECNO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLTYPE" expression="row1.BILLTYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROC1" expression="row1.PROC1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE1" expression="row1.PROCDATE1" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC2" expression="row1.PROC2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE2" expression="row1.PROCDATE2" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC3" expression="row1.PROC3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE3" expression="row1.PROCDATE3" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC4" expression="row1.PROC4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE4" expression="row1.PROCDATE4" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CONDCODE1" expression="row1.CONDCODE1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE2" expression="row1.CONDCODE2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE3" expression="row1.CONDCODE3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE4" expression="row1.CONDCODE4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE5" expression="row1.CONDCODE5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE6" expression="row1.CONDCODE6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE7" expression="row1.CONDCODE7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE8" expression="row1.CONDCODE8" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE9" expression="row1.CONDCODE9" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE10" expression="row1.CONDCODE10" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE11" expression="row1.CONDCODE11" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONDCODE12" expression="row1.CONDCODE12" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADPROVID" expression="row1.ADPROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ATPROVID" expression="row1.ATPROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DSCHHOUR" expression="row1.DSCHHOUR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CREATEBY" expression="row1.CREATEBY" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="CREATEDATE" expression="row1.CREATEDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LASTCHANGEBY" expression="row1.LASTCHANGEBY" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="COMPANY_ID" expression="row1.COMPANY_ID" type="id_String"/>
-        <mapperTableEntries name="IS_UNCLEAN" expression="row1.IS_UNCLEAN" type="id_BigDecimal"/>
-        <mapperTableEntries name="STMTFROM" expression="row1.STMTFROM" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="STMTTO" expression="row1.STMTTO" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HDAYCOVER" expression="row1.HDAYCOVER" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="HDAYNONCOVER" expression="row1.HDAYNONCOVER" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="HDAYCOINS" expression="row1.HDAYCOINS" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="HDAYLIFRES" expression="row1.HDAYLIFRES" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="RENDPROVTAXNO" expression="row1.RENDPROVTAXNO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONSPROV1" expression="row1.CONSPROV1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONSPROV2" expression="row1.CONSPROV2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURCODE1" expression="row1.OCCURCODE1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURDATE1" expression="row1.OCCURDATE1" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCURCODE2" expression="row1.OCCURCODE2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURDATE2" expression="row1.OCCURDATE2" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCURCODE3" expression="row1.OCCURCODE3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURDATE3" expression="row1.OCCURDATE3" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCURCODE4" expression="row1.OCCURCODE4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURDATE4" expression="row1.OCCURDATE4" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCURCODE5" expression="row1.OCCURCODE5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURDATE5" expression="row1.OCCURDATE5" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCURCODE6" expression="row1.OCCURCODE6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURDATE6" expression="row1.OCCURDATE6" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCURCODE7" expression="row1.OCCURCODE7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURDATE7" expression="row1.OCCURDATE7" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCURCODE8" expression="row1.OCCURCODE8" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCURDATE8" expression="row1.OCCURDATE8" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCSPANCODE1" expression="row1.OCCSPANCODE1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCSPANFROM1" expression="row1.OCCSPANFROM1" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCSPANTO1" expression="row1.OCCSPANTO1" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCSPANCODE2" expression="row1.OCCSPANCODE2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCSPANFROM2" expression="row1.OCCSPANFROM2" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCSPANTO2" expression="row1.OCCSPANTO2" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCSPANCODE3" expression="row1.OCCSPANCODE3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCSPANFROM3" expression="row1.OCCSPANFROM3" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCSPANTO3" expression="row1.OCCSPANTO3" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCSPANCODE4" expression="row1.OCCSPANCODE4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OCCSPANFROM4" expression="row1.OCCSPANFROM4" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OCCSPANTO4" expression="row1.OCCSPANTO4" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="VALUECODE1" expression="row1.VALUECODE1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT1" expression="row1.VALUEAMT1" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE2" expression="row1.VALUECODE2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT2" expression="row1.VALUEAMT2" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE3" expression="row1.VALUECODE3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT3" expression="row1.VALUEAMT3" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE4" expression="row1.VALUECODE4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT4" expression="row1.VALUEAMT4" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE5" expression="row1.VALUECODE5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT5" expression="row1.VALUEAMT5" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE6" expression="row1.VALUECODE6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT6" expression="row1.VALUEAMT6" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE7" expression="row1.VALUECODE7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT7" expression="row1.VALUEAMT7" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE8" expression="row1.VALUECODE8" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT8" expression="row1.VALUEAMT8" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE9" expression="row1.VALUECODE9" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT9" expression="row1.VALUEAMT9" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE10" expression="row1.VALUECODE10" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT10" expression="row1.VALUEAMT10" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE11" expression="row1.VALUECODE11" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT11" expression="row1.VALUEAMT11" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="VALUECODE12" expression="row1.VALUECODE12" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VALUEAMT12" expression="row1.VALUEAMT12" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="PAYER1" expression="row1.PAYER1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PAYER2" expression="row1.PAYER2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PAYER3" expression="row1.PAYER3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="HCFAPROV1" expression="row1.HCFAPROV1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="HCFAPROV2" expression="row1.HCFAPROV2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="HCFAPROV3" expression="row1.HCFAPROV3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RELEASEIND1" expression="row1.RELEASEIND1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RELEASEIND2" expression="row1.RELEASEIND2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RELEASEIND3" expression="row1.RELEASEIND3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BENEFITASSGN1" expression="row1.BENEFITASSGN1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BENEFITASSGN2" expression="row1.BENEFITASSGN2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BENEFITASSGN3" expression="row1.BENEFITASSGN3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PRIORPYMT1" expression="row1.PRIORPYMT1" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="PRIORPYMT2" expression="row1.PRIORPYMT2" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="PRIORPYMT3" expression="row1.PRIORPYMT3" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="PRIORPYMT4" expression="row1.PRIORPYMT4" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="ESTAMTDUE1" expression="row1.ESTAMTDUE1" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="ESTAMTDUE2" expression="row1.ESTAMTDUE2" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="ESTAMTDUE3" expression="row1.ESTAMTDUE3" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="ESTAMTDUE4" expression="row1.ESTAMTDUE4" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="RESPPARTYNAME" expression="row1.RESPPARTYNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RESPPARTYADDR1" expression="row1.RESPPARTYADDR1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RESPPARTYADDR2" expression="row1.RESPPARTYADDR2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RESPPARTYADDR3" expression="row1.RESPPARTYADDR3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RESPPARTYADDR4" expression="row1.RESPPARTYADDR4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSNAME1" expression="row1.INSNAME1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSNAME2" expression="row1.INSNAME2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSNAME3" expression="row1.INSNAME3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATREL1" expression="row1.PATREL1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATREL2" expression="row1.PATREL2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATREL3" expression="row1.PATREL3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CERTSSN1" expression="row1.CERTSSN1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CERTSSN2" expression="row1.CERTSSN2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CERTSSN3" expression="row1.CERTSSN3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSGRNAME1" expression="row1.INSGRNAME1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSGRNAME2" expression="row1.INSGRNAME2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSGRNAME3" expression="row1.INSGRNAME3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSGRNO1" expression="row1.INSGRNO1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSGRNO2" expression="row1.INSGRNO2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSGRNO3" expression="row1.INSGRNO3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TREATAUTHCD1" expression="row1.TREATAUTHCD1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TREATAUTHCD2" expression="row1.TREATAUTHCD2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TREATAUTHCD3" expression="row1.TREATAUTHCD3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADMDIAG" expression="row1.ADMDIAG" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ECODE" expression="row1.ECODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLSUBDATE" expression="row1.BILLSUBDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="EMPLMTSTAT1" expression="row1.EMPLMTSTAT1" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="EMPLMTSTAT2" expression="row1.EMPLMTSTAT2" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="EMPLMTSTAT3" expression="row1.EMPLMTSTAT3" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="EMPLYRNAME1" expression="row1.EMPLYRNAME1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EMPLYRNAME2" expression="row1.EMPLYRNAME2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EMPLYRNAME3" expression="row1.EMPLYRNAME3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EMPLYRLOC1" expression="row1.EMPLYRLOC1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EMPLYRLOC2" expression="row1.EMPLYRLOC2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EMPLYRLOC3" expression="row1.EMPLYRLOC3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROC5" expression="row1.PROC5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE5" expression="row1.PROCDATE5" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC6" expression="row1.PROC6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE6" expression="row1.PROCDATE6" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC7" expression="row1.PROC7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE7" expression="row1.PROCDATE7" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC8" expression="row1.PROC8" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE8" expression="row1.PROCDATE8" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC9" expression="row1.PROC9" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE9" expression="row1.PROCDATE9" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC10" expression="row1.PROC10" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE10" expression="row1.PROCDATE10" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC11" expression="row1.PROC11" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE11" expression="row1.PROCDATE11" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC12" expression="row1.PROC12" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE12" expression="row1.PROCDATE12" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROC13" expression="row1.PROC13" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCDATE13" expression="row1.PROCDATE13" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PMTSTATUS" expression="row1.PMTSTATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PAYEE" expression="row1.PAYEE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUBSSN" expression="row1.SUBSSN" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL2UPPER" expression="row1.FL2UPPER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL2LOWER" expression="row1.FL2LOWER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL11UPPER" expression="row1.FL11UPPER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL11LOWER" expression="row1.FL11LOWER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL31UPPER" expression="row1.FL31UPPER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL31LOWER" expression="row1.FL31LOWER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL561" expression="row1.FL561" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL562" expression="row1.FL562" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL563" expression="row1.FL563" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL564" expression="row1.FL564" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL565" expression="row1.FL565" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL57" expression="row1.FL57" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL78UPPER" expression="row1.FL78UPPER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL78LOWER" expression="row1.FL78LOWER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROCMETHOD" expression="row1.PROCMETHOD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REMARKS1" expression="row1.REMARKS1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REMARKS2" expression="row1.REMARKS2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REMARKS3" expression="row1.REMARKS3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REMARKS4" expression="row1.REMARKS4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID" type="id_Object"/>
-        <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID" type="id_Object"/>
-        <mapperTableEntries name="REFPROV_KEYID" expression="row1.REFPROV_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="ADPROV_KEYID" expression="row1.ADPROV_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="ATPROV_KEYID" expression="row1.ATPROV_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="CONSPROV1_KEYID" expression="row1.CONSPROV1_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="CONSPROV2_KEYID" expression="row1.CONSPROV2_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="RefProv_KeyId_NPI" expression="row1.RefProv_KeyId_NPI" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="AdProv_KeyId_NPI" expression="row1.AdProv_KeyId_NPI" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="ConsProv1_KeyId_NPI" expression="row1.ConsProv1_KeyId_NPI" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="ConsProv2_KeyId_NPI" expression="row1.ConsProv2_KeyId_NPI" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="CROSSREF_ID" expression="row1.CROSSREF_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="USERFIELD1" expression="row1.USERFIELD1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="USERFIELD2" expression="row1.USERFIELD2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATPAID" expression="row1.PATPAID" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="PURCHAMT" expression="row1.PURCHAMT" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="FACILITY" expression="row1.FACILITY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FACPROVID" expression="row1.FACPROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PAYERRESP" expression="row1.PAYERRESP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EDI_CLAIM_ID" expression="row1.EDI_CLAIM_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACID" expression="row1.SVCFACID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DRGOUTLIER" expression="row1.DRGOUTLIER" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MEDICAREPAID" expression="row1.MEDICAREPAID" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MEDICAREPD_100" expression="row1.MEDICAREPD_100" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MEDICAREPD_80" expression="row1.MEDICAREPD_80" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MEDICAREPD_A" expression="row1.MEDICAREPD_A" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MEDICAREPD_B" expression="row1.MEDICAREPD_B" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="COBNONCOV" expression="row1.COBNONCOV" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="COBDENIED" expression="row1.COBDENIED" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="OTHPAYERAUTH" expression="row1.OTHPAYERAUTH" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHPAYERPATID" expression="row1.OTHPAYERPATID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACID_KEYID" expression="row1.SVCFACID_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="REMITT_CODE" expression="row1.REMITT_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REMITT_DESC" expression="row1.REMITT_DESC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REVERSED" expression="row1.REVERSED" type="id_Integer"/>
-        <mapperTableEntries name="SERVICEDATEFROM" expression="row1.SERVICEDATEFROM" type="id_Date"/>
-        <mapperTableEntries name="ProvQualCode" expression="row1.ProvQualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="BIRTH" expression="row1.BIRTH" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GENDER" expression="row1.GENDER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MARITAL" expression="row1.MARITAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EOB" expression="row1.EOB" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="RefProvQualCode" expression="row1.RefProvQualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="SvcFacQualCode" expression="row1.SvcFacQualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="FacProvQualCode" expression="row1.FacProvQualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="OtherProvQualCode" expression="row1.OtherProvQualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="OtherProvid" expression="row1.OtherProvid" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OtherProv_KeyId" expression="row1.OtherProv_KeyId" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="BILLPROV_A" expression="row1.BILLPROV_A" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROV_B" expression="row1.BILLPROV_B" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROVNAME" expression="row1.BILLPROVNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROVADDR1" expression="row1.BILLPROVADDR1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROVADDR2" expression="row1.BILLPROVADDR2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROVADDR3" expression="row1.BILLPROVADDR3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROVADDR4" expression="row1.BILLPROVADDR4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="State" expression="row1.State" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MembLocalUse" expression="row1.MembLocalUse" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PatAcct" expression="row1.PatAcct" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Employment" expression="row1.Employment" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="AutoAccident" expression="row1.AutoAccident" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="OtherAccident" expression="row1.OtherAccident" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="DateOfCurrent" expression="row1.DateOfCurrent" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Same_SimilarIllness" expression="row1.Same_SimilarIllness" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="UnableToWorkFromDate" expression="row1.UnableToWorkFromDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="UnableToWorkToDate" expression="row1.UnableToWorkToDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HospitalizedFromDate" expression="row1.HospitalizedFromDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HospitalizedToDate" expression="row1.HospitalizedToDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="MiscLocalUse" expression="row1.MiscLocalUse" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MiscCharges1" expression="row1.MiscCharges1" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MiscCharges2" expression="row1.MiscCharges2" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MiscOriginalRef" expression="row1.MiscOriginalRef" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MiscMedicaidCode" expression="row1.MiscMedicaidCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OutsideLab" expression="row1.OutsideLab" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="AcceptAssignment" expression="row1.AcceptAssignment" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="P10" expression="row1.P10" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P11" expression="row1.P11" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P12" expression="row1.P12" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P13" expression="row1.P13" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P14" expression="row1.P14" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P15" expression="row1.P15" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACLOC_A" expression="row1.SVCFACLOC_A" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACLOC_B" expression="row1.SVCFACLOC_B" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACLOCNAME" expression="row1.SVCFACLOCNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACLOCADDR1" expression="row1.SVCFACLOCADDR1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACLOCADDR2" expression="row1.SVCFACLOCADDR2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACLOCADDR3" expression="row1.SVCFACLOCADDR3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SVCFACLOCADDR4" expression="row1.SVCFACLOCADDR4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AdprovQualCode" expression="row1.AdprovQualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="AtprovQualCode" expression="row1.AtprovQualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="ConsProv1QualCode" expression="row1.ConsProv1QualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="ConsProv2QualCode" expression="row1.ConsProv2QualCode" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="H_TYPE" expression="row1.H_TYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHPROVID1" expression="row1.OTHPROVID1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHPROVID2" expression="row1.OTHPROVID2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHPROVID3" expression="row1.OTHPROVID3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ATTEN_PROV_QUAL_NPI" expression="row1.ATTEN_PROV_QUAL_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ATTEN_PROVNPI" expression="row1.ATTEN_PROVNPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ATTEN_PROVQUAL" expression="row1.ATTEN_PROVQUAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ATTEN_PROVFIRSTNAME" expression="row1.ATTEN_PROVFIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ATTEN_PROVLASTNAME" expression="row1.ATTEN_PROVLASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPER_PROV_QUAL_NPI" expression="row1.OPER_PROV_QUAL_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPER_PROVNPI" expression="row1.OPER_PROVNPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPER_PROVQUAL" expression="row1.OPER_PROVQUAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPER_PROVID" expression="row1.OPER_PROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPER_PROVFIRSTNAME" expression="row1.OPER_PROVFIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPER_PROVLASTNAME" expression="row1.OPER_PROVLASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV1_QUAL_NPI" expression="row1.OTHERPROV1_QUAL_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV1_NPI" expression="row1.OTHERPROV1_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV1_QUAL" expression="row1.OTHERPROV1_QUAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV1_ID" expression="row1.OTHERPROV1_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV1_FIRSTNAME" expression="row1.OTHERPROV1_FIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV1_LASTNAME" expression="row1.OTHERPROV1_LASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV2_QUAL_NPI" expression="row1.OTHERPROV2_QUAL_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV2_NPI" expression="row1.OTHERPROV2_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV2_QUAL" expression="row1.OTHERPROV2_QUAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV2_ID" expression="row1.OTHERPROV2_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV2_FIRSTNAME" expression="row1.OTHERPROV2_FIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV2_LASTNAME" expression="row1.OTHERPROV2_LASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ATTENPROV_KEYID_NPI" expression="row1.ATTENPROV_KEYID_NPI" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="OPERPROV_KEYID_NPI" expression="row1.OPERPROV_KEYID_NPI" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="OPERPROV_KEYID" expression="row1.OPERPROV_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV1_KEYID_NPI" expression="row1.OTHERPROV1_KEYID_NPI" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV1_KEYID" expression="row1.OTHERPROV1_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV2_KEYID_NPI" expression="row1.OTHERPROV2_KEYID_NPI" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="OTHERPROV2_KEYID" expression="row1.OTHERPROV2_KEYID" type="id_Object" nullable="true"/>
-        <mapperTableEntries name="PROVIDADDR" expression="row1.PROVIDADDR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVIDCITY_STATE_ZIP" expression="row1.PROVIDCITY_STATE_ZIP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROV_PH_FAX_CC" expression="row1.PROV_PH_FAX_CC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="USERFIELD3" expression="row1.USERFIELD3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="USERFIELD4" expression="row1.USERFIELD4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TOTCHARGE" expression="row1.TOTCHARGE" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="DXVERSIONQUAL" expression="row1.DXVERSIONQUAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATREAVISCODE1" expression="row1.PATREAVISCODE1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATREAVISCODE2" expression="row1.PATREAVISCODE2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATREAVISCODE3" expression="row1.PATREAVISCODE3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ECODE2" expression="row1.ECODE2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ECODE3" expression="row1.ECODE3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PPSCODE" expression="row1.PPSCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_a_Qual" expression="row1.CC_a_Qual" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_a_Code" expression="row1.CC_a_Code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_a_Value" expression="row1.CC_a_Value" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_b_Qual" expression="row1.CC_b_Qual" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_b_Code" expression="row1.CC_b_Code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_b_Value" expression="row1.CC_b_Value" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_c_Qual" expression="row1.CC_c_Qual" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_c_Code" expression="row1.CC_c_Code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_c_Value" expression="row1.CC_c_Value" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_d_Qual" expression="row1.CC_d_Qual" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_d_Code" expression="row1.CC_d_Code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CC_d_Value" expression="row1.CC_d_Value" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PAYTOCITYSTATE" expression="row1.PAYTOCITYSTATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PAYTOID" expression="row1.PAYTOID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACCIDENT_STATE" expression="row1.ACCIDENT_STATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DCNA" expression="row1.DCNA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DCNB" expression="row1.DCNB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DCNC" expression="row1.DCNC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL07_1" expression="row1.FL07_1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL07_2" expression="row1.FL07_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL37A" expression="row1.FL37A" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL37B" expression="row1.FL37B" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL68A" expression="row1.FL68A" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL68B" expression="row1.FL68B" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL73" expression="row1.FL73" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL75_1" expression="row1.FL75_1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL75_2" expression="row1.FL75_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL75_3" expression="row1.FL75_3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FL75_4" expression="row1.FL75_4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CREATIONDATE" expression="row1.CREATIONDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ADPROV_LASTNAME" expression="row1.ADPROV_LASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADPROV_FIRSTNAME" expression="row1.ADPROV_FIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REFPROV_LASTNAME" expression="row1.REFPROV_LASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REFPROV_FIRSTNAME" expression="row1.REFPROV_FIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ConsProv1_LASTNAME" expression="row1.ConsProv1_LASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ConsProv1_FIRSTNAME" expression="row1.ConsProv1_FIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ConsProv2_LASTNAME" expression="row1.ConsProv2_LASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ConsProv2_FIRSTNAME" expression="row1.ConsProv2_FIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AdprovQualCode_NPI" expression="row1.AdprovQualCode_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Adprovid_NPI" expression="row1.Adprovid_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RefprovQualCode_NPI" expression="row1.RefprovQualCode_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Refprovid_NPI" expression="row1.Refprovid_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ConsProv1QualCode_NPI" expression="row1.ConsProv1QualCode_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ConsProv1_NPI" expression="row1.ConsProv1_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ConsProv2QualCode_NPI" expression="row1.ConsProv2QualCode_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ConsProv2_NPI" expression="row1.ConsProv2_NPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SPECCODE" expression="row1.SPECCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STATUSCODE" expression="row1.STATUSCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TPBATCH" expression="row1.TPBATCH" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="BMSETWINRULE" expression="row1.BMSETWINRULE" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="WF_Queued" expression="row1.WF_Queued" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="ADJUDICATION_ID" expression="row1.ADJUDICATION_ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="P16" expression="row1.P16" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STATUSID" expression="row1.STATUSID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="P17" expression="row1.P17" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PRICESTATUS" expression="row1.PRICESTATUS" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="P18" expression="row1.P18" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADMPOA" expression="row1.ADMPOA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ECPOA1" expression="row1.ECPOA1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ECPOA2" expression="row1.ECPOA2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ECPOA3" expression="row1.ECPOA3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PRVPOA1" expression="row1.PRVPOA1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PRVPOA2" expression="row1.PRVPOA2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PRVPOA3" expression="row1.PRVPOA3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CLAIMFINADJNETAMOUNT" expression="row1.CLAIMFINADJNETAMOUNT" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="CLAIMFINNETPAYAMOUNT" expression="row1.CLAIMFINNETPAYAMOUNT" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="P19" expression="row1.P19" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P20" expression="row1.P20" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REPRICE_BATCHID" expression="row1.REPRICE_BATCHID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P21" expression="row1.P21" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P22" expression="row1.P22" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P23" expression="row1.P23" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ISHPGLOBAL" expression="row1.ISHPGLOBAL" type="id_Boolean"/>
-        <mapperTableEntries name="LOB" expression="row1.LOB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOBNETWORK" expression="row1.LOBNETWORK" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="ISPROVPAR" expression="row1.ISPROVPAR" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="HMOIN" expression="row1.HMOIN" type="id_Integer"/>
-        <mapperTableEntries name="HMOOUT" expression="row1.HMOOUT" type="id_Integer"/>
-        <mapperTableEntries name="PPOIN" expression="row1.PPOIN" type="id_Integer"/>
-        <mapperTableEntries name="PPOOUT" expression="row1.PPOOUT" type="id_Integer"/>
-        <mapperTableEntries name="P24" expression="row1.P24" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TYPE_PROC1" expression="row1.TYPE_PROC1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TYPE_PROC2" expression="row1.TYPE_PROC2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TYPE_PROC3" expression="row1.TYPE_PROC3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TYPE_PROC4" expression="row1.TYPE_PROC4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TYPE_PROC5" expression="row1.TYPE_PROC5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TYPE_PROC6" expression="row1.TYPE_PROC6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILPROVID" expression="row1.BILPROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILPROVQUALCODE" expression="row1.BILPROVQUALCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EDI_BATCHID" expression="row1.EDI_BATCHID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P25" expression="row1.P25" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ISCLAIMSHOP_PRICED" expression="row1.ISCLAIMSHOP_PRICED" type="id_Boolean"/>
-        <mapperTableEntries name="CLAIMSHOP_PRICESTATUS" expression="row1.CLAIMSHOP_PRICESTATUS" type="id_Short" nullable="true"/>
-        <mapperTableEntries name="ISRETRORATE" expression="row1.ISRETRORATE" type="id_Boolean"/>
-        <mapperTableEntries name="OPTTYPE" expression="row1.OPTTYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDID" expression="row1.INSUREDID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATIENTNAME" expression="row1.PATIENTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATIENTDOB" expression="row1.PATIENTDOB" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PATIENTGENDER" expression="row1.PATIENTGENDER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDNAME" expression="row1.INSUREDNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATIENTADDRESS" expression="row1.PATIENTADDRESS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATIENTCITY" expression="row1.PATIENTCITY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATIENTSTATE" expression="row1.PATIENTSTATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATIENTZIP" expression="row1.PATIENTZIP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATIENTPHONE" expression="row1.PATIENTPHONE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PATRELTOINSURED" expression="row1.PATRELTOINSURED" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDADDRESS" expression="row1.INSUREDADDRESS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDCITY" expression="row1.INSUREDCITY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDSTATE" expression="row1.INSUREDSTATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDZIP" expression="row1.INSUREDZIP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDPHONE" expression="row1.INSUREDPHONE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHINSUREDNAME" expression="row1.OTHINSUREDNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHINSUREDPLCYGRP" expression="row1.OTHINSUREDPLCYGRP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHINSURPLANPRGNAME" expression="row1.OTHINSURPLANPRGNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSURPLYGRPFECANO" expression="row1.INSURPLYGRPFECANO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDDOB" expression="row1.INSUREDDOB" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSUREDGENDER" expression="row1.INSUREDGENDER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERCLAIMCODE" expression="row1.OTHERCLAIMCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERCLAIMVALUE" expression="row1.OTHERCLAIMVALUE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSURPLANPRGNAME" expression="row1.INSURPLANPRGNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERBENEFITPLAN" expression="row1.OTHERBENEFITPLAN" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="DTOFCURRQUALCODE" expression="row1.DTOFCURRQUALCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OTHERDTQUALCODE" expression="row1.OTHERDTQUALCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REFERRINGPROVNM" expression="row1.REFERRINGPROVNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ORDERINGPROVNM" expression="row1.ORDERINGPROVNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUPERVISINGPROVNM" expression="row1.SUPERVISINGPROVNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REFPROVOTHQUALCODE" expression="row1.REFPROVOTHQUALCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REFPROVOTHIDVAL" expression="row1.REFPROVOTHIDVAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REFPROVOTHIDNPI" expression="row1.REFPROVOTHIDNPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPERPROVOTHQUALCODE" expression="row1.OPERPROVOTHQUALCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPERPROVOTHIDVAL" expression="row1.OPERPROVOTHIDVAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPERPROVOTHIDNPI" expression="row1.OPERPROVOTHIDNPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUPRPROVOTHQUALCODE" expression="row1.SUPRPROVOTHQUALCODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUPRPROVOTHIDVAL" expression="row1.SUPRPROVOTHIDVAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUPRPROVOTHIDNPI" expression="row1.SUPRPROVOTHIDNPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DIAG_ICDIND" expression="row1.DIAG_ICDIND" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="FEDTAXIDONCLAIM" expression="row1.FEDTAXIDONCLAIM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TOTALCHARGE" expression="row1.TOTALCHARGE" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="AMOUNTPAID" expression="row1.AMOUNTPAID" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="SRVFACILITYNPI" expression="row1.SRVFACILITYNPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SRVFACILITYSTATE" expression="row1.SRVFACILITYSTATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SRVFACILITYZIP" expression="row1.SRVFACILITYZIP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROVIDERNPI" expression="row1.BILLPROVIDERNPI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROVIDERSTATE" expression="row1.BILLPROVIDERSTATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BILLPROVIDERZIP" expression="row1.BILLPROVIDERZIP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ISPAIDEDICLAIM" expression="row1.ISPAIDEDICLAIM" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="EDI_OUTBOUND_FLAG" expression="row1.EDI_OUTBOUND_FLAG" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="BILLPROVIDERPHONE" expression="row1.BILLPROVIDERPHONE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EFTNO" expression="row1.EFTNO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REFERRINGPROVFIRSTNM" expression="row1.REFERRINGPROVFIRSTNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ORDERINGPROVFIRSTNM" expression="row1.ORDERINGPROVFIRSTNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUPERVISINGPROVFIRSTNM" expression="row1.SUPERVISINGPROVFIRSTNM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P27" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P28" type="id_String" nullable="true"/>
-        <mapperTableEntries name="P29" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REFERENCENO" expression="row1.REFERENCENO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACTIVE_FLAG" expression="Var.var1 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="REC_TERM_DTM" expression="" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PHCODE" expression="row1.PHCODE " type="id_String"/>
+        <mapperTableEntries name="CLAIMNO" expression="row1.CLAIMNO " type="id_String"/>
+        <mapperTableEntries name="ACCT" expression="row1.ACCT " type="id_String"/>
+        <mapperTableEntries name="SUBACCT" expression="row1.SUBACCT " type="id_String"/>
+        <mapperTableEntries name="PLACESVC" expression="row1.PLACESVC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUTHNO" expression="row1.AUTHNO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVID" expression="row1.PROVID " type="id_String"/>
+        <mapperTableEntries name="REFPROVID" expression="row1.REFPROVID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VENDOR" expression="row1.VENDOR " type="id_String"/>
+        <mapperTableEntries name="MEMBID" expression="row1.MEMBID " type="id_String"/>
+        <mapperTableEntries name="MEMBNAME" expression="row1.MEMBNAME " type="id_String"/>
+        <mapperTableEntries name="NUMEN" expression="row1.NUMEN " type="id_Integer"/>
+        <mapperTableEntries name="DATERECD" expression="row1.DATERECD " type="id_Date"/>
+        <mapperTableEntries name="DATEPAID" expression="row1.DATEPAID " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INTEREST" expression="row1.INTEREST " type="id_BigDecimal"/>
+        <mapperTableEntries name="CHPREFIX" expression="row1.CHPREFIX " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NBRUNITS" expression="row1.NBRUNITS " type="id_Integer"/>
+        <mapperTableEntries name="HPCODE" expression="row1.HPCODE " type="id_String"/>
+        <mapperTableEntries name="OPT" expression="row1.OPT " type="id_String"/>
+        <mapperTableEntries name="SPEC" expression="row1.SPEC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STATUS" expression="row1.STATUS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OUTCOME" expression="row1.OUTCOME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLED" expression="row1.BILLED " type="id_BigDecimal"/>
+        <mapperTableEntries name="CONTRVAL" expression="row1.CONTRVAL " type="id_BigDecimal"/>
+        <mapperTableEntries name="NET" expression="row1.NET " type="id_BigDecimal"/>
+        <mapperTableEntries name="CASENO" expression="row1.CASENO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BATCH" expression="row1.BATCH " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PROVCLAIM" expression="row1.PROVCLAIM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EDIREF" expression="row1.EDIREF " type="id_String" nullable="true"/>
+        <mapperTableEntries name="XPDATE" expression="row1.XPDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="XPSTATUS" expression="row1.XPSTATUS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="XPTRAN" expression="row1.XPTRAN " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OUTLOADDT" expression="row1.OUTLOADDT " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PCPEN" expression="row1.PCPEN " type="id_BigDecimal"/>
+        <mapperTableEntries name="COB" expression="row1.COB " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="DATEFROM" expression="row1.DATEFROM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DATETO" expression="row1.DATETO " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="P0" expression="row1.P0 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P1" expression="row1.P1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P2" expression="row1.P2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P3" expression="row1.P3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P4" expression="row1.P4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P5" expression="row1.P5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P6" expression="row1.P6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P7" expression="row1.P7 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P8" expression="row1.P8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P9" expression="row1.P9 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CHECKNO" expression="row1.CHECKNO " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="HRID" expression="row1.HRID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADMDATE" expression="row1.ADMDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ADMHOUR" expression="row1.ADMHOUR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADMTYPE" expression="row1.ADMTYPE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADMSOURCE" expression="row1.ADMSOURCE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSCHDATE" expression="row1.DSCHDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INPATDAYS" expression="row1.INPATDAYS " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="HOSPAT" expression="row1.HOSPAT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVPAT" expression="row1.PROVPAT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEDRECNO" expression="row1.MEDRECNO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLTYPE" expression="row1.BILLTYPE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROC1" expression="row1.PROC1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE1" expression="row1.PROCDATE1 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC2" expression="row1.PROC2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE2" expression="row1.PROCDATE2 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC3" expression="row1.PROC3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE3" expression="row1.PROCDATE3 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC4" expression="row1.PROC4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE4" expression="row1.PROCDATE4 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONDCODE1" expression="row1.CONDCODE1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE2" expression="row1.CONDCODE2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE3" expression="row1.CONDCODE3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE4" expression="row1.CONDCODE4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE5" expression="row1.CONDCODE5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE6" expression="row1.CONDCODE6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE7" expression="row1.CONDCODE7 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE8" expression="row1.CONDCODE8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE9" expression="row1.CONDCODE9 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE10" expression="row1.CONDCODE10 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE11" expression="row1.CONDCODE11 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONDCODE12" expression="row1.CONDCODE12 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADPROVID" expression="row1.ADPROVID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ATPROVID" expression="row1.ATPROVID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSCHHOUR" expression="row1.DSCHHOUR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CREATEBY" expression="row1.CREATEBY " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CREATEDATE" expression="row1.CREATEDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LASTCHANGEBY" expression="row1.LASTCHANGEBY " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="COMPANY_ID" expression="row1.COMPANY_ID " type="id_String"/>
+        <mapperTableEntries name="IS_UNCLEAN" expression="row1.IS_UNCLEAN " type="id_BigDecimal"/>
+        <mapperTableEntries name="STMTFROM" expression="row1.STMTFROM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STMTTO" expression="row1.STMTTO " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="HDAYCOVER" expression="row1.HDAYCOVER " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="HDAYNONCOVER" expression="row1.HDAYNONCOVER " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="HDAYCOINS" expression="row1.HDAYCOINS " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="HDAYLIFRES" expression="row1.HDAYLIFRES " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="RENDPROVTAXNO" expression="row1.RENDPROVTAXNO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONSPROV1" expression="row1.CONSPROV1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONSPROV2" expression="row1.CONSPROV2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURCODE1" expression="row1.OCCURCODE1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURDATE1" expression="row1.OCCURDATE1 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCURCODE2" expression="row1.OCCURCODE2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURDATE2" expression="row1.OCCURDATE2 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCURCODE3" expression="row1.OCCURCODE3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURDATE3" expression="row1.OCCURDATE3 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCURCODE4" expression="row1.OCCURCODE4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURDATE4" expression="row1.OCCURDATE4 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCURCODE5" expression="row1.OCCURCODE5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURDATE5" expression="row1.OCCURDATE5 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCURCODE6" expression="row1.OCCURCODE6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURDATE6" expression="row1.OCCURDATE6 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCURCODE7" expression="row1.OCCURCODE7 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURDATE7" expression="row1.OCCURDATE7 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCURCODE8" expression="row1.OCCURCODE8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCURDATE8" expression="row1.OCCURDATE8 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCSPANCODE1" expression="row1.OCCSPANCODE1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCSPANFROM1" expression="row1.OCCSPANFROM1 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCSPANTO1" expression="row1.OCCSPANTO1 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCSPANCODE2" expression="row1.OCCSPANCODE2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCSPANFROM2" expression="row1.OCCSPANFROM2 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCSPANTO2" expression="row1.OCCSPANTO2 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCSPANCODE3" expression="row1.OCCSPANCODE3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCSPANFROM3" expression="row1.OCCSPANFROM3 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCSPANTO3" expression="row1.OCCSPANTO3 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCSPANCODE4" expression="row1.OCCSPANCODE4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OCCSPANFROM4" expression="row1.OCCSPANFROM4 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OCCSPANTO4" expression="row1.OCCSPANTO4 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="VALUECODE1" expression="row1.VALUECODE1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT1" expression="row1.VALUEAMT1 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE2" expression="row1.VALUECODE2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT2" expression="row1.VALUEAMT2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE3" expression="row1.VALUECODE3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT3" expression="row1.VALUEAMT3 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE4" expression="row1.VALUECODE4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT4" expression="row1.VALUEAMT4 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE5" expression="row1.VALUECODE5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT5" expression="row1.VALUEAMT5 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE6" expression="row1.VALUECODE6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT6" expression="row1.VALUEAMT6 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE7" expression="row1.VALUECODE7 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT7" expression="row1.VALUEAMT7 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE8" expression="row1.VALUECODE8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT8" expression="row1.VALUEAMT8 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE9" expression="row1.VALUECODE9 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT9" expression="row1.VALUEAMT9 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE10" expression="row1.VALUECODE10 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT10" expression="row1.VALUEAMT10 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE11" expression="row1.VALUECODE11 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT11" expression="row1.VALUEAMT11 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VALUECODE12" expression="row1.VALUECODE12 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALUEAMT12" expression="row1.VALUEAMT12 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PAYER1" expression="row1.PAYER1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PAYER2" expression="row1.PAYER2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PAYER3" expression="row1.PAYER3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HCFAPROV1" expression="row1.HCFAPROV1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HCFAPROV2" expression="row1.HCFAPROV2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HCFAPROV3" expression="row1.HCFAPROV3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RELEASEIND1" expression="row1.RELEASEIND1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RELEASEIND2" expression="row1.RELEASEIND2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RELEASEIND3" expression="row1.RELEASEIND3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BENEFITASSGN1" expression="row1.BENEFITASSGN1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BENEFITASSGN2" expression="row1.BENEFITASSGN2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BENEFITASSGN3" expression="row1.BENEFITASSGN3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRIORPYMT1" expression="row1.PRIORPYMT1 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PRIORPYMT2" expression="row1.PRIORPYMT2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PRIORPYMT3" expression="row1.PRIORPYMT3 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PRIORPYMT4" expression="row1.PRIORPYMT4 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ESTAMTDUE1" expression="row1.ESTAMTDUE1 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ESTAMTDUE2" expression="row1.ESTAMTDUE2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ESTAMTDUE3" expression="row1.ESTAMTDUE3 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ESTAMTDUE4" expression="row1.ESTAMTDUE4 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="RESPPARTYNAME" expression="row1.RESPPARTYNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RESPPARTYADDR1" expression="row1.RESPPARTYADDR1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RESPPARTYADDR2" expression="row1.RESPPARTYADDR2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RESPPARTYADDR3" expression="row1.RESPPARTYADDR3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RESPPARTYADDR4" expression="row1.RESPPARTYADDR4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSNAME1" expression="row1.INSNAME1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSNAME2" expression="row1.INSNAME2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSNAME3" expression="row1.INSNAME3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATREL1" expression="row1.PATREL1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATREL2" expression="row1.PATREL2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATREL3" expression="row1.PATREL3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CERTSSN1" expression="row1.CERTSSN1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CERTSSN2" expression="row1.CERTSSN2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CERTSSN3" expression="row1.CERTSSN3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSGRNAME1" expression="row1.INSGRNAME1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSGRNAME2" expression="row1.INSGRNAME2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSGRNAME3" expression="row1.INSGRNAME3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSGRNO1" expression="row1.INSGRNO1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSGRNO2" expression="row1.INSGRNO2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSGRNO3" expression="row1.INSGRNO3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TREATAUTHCD1" expression="row1.TREATAUTHCD1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TREATAUTHCD2" expression="row1.TREATAUTHCD2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TREATAUTHCD3" expression="row1.TREATAUTHCD3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADMDIAG" expression="row1.ADMDIAG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ECODE" expression="row1.ECODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLSUBDATE" expression="row1.BILLSUBDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EMPLMTSTAT1" expression="row1.EMPLMTSTAT1 " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="EMPLMTSTAT2" expression="row1.EMPLMTSTAT2 " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="EMPLMTSTAT3" expression="row1.EMPLMTSTAT3 " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="EMPLYRNAME1" expression="row1.EMPLYRNAME1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EMPLYRNAME2" expression="row1.EMPLYRNAME2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EMPLYRNAME3" expression="row1.EMPLYRNAME3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EMPLYRLOC1" expression="row1.EMPLYRLOC1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EMPLYRLOC2" expression="row1.EMPLYRLOC2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EMPLYRLOC3" expression="row1.EMPLYRLOC3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROC5" expression="row1.PROC5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE5" expression="row1.PROCDATE5 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC6" expression="row1.PROC6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE6" expression="row1.PROCDATE6 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC7" expression="row1.PROC7 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE7" expression="row1.PROCDATE7 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC8" expression="row1.PROC8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE8" expression="row1.PROCDATE8 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC9" expression="row1.PROC9 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE9" expression="row1.PROCDATE9 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC10" expression="row1.PROC10 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE10" expression="row1.PROCDATE10 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC11" expression="row1.PROC11 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE11" expression="row1.PROCDATE11 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC12" expression="row1.PROC12 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE12" expression="row1.PROCDATE12 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PROC13" expression="row1.PROC13 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCDATE13" expression="row1.PROCDATE13 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PMTSTATUS" expression="row1.PMTSTATUS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PAYEE" expression="row1.PAYEE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUBSSN" expression="row1.SUBSSN " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL2UPPER" expression="row1.FL2UPPER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL2LOWER" expression="row1.FL2LOWER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL11UPPER" expression="row1.FL11UPPER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL11LOWER" expression="row1.FL11LOWER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL31UPPER" expression="row1.FL31UPPER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL31LOWER" expression="row1.FL31LOWER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL561" expression="row1.FL561 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL562" expression="row1.FL562 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL563" expression="row1.FL563 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL564" expression="row1.FL564 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL565" expression="row1.FL565 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL57" expression="row1.FL57 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL78UPPER" expression="row1.FL78UPPER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL78LOWER" expression="row1.FL78LOWER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROCMETHOD" expression="row1.PROCMETHOD " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REMARKS1" expression="row1.REMARKS1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REMARKS2" expression="row1.REMARKS2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REMARKS3" expression="row1.REMARKS3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REMARKS4" expression="row1.REMARKS4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_Object"/>
+        <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID " type="id_Object"/>
+        <mapperTableEntries name="REFPROV_KEYID" expression="row1.REFPROV_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="ADPROV_KEYID" expression="row1.ADPROV_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="ATPROV_KEYID" expression="row1.ATPROV_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="CONSPROV1_KEYID" expression="row1.CONSPROV1_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="CONSPROV2_KEYID" expression="row1.CONSPROV2_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="RefProv_KeyId_NPI" expression="row1.RefProv_KeyId_NPI " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="AdProv_KeyId_NPI" expression="row1.AdProv_KeyId_NPI " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="ConsProv1_KeyId_NPI" expression="row1.ConsProv1_KeyId_NPI " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="ConsProv2_KeyId_NPI" expression="row1.ConsProv2_KeyId_NPI " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="CROSSREF_ID" expression="row1.CROSSREF_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="USERFIELD1" expression="row1.USERFIELD1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="USERFIELD2" expression="row1.USERFIELD2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATPAID" expression="row1.PATPAID " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PURCHAMT" expression="row1.PURCHAMT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="FACILITY" expression="row1.FACILITY " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FACPROVID" expression="row1.FACPROVID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PAYERRESP" expression="row1.PAYERRESP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EDI_CLAIM_ID" expression="row1.EDI_CLAIM_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACID" expression="row1.SVCFACID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DRGOUTLIER" expression="row1.DRGOUTLIER " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MEDICAREPAID" expression="row1.MEDICAREPAID " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MEDICAREPD_100" expression="row1.MEDICAREPD_100 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MEDICAREPD_80" expression="row1.MEDICAREPD_80 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MEDICAREPD_A" expression="row1.MEDICAREPD_A " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MEDICAREPD_B" expression="row1.MEDICAREPD_B " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="COBNONCOV" expression="row1.COBNONCOV " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="COBDENIED" expression="row1.COBDENIED " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="OTHPAYERAUTH" expression="row1.OTHPAYERAUTH " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHPAYERPATID" expression="row1.OTHPAYERPATID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACID_KEYID" expression="row1.SVCFACID_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="REMITT_CODE" expression="row1.REMITT_CODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REMITT_DESC" expression="row1.REMITT_DESC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REVERSED" expression="row1.REVERSED " type="id_Integer"/>
+        <mapperTableEntries name="SERVICEDATEFROM" expression="row1.SERVICEDATEFROM " type="id_Date"/>
+        <mapperTableEntries name="ProvQualCode" expression="row1.ProvQualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="BIRTH" expression="row1.BIRTH " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GENDER" expression="row1.GENDER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MARITAL" expression="row1.MARITAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EOB" expression="row1.EOB " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="RefProvQualCode" expression="row1.RefProvQualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SvcFacQualCode" expression="row1.SvcFacQualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FacProvQualCode" expression="row1.FacProvQualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OtherProvQualCode" expression="row1.OtherProvQualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OtherProvid" expression="row1.OtherProvid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OtherProv_KeyId" expression="row1.OtherProv_KeyId " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="BILLPROV_A" expression="row1.BILLPROV_A " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROV_B" expression="row1.BILLPROV_B " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROVNAME" expression="row1.BILLPROVNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROVADDR1" expression="row1.BILLPROVADDR1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROVADDR2" expression="row1.BILLPROVADDR2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROVADDR3" expression="row1.BILLPROVADDR3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROVADDR4" expression="row1.BILLPROVADDR4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="State" expression="row1.State " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MembLocalUse" expression="row1.MembLocalUse " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PatAcct" expression="row1.PatAcct " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Employment" expression="row1.Employment " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="AutoAccident" expression="row1.AutoAccident " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="OtherAccident" expression="row1.OtherAccident " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="DateOfCurrent" expression="row1.DateOfCurrent " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Same_SimilarIllness" expression="row1.Same_SimilarIllness " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="UnableToWorkFromDate" expression="row1.UnableToWorkFromDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="UnableToWorkToDate" expression="row1.UnableToWorkToDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="HospitalizedFromDate" expression="row1.HospitalizedFromDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="HospitalizedToDate" expression="row1.HospitalizedToDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="MiscLocalUse" expression="row1.MiscLocalUse " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MiscCharges1" expression="row1.MiscCharges1 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MiscCharges2" expression="row1.MiscCharges2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MiscOriginalRef" expression="row1.MiscOriginalRef " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MiscMedicaidCode" expression="row1.MiscMedicaidCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OutsideLab" expression="row1.OutsideLab " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="AcceptAssignment" expression="row1.AcceptAssignment " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="P10" expression="row1.P10 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P11" expression="row1.P11 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P12" expression="row1.P12 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P13" expression="row1.P13 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P14" expression="row1.P14 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P15" expression="row1.P15 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACLOC_A" expression="row1.SVCFACLOC_A " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACLOC_B" expression="row1.SVCFACLOC_B " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACLOCNAME" expression="row1.SVCFACLOCNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACLOCADDR1" expression="row1.SVCFACLOCADDR1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACLOCADDR2" expression="row1.SVCFACLOCADDR2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACLOCADDR3" expression="row1.SVCFACLOCADDR3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SVCFACLOCADDR4" expression="row1.SVCFACLOCADDR4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AdprovQualCode" expression="row1.AdprovQualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AtprovQualCode" expression="row1.AtprovQualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ConsProv1QualCode" expression="row1.ConsProv1QualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ConsProv2QualCode" expression="row1.ConsProv2QualCode " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="H_TYPE" expression="row1.H_TYPE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHPROVID1" expression="row1.OTHPROVID1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHPROVID2" expression="row1.OTHPROVID2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHPROVID3" expression="row1.OTHPROVID3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ATTEN_PROV_QUAL_NPI" expression="row1.ATTEN_PROV_QUAL_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ATTEN_PROVNPI" expression="row1.ATTEN_PROVNPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ATTEN_PROVQUAL" expression="row1.ATTEN_PROVQUAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ATTEN_PROVFIRSTNAME" expression="row1.ATTEN_PROVFIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ATTEN_PROVLASTNAME" expression="row1.ATTEN_PROVLASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPER_PROV_QUAL_NPI" expression="row1.OPER_PROV_QUAL_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPER_PROVNPI" expression="row1.OPER_PROVNPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPER_PROVQUAL" expression="row1.OPER_PROVQUAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPER_PROVID" expression="row1.OPER_PROVID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPER_PROVFIRSTNAME" expression="row1.OPER_PROVFIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPER_PROVLASTNAME" expression="row1.OPER_PROVLASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV1_QUAL_NPI" expression="row1.OTHERPROV1_QUAL_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV1_NPI" expression="row1.OTHERPROV1_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV1_QUAL" expression="row1.OTHERPROV1_QUAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV1_ID" expression="row1.OTHERPROV1_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV1_FIRSTNAME" expression="row1.OTHERPROV1_FIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV1_LASTNAME" expression="row1.OTHERPROV1_LASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV2_QUAL_NPI" expression="row1.OTHERPROV2_QUAL_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV2_NPI" expression="row1.OTHERPROV2_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV2_QUAL" expression="row1.OTHERPROV2_QUAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV2_ID" expression="row1.OTHERPROV2_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV2_FIRSTNAME" expression="row1.OTHERPROV2_FIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV2_LASTNAME" expression="row1.OTHERPROV2_LASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ATTENPROV_KEYID_NPI" expression="row1.ATTENPROV_KEYID_NPI " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="OPERPROV_KEYID_NPI" expression="row1.OPERPROV_KEYID_NPI " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="OPERPROV_KEYID" expression="row1.OPERPROV_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV1_KEYID_NPI" expression="row1.OTHERPROV1_KEYID_NPI " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV1_KEYID" expression="row1.OTHERPROV1_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV2_KEYID_NPI" expression="row1.OTHERPROV2_KEYID_NPI " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="OTHERPROV2_KEYID" expression="row1.OTHERPROV2_KEYID " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="PROVIDADDR" expression="row1.PROVIDADDR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVIDCITY_STATE_ZIP" expression="row1.PROVIDCITY_STATE_ZIP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROV_PH_FAX_CC" expression="row1.PROV_PH_FAX_CC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="USERFIELD3" expression="row1.USERFIELD3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="USERFIELD4" expression="row1.USERFIELD4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TOTCHARGE" expression="row1.TOTCHARGE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="DXVERSIONQUAL" expression="row1.DXVERSIONQUAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATREAVISCODE1" expression="row1.PATREAVISCODE1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATREAVISCODE2" expression="row1.PATREAVISCODE2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATREAVISCODE3" expression="row1.PATREAVISCODE3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ECODE2" expression="row1.ECODE2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ECODE3" expression="row1.ECODE3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PPSCODE" expression="row1.PPSCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_a_Qual" expression="row1.CC_a_Qual " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_a_Code" expression="row1.CC_a_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_a_Value" expression="row1.CC_a_Value " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_b_Qual" expression="row1.CC_b_Qual " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_b_Code" expression="row1.CC_b_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_b_Value" expression="row1.CC_b_Value " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_c_Qual" expression="row1.CC_c_Qual " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_c_Code" expression="row1.CC_c_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_c_Value" expression="row1.CC_c_Value " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_d_Qual" expression="row1.CC_d_Qual " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_d_Code" expression="row1.CC_d_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CC_d_Value" expression="row1.CC_d_Value " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PAYTOCITYSTATE" expression="row1.PAYTOCITYSTATE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PAYTOID" expression="row1.PAYTOID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACCIDENT_STATE" expression="row1.ACCIDENT_STATE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DCNA" expression="row1.DCNA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DCNB" expression="row1.DCNB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DCNC" expression="row1.DCNC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL07_1" expression="row1.FL07_1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL07_2" expression="row1.FL07_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL37A" expression="row1.FL37A " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL37B" expression="row1.FL37B " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL68A" expression="row1.FL68A " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL68B" expression="row1.FL68B " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL73" expression="row1.FL73 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL75_1" expression="row1.FL75_1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL75_2" expression="row1.FL75_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL75_3" expression="row1.FL75_3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FL75_4" expression="row1.FL75_4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CREATIONDATE" expression="row1.CREATIONDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ADPROV_LASTNAME" expression="row1.ADPROV_LASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADPROV_FIRSTNAME" expression="row1.ADPROV_FIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REFPROV_LASTNAME" expression="row1.REFPROV_LASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REFPROV_FIRSTNAME" expression="row1.REFPROV_FIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ConsProv1_LASTNAME" expression="row1.ConsProv1_LASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ConsProv1_FIRSTNAME" expression="row1.ConsProv1_FIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ConsProv2_LASTNAME" expression="row1.ConsProv2_LASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ConsProv2_FIRSTNAME" expression="row1.ConsProv2_FIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AdprovQualCode_NPI" expression="row1.AdprovQualCode_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Adprovid_NPI" expression="row1.Adprovid_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RefprovQualCode_NPI" expression="row1.RefprovQualCode_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Refprovid_NPI" expression="row1.Refprovid_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ConsProv1QualCode_NPI" expression="row1.ConsProv1QualCode_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ConsProv1_NPI" expression="row1.ConsProv1_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ConsProv2QualCode_NPI" expression="row1.ConsProv2QualCode_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ConsProv2_NPI" expression="row1.ConsProv2_NPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPECCODE" expression="row1.SPECCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STATUSCODE" expression="row1.STATUSCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TPBATCH" expression="row1.TPBATCH " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="BMSETWINRULE" expression="row1.BMSETWINRULE " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="WF_Queued" expression="row1.WF_Queued " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="ADJUDICATION_ID" expression="row1.ADJUDICATION_ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="P16" expression="row1.P16 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STATUSID" expression="row1.STATUSID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="P17" expression="row1.P17 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRICESTATUS" expression="row1.PRICESTATUS " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="P18" expression="row1.P18 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADMPOA" expression="row1.ADMPOA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ECPOA1" expression="row1.ECPOA1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ECPOA2" expression="row1.ECPOA2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ECPOA3" expression="row1.ECPOA3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRVPOA1" expression="row1.PRVPOA1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRVPOA2" expression="row1.PRVPOA2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRVPOA3" expression="row1.PRVPOA3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CLAIMFINADJNETAMOUNT" expression="row1.CLAIMFINADJNETAMOUNT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="CLAIMFINNETPAYAMOUNT" expression="row1.CLAIMFINNETPAYAMOUNT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="P19" expression="row1.P19 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P20" expression="row1.P20 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REPRICE_BATCHID" expression="row1.REPRICE_BATCHID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P21" expression="row1.P21 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P22" expression="row1.P22 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P23" expression="row1.P23 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ISHPGLOBAL" expression="row1.ISHPGLOBAL " type="id_Boolean"/>
+        <mapperTableEntries name="LOB" expression="row1.LOB " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOBNETWORK" expression="row1.LOBNETWORK " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="ISPROVPAR" expression="row1.ISPROVPAR " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="HMOIN" expression="row1.HMOIN " type="id_Integer"/>
+        <mapperTableEntries name="HMOOUT" expression="row1.HMOOUT " type="id_Integer"/>
+        <mapperTableEntries name="PPOIN" expression="row1.PPOIN " type="id_Integer"/>
+        <mapperTableEntries name="PPOOUT" expression="row1.PPOOUT " type="id_Integer"/>
+        <mapperTableEntries name="P24" expression="row1.P24 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_PROC1" expression="row1.TYPE_PROC1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_PROC2" expression="row1.TYPE_PROC2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_PROC3" expression="row1.TYPE_PROC3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_PROC4" expression="row1.TYPE_PROC4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_PROC5" expression="row1.TYPE_PROC5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_PROC6" expression="row1.TYPE_PROC6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILPROVID" expression="row1.BILPROVID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILPROVQUALCODE" expression="row1.BILPROVQUALCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EDI_BATCHID" expression="row1.EDI_BATCHID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="P25" expression="row1.P25 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ISCLAIMSHOP_PRICED" expression="row1.ISCLAIMSHOP_PRICED " type="id_Boolean"/>
+        <mapperTableEntries name="CLAIMSHOP_PRICESTATUS" expression="row1.CLAIMSHOP_PRICESTATUS " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="ISRETRORATE" expression="row1.ISRETRORATE " type="id_Boolean"/>
+        <mapperTableEntries name="OPTTYPE" expression="row1.OPTTYPE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSUREDID" expression="row1.INSUREDID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATIENTNAME" expression="row1.PATIENTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATIENTDOB" expression="row1.PATIENTDOB " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PATIENTGENDER" expression="row1.PATIENTGENDER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSUREDNAME" expression="row1.INSUREDNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATIENTADDRESS" expression="row1.PATIENTADDRESS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATIENTCITY" expression="row1.PATIENTCITY " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATIENTSTATE" expression="row1.PATIENTSTATE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATIENTZIP" expression="row1.PATIENTZIP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATIENTPHONE" expression="row1.PATIENTPHONE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PATRELTOINSURED" expression="row1.PATRELTOINSURED " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSUREDADDRESS" expression="row1.INSUREDADDRESS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSUREDCITY" expression="row1.INSUREDCITY " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSUREDSTATE" expression="row1.INSUREDSTATE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSUREDZIP" expression="row1.INSUREDZIP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSUREDPHONE" expression="row1.INSUREDPHONE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHINSUREDNAME" expression="row1.OTHINSUREDNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHINSUREDPLCYGRP" expression="row1.OTHINSUREDPLCYGRP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHINSURPLANPRGNAME" expression="row1.OTHINSURPLANPRGNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSURPLYGRPFECANO" expression="row1.INSURPLYGRPFECANO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSUREDDOB" expression="row1.INSUREDDOB " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSUREDGENDER" expression="row1.INSUREDGENDER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERCLAIMCODE" expression="row1.OTHERCLAIMCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERCLAIMVALUE" expression="row1.OTHERCLAIMVALUE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSURPLANPRGNAME" expression="row1.INSURPLANPRGNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERBENEFITPLAN" expression="row1.OTHERBENEFITPLAN " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="DTOFCURRQUALCODE" expression="row1.DTOFCURRQUALCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OTHERDTQUALCODE" expression="row1.OTHERDTQUALCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REFERRINGPROVNM" expression="row1.REFERRINGPROVNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDERINGPROVNM" expression="row1.ORDERINGPROVNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPERVISINGPROVNM" expression="row1.SUPERVISINGPROVNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REFPROVOTHQUALCODE" expression="row1.REFPROVOTHQUALCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REFPROVOTHIDVAL" expression="row1.REFPROVOTHIDVAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REFPROVOTHIDNPI" expression="row1.REFPROVOTHIDNPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPERPROVOTHQUALCODE" expression="row1.OPERPROVOTHQUALCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPERPROVOTHIDVAL" expression="row1.OPERPROVOTHIDVAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPERPROVOTHIDNPI" expression="row1.OPERPROVOTHIDNPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPRPROVOTHQUALCODE" expression="row1.SUPRPROVOTHQUALCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPRPROVOTHIDVAL" expression="row1.SUPRPROVOTHIDVAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPRPROVOTHIDNPI" expression="row1.SUPRPROVOTHIDNPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIAG_ICDIND" expression="row1.DIAG_ICDIND " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FEDTAXIDONCLAIM" expression="row1.FEDTAXIDONCLAIM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TOTALCHARGE" expression="row1.TOTALCHARGE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AMOUNTPAID" expression="row1.AMOUNTPAID " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SRVFACILITYNPI" expression="row1.SRVFACILITYNPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SRVFACILITYSTATE" expression="row1.SRVFACILITYSTATE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SRVFACILITYZIP" expression="row1.SRVFACILITYZIP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROVIDERNPI" expression="row1.BILLPROVIDERNPI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROVIDERSTATE" expression="row1.BILLPROVIDERSTATE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLPROVIDERZIP" expression="row1.BILLPROVIDERZIP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ISPAIDEDICLAIM" expression="row1.ISPAIDEDICLAIM " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="EDI_OUTBOUND_FLAG" expression="row1.EDI_OUTBOUND_FLAG " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="BILLPROVIDERPHONE" expression="row1.BILLPROVIDERPHONE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EFTNO" expression="row1.EFTNO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REFERRINGPROVFIRSTNM" expression="row1.REFERRINGPROVFIRSTNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDERINGPROVFIRSTNM" expression="row1.ORDERINGPROVFIRSTNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPERVISINGPROVFIRSTNM" expression="row1.SUPERVISINGPROVFIRSTNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REFERENCENO" expression="row1.REFERENCENO " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PHCODE" type="id_String"/>
@@ -12008,13 +11984,9 @@
   <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMSSqlRow_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="to_agg" lineStyle="0" metaname="to_agg" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tAggregateRow_1">
+  <connection connectorName="FLOW" label="to_agg" lineStyle="0" metaname="to_agg" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tAggregateRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="to_agg" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="SQL_INSERT" lineStyle="0" metaname="SQL_INSERT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tMSSqlOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SQL_INSERT" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -12072,6 +12044,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
