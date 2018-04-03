@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_rBMHsDeAEeionMhtIoBHVw" name="Match_Mmeber_Analysis" creationDate="2018-04-03T16:50:38.570-0400">
+  <taggedValue xmi:id="_rBMHsTeAEeionMhtIoBHVw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_rBMHsjeAEeionMhtIoBHVw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_rBMHszeAEeionMhtIoBHVw" tag="Author" value="HighPoint6@medpointmanagement.com"/>
+  <taggedValue xmi:id="_rBMHtDeAEeionMhtIoBHVw" tag="Purpose"/>
+  <taggedValue xmi:id="_rBMHtTeAEeionMhtIoBHVw" tag="Description"/>
+  <taggedValue xmi:id="_rBMHtjeAEeionMhtIoBHVw" tag="Version" value="0.1"/>
+  <context xmi:id="_rBMHtzeAEeionMhtIoBHVw"/>
+  <results xmi:id="_rBMHuDeAEeionMhtIoBHVw">
+    <resultMetadata xmi:id="_rBMHuTeAEeionMhtIoBHVw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_rBOj8DeAEeionMhtIoBHVw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_rBOj8TeAEeionMhtIoBHVw">
+      <builtInMatchRuleDefinition xmi:id="_rBOj8jeAEeionMhtIoBHVw"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_rBOj8zeAEeionMhtIoBHVw" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
