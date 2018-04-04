@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
   <dataquality.domain.pattern:Pattern xmi:id="_ZNaNsD4ZEd24WPpU35gV1A" name="Month" supplierDependency="_9LinwTgOEeiv1bKJKPS_Mg">
     <taggedValue xmi:id="_dvSLQEErEd2095gIBp6gJQ" tag="Purpose" value="Check the validity of month"/>
     <taggedValue xmi:id="_dvSLQUErEd2095gIBp6gJQ" tag="Description" value="Matches month written as 2-digit numbers (e.g. '08', '12')."/>
@@ -10,7 +10,5 @@
       <expression xmi:id="_ZNaNsj4ZEd24WPpU35gV1A" body="'^((0[1-9])|(1[0-2]))$'" language="SQL"/>
     </components>
   </dataquality.domain.pattern:Pattern>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_9LinwTgOEeiv1bKJKPS_Mg" kind="Usage" supplier="_ZNaNsD4ZEd24WPpU35gV1A">
-    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/MPM_EDW/Member_column_Analysis_0.1.ana#_kV_qgDgOEeiv1bKJKPS_Mg"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_9LinwTgOEeiv1bKJKPS_Mg" kind="Usage" supplier="_ZNaNsD4ZEd24WPpU35gV1A"/>
 </xmi:XMI>

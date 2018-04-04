@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
   <dataquality.domain.pattern:Pattern xmi:id="_pWgP8LkgEeSVYtNTxh_-xg" name="US State Codes" supplierDependency="_9JYElDgOEeiv1bKJKPS_Mg">
     <taggedValue xmi:id="__qeGEEElEd2095gIBp6gJQ" tag="Purpose" value="Check the validity of Belgian postal codes."/>
     <taggedValue xmi:id="__qeGEUElEd2095gIBp6gJQ" tag="Description" value="matches US state codes such as AK, AL, AR, ..."/>
@@ -10,7 +10,5 @@
       <expression xmi:id="_pWgP-LkgEeSVYtNTxh_-xg" body="'^(A[KLRZ]|C[AOT]|DE|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|N[CDEHJMVY]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])$'" language="SQL"/>
     </components>
   </dataquality.domain.pattern:Pattern>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_9JYElDgOEeiv1bKJKPS_Mg" kind="Usage" supplier="_pWgP8LkgEeSVYtNTxh_-xg">
-    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/MPM_EDW/Member_column_Analysis_0.1.ana#_kV_qgDgOEeiv1bKJKPS_Mg"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_9JYElDgOEeiv1bKJKPS_Mg" kind="Usage" supplier="_pWgP8LkgEeSVYtNTxh_-xg"/>
 </xmi:XMI>
