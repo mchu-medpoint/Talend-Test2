@@ -8,7 +8,7 @@
     <taggedValue xmi:id="_kV_qhDgOEeiv1bKJKPS_Mg" tag="Description" value=""/>
     <taggedValue xmi:id="_kV_qhTgOEeiv1bKJKPS_Mg" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_zO9p4TgOEeiv1bKJKPS_Mg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
-    <taggedValue xmi:id="_zO9p4jgOEeiv1bKJKPS_Mg" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_zO9p4jgOEeiv1bKJKPS_Mg" tag="PREVIEW_ROW_NUMBER" value="100"/>
     <taggedValue xmi:id="_zO9p4zgOEeiv1bKJKPS_Mg" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
     <taggedValue xmi:id="_zPCiYDgOEeiv1bKJKPS_Mg" tag="Is Use Sample Data" value="true"/>
     <taggedValue xmi:id="_l7-UYDgPEeiv1bKJKPS_Mg" tag="false" value="true"/>
@@ -19,8 +19,8 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
     </context>
     <results xmi:id="_kV_qhzgOEeiv1bKJKPS_Mg">
-      <resultMetadata xmi:id="_kV_qiDgOEeiv1bKJKPS_Mg" executionDate="2018-04-04T09:53:55.923-0400" executionDuration="4591" message="" executionNumber="3" lastRunOk="true" lastExecutionNumberOk="1"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_9ICn0DgOEeiv1bKJKPS_Mg" count="50" computed="true">
+      <resultMetadata xmi:id="_kV_qiDgOEeiv1bKJKPS_Mg" executionDate="2018-04-04T10:04:03.537-0400" executionDuration="5392" message="" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="2"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_9ICn0DgOEeiv1bKJKPS_Mg" count="100" computed="true">
         <parameters xmi:id="_9ICn0TgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
@@ -31,7 +31,7 @@
           <sqlGenericExpression xmi:id="__A18gzgOEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_9ICn0jgOEeiv1bKJKPS_Mg" count="50" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_9ICn0jgOEeiv1bKJKPS_Mg" count="100" computed="true">
         <parameters xmi:id="_9ICn0zgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -42,7 +42,7 @@
           <sqlGenericExpression xmi:id="__BL6wzgOEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_9ICn1DgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="48">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_9ICn1DgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="90">
         <parameters xmi:id="_9ICn1TgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -53,7 +53,7 @@
           <sqlGenericExpression xmi:id="__BcZczgOEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_9ICn1jgOEeiv1bKJKPS_Mg" count="50" computed="true" uniqueValueCount="47">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_9ICn1jgOEeiv1bKJKPS_Mg" count="100" computed="true" uniqueValueCount="81">
         <parameters xmi:id="_9ICn1zgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
@@ -70,7 +70,7 @@
           <sqlGenericExpression xmi:id="__Bqb6TgOEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_9ICn2DgOEeiv1bKJKPS_Mg" count="50" computed="true" duplicateValueCount="1">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_9ICn2DgOEeiv1bKJKPS_Mg" count="100" computed="true" duplicateValueCount="9">
         <parameters xmi:id="_9ICn2TgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
@@ -87,7 +87,7 @@
           <sqlGenericExpression xmi:id="__B7hqTgOEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_9ICn2jgOEeiv1bKJKPS_Mg" count="50" computed="true">
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_9ICn2jgOEeiv1bKJKPS_Mg" count="100" computed="true">
         <parameters xmi:id="_9ICn2zgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
@@ -106,7 +106,7 @@
         <parameters xmi:id="_9ICn3TgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Text_Statistics_0.1.definition#_yb9x0zh8Ed2XmO7pl5Yuyg"/>
-        <averageLengthIndicator xmi:id="_9ICn3jgOEeiv1bKJKPS_Mg" count="50" computed="true" sumLength="344.0">
+        <averageLengthIndicator xmi:id="_9ICn3jgOEeiv1bKJKPS_Mg" count="100" computed="true" sumLength="709.0">
           <parameters xmi:id="_9ICn3zgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn4DgOEeiv1bKJKPS_Mg" useBlank="false"/>
           </parameters>
@@ -130,7 +130,7 @@
             <sqlGenericExpression xmi:id="__CosTjgOEeiv1bKJKPS_Mg" body="SELECT SUM(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)), COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </averageLengthIndicator>
-        <maxLengthIndicator xmi:id="_9ICn4TgOEeiv1bKJKPS_Mg" count="50" computed="true" length="14">
+        <maxLengthIndicator xmi:id="_9ICn4TgOEeiv1bKJKPS_Mg" count="100" computed="true" length="14">
           <parameters xmi:id="_9ICn4jgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn4zgOEeiv1bKJKPS_Mg" useBlank="false"/>
           </parameters>
@@ -154,7 +154,7 @@
             <sqlGenericExpression xmi:id="__C-DfjgOEeiv1bKJKPS_Mg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </maxLengthIndicator>
-        <minLengthIndicator xmi:id="_9ICn5DgOEeiv1bKJKPS_Mg" count="50" computed="true" length="4">
+        <minLengthIndicator xmi:id="_9ICn5DgOEeiv1bKJKPS_Mg" count="100" computed="true" length="4">
           <parameters xmi:id="_9ICn5TgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn5jgOEeiv1bKJKPS_Mg" useBlank="false"/>
           </parameters>
@@ -178,7 +178,7 @@
             <sqlGenericExpression xmi:id="__DQ-bjgOEeiv1bKJKPS_Mg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </minLengthIndicator>
-        <minLengthWithBlankIndicator xmi:id="_9ICn5zgOEeiv1bKJKPS_Mg" count="50" computed="true" length="4">
+        <minLengthWithBlankIndicator xmi:id="_9ICn5zgOEeiv1bKJKPS_Mg" count="100" computed="true" length="4">
           <parameters xmi:id="_9ICn6DgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn6TgOEeiv1bKJKPS_Mg"/>
           </parameters>
@@ -201,7 +201,7 @@
             <sqlGenericExpression xmi:id="__FGKbTgOEeiv1bKJKPS_Mg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
           </builtInIndicatorDefinition>
         </minLengthWithBlankIndicator>
-        <minLengthWithNullIndicator xmi:id="_9ICn6jgOEeiv1bKJKPS_Mg" count="50" computed="true" length="4">
+        <minLengthWithNullIndicator xmi:id="_9ICn6jgOEeiv1bKJKPS_Mg" count="100" computed="true" length="4">
           <parameters xmi:id="_9ICn6zgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn7DgOEeiv1bKJKPS_Mg" useBlank="false" useNulls="true"/>
           </parameters>
@@ -225,7 +225,7 @@
             <sqlGenericExpression xmi:id="__FUM3jgOEeiv1bKJKPS_Mg" body="SELECT MIN(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))) FROM &lt;%=__TABLE_NAME__%> WHERE (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </minLengthWithNullIndicator>
-        <minLengthWithBlankNullIndicator xmi:id="_9ICn7TgOEeiv1bKJKPS_Mg" count="50" computed="true" length="4">
+        <minLengthWithBlankNullIndicator xmi:id="_9ICn7TgOEeiv1bKJKPS_Mg" count="100" computed="true" length="4">
           <parameters xmi:id="_9ICn7jgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn7zgOEeiv1bKJKPS_Mg" useNulls="true"/>
           </parameters>
@@ -249,7 +249,7 @@
             <sqlGenericExpression xmi:id="__FnHzjgOEeiv1bKJKPS_Mg" body="SELECT MIN(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </minLengthWithBlankNullIndicator>
-        <maxLengthWithBlankIndicator xmi:id="_9ICn8DgOEeiv1bKJKPS_Mg" count="50" computed="true" length="14">
+        <maxLengthWithBlankIndicator xmi:id="_9ICn8DgOEeiv1bKJKPS_Mg" count="100" computed="true" length="14">
           <parameters xmi:id="_9ICn8TgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn8jgOEeiv1bKJKPS_Mg"/>
           </parameters>
@@ -272,7 +272,7 @@
             <sqlGenericExpression xmi:id="__EY_zTgOEeiv1bKJKPS_Mg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
           </builtInIndicatorDefinition>
         </maxLengthWithBlankIndicator>
-        <maxLengthWithNullIndicator xmi:id="_9ICn8zgOEeiv1bKJKPS_Mg" count="50" computed="true" length="14">
+        <maxLengthWithNullIndicator xmi:id="_9ICn8zgOEeiv1bKJKPS_Mg" count="100" computed="true" length="14">
           <parameters xmi:id="_9ICn9DgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn9TgOEeiv1bKJKPS_Mg" useBlank="false" useNulls="true"/>
           </parameters>
@@ -296,7 +296,7 @@
             <sqlGenericExpression xmi:id="__EnCPjgOEeiv1bKJKPS_Mg" body="SELECT MAX(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))) FROM &lt;%=__TABLE_NAME__%> WHERE (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </maxLengthWithNullIndicator>
-        <maxLengthWithBlankNullIndicator xmi:id="_9ICn9jgOEeiv1bKJKPS_Mg" count="50" computed="true" length="14">
+        <maxLengthWithBlankNullIndicator xmi:id="_9ICn9jgOEeiv1bKJKPS_Mg" count="100" computed="true" length="14">
           <parameters xmi:id="_9ICn9zgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn-DgOEeiv1bKJKPS_Mg" useNulls="true"/>
           </parameters>
@@ -320,7 +320,7 @@
             <sqlGenericExpression xmi:id="__E3g7jgOEeiv1bKJKPS_Mg" body="SELECT MAX(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </maxLengthWithBlankNullIndicator>
-        <avgLengthWithBlankIndicator xmi:id="_9ICn-TgOEeiv1bKJKPS_Mg" count="50" computed="true" sumLength="344.0">
+        <avgLengthWithBlankIndicator xmi:id="_9ICn-TgOEeiv1bKJKPS_Mg" count="100" computed="true" sumLength="709.0">
           <parameters xmi:id="_9ICn-jgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn-zgOEeiv1bKJKPS_Mg"/>
           </parameters>
@@ -343,7 +343,7 @@
             <sqlGenericExpression xmi:id="__DrOHTgOEeiv1bKJKPS_Mg" body="SELECT SUM(CHAR_LENGTH( CASE WHEN   CHAR_LENGTH( TRIM(&lt;%=__COLUMN_NAMES__%>) ) =0  THEN '' ELSE  &lt;%=__COLUMN_NAMES__%> END)), COUNT(*) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
           </builtInIndicatorDefinition>
         </avgLengthWithBlankIndicator>
-        <avgLengthWithNullIndicator xmi:id="_9ICn_DgOEeiv1bKJKPS_Mg" count="50" computed="true" sumLength="344.0">
+        <avgLengthWithNullIndicator xmi:id="_9ICn_DgOEeiv1bKJKPS_Mg" count="100" computed="true" sumLength="709.0">
           <parameters xmi:id="_9ICn_TgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICn_jgOEeiv1bKJKPS_Mg" useBlank="false" useNulls="true"/>
           </parameters>
@@ -367,7 +367,7 @@
             <sqlGenericExpression xmi:id="__D8T3jgOEeiv1bKJKPS_Mg" body="SELECT SUM(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))), COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </avgLengthWithNullIndicator>
-        <avgLengthWithBlankNullIndicator xmi:id="_9ICn_zgOEeiv1bKJKPS_Mg" count="50" computed="true" sumLength="344.0">
+        <avgLengthWithBlankNullIndicator xmi:id="_9ICn_zgOEeiv1bKJKPS_Mg" count="100" computed="true" sumLength="709.0">
           <parameters xmi:id="_9ICoADgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICoATgOEeiv1bKJKPS_Mg" useNulls="true"/>
           </parameters>
@@ -392,7 +392,7 @@
           </builtInIndicatorDefinition>
         </avgLengthWithBlankNullIndicator>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:ModeIndicator" xmi:id="_9ICoAjgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="47" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C444F5241444F2055524942457372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400074149535055524F71007E0005740007414E445241444571007E0005740006434F594F544571007E000574000643484156455A71007E000574000643414D504F5371007E00057400044252494D71007E000574000C4341494E2D53554D4D45525371007E0005740005414C4C454E71007E00057400084D415254494E455A7371007E0003000000000000000378" mode="ACED00057400084D415254494E455A">
+      <indicators xsi:type="dataquality.indicators:ModeIndicator" xmi:id="_9ICoAjgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="81" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400074149535055524F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000752414D4952455A7371007E000300000000000000027400054C4F50455A71007E00077400054D454A494171007E00077400094645524E414E44455A71007E00077400074D4F52414C455371007E00077400074D454452414E4F71007E000774000553434F545471007E00077400084D415254494E455A7371007E0003000000000000000374000652495645524171007E000778" mode="ACED00057400084D415254494E455A">
         <parameters xmi:id="_9ICoAzgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Mode_0.1.definition#_ccIR4RF2Ed2PKb6nEJEvhw"/>
@@ -409,7 +409,7 @@
           <sqlGenericExpression xmi:id="__F-7OTgOEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_9ICoBDgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="47" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C444F5241444F2055524942457372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400074149535055524F71007E0005740007414E445241444571007E0005740006434F594F544571007E000574000643484156455A71007E000574000643414D504F5371007E00057400044252494D71007E000574000C4341494E2D53554D4D45525371007E0005740005414C4C454E71007E00057400084D415254494E455A7371007E0003000000000000000378">
+      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_9ICoBDgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="81" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400074149535055524F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000752414D4952455A7371007E000300000000000000027400054C4F50455A71007E00077400054D454A494171007E00077400094645524E414E44455A71007E00077400074D4F52414C455371007E00077400074D454452414E4F71007E000774000553434F545471007E00077400084D415254494E455A7371007E0003000000000000000374000652495645524171007E000778">
         <parameters xmi:id="_9ICoBTgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Frequency_Table_0.1.definition#_ccIR4hF2Ed2PKb6nEJEvhw"/>
@@ -426,7 +426,7 @@
           <sqlGenericExpression xmi:id="__GQA-TgOEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_9ICoBjgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="47" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C444F5241444F2055524942457372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400074149535055524F71007E0005740007414E445241444571007E0005740006434F594F544571007E000574000643484156455A71007E000574000643414D504F5371007E00057400094645524E414E44455A71007E00057400044252494D71007E000574000C4341494E2D53554D4D45525371007E0005740005414C4C454E71007E000578">
+      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_9ICoBjgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="81" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740008414C56415241444F7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740007414C564152455A71007E00057400074149535055524F71007E000574000741495A5055524F71007E0005740007414E445241444571007E0005740006414C4641524F71007E000574000842414E55454C4F5371007E00057400044252494D71007E000574000C4341494E2D53554D4D45525371007E0005740005414C4C454E71007E000578">
         <parameters xmi:id="_9ICoBzgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Low_Frequency_Table_0.1.definition#_-0C00JOtEd2Iyo0dtkB9pA"/>
@@ -442,7 +442,7 @@
           <sqlGenericExpression xmi:id="__GgfqDgOEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_9ICoCDgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="5" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C4141414141412041414141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000541414141417371007E000300000000000000097400074141414141414171007E000774000C41414141412041414141414171007E00057400064141414141417371007E0003000000000000000C74000C414141412D4141414141414171007E000574000841414141414141417371007E00030000000000000007740004414141417371007E000300000000000000057400094141414141414141417371007E0003000000000000000374000E414141414141204141414141414171007E000578">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_9ICoCDgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="10" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C4141414141412041414141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000002740007414141414141417371007E0003000000000000001574000541414141417371007E0003000000000000001274000B414141414141414141414171007E00057400064141414141417371007E0003000000000000001374000841414141414141417371007E0003000000000000000F740004414141417371007E000300000000000000087400094141414141414141417371007E000300000000000000057400094141414120414141417371007E0003000000000000000174000A4141204141414141414171007E001478">
         <parameters xmi:id="_9ICoCTgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
@@ -475,7 +475,7 @@
           <charactersMapping xmi:id="__GvJOTgOEeiv1bKJKPS_Mg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_9ICoCjgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="5" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C4141414141412041414141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000541414141417371007E000300000000000000097400074141414141414171007E000774000B414141414141414141414171007E000574000C41414141412041414141414171007E000574000C414141412D4141414141414171007E000574000E414141414141204141414141414171007E00057400094141414141414141417371007E00030000000000000003740004414141417371007E0003000000000000000574000841414141414141417371007E0003000000000000000778">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_9ICoCjgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="10" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000B41414141412041414141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000D4141414141412D41414141414171007E000574000A4141414141414141414171007E000574000A4141414120414141414171007E000574000E414141414141412041414141414171007E000574000C41414141412041414141414171007E000574000C414141412D4141414141414171007E000574000941414141204141414171007E000574000E414141414141204141414141414171007E000574000A4141204141414141414171007E000578">
         <parameters xmi:id="_9ICoCzgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
@@ -508,7 +508,7 @@
           <charactersMapping xmi:id="__G_n6TgOEeiv1bKJKPS_Mg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_9ICoDDgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="47" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C444F5241444F2055524942457372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400064D4F52454E4F7371007E00030000000000000002740006434F594F544571007E000574000643484156455A71007E000574000643414D504F5371007E00057400094645524E414E44455A71007E00057400044252494D71007E000574000C4341494E2D53554D4D45525371007E00057400064E4557454C4C71007E00077400074D454452414E4F71007E000778" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C444F5241444F2055524942457372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400064D4F52454E4F7371007E00030000000000000002740006434F594F544571007E000574000643484156455A71007E000574000643414D504F5371007E00057400094645524E414E44455A71007E00057400044252494D71007E000574000C4341494E2D53554D4D45525371007E00057400064E4557454C4C71007E00077400074D454452414E4F71007E000778">
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_9ICoDDgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="81" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740007414C564152455A7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000037400064D4F52454E4F7371007E000300000000000000027400045255495A71007E000774000741495A5055524F71007E000774000443454A417371007E0003000000000000000174000B43415354454C4C414E4F5371007E000B7400044D455A4171007E00057400064E4557454C4C71007E000774000C43484156455A204E4156415371007E000B7400074D454452414E4F71007E000578" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740007414C564152455A7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000037400064D4F52454E4F7371007E000300000000000000027400045255495A71007E000774000741495A5055524F71007E000774000443454A417371007E0003000000000000000174000B43415354454C4C414E4F5371007E000B7400044D455A4171007E00077400064E4557454C4C71007E000774000C43484156455A204E4156415371007E000B7400074D454452414E4F71007E000778">
         <parameters xmi:id="_9ICoDTgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
@@ -528,7 +528,7 @@
           <sqlGenericExpression xmi:id="__HSizDgOEeiv1bKJKPS_Mg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), NYSIIS(&lt;%=__COLUMN_NAMES__%>) , COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 2 ORDER BY d DESC,c DESC" language="Netezza"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_9ICoDjgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="47" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C444F5241444F2055524942457372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400074149535055524F71007E0005740007414E445241444571007E0005740006434F594F544571007E000574000643484156455A71007E000574000643414D504F5371007E00057400094645524E414E44455A71007E00057400044252494D71007E000574000C4341494E2D53554D4D45525371007E0005740005414C4C454E71007E000578" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C444F5241444F2055524942457372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400074149535055524F71007E0005740007414E445241444571007E0005740006434F594F544571007E000574000643484156455A71007E000574000643414D504F5371007E00057400094645524E414E44455A71007E00057400044252494D71007E000574000C4341494E2D53554D4D45525371007E0005740005414C4C454E71007E000578">
+      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_9ICoDjgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="81" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000843414C4445524F4E7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740007414E445241444571007E0005740006434F594F544571007E000574000643484156455A71007E000574000443454A4171007E000574000B43415354454C4C414E4F5371007E000574000842414E55454C4F5371007E00057400044252494D71007E0005740005414C4C454E71007E000574000C43484156455A204E4156415371007E000578" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000843414C4445524F4E7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740007414E445241444571007E0005740006434F594F544571007E000574000643484156455A71007E000574000443454A4171007E000574000B43415354454C4C414E4F5371007E000574000842414E55454C4F5371007E00057400044252494D71007E0005740005414C4C454E71007E000574000C43484156455A204E4156415371007E000578">
         <parameters xmi:id="_9ICoDzgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Low_Frequency_Table_0.1.definition#_AjKIEPbBEd24-N3PsP_o-w"/>
@@ -548,7 +548,7 @@
           <sqlGenericExpression xmi:id="__HhMTDgOEeiv1bKJKPS_Mg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), NYSIIS(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY NYSIIS(&lt;%=__COLUMN_NAMES__%>) ORDER BY d,c ASC" language="Netezza"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BenfordLawFrequencyIndicator" xmi:id="_9ICoEDgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740001317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000007400013271007E00057400013371007E00057400013471007E00057400013571007E00057400013671007E00057400013771007E00057400013871007E0005740007696E76616C69647371007E000300000000000000327400013971007E000578">
+      <indicators xsi:type="dataquality.indicators:BenfordLawFrequencyIndicator" xmi:id="_9ICoEDgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740001317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000007400013271007E00057400013371007E00057400013471007E00057400013571007E00057400013671007E00057400013771007E00057400013871007E0005740007696E76616C69647371007E000300000000000000647400013971007E000578">
         <parameters xmi:id="_9ICoETgOEeiv1bKJKPS_Mg" topN="50"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Fraud Detection/Benford_Law_Frequency_0.1.definition#_yRkFIezIEeG0fbygDv6UrQ"/>
@@ -568,7 +568,7 @@
           <sqlGenericExpression xmi:id="__Hxq_DgOEeiv1bKJKPS_Mg" body="SELECT SUBSTRING(&lt;%=__COLUMN_NAMES__%>,1,1), COUNT(*)  FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 1 order by 1" language="Redshift"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_9ICowzgOEeiv1bKJKPS_Mg" count="50" computed="true">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_9ICowzgOEeiv1bKJKPS_Mg" count="100" computed="true">
         <parameters xmi:id="_9ICoxDgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
@@ -579,7 +579,7 @@
           <sqlGenericExpression xmi:id="_AHjs8zgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_9ICoxTgOEeiv1bKJKPS_Mg" count="50" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_9ICoxTgOEeiv1bKJKPS_Mg" count="100" computed="true">
         <parameters xmi:id="_9ICoxjgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -590,7 +590,7 @@
           <sqlGenericExpression xmi:id="_AH2n4zgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_9ICoxzgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="48">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_9ICoxzgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="93">
         <parameters xmi:id="_9ICoyDgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -601,7 +601,7 @@
           <sqlGenericExpression xmi:id="_AIJi0zgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_9ICoyTgOEeiv1bKJKPS_Mg" count="50" computed="true" uniqueValueCount="46">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_9ICoyTgOEeiv1bKJKPS_Mg" count="100" computed="true" uniqueValueCount="86">
         <parameters xmi:id="_9ICoyjgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
@@ -618,7 +618,7 @@
           <sqlGenericExpression xmi:id="_AIcdyTgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_9ICoyzgOEeiv1bKJKPS_Mg" count="50" computed="true" duplicateValueCount="2">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_9ICoyzgOEeiv1bKJKPS_Mg" count="100" computed="true" duplicateValueCount="7">
         <parameters xmi:id="_9ICozDgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
@@ -635,7 +635,7 @@
           <sqlGenericExpression xmi:id="_AIv_yTgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_9ICozTgOEeiv1bKJKPS_Mg" count="50" computed="true">
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_9ICozTgOEeiv1bKJKPS_Mg" count="100" computed="true">
         <parameters xmi:id="_9ICozjgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
@@ -654,7 +654,7 @@
         <parameters xmi:id="_9ICo0DgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Text_Statistics_0.1.definition#_yb9x0zh8Ed2XmO7pl5Yuyg"/>
-        <averageLengthIndicator xmi:id="_9ICo0TgOEeiv1bKJKPS_Mg" count="50" computed="true" sumLength="324.0">
+        <averageLengthIndicator xmi:id="_9ICo0TgOEeiv1bKJKPS_Mg" count="100" computed="true" sumLength="634.0">
           <parameters xmi:id="_9ICo0jgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo0zgOEeiv1bKJKPS_Mg" useBlank="false"/>
           </parameters>
@@ -678,7 +678,7 @@
             <sqlGenericExpression xmi:id="_AJYR7jgPEeiv1bKJKPS_Mg" body="SELECT SUM(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)), COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </averageLengthIndicator>
-        <maxLengthIndicator xmi:id="_9ICo1DgOEeiv1bKJKPS_Mg" count="50" computed="true" length="9">
+        <maxLengthIndicator xmi:id="_9ICo1DgOEeiv1bKJKPS_Mg" count="100" computed="true" length="10">
           <parameters xmi:id="_9ICo1TgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo1jgOEeiv1bKJKPS_Mg" useBlank="false"/>
           </parameters>
@@ -702,7 +702,7 @@
             <sqlGenericExpression xmi:id="_AJrM3jgPEeiv1bKJKPS_Mg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </maxLengthIndicator>
-        <minLengthIndicator xmi:id="_9ICo1zgOEeiv1bKJKPS_Mg" count="50" computed="true" length="4">
+        <minLengthIndicator xmi:id="_9ICo1zgOEeiv1bKJKPS_Mg" count="100" computed="true" length="3">
           <parameters xmi:id="_9ICo2DgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo2TgOEeiv1bKJKPS_Mg" useBlank="false"/>
           </parameters>
@@ -726,7 +726,7 @@
             <sqlGenericExpression xmi:id="_AJ8SnjgPEeiv1bKJKPS_Mg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) AND (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </minLengthIndicator>
-        <minLengthWithBlankIndicator xmi:id="_9ICo2jgOEeiv1bKJKPS_Mg" count="50" computed="true" length="4">
+        <minLengthWithBlankIndicator xmi:id="_9ICo2jgOEeiv1bKJKPS_Mg" count="100" computed="true" length="3">
           <parameters xmi:id="_9ICo2zgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo3DgOEeiv1bKJKPS_Mg"/>
           </parameters>
@@ -749,7 +749,7 @@
             <sqlGenericExpression xmi:id="_AMsrrTgPEeiv1bKJKPS_Mg" body="SELECT MIN(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
           </builtInIndicatorDefinition>
         </minLengthWithBlankIndicator>
-        <minLengthWithNullIndicator xmi:id="_9ICo3TgOEeiv1bKJKPS_Mg" count="50" computed="true" length="4">
+        <minLengthWithNullIndicator xmi:id="_9ICo3TgOEeiv1bKJKPS_Mg" count="100" computed="true" length="3">
           <parameters xmi:id="_9ICo3jgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo3zgOEeiv1bKJKPS_Mg" useBlank="false" useNulls="true"/>
           </parameters>
@@ -773,7 +773,7 @@
             <sqlGenericExpression xmi:id="_AQC6njgPEeiv1bKJKPS_Mg" body="SELECT MIN(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))) FROM &lt;%=__TABLE_NAME__%> WHERE (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </minLengthWithNullIndicator>
-        <minLengthWithBlankNullIndicator xmi:id="_9ICo4DgOEeiv1bKJKPS_Mg" count="50" computed="true" length="4">
+        <minLengthWithBlankNullIndicator xmi:id="_9ICo4DgOEeiv1bKJKPS_Mg" count="100" computed="true" length="3">
           <parameters xmi:id="_9ICo4TgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo4jgOEeiv1bKJKPS_Mg" useNulls="true"/>
           </parameters>
@@ -797,7 +797,7 @@
             <sqlGenericExpression xmi:id="_AS9ErjgPEeiv1bKJKPS_Mg" body="SELECT MIN(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </minLengthWithBlankNullIndicator>
-        <maxLengthWithBlankIndicator xmi:id="_9ICo4zgOEeiv1bKJKPS_Mg" count="50" computed="true" length="9">
+        <maxLengthWithBlankIndicator xmi:id="_9ICo4zgOEeiv1bKJKPS_Mg" count="100" computed="true" length="10">
           <parameters xmi:id="_9ICo5DgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo5TgOEeiv1bKJKPS_Mg"/>
           </parameters>
@@ -820,7 +820,7 @@
             <sqlGenericExpression xmi:id="_ALULnTgPEeiv1bKJKPS_Mg" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
           </builtInIndicatorDefinition>
         </maxLengthWithBlankIndicator>
-        <maxLengthWithNullIndicator xmi:id="_9ICo5jgOEeiv1bKJKPS_Mg" count="50" computed="true" length="9">
+        <maxLengthWithNullIndicator xmi:id="_9ICo5jgOEeiv1bKJKPS_Mg" count="100" computed="true" length="10">
           <parameters xmi:id="_9ICo5zgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo6DgOEeiv1bKJKPS_Mg" useBlank="false" useNulls="true"/>
           </parameters>
@@ -844,7 +844,7 @@
             <sqlGenericExpression xmi:id="_ALpizjgPEeiv1bKJKPS_Mg" body="SELECT MAX(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))) FROM &lt;%=__TABLE_NAME__%> WHERE (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </maxLengthWithNullIndicator>
-        <maxLengthWithBlankNullIndicator xmi:id="_9ICo6TgOEeiv1bKJKPS_Mg" count="50" computed="true" length="9">
+        <maxLengthWithBlankNullIndicator xmi:id="_9ICo6TgOEeiv1bKJKPS_Mg" count="100" computed="true" length="10">
           <parameters xmi:id="_9ICo6jgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo6zgOEeiv1bKJKPS_Mg" useNulls="true"/>
           </parameters>
@@ -868,7 +868,7 @@
             <sqlGenericExpression xmi:id="_AMNjfjgPEeiv1bKJKPS_Mg" body="SELECT MAX(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </maxLengthWithBlankNullIndicator>
-        <avgLengthWithBlankIndicator xmi:id="_9ICo7DgOEeiv1bKJKPS_Mg" count="50" computed="true" sumLength="324.0">
+        <avgLengthWithBlankIndicator xmi:id="_9ICo7DgOEeiv1bKJKPS_Mg" count="100" computed="true" sumLength="634.0">
           <parameters xmi:id="_9ICo7TgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo7jgOEeiv1bKJKPS_Mg"/>
           </parameters>
@@ -891,7 +891,7 @@
             <sqlGenericExpression xmi:id="_AKUGDTgPEeiv1bKJKPS_Mg" body="SELECT SUM(CHAR_LENGTH( CASE WHEN   CHAR_LENGTH( TRIM(&lt;%=__COLUMN_NAMES__%>) ) =0  THEN '' ELSE  &lt;%=__COLUMN_NAMES__%> END)), COUNT(*) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
           </builtInIndicatorDefinition>
         </avgLengthWithBlankIndicator>
-        <avgLengthWithNullIndicator xmi:id="_9ICo7zgOEeiv1bKJKPS_Mg" count="50" computed="true" sumLength="324.0">
+        <avgLengthWithNullIndicator xmi:id="_9ICo7zgOEeiv1bKJKPS_Mg" count="100" computed="true" sumLength="634.0">
           <parameters xmi:id="_9ICo8DgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo8TgOEeiv1bKJKPS_Mg" useBlank="false" useNulls="true"/>
           </parameters>
@@ -915,7 +915,7 @@
             <sqlGenericExpression xmi:id="_AKr5fjgPEeiv1bKJKPS_Mg" body="SELECT SUM(CHAR_LENGTH(ISNULL(&lt;%=__COLUMN_NAMES__%>,''))), COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE (TRIM(ISNULL(&lt;%=__COLUMN_NAMES__%>,'NULL TALEND')) &lt;> '' ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Netezza"/>
           </builtInIndicatorDefinition>
         </avgLengthWithNullIndicator>
-        <avgLengthWithBlankNullIndicator xmi:id="_9ICo8jgOEeiv1bKJKPS_Mg" count="50" computed="true" sumLength="324.0">
+        <avgLengthWithBlankNullIndicator xmi:id="_9ICo8jgOEeiv1bKJKPS_Mg" count="100" computed="true" sumLength="634.0">
           <parameters xmi:id="_9ICo8zgOEeiv1bKJKPS_Mg">
             <textParameter xmi:id="_9ICo9DgOEeiv1bKJKPS_Mg" useNulls="true"/>
           </parameters>
@@ -940,7 +940,7 @@
           </builtInIndicatorDefinition>
         </avgLengthWithBlankNullIndicator>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:ModeIndicator" xmi:id="_9ICo9TgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="46" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000744414E49454C417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400074D49434841454C7371007E0003000000000000000274000641445249414E71007E0005740007414E54484F4E5971007E0005740007414C4953534F4E71007E000574000843524953414E544171007E0005740005414E41484971007E0005740009414E4153544143494171007E0005740005414E47494571007E0005740007414E544F4E494F71007E000778" mode="ACED0005740007414E544F4E494F">
+      <indicators xsi:type="dataquality.indicators:ModeIndicator" xmi:id="_9ICo9TgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="86" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400044C5549537372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000027400074D49434841454C71007E000574000641445249414E7371007E00030000000000000001740007414E54484F4E5971007E0005740006484543544F5271007E0005740007414C4953534F4E71007E00087400054A554C494F71007E000574000741445249414E4171007E0008740007414E544F4E494F71007E000574000849534142454C4C4171007E000578" mode="ACED0005740007414E54484F4E59">
         <parameters xmi:id="_9ICo9jgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Mode_0.1.definition#_ccIR4RF2Ed2PKb6nEJEvhw"/>
@@ -957,7 +957,7 @@
           <sqlGenericExpression xmi:id="_AT44yTgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_9ICo9zgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="46" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000744414E49454C417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400074D49434841454C7371007E0003000000000000000274000641445249414E71007E0005740007414E54484F4E5971007E0005740007414C4953534F4E71007E000574000843524953414E544171007E0005740005414E41484971007E0005740009414E4153544143494171007E0005740005414E47494571007E0005740007414E544F4E494F71007E000778">
+      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_9ICo9zgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="86" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400044C5549537372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000027400074D49434841454C71007E000574000641445249414E7371007E00030000000000000001740007414E54484F4E5971007E0005740006484543544F5271007E0005740007414C4953534F4E71007E00087400054A554C494F71007E000574000741445249414E4171007E0008740007414E544F4E494F71007E000574000849534142454C4C4171007E000578">
         <parameters xmi:id="_9ICo-DgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Frequency_Table_0.1.definition#_ccIR4hF2Ed2PKb6nEJEvhw"/>
@@ -974,7 +974,7 @@
           <sqlGenericExpression xmi:id="_AUQsOTgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_9ICo-TgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="46" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400074445525249434B7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000744414E49454C4171007E000574000641445249414E71007E000574000744454C414E4E4171007E0005740007414E54484F4E5971007E0005740007414C4953534F4E71007E000574000843524953414E544171007E0005740005414E41484971007E0005740009414E4153544143494171007E0005740005414E47494571007E000578">
+      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_9ICo-TgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="86" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740008414E4A454C494E417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740003414E4171007E0005740005415249454C71007E000574000942454E45444943544F71007E000574000641445249414E71007E0005740007414C4953534F4E71007E0005740005414E41484971007E000574000741445249414E4171007E0005740009414E4153544143494171007E0005740005414E47494571007E000578">
         <parameters xmi:id="_9ICo-jgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Low_Frequency_Table_0.1.definition#_-0C00JOtEd2Iyo0dtkB9pA"/>
@@ -990,7 +990,7 @@
           <sqlGenericExpression xmi:id="_AUmDaDgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_9ICo-zgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="6" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000006740007414141414141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000001174000541414141417371007E000300000000000000077400064141414141417371007E0003000000000000000B74000841414141414141417371007E00030000000000000006740004414141417371007E000300000000000000057400094141414141414141417371007E0003000000000000000478">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_9ICo-zgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="9" uniqueValueCount="3" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000097400034141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740007414141414141417371007E0003000000000000001974000541414141417371007E0003000000000000001474000A4141414120414141414171007E000574000641414141414171007E000774000841414141414141417371007E0003000000000000000A740004414141417371007E000300000000000000097400094141414141414141417371007E00030000000000000008740008414120414141414171007E000578">
         <parameters xmi:id="_9ICo_DgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
@@ -1023,7 +1023,7 @@
           <charactersMapping xmi:id="_AU7aqTgPEeiv1bKJKPS_Mg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_9ICo_TgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="6" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000674000541414141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000007740007414141414141417371007E000300000000000000117400064141414141417371007E0003000000000000000B7400094141414141414141417371007E00030000000000000004740004414141417371007E0003000000000000000574000841414141414141417371007E0003000000000000000678">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_9ICo_TgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="9" uniqueValueCount="3" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000097400034141417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000541414141417371007E00030000000000000014740007414141414141417371007E0003000000000000001974000A4141414120414141414171007E000574000641414141414171007E0009740008414120414141414171007E00057400094141414141414141417371007E00030000000000000008740004414141417371007E0003000000000000000974000841414141414141417371007E0003000000000000000A78">
         <parameters xmi:id="_9ICo_jgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
@@ -1056,7 +1056,7 @@
           <charactersMapping xmi:id="_AVVqWTgPEeiv1bKJKPS_Mg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_9ICo_zgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="46" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000744414E49454C417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000641445249414E71007E000574000744454C414E4E4171007E000574000744455348414E4571007E0005740007414C4953534F4E71007E000574000843524953414E544171007E0005740005414E41484971007E0005740005414E47494571007E0005740009414E4153544143494171007E0005740007414E544F4E494F7371007E0003000000000000000378" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000744414E49454C417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000641445249414E71007E000574000744454C414E4E4171007E000574000744455348414E4571007E0005740007414C4953534F4E71007E000574000843524953414E544171007E0005740005414E41484971007E0005740005414E47494571007E0005740009414E4153544143494171007E0005740007414E544F4E494F7371007E0003000000000000000278">
+      <indicators xsi:type="dataquality.indicators:SoundexFreqIndicator" xmi:id="_9ICo_zgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="86" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740005415249454C7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000942454E45444943544F71007E000574000842454E4A414D494E71007E00057400064D494755454C7371007E000300000000000000037400064D41544845577371007E000300000000000000027400064A4F414E4E4171007E000B740007414C4953534F4E71007E0005740005414E41484971007E000B74000741445249414E4171007E000B740007414E544F4E494F7371007E0003000000000000000478" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740005415249454C7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000942454E45444943544F71007E000574000842454E4A414D494E71007E00057400064D494755454C7371007E000300000000000000027400064D415448455771007E00097400064A4F414E4E4171007E0009740007414C4953534F4E71007E0005740005414E41484971007E000974000741445249414E4171007E0009740007414E544F4E494F71007E000978">
         <parameters xmi:id="_9ICpADgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Frequency_Table_0.1.definition#_VGep4Pa7Ed24-N3PsP_o-w"/>
@@ -1076,7 +1076,7 @@
           <sqlGenericExpression xmi:id="_AVtdvDgPEeiv1bKJKPS_Mg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), NYSIIS(&lt;%=__COLUMN_NAMES__%>) , COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 2 ORDER BY d DESC,c DESC" language="Netezza"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_9ICpATgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="46" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400074445525249434B7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000744414E49454C4171007E000574000641445249414E71007E000574000744454C414E4E4171007E000574000744455348414E4571007E0005740007414C4953534F4E71007E000574000843524953414E544171007E0005740005414E41484971007E0005740005414E47494571007E0005740009414E4153544143494171007E000578" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400074445525249434B7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000744414E49454C4171007E000574000641445249414E71007E000574000744454C414E4E4171007E000574000744455348414E4571007E0005740007414C4953534F4E71007E000574000843524953414E544171007E0005740005414E41484971007E0005740005414E47494571007E0005740009414E4153544143494171007E000578">
+      <indicators xsi:type="dataquality.indicators:SoundexLowFreqIndicator" xmi:id="_9ICpATgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="86" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740008414E4A454C494E417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740009434852495354494E4571007E0005740005415249454C71007E000574000942454E45444943544F71007E0005740005434852495371007E000574000842454E4A414D494E71007E0005740005434941524171007E0005740007414C4953534F4E71007E0005740005414E47494571007E0005740009414E4153544143494171007E000578" valueToDistinctFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740008414E4A454C494E417372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740009434852495354494E4571007E0005740005415249454C71007E000574000942454E45444943544F71007E0005740005434852495371007E000574000842454E4A414D494E71007E0005740005434941524171007E0005740007414C4953534F4E71007E0005740005414E47494571007E0005740009414E4153544143494171007E000578">
         <parameters xmi:id="_9ICpAjgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Soundex/Soundex_Low_Frequency_Table_0.1.definition#_AjKIEPbBEd24-N3PsP_o-w"/>
@@ -1096,7 +1096,7 @@
           <sqlGenericExpression xmi:id="_AWC07DgPEeiv1bKJKPS_Mg" body="SELECT MAX(&lt;%=__COLUMN_NAMES__%>), NYSIIS(&lt;%=__COLUMN_NAMES__%>), COUNT(*) c, COUNT(DISTINCT &lt;%=__COLUMN_NAMES__%>) d FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY NYSIIS(&lt;%=__COLUMN_NAMES__%>) ORDER BY d,c ASC" language="Netezza"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BenfordLawFrequencyIndicator" xmi:id="_9ICpAzgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740001317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000007400013271007E00057400013371007E00057400013471007E00057400013571007E00057400013671007E00057400013771007E00057400013871007E0005740007696E76616C69647371007E000300000000000000327400013971007E000578">
+      <indicators xsi:type="dataquality.indicators:BenfordLawFrequencyIndicator" xmi:id="_9ICpAzgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740001317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000007400013271007E00057400013371007E00057400013471007E00057400013571007E00057400013671007E00057400013771007E00057400013871007E0005740007696E76616C69647371007E000300000000000000647400013971007E000578">
         <parameters xmi:id="_9ICpBDgOEeiv1bKJKPS_Mg" topN="50"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll8jSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Fraud Detection/Benford_Law_Frequency_0.1.definition#_yRkFIezIEeG0fbygDv6UrQ"/>
@@ -1116,7 +1116,7 @@
           <sqlGenericExpression xmi:id="_AWYMHDgPEeiv1bKJKPS_Mg" body="SELECT SUBSTRING(&lt;%=__COLUMN_NAMES__%>,1,1), COUNT(*)  FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY 1 order by 1" language="Redshift"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_9ICptjgOEeiv1bKJKPS_Mg" count="50" computed="true">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_9ICptjgOEeiv1bKJKPS_Mg" count="100" computed="true">
         <parameters xmi:id="_9ICptzgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
@@ -1127,7 +1127,7 @@
           <sqlGenericExpression xmi:id="_BaEdszgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_9ICpuDgOEeiv1bKJKPS_Mg" count="50" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_9ICpuDgOEeiv1bKJKPS_Mg" count="100" computed="true">
         <parameters xmi:id="_9ICpuTgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -1138,7 +1138,7 @@
           <sqlGenericExpression xmi:id="_BaetYzgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_9ICpujgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="50">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_9ICpujgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="99">
         <parameters xmi:id="_9ICpuzgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -1149,7 +1149,7 @@
           <sqlGenericExpression xmi:id="_Ba7ZUzgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_9ICpvDgOEeiv1bKJKPS_Mg" count="50" computed="true" uniqueValueCount="50">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_9ICpvDgOEeiv1bKJKPS_Mg" count="100" computed="true" uniqueValueCount="98">
         <parameters xmi:id="_9ICpvTgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
@@ -1166,7 +1166,7 @@
           <sqlGenericExpression xmi:id="_BbYFSTgPEeiv1bKJKPS_Mg" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_9ICpvjgOEeiv1bKJKPS_Mg" count="50" computed="true" duplicateValueCount="0">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_9ICpvjgOEeiv1bKJKPS_Mg" count="100" computed="true" duplicateValueCount="1">
         <parameters xmi:id="_9ICpvzgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
@@ -1187,7 +1187,7 @@
         <parameters xmi:id="_9ICpwTgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Range_0.1.definition#_ccI49hF2Ed2PKb6nEJEvhw"/>
-        <lowerValue xmi:id="_9ICpwjgOEeiv1bKJKPS_Mg" count="50" computed="true" value="1956-09-05 00:00:00.000" datatype="93">
+        <lowerValue xmi:id="_9ICpwjgOEeiv1bKJKPS_Mg" count="100" computed="true" value="1945-12-04 00:00:00.000" datatype="93">
           <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
           <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Minimum_0.1.definition#_ccJgABF2Ed2PKb6nEJEvhw"/>
           <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_DWAl9DgPEeiv1bKJKPS_Mg" body="SELECT MIN(&quot;BIRTH&quot;) FROM &quot;ECD&quot;.&quot;dbo&quot;.&quot;MEMB_COMPANY_V&quot; " language="Microsoft SQL Server"/>
@@ -1197,7 +1197,7 @@
             <sqlGenericExpression xmi:id="_Be4FMzgPEeiv1bKJKPS_Mg" body="SELECT MIN(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
           </builtInIndicatorDefinition>
         </lowerValue>
-        <upperValue xmi:id="_9ICpwzgOEeiv1bKJKPS_Mg" count="50" computed="true" value="2017-10-03 00:00:00.000" datatype="93">
+        <upperValue xmi:id="_9ICpwzgOEeiv1bKJKPS_Mg" count="100" computed="true" value="2017-10-03 00:00:00.000" datatype="93">
           <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
           <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Maximum_0.1.definition#_ccJgARF2Ed2PKb6nEJEvhw"/>
           <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_DWAl9TgPEeiv1bKJKPS_Mg" body="SELECT MAX(&quot;BIRTH&quot;) FROM &quot;ECD&quot;.&quot;dbo&quot;.&quot;MEMB_COMPANY_V&quot; " language="Microsoft SQL Server"/>
@@ -1208,7 +1208,7 @@
           </builtInIndicatorDefinition>
         </upperValue>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:ModeIndicator" xmi:id="_9ICpxDgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="50" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200386F72672E74616C656E642E646174617175616C6974792E696E64696361746F72732E6D617064622E54616C656E64466F726D617444617465F8E98C22E38F4C860200024C0007646174654F626A7400104C6A6176612F7574696C2F446174653B4C00077061747465726E7400124C6A6176612F6C616E672F537472696E673B7872000E6A6176612E7574696C2E44617465686A81014B59741903000078707708FFFFFFDAF310B080787371007E00027708FFFFFFDAF310B08078737200126A6176612E73716C2E54696D657374616D702618D5C80153BF650200014900056E616E6F737871007E00057708FFFFFFDAF310B0807800000000740017797979792D4D4D2D64642048483A6D6D3A73732E53535371007E000A7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017371007E00027708FFFFFFC6C09FE080787371007E00027708FFFFFFC6C09FE080787371007E00087708FFFFFFC6C09FE080780000000071007E000A71007E000A71007E000D7371007E000277080000001E42383A00787371007E000277080000001E42383A00787371007E000877080000001E42383A00780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFFAF99283C80787371007E00027708FFFFFFAF99283C80787371007E00087708FFFFFFAF99283C80780000000071007E000A71007E000A71007E000D7371007E000277080000001DCBC5F600787371007E000277080000001DCBC5F600787371007E000877080000001DCBC5F600780000000071007E000A71007E000A71007E000D7371007E0002770800000049FE307080787371007E0002770800000049FE307080787371007E0008770800000049FE307080780000000071007E000A71007E000A71007E000D7371007E000277080000005E4F876880787371007E000277080000005E4F876880787371007E000877080000005E4F876880780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFF9E1DBB0200787371007E00027708FFFFFF9E1DBB0200787371007E00087708FFFFFF9E1DBB0200780000000071007E000A71007E000A71007E000D7371007E000277080000006ED8B2D080787371007E000277080000006ED8B2D080787371007E000877080000006ED8B2D080780000000071007E000A71007E000A71007E000D7371007E0002770800000003CE2DA600787371007E0002770800000003CE2DA600787371007E0008770800000003CE2DA600780000000071007E000A71007E000A71007E000D78" mode="ACED0005737200386F72672E74616C656E642E646174617175616C6974792E696E64696361746F72732E6D617064622E54616C656E64466F726D617444617465F8E98C22E38F4C860200024C0007646174654F626A7400104C6A6176612F7574696C2F446174653B4C00077061747465726E7400124C6A6176612F6C616E672F537472696E673B7872000E6A6176612E7574696C2E44617465686A81014B59741903000078707708FFFFFF9E1DBB0200787371007E00007708FFFFFF9E1DBB020078737200126A6176612E73716C2E54696D657374616D702618D5C80153BF650200014900056E616E6F737871007E00037708FFFFFF9E1DBB02007800000000740017797979792D4D4D2D64642048483A6D6D3A73732E53535371007E0008">
+      <indicators xsi:type="dataquality.indicators:ModeIndicator" xmi:id="_9ICpxDgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="98" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200386F72672E74616C656E642E646174617175616C6974792E696E64696361746F72732E6D617064622E54616C656E64466F726D617444617465F8E98C22E38F4C860200024C0007646174654F626A7400104C6A6176612F7574696C2F446174653B4C00077061747465726E7400124C6A6176612F6C616E672F537472696E673B7872000E6A6176612E7574696C2E44617465686A81014B59741903000078707708FFFFFFB988F6D600787371007E00027708FFFFFFB988F6D60078737200126A6176612E73716C2E54696D657374616D702618D5C80153BF650200014900056E616E6F737871007E00057708FFFFFFB988F6D6007800000000740017797979792D4D4D2D64642048483A6D6D3A73732E53535371007E000A7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017371007E00027708FFFFFFDA6804FC80787371007E00057708FFFFFFDA6804FC807871007E000A71007E000D7371007E00027708FFFFFFD1982CA600787371007E00027708FFFFFFD1982CA600787371007E00087708FFFFFFD1982CA600780000000071007E000A71007E000A71007E000D7371007E00027708000000F12E853480787371007E00027708000000F12E853480787371007E00087708000000F12E853480780000000071007E000A71007E000A7371007E000B00000000000000027371007E00027708FFFFFFB28DF82200787371007E00027708FFFFFFB28DF82200787371007E00087708FFFFFFB28DF82200780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFFC6C09FE080787371007E00057708FFFFFFC6C09FE0807871007E000A71007E000D7371007E00027708FFFFFFAF99283C80787371007E00057708FFFFFFAF99283C807871007E000A71007E000D7371007E00027708FFFFFF9E1DBB0200787371007E00057708FFFFFF9E1DBB02007871007E000A71007E000D7371007E00027708FFFFFFC87B4BDA00787371007E00027708FFFFFFC87B4BDA00787371007E00087708FFFFFFC87B4BDA00780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFF4F195E5080787371007E00057708FFFFFF4F195E50807871007E000A71007E000D78" mode="ACED0005737200386F72672E74616C656E642E646174617175616C6974792E696E64696361746F72732E6D617064622E54616C656E64466F726D617444617465F8E98C22E38F4C860200024C0007646174654F626A7400104C6A6176612F7574696C2F446174653B4C00077061747465726E7400124C6A6176612F6C616E672F537472696E673B7872000E6A6176612E7574696C2E44617465686A81014B59741903000078707708000000F12E853480787371007E00007708000000F12E85348078737200126A6176612E73716C2E54696D657374616D702618D5C80153BF650200014900056E616E6F737871007E00037708000000F12E8534807800000000740017797979792D4D4D2D64642048483A6D6D3A73732E53535371007E0008">
         <parameters xmi:id="_9ICpxTgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICpxjgOEeiv1bKJKPS_Mg"/>
         </parameters>
@@ -1227,7 +1227,7 @@
           <sqlGenericExpression xmi:id="_BjRdCTgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_9ICpxzgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="50" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200386F72672E74616C656E642E646174617175616C6974792E696E64696361746F72732E6D617064622E54616C656E64466F726D617444617465F8E98C22E38F4C860200024C0007646174654F626A7400104C6A6176612F7574696C2F446174653B4C00077061747465726E7400124C6A6176612F6C616E672F537472696E673B7872000E6A6176612E7574696C2E44617465686A81014B59741903000078707708FFFFFFDAF310B080787371007E00027708FFFFFFDAF310B08078737200126A6176612E73716C2E54696D657374616D702618D5C80153BF650200014900056E616E6F737871007E00057708FFFFFFDAF310B0807800000000740017797979792D4D4D2D64642048483A6D6D3A73732E53535371007E000A7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017371007E00027708FFFFFFC6C09FE080787371007E00027708FFFFFFC6C09FE080787371007E00087708FFFFFFC6C09FE080780000000071007E000A71007E000A71007E000D7371007E000277080000001E42383A00787371007E000277080000001E42383A00787371007E000877080000001E42383A00780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFFAF99283C80787371007E00027708FFFFFFAF99283C80787371007E00087708FFFFFFAF99283C80780000000071007E000A71007E000A71007E000D7371007E000277080000001DCBC5F600787371007E000277080000001DCBC5F600787371007E000877080000001DCBC5F600780000000071007E000A71007E000A71007E000D7371007E0002770800000049FE307080787371007E0002770800000049FE307080787371007E0008770800000049FE307080780000000071007E000A71007E000A71007E000D7371007E000277080000005E4F876880787371007E000277080000005E4F876880787371007E000877080000005E4F876880780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFF9E1DBB0200787371007E00027708FFFFFF9E1DBB0200787371007E00087708FFFFFF9E1DBB0200780000000071007E000A71007E000A71007E000D7371007E000277080000006ED8B2D080787371007E000277080000006ED8B2D080787371007E000877080000006ED8B2D080780000000071007E000A71007E000A71007E000D7371007E0002770800000003CE2DA600787371007E0002770800000003CE2DA600787371007E0008770800000003CE2DA600780000000071007E000A71007E000A71007E000D78">
+      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_9ICpxzgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="98" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200386F72672E74616C656E642E646174617175616C6974792E696E64696361746F72732E6D617064622E54616C656E64466F726D617444617465F8E98C22E38F4C860200024C0007646174654F626A7400104C6A6176612F7574696C2F446174653B4C00077061747465726E7400124C6A6176612F6C616E672F537472696E673B7872000E6A6176612E7574696C2E44617465686A81014B59741903000078707708FFFFFFB988F6D600787371007E00027708FFFFFFB988F6D60078737200126A6176612E73716C2E54696D657374616D702618D5C80153BF650200014900056E616E6F737871007E00057708FFFFFFB988F6D6007800000000740017797979792D4D4D2D64642048483A6D6D3A73732E53535371007E000A7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017371007E00027708FFFFFFDA6804FC80787371007E00057708FFFFFFDA6804FC807871007E000A71007E000D7371007E00027708FFFFFFD1982CA600787371007E00027708FFFFFFD1982CA600787371007E00087708FFFFFFD1982CA600780000000071007E000A71007E000A71007E000D7371007E00027708000000F12E853480787371007E00027708000000F12E853480787371007E00087708000000F12E853480780000000071007E000A71007E000A7371007E000B00000000000000027371007E00027708FFFFFFB28DF82200787371007E00027708FFFFFFB28DF82200787371007E00087708FFFFFFB28DF82200780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFFC6C09FE080787371007E00057708FFFFFFC6C09FE0807871007E000A71007E000D7371007E00027708FFFFFFAF99283C80787371007E00057708FFFFFFAF99283C807871007E000A71007E000D7371007E00027708FFFFFF9E1DBB0200787371007E00057708FFFFFF9E1DBB02007871007E000A71007E000D7371007E00027708FFFFFFC87B4BDA00787371007E00027708FFFFFFC87B4BDA00787371007E00087708FFFFFFC87B4BDA00780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFF4F195E5080787371007E00057708FFFFFF4F195E50807871007E000A71007E000D78">
         <parameters xmi:id="_9ICpyDgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Frequency_Table_0.1.definition#_ccIR4hF2Ed2PKb6nEJEvhw"/>
@@ -1244,7 +1244,7 @@
           <sqlGenericExpression xmi:id="_BjuI-TgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DateFrequencyIndicator" xmi:id="_9ICpyTgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="50" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000831393830303132377372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740008313937303037303971007E0005740008313937343032313371007E0005740008313938353032303171007E0005740008313936323033313871007E0005740008313938323131303271007E0005740008313935363039303571007E0005740008313935393031323271007E0005740008313936343132313671007E0005740008313937343031323171007E000578">
+      <indicators xsi:type="dataquality.indicators:DateFrequencyIndicator" xmi:id="_9ICpyTgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="98" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000832303032313032397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000831393633303930387371007E00030000000000000001740008313936323036313271007E0007740008313934353132303471007E0007740008313936323033313871007E0007740008313936343131313971007E0007740008313936303035333071007E0007740008313935363039303571007E0007740008313935393031323271007E0007740008313935393036313871007E000778">
         <parameters xmi:id="_9ICpyjgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICpyzgOEeiv1bKJKPS_Mg" dateAggregationType="day"/>
         </parameters>
@@ -1263,7 +1263,7 @@
           <sqlGenericExpression xmi:id="_BkNRKTgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:WeekFrequencyIndicator" xmi:id="_9ICpzDgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="50" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000831393734303130347372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740008313938323131343571007E0005740008313936323033313271007E0005740008313938303031303571007E0005740008313938353032303571007E0005740008313937343032303771007E0005740008313936343132353171007E0005740008313935393031303471007E0005740008313935363039333671007E0005740008313937303037323871007E000578">
+      <indicators xsi:type="dataquality.indicators:WeekFrequencyIndicator" xmi:id="_9ICpzDgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="94" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000832303131313034337372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000831393632303331327371007E00030000000000000001740008313935393036323571007E0007740008323031353031303471007E0005740008313934353132343971007E0007740008313936303035323371007E0007740008313936323036323471007E0007740008313935393031303471007E0007740008313935363039333671007E0007740008323030323130343471007E000578">
         <parameters xmi:id="_9ICpzTgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICpzjgOEeiv1bKJKPS_Mg" dateAggregationType="week"/>
         </parameters>
@@ -1282,7 +1282,7 @@
           <sqlGenericExpression xmi:id="_BkzHCTgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:MonthFrequencyIndicator" xmi:id="_9ICpzzgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="46" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400063139373030377372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000631393539303171007E00057400063139393830397371007E0003000000000000000274000632303131303871007E000874000631393536303971007E000574000631393830303171007E000574000631393734303171007E000574000631393634313271007E000574000631393734303271007E000574000631393632303371007E000578">
+      <indicators xsi:type="dataquality.indicators:MonthFrequencyIndicator" xmi:id="_9ICpzzgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="84" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400063230313131307372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000632303032313071007E000574000631393934303571007E00057400063139343531327371007E0003000000000000000174000632303133303871007E000574000631393938303971007E000574000632303131303871007E000574000631393536303971007E000974000632303135303171007E000574000632303131303471007E000578">
         <parameters xmi:id="_9ICp0DgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICp0TgOEeiv1bKJKPS_Mg" dateAggregationType="month"/>
         </parameters>
@@ -1301,7 +1301,7 @@
           <sqlGenericExpression xmi:id="_BlSPOTgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:QuarterFrequencyIndicator" xmi:id="_9ICp0jgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="39" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000531393632317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000531393734317371007E00030000000000000002740005313938353171007E0007740005313939383371007E000774000532303131337371007E00030000000000000003740005313936343471007E0005740005313935363371007E0005740005313935393171007E0005740005323031363171007E0007740005313937303371007E000578">
+      <indicators xsi:type="dataquality.indicators:QuarterFrequencyIndicator" xmi:id="_9ICp0jgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="54" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000531393734317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000002740005313938353171007E0005740005313939383371007E000574000532303131337371007E00030000000000000004740005313938353471007E0005740005313939343271007E000574000532303032347371007E00030000000000000003740005323031313271007E000D740005313936343471007E0005740005323030323371007E000578">
         <parameters xmi:id="_9ICp0zgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICp1DgOEeiv1bKJKPS_Mg" dateAggregationType="quarter"/>
         </parameters>
@@ -1320,7 +1320,7 @@
           <sqlGenericExpression xmi:id="_Bl4FGTgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:YearFrequencyIndicator" xmi:id="_9ICp1TgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="16" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740004313939387372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000027400043139393771007E0005740004313938357371007E000300000000000000037400043139373471007E00057400043230303671007E00057400043230303571007E00057400043230313471007E00087400043230303371007E00057400043230303271007E0005740004323031317371007E0003000000000000000478">
+      <indicators xsi:type="dataquality.indicators:YearFrequencyIndicator" xmi:id="_9ICp1TgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="11" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740004313938357372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000004740004323030367371007E00030000000000000003740004323030357371007E000300000000000000057400043230313571007E00097400043230303471007E00077400043230313471007E0009740004323030327371007E000300000000000000067400043230313371007E0009740004323031317371007E000300000000000000097400043139393971007E000778">
         <parameters xmi:id="_9ICp1jgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICp1zgOEeiv1bKJKPS_Mg"/>
         </parameters>
@@ -1339,7 +1339,7 @@
           <sqlGenericExpression xmi:id="_BmeiCTgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_9ICp2DgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="50" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200386F72672E74616C656E642E646174617175616C6974792E696E64696361746F72732E6D617064622E54616C656E64466F726D617444617465F8E98C22E38F4C860200024C0007646174654F626A7400104C6A6176612F7574696C2F446174653B4C00077061747465726E7400124C6A6176612F6C616E672F537472696E673B7872000E6A6176612E7574696C2E44617465686A81014B59741903000078707708FFFFFFDAF310B080787371007E00027708FFFFFFDAF310B08078737200126A6176612E73716C2E54696D657374616D702618D5C80153BF650200014900056E616E6F737871007E00057708FFFFFFDAF310B0807800000000740017797979792D4D4D2D64642048483A6D6D3A73732E53535371007E000A7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017371007E00027708FFFFFFC6C09FE080787371007E00027708FFFFFFC6C09FE080787371007E00087708FFFFFFC6C09FE080780000000071007E000A71007E000A71007E000D7371007E000277080000001E42383A00787371007E000277080000001E42383A00787371007E000877080000001E42383A00780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFFAF99283C80787371007E00027708FFFFFFAF99283C80787371007E00087708FFFFFFAF99283C80780000000071007E000A71007E000A71007E000D7371007E000277080000001DCBC5F600787371007E000277080000001DCBC5F600787371007E000877080000001DCBC5F600780000000071007E000A71007E000A71007E000D7371007E0002770800000049FE307080787371007E0002770800000049FE307080787371007E0008770800000049FE307080780000000071007E000A71007E000A71007E000D7371007E000277080000005E4F876880787371007E000277080000005E4F876880787371007E000877080000005E4F876880780000000071007E000A71007E000A71007E000D7371007E00027708FFFFFF9E1DBB0200787371007E00027708FFFFFF9E1DBB0200787371007E00087708FFFFFF9E1DBB0200780000000071007E000A71007E000A71007E000D7371007E000277080000006ED8B2D080787371007E000277080000006ED8B2D080787371007E000877080000006ED8B2D080780000000071007E000A71007E000A71007E000D7371007E0002770800000003CE2DA600787371007E0002770800000003CE2DA600787371007E0008770800000003CE2DA600780000000071007E000A71007E000A71007E000D78">
+      <indicators xsi:type="dataquality.indicators:LowFrequencyIndicator" xmi:id="_9ICp2DgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="98" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A737200386F72672E74616C656E642E646174617175616C6974792E696E64696361746F72732E6D617064622E54616C656E64466F726D617444617465F8E98C22E38F4C860200024C0007646174654F626A7400104C6A6176612F7574696C2F446174653B4C00077061747465726E7400124C6A6176612F6C616E672F537472696E673B7872000E6A6176612E7574696C2E44617465686A81014B59741903000078707708FFFFFFB988F6D600787371007E00057708FFFFFFB988F6D60078740017797979792D4D4D2D64642048483A6D6D3A73732E5353537372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017371007E00027708FFFFFFDA6804FC80787371007E00057708FFFFFFDA6804FC807871007E000871007E000B7371007E00027708FFFFFFD1982CA600787371007E00057708FFFFFFD1982CA6007871007E000871007E000B7371007E00027708FFFFFFB28DF82200787371007E00057708FFFFFFB28DF822007871007E000871007E000B7371007E00027708FFFFFFDAF310B080787371007E00057708FFFFFFDAF310B0807871007E000871007E000B7371007E00027708FFFFFFC6C09FE080787371007E00057708FFFFFFC6C09FE0807871007E000871007E000B7371007E00027708FFFFFFAF99283C80787371007E00057708FFFFFFAF99283C807871007E000871007E000B7371007E00027708FFFFFF9E1DBB0200787371007E00057708FFFFFF9E1DBB02007871007E000871007E000B7371007E00027708FFFFFFC87B4BDA00787371007E00057708FFFFFFC87B4BDA007871007E000871007E000B7371007E00027708FFFFFF4F195E5080787371007E00057708FFFFFF4F195E50807871007E000871007E000B78">
         <parameters xmi:id="_9ICp2TgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Low_Frequency_Table_0.1.definition#_-0C00JOtEd2Iyo0dtkB9pA"/>
@@ -1355,7 +1355,7 @@
           <sqlGenericExpression xmi:id="_Bm4xuDgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DateLowFrequencyIndicator" xmi:id="_9ICp2jgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="50" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000831393830303132377372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740008313937303037303971007E0005740008313937343032313371007E0005740008313938353032303171007E0005740008313936323033313871007E0005740008313938323131303271007E0005740008313935363039303571007E0005740008313935393031323271007E0005740008313936343132313671007E0005740008313937343031323171007E000578">
+      <indicators xsi:type="dataquality.indicators:DateLowFrequencyIndicator" xmi:id="_9ICp2jgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="98" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000831393633303930387372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740008313936323036313271007E0005740008313934353132303471007E0005740008313936323033313871007E0005740008313936343131313971007E0005740008313936303035333071007E0005740008313935363039303571007E0005740008313935393031323271007E0005740008313936343132313671007E0005740008313935393036313871007E000578">
         <parameters xmi:id="_9ICp2zgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICp3DgOEeiv1bKJKPS_Mg" dateAggregationType="day"/>
         </parameters>
@@ -1373,7 +1373,7 @@
           <sqlGenericExpression xmi:id="_BnVdqDgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:WeekLowFrequencyIndicator" xmi:id="_9ICp3TgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="50" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000831393734303130347372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740008313938323131343571007E0005740008313936323033313271007E0005740008313938303031303571007E0005740008313938353032303571007E0005740008313937343032303771007E0005740008313936343132353171007E0005740008313935393031303471007E0005740008313935363039333671007E0005740008313937303037323871007E000578">
+      <indicators xsi:type="dataquality.indicators:WeekLowFrequencyIndicator" xmi:id="_9ICp3TgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="94" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000831393632303331327372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740008313935393036323571007E0005740008313934353132343971007E0005740008313936303035323371007E0005740008313936323036323471007E0005740008313936333039333771007E0005740008313936343132353171007E0005740008313935393031303471007E0005740008313935363039333671007E0005740008313936343131343771007E000578">
         <parameters xmi:id="_9ICp3jgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICp3zgOEeiv1bKJKPS_Mg" dateAggregationType="week"/>
         </parameters>
@@ -1391,7 +1391,7 @@
           <sqlGenericExpression xmi:id="_Bnz-yDgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:MonthLowFrequencyIndicator" xmi:id="_9ICp4DgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="46" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400063139373030377372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000631393539303171007E000574000631393832313171007E000574000631393536303971007E000574000631393830303171007E000574000631393734303171007E000574000631393634313271007E000574000631393734303271007E000574000631393835303271007E000574000631393632303371007E000578">
+      <indicators xsi:type="dataquality.indicators:MonthLowFrequencyIndicator" xmi:id="_9ICp4DgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="84" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400063139343531327372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000631393632303671007E000574000631393539303171007E000574000631393633303971007E000574000631393536303971007E000574000631393539303671007E000574000631393634313171007E000574000631393634313271007E000574000631393630303571007E000574000631393632303371007E000578">
         <parameters xmi:id="_9ICp4TgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICp4jgOEeiv1bKJKPS_Mg" dateAggregationType="month"/>
         </parameters>
@@ -1409,7 +1409,7 @@
           <sqlGenericExpression xmi:id="_BoTG-DgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:QuarterLowFrequencyIndicator" xmi:id="_9ICp4zgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="39" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000531393632317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740005313938353471007E0005740005313939343271007E0005740005313936343471007E0005740005313935363371007E0005740005313938373171007E0005740005313935393171007E0005740005313938303171007E0005740005313937303371007E0005740005313938323471007E000578">
+      <indicators xsi:type="dataquality.indicators:QuarterLowFrequencyIndicator" xmi:id="_9ICp4zgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="54" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000531393632317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740005313936323271007E0005740005313936333371007E0005740005313936373271007E0005740005313934353471007E0005740005313935363371007E0005740005313935393171007E0005740005313935393271007E0005740005313936303271007E0005740005313937303371007E000578">
         <parameters xmi:id="_9ICp5DgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICp5TgOEeiv1bKJKPS_Mg" dateAggregationType="quarter"/>
         </parameters>
@@ -1427,7 +1427,7 @@
           <sqlGenericExpression xmi:id="_Bovy6DgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:YearLowFrequencyIndicator" xmi:id="_9ICp5jgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="10" uniqueValueCount="16" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740004313938377372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400043139363471007E00057400043139363271007E00057400043139393471007E00057400043139383271007E00057400043139373071007E00057400043139383071007E00057400043139353971007E00057400043139353671007E00057400043139393971007E000578">
+      <indicators xsi:type="dataquality.indicators:YearLowFrequencyIndicator" xmi:id="_9ICp5jgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="10" uniqueValueCount="11" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740004313936337372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017400043139393571007E00057400043139363071007E00057400043139383271007E00057400043139373071007E00057400043139383071007E00057400043139343571007E00057400043139353671007E00057400043139363771007E00057400043139383971007E000578">
         <parameters xmi:id="_9ICp5zgOEeiv1bKJKPS_Mg">
           <dateParameters xmi:id="_9ICp6DgOEeiv1bKJKPS_Mg"/>
         </parameters>
@@ -1445,7 +1445,7 @@
           <sqlGenericExpression xmi:id="_BpO7GDgPEeiv1bKJKPS_Mg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_9ICp6TgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740017393939392D39392D39392039393A39393A39392E3939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000003278">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_9ICp6TgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740017393939392D39392D39392039393A39393A39392E3939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000006478">
         <parameters xmi:id="_9ICp6jgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
@@ -1478,7 +1478,7 @@
           <charactersMapping xmi:id="_BppK2TgPEeiv1bKJKPS_Mg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_9ICp6zgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740017393939392D39392D39392039393A39393A39392E3939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000003278">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_9ICp6zgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740017393939392D39392D39392039393A39393A39392E3939397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000006478">
         <parameters xmi:id="_9ICp7DgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
@@ -1511,7 +1511,7 @@
           <charactersMapping xmi:id="_BqKvSTgPEeiv1bKJKPS_Mg" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:BenfordLawFrequencyIndicator" xmi:id="_9ICp7TgOEeiv1bKJKPS_Mg" count="50" computed="true" distinctValueCount="9" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000009740001317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000013740001327371007E0003000000000000001F740001337371007E000300000000000000007400013471007E00097400013571007E00097400013671007E00097400013771007E00097400013871007E00097400013971007E000978">
+      <indicators xsi:type="dataquality.indicators:BenfordLawFrequencyIndicator" xmi:id="_9ICp7TgOEeiv1bKJKPS_Mg" count="100" computed="true" distinctValueCount="9" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000009740001317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000024740001327371007E00030000000000000040740001337371007E000300000000000000007400013471007E00097400013571007E00097400013671007E00097400013771007E00097400013871007E00097400013971007E000978">
         <parameters xmi:id="_9ICp7jgOEeiv1bKJKPS_Mg" topN="50">
           <dateParameters xmi:id="_9ICp7zgOEeiv1bKJKPS_Mg"/>
         </parameters>
