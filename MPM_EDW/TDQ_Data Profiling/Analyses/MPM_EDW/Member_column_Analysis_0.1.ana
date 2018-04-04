@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_kV_qgDgOEeiv1bKJKPS_Mg" name="Member_column_Analysis" creationDate="2018-04-04T09:46:23.155-0400">
+  <taggedValue xmi:id="_kV_qgTgOEeiv1bKJKPS_Mg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_kV_qgjgOEeiv1bKJKPS_Mg" tag="Author" value="HighPoint6@medpointmanagement.com"/>
+  <taggedValue xmi:id="_kV_qgzgOEeiv1bKJKPS_Mg" tag="Purpose"/>
+  <taggedValue xmi:id="_kV_qhDgOEeiv1bKJKPS_Mg" tag="Description"/>
+  <taggedValue xmi:id="_kV_qhTgOEeiv1bKJKPS_Mg" tag="Version" value="0.1"/>
+  <context xmi:id="_kV_qhjgOEeiv1bKJKPS_Mg"/>
+  <results xmi:id="_kV_qhzgOEeiv1bKJKPS_Mg">
+    <resultMetadata xmi:id="_kV_qiDgOEeiv1bKJKPS_Mg"/>
+  </results>
+  <parameters xmi:id="_kV_qiTgOEeiv1bKJKPS_Mg" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
