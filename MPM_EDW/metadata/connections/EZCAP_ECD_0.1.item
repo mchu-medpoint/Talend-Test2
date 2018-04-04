@@ -427,11 +427,13 @@
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_zfll7jSXEeiA5eC6W0k7dg" name="LASTNM" id="LASTNM" label="LASTNM" length="40" sourceType="VARCHAR" talendType="id_String" nullable="false">
           <taggedValue xmi:id="_zfll7zSXEeiA5eC6W0k7dg" tag="Comment" value=""/>
+          <taggedValue xmi:id="_zPAGIDgOEeiv1bKJKPS_Mg" tag="Content Type" value="Nominal"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_zfll8DSXEeiA5eC6W0k7dg" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_zfll8TSXEeiA5eC6W0k7dg" name="VARCHAR" javaDataType="12"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_zfll8jSXEeiA5eC6W0k7dg" name="FIRSTNM" id="FIRSTNM" label="FIRSTNM" length="30" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_zfll8zSXEeiA5eC6W0k7dg" tag="Comment" value=""/>
+          <taggedValue xmi:id="_zPAGITgOEeiv1bKJKPS_Mg" tag="Content Type" value="Nominal"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_zfll9DSXEeiA5eC6W0k7dg" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_zfll9TSXEeiA5eC6W0k7dg" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
         </feature>
@@ -477,6 +479,7 @@
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_zflmFjSXEeiA5eC6W0k7dg" name="BIRTH" id="BIRTH" label="BIRTH" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
           <taggedValue xmi:id="_zflmFzSXEeiA5eC6W0k7dg" tag="Comment" value=""/>
+          <taggedValue xmi:id="_zPAGIjgOEeiv1bKJKPS_Mg" tag="Content Type" value="Interval"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_zflmGDSXEeiA5eC6W0k7dg" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_zflmGTSXEeiA5eC6W0k7dg" name="DATETIME" numericPrecision="3" javaDataType="93"/>
         </feature>
@@ -4628,5 +4631,6 @@
   </orgomg.cwm.resource.relational:Catalog>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_thRe0DeAEeionMhtIoBHVw" kind="Usage" supplier="_mrtVoDSVEeiA5eC6W0k7dg">
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/MPM_EDW/Match_Mmeber_Analysis_0.1.ana#_rBMHsDeAEeionMhtIoBHVw"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/MPM_EDW/Member_column_Analysis_0.1.ana#_kV_qgDgOEeiv1bKJKPS_Mg"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
