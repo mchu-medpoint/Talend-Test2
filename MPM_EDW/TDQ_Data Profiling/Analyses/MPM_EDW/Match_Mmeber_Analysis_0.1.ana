@@ -97,7 +97,16 @@
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_rBOj8DeAEeionMhtIoBHVw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_rBOj8TeAEeionMhtIoBHVw">
       <builtInMatchRuleDefinition xmi:id="_rBOj8jeAEeionMhtIoBHVw">
-        <matchRules xmi:id="_rnc2cDeAEeionMhtIoBHVw" name="Match Rule 1"/>
+        <blockKeys xmi:id="_dbgagDeTEeionMhtIoBHVw" name="COMPANY_ID" column="COMPANY_ID">
+          <preAlgorithm xmi:id="_dbgagTeTEeionMhtIoBHVw" algorithmType="NON_ALGO" algorithmParameters=""/>
+          <algorithm xmi:id="_dbgagjeTEeionMhtIoBHVw" algorithmType="first_Char_EW" algorithmParameters=""/>
+          <postAlgorithm xmi:id="_dbgagzeTEeionMhtIoBHVw" algorithmType="NON_ALGO" algorithmParameters=""/>
+        </blockKeys>
+        <matchRules xmi:id="_rnc2cDeAEeionMhtIoBHVw" name="Match Rule 1">
+          <matchKeys xmi:id="_xGw5oDeSEeionMhtIoBHVw" name="FULLNAME" column="FULLNAME" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_xGw5oTeSEeionMhtIoBHVw" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
