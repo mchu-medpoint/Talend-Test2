@@ -632,6 +632,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MI"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEMBSSN"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="BIRTH"/>
@@ -658,6 +660,7 @@
       <column comment="" key="false" length="30" name="MI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="10" name="MEMBSSN" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -846,7 +849,7 @@
         <mapperTableEntries name="MIDDLE_NAME" expression="row1.MI " type="id_String" nullable="true"/>
         <mapperTableEntries name="DOB" expression="row1.BIRTH " type="id_Date" nullable="true"/>
         <mapperTableEntries name="GENDER" expression="row1.SEX " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBER_SSN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBER_SSN" expression="row1.MEMBSSN " type="id_String" nullable="true"/>
         <mapperTableEntries name="DECEASED_DT" expression="row1.DEATHDATE " type="id_Date" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="row1.MEMB_KEYID " type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_ID" expression="row1.MEMBID " type="id_String" nullable="true"/>
@@ -895,6 +898,7 @@
         <mapperTableEntries name="LASTNM" type="id_String"/>
         <mapperTableEntries name="FIRSTNM" type="id_String" nullable="true"/>
         <mapperTableEntries name="MI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBSSN" type="id_String" nullable="true"/>
         <mapperTableEntries name="SEX" type="id_String" nullable="true"/>
         <mapperTableEntries name="BIRTH" type="id_Date"/>
         <mapperTableEntries name="DEATHDATE" type="id_Date" nullable="true"/>
@@ -2057,6 +2061,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MEMBSSN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
