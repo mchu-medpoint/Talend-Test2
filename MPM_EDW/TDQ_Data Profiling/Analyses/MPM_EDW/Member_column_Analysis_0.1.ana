@@ -77,7 +77,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zflmFjSXEeiA5eC6W0k7dg"/>
     </context>
     <results xmi:id="_kV_qhzgOEeiv1bKJKPS_Mg">
-      <resultMetadata xmi:id="_kV_qiDgOEeiv1bKJKPS_Mg" executionDate="2018-04-04T09:49:52.331-0400" message="Unsupported use of regular expressions on this database. Remove all Pattern indicators from this analysis, please." executionNumber="1"/>
+      <resultMetadata xmi:id="_kV_qiDgOEeiv1bKJKPS_Mg" executionDate="2018-04-04T09:52:47.056-0400" message="Unsupported use of regular expressions on this database. Remove all Pattern indicators from this analysis, please." executionNumber="2"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_9ICn0DgOEeiv1bKJKPS_Mg">
         <parameters xmi:id="_9ICn0TgOEeiv1bKJKPS_Mg"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/EZCAP_ECD_0.1.item#_zfll7jSXEeiA5eC6W0k7dg"/>
