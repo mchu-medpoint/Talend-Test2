@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_kV_qgDgOEeiv1bKJKPS_Mg" name="Member_column_Analysis" creationDate="2018-04-04T09:46:23.155-0400" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_kV_qgDgOEeiv1bKJKPS_Mg" name="Member_column_Analysis" supplierDependency="_uzypsDgPEeiv1bKJKPS_Mg" creationDate="2018-04-04T09:46:23.155-0400" defaultContext="Default">
     <clientDependency href="../../../metadata/connections/EZCAP_ECD_0.1.item#_thRe0DeAEeionMhtIoBHVw"/>
     <taggedValue xmi:id="_kV_qgTgOEeiv1bKJKPS_Mg" tag="Status" value="development"/>
     <taggedValue xmi:id="_kV_qgjgOEeiv1bKJKPS_Mg" tag="Author" value="HighPoint6@medpointmanagement.com"/>
@@ -1544,4 +1544,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_uzypsDgPEeiv1bKJKPS_Mg" kind="Usage" supplier="_kV_qgDgOEeiv1bKJKPS_Mg">
+    <client xsi:type="dataquality.reports:TdReport" href="../../Reports/Member_column_Analysis_0.1.rep#_uzypoDgPEeiv1bKJKPS_Mg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>

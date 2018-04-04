@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_uzypoDgPEeiv1bKJKPS_Mg" name="Member_column_Analysis" creationDate="2018-04-04T09:54:43.022-0400">
+  <clientDependency href="../Analyses/MPM_EDW/Member_column_Analysis_0.1.ana#_uzypsDgPEeiv1bKJKPS_Mg"/>
+  <taggedValue xmi:id="_uzypoTgPEeiv1bKJKPS_Mg" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_uzypojgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_uzypozgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_uzyppDgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_uzyppTgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_uzyppjgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_uzyppzgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_uzypqDgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_uzypqTgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
+  <taggedValue xmi:id="_uzypqjgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:M:\EDW Project\HighPoint\PRASAD\highpoint(vdi)_talend_workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_uzypqzgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_uzyprDgPEeiv1bKJKPS_Mg" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_uzyprTgPEeiv1bKJKPS_Mg" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_uzyprjgPEeiv1bKJKPS_Mg" tag="Author" value="HighPoint6@medpointmanagement.com"/>
+  <analysisMap xmi:id="_uzyprzgPEeiv1bKJKPS_Mg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/MPM_EDW/Member_column_Analysis_0.1.ana#_kV_qgDgOEeiv1bKJKPS_Mg"/>
+  </analysisMap>
+</dataquality.reports:TdReport>
