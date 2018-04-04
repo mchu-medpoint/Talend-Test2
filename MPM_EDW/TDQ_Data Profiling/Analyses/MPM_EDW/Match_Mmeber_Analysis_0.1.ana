@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_rBMHsDeAEeionMhtIoBHVw" name="Match_Mmeber_Analysis" creationDate="2018-04-03T16:50:38.570-0400" defaultContext="Default">
   <clientDependency href="../../../metadata/connections/EZCAP_ECD_0.1.item#_thRe0DeAEeionMhtIoBHVw"/>
-  <taggedValue xmi:id="_rBMHsTeAEeionMhtIoBHVw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_rBMHsTeAEeionMhtIoBHVw" tag="PREVIEW_ROW_NUMBER" value="100000"/>
   <taggedValue xmi:id="_rBMHsjeAEeionMhtIoBHVw" tag="Status" value="development"/>
   <taggedValue xmi:id="_rBMHszeAEeionMhtIoBHVw" tag="Author" value="HighPoint6@medpointmanagement.com"/>
   <taggedValue xmi:id="_rBMHtDeAEeionMhtIoBHVw" tag="Purpose" value=""/>
@@ -97,16 +97,20 @@
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_rBOj8DeAEeionMhtIoBHVw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_rBOj8TeAEeionMhtIoBHVw">
       <builtInMatchRuleDefinition xmi:id="_rBOj8jeAEeionMhtIoBHVw">
-        <blockKeys xmi:id="_dbgagDeTEeionMhtIoBHVw" name="COMPANY_ID" column="COMPANY_ID">
-          <preAlgorithm xmi:id="_dbgagTeTEeionMhtIoBHVw" algorithmType="NON_ALGO" algorithmParameters=""/>
-          <algorithm xmi:id="_dbgagjeTEeionMhtIoBHVw" algorithmType="first_Char_EW" algorithmParameters=""/>
-          <postAlgorithm xmi:id="_dbgagzeTEeionMhtIoBHVw" algorithmType="NON_ALGO" algorithmParameters=""/>
-        </blockKeys>
         <matchRules xmi:id="_rnc2cDeAEeionMhtIoBHVw" name="Match Rule 1">
-          <matchKeys xmi:id="_xGw5oDeSEeionMhtIoBHVw" name="FULLNAME" column="FULLNAME" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
-            <algorithm xmi:id="_xGw5oTeSEeionMhtIoBHVw" algorithmType="EXACT" algorithmParameters=""/>
+          <matchKeys xmi:id="_nLmMYDgTEeiv1bKJKPS_Mg" name="LASTNM" column="LASTNM" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_nLmMYTgTEeiv1bKJKPS_Mg" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+          <matchKeys xmi:id="_qi0m4DgTEeiv1bKJKPS_Mg" name="BIRTH" column="BIRTH" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_qi0m4TgTEeiv1bKJKPS_Mg" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+          <matchKeys xmi:id="_9dNNQDgTEeiv1bKJKPS_Mg" name="FIRSTNM" column="FIRSTNM" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_9dNNQTgTEeiv1bKJKPS_Mg" algorithmType="EXACT" algorithmParameters=""/>
           </matchKeys>
         </matchRules>
+        <survivorshipKeys xmi:id="_Ix304DgTEeiv1bKJKPS_Mg" name="FULLNAME" allowManualResolution="true">
+          <function xmi:id="_Ix304TgTEeiv1bKJKPS_Mg" algorithmType="Concatenate" algorithmParameters=","/>
+        </survivorshipKeys>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
