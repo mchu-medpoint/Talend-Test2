@@ -260,7 +260,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="MD5.getHashString(row1.HPCODE,row1.EMPGROUP,row1.OPFROMDT,row1.MEMB_KEYID) " type="id_String"/>
+        <mapperTableEntries name="var1" expression="MD5.getHashString(row1.HPCODE,row1.EMPGROUP,row1.MEMB_KEYID) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="tLog">
         <mapperTableEntries name="MEMB_HPHISTS_SK" expression="row1.MEMB_HPHISTS_SK " type="id_Long"/>
