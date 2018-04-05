@@ -259,7 +259,9 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="MD5.getHashString(row1.HPCODE,row1.EMPGROUP,row1.OPFROMDT,row1.MEMB_KEYID) " type="id_String"/>
+      </varTables>
       <outputTables sizeState="INTERMEDIATE" name="tLog">
         <mapperTableEntries name="MEMB_HPHISTS_SK" expression="row1.MEMB_HPHISTS_SK " type="id_Long"/>
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_String"/>
@@ -272,7 +274,7 @@
         <mapperTableEntries name="CURRHIST" expression="row1.CURRHIST " type="id_String" nullable="true"/>
         <mapperTableEntries name="OPTHRUDT" expression="row1.OPTHRUDT " type="id_Date" nullable="true"/>
         <mapperTableEntries name="HPFROMDT" expression="row1.HPFROMDT " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OPT" expression="row1.OPT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPT" expression="Var.var1 " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MEMB_HPHISTS_SK" type="id_Long"/>
