@@ -815,7 +815,7 @@
         <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="row1.MEMB_KEYID " type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_ID" expression="row1.MEMBID " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="a" expressionFilter="row2.SRC_MEMBER_KEY_ID == null" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="a" expressionFilter="row2.SRC_MEMBER_KEY_ID != null" activateExpressionFilter="true">
         <mapperTableEntries name="LAST_NAME" expression="row1.LASTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="row1.FIRSTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="MIDDLE_NAME" expression="row1.MI " type="id_String" nullable="true"/>
