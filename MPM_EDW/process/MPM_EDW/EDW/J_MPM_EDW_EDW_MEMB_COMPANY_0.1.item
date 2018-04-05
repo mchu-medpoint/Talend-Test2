@@ -471,7 +471,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="-64" posX="288" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String load = context.MPM_EDW_LoadType;&#xA;globalMap.put(&quot;load&quot;,load);&#xA;&#xA;System.out.println(load);&#xA;&#xA;System.out.println(globalMap.get(&quot;load&quot;));&#xA;&#xA;String Query = &quot;&quot;;&#xA;if (globalMap.get(&quot;load&quot;).equals(&quot;Baseline&quot;))&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT MEMB_COMPANY_V_SK,MEMB_KEYID,MEMBSSN,LASTNM,FIRSTNM,MI,SEX,BIRTH,DEATHDATE,MEMBID,LASTCHANGEDATE FROM MEMB_COMPANY_V&quot;;&#xA;&#x9;}&#xA;else&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT MEMB_COMPANY_V_SK,MEMB_KEYID,MEMBSSN,LASTNM,FIRSTNM,MI,SEX,BIRTH,DEATHDATE,MEMBID,LASTCHANGEDATE FROM MEMB_COMPANY_V WHERE LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;;&#xA;&#x9;}&#xA;&#xA;globalMap.put(&quot;Query&quot;,Query);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String load = context.MPM_EDW_LoadType;&#xA;globalMap.put(&quot;load&quot;,load);&#xA;&#xA;System.out.println(load);&#xA;&#xA;System.out.println(globalMap.get(&quot;load&quot;));&#xA;&#xA;String Query = &quot;&quot;;&#xA;if (globalMap.get(&quot;load&quot;).equals(&quot;Baseline&quot;))&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT MEMB_KEYID,LASTNM,FIRSTNM,MI,MEMBSSN,SEX,BIRTH,DEATHDATE,MEMBID,LASTCHANGEDATE FROM MEMB_COMPANY_V&quot;;&#xA;&#x9;}&#xA;else&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT MEMB_KEYID,LASTNM,FIRSTNM,MI,MEMBSSN,SEX,BIRTH,DEATHDATE,MEMBID,LASTCHANGEDATE FROM MEMB_COMPANY_V WHERE LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;;&#xA;&#x9;}&#xA;&#xA;globalMap.put(&quot;Query&quot;,Query);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
@@ -1168,7 +1168,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="&quot;0&quot;" type="id_String"/>
       </varTables>
@@ -1689,13 +1689,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="SQL_INSERT" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="a" lineStyle="0" metaname="a" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_2" target="tMap_4">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="a" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="SQL_Update" lineStyle="0" metaname="SQL_Update" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_2" target="tMSSqlOutput_1">
+  <connection connectorName="FLOW" label="SQL_Update" lineStyle="0" metaname="SQL_Update" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_2" target="tMSSqlOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="SQL_Update" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="a" lineStyle="0" metaname="a" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_2" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="a" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
