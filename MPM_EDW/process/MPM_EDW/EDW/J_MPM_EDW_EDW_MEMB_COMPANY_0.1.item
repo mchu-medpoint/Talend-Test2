@@ -725,7 +725,7 @@
       <column comment="" key="false" length="-1" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="row1.MEMB_KEYID+row1.MEMBID " type="id_String"/>
         <mapperTableEntries name="varMD5_HK" expression="MD5.getHashString(Var.var1) " type="id_String"/>
@@ -883,7 +883,7 @@
       <outputTables sizeState="INTERMEDIATE" name="to_agg">
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row2.SRC_MEMBER_KEY_ID == null" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row2.MD5_HK == null" activateExpressionFilter="true">
         <mapperTableEntries name="LAST_NAME" expression="row1.LASTNM  LookupEDW.LASTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="row1.FIRSTNM  LookupEDW.FIRSTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="MIDDLE_NAME" expression="row1.MI  LookupEDW.MI " type="id_String" nullable="true"/>
@@ -897,7 +897,7 @@
         <mapperTableEntries name="MD5_HK" expression=" LookupEDW.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="LookupEDW.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="SQL_Update" expressionFilter="row2.SRC_MEMBER_KEY_ID != null" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="SQL_Update" expressionFilter="row2.MD5_HK != null" activateExpressionFilter="true">
         <mapperTableEntries name="LAST_NAME" expression="LookupEDW.LASTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="LookupEDW.FIRSTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="MIDDLE_NAME" expression="LookupEDW.MI " type="id_String" nullable="true"/>
@@ -911,7 +911,7 @@
         <mapperTableEntries name="MD5_HK" expression="LookupEDW.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="LookupEDW.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="a" expressionFilter="row2.SRC_MEMBER_KEY_ID != null" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="a" expressionFilter="row2.MD5_HK != null" activateExpressionFilter="true">
         <mapperTableEntries name="LAST_NAME" expression="LookupEDW.LASTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="LookupEDW.FIRSTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="MIDDLE_NAME" expression="LookupEDW.MI " type="id_String" nullable="true"/>
