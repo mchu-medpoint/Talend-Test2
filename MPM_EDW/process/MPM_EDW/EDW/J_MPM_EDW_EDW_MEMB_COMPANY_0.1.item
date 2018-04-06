@@ -894,7 +894,7 @@
         <mapperTableEntries name="DECEASED_DT" expression="LookupEDW.DEATHDATE " type="id_Date" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="LookupEDW.MEMB_KEYID " type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_ID" expression="LookupEDW.MEMBID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="REC_EFF_DTM" expression="" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MD5_HK" expression="LookupEDW.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="LookupEDW.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
