@@ -721,10 +721,17 @@
       <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="row1.MEMB_KEYID+row1.MEMBID " type="id_String"/>
+        <mapperTableEntries name="varMD5_HK" expression="MD5.getHashString(Var.var1) " type="id_String"/>
+        <mapperTableEntries name="var2" expression="row1.MEMB_KEYID+row1.LASTNM+row1.FIRSTNM+row1.MI+row1.MEMBSSN+row1.SEX+(row1.BIRTH==null?null:row1.BIRTH.toString())+(row1.row1.DEATHDATE==null?null:row1.DEATHDATE.toString())+row1.MEMBID " type="id_String"/>
+        <mapperTableEntries name="varMD5_COMPARE_HK" expression="MD5.getHashString(Var.var2) " type="id_String"/>
+      </varTables>
       <outputTables sizeState="INTERMEDIATE" name="LookupEDW">
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_String"/>
         <mapperTableEntries name="LASTNM" expression="row1.LASTNM " type="id_String"/>
@@ -736,6 +743,8 @@
         <mapperTableEntries name="DEATHDATE" expression="row1.DEATHDATE " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MEMBID" expression="row1.MEMBID " type="id_String"/>
         <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE " type="id_Date"/>
+        <mapperTableEntries name="MD5_HK" expression="Var.varMD5_HK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MD5_COMPARE_HK" expression="Var.varMD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MEMB_KEYID" type="id_String"/>
@@ -867,7 +876,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="&quot;1&quot;" type="id_String"/>
       </varTables>
@@ -927,6 +936,8 @@
         <mapperTableEntries name="DEATHDATE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="MEMBID" type="id_String"/>
         <mapperTableEntries name="LASTCHANGEDATE" type="id_Date"/>
+        <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="row1.MEMB_KEYID " type="id_String" nullable="true" operator="="/>
@@ -1812,6 +1823,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="LookupEDW" lineStyle="0" metaname="LookupEDW" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MD5_COMPARE_HK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MD5_HK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="LookupEDW" show="false"/>
   </connection>
