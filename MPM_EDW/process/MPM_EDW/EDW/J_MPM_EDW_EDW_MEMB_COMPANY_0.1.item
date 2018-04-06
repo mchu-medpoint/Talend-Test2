@@ -725,11 +725,11 @@
       <column comment="" key="false" length="-1" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="row1.MEMB_KEYID+row1.MEMBID " type="id_String"/>
         <mapperTableEntries name="varMD5_HK" expression="MD5.getHashString(Var.var1) " type="id_String"/>
-        <mapperTableEntries name="var2" expression="row1.MEMB_KEYID+row1.LASTNM+row1.FIRSTNM+row1.MI+row1.MEMBSSN+row1.SEX+(row1.BIRTH==null?null:row1.BIRTH.toString())+(row1.row1.DEATHDATE==null?null:row1.DEATHDATE.toString())+row1.MEMBID " type="id_String"/>
+        <mapperTableEntries name="var2" expression="row1.MEMB_KEYID+row1.LASTNM+row1.FIRSTNM+row1.MI+row1.MEMBSSN+row1.SEX+(row1.BIRTH==null?null:row1.BIRTH.toString())+(row1.DEATHDATE==null?null:row1.DEATHDATE.toString())+row1.MEMBID " type="id_String"/>
         <mapperTableEntries name="varMD5_COMPARE_HK" expression="MD5.getHashString(Var.var2) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="LookupEDW">
