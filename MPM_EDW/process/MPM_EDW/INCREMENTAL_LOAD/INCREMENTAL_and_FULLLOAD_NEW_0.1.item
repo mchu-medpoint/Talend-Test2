@@ -2583,14 +2583,6 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;load&quot;)).equals (&quot;DeltaLoad&quot;) || ((String)globalMap.get(&quot;load&quot;)).equals(&quot;Baseline&quot;) == true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
-  <note opaque="true" posX="192" posY="576" sizeHeight="64" sizeWidth="769" text="INCREMENTAL LOAD">
-    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
-    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
-  </note>
-  <note opaque="true" posX="288" posY="128" sizeHeight="64" sizeWidth="769" text="FULL LOAD">
-    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
-    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
-  </note>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
