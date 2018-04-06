@@ -837,7 +837,7 @@
       <column comment="" key="false" length="255" name="SRC_MEMBER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="REC_EFF_DTM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_COMPARE_HK_Target" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_String" originalLength="32" usefulColumn="true"/>
@@ -908,7 +908,7 @@
         <mapperTableEntries name="DECEASED_DT" expression="LookupEDW.DEATHDATE " type="id_Date" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="LookupEDW.MEMB_KEYID " type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_ID" expression="LookupEDW.MEMBID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MD5_HK" expression="LookupEDW.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="LookupEDW.MD5_COMPARE_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK_Target" expression="row2.MD5_COMPARE_HK " type="id_String" nullable="true"/>
@@ -1680,7 +1680,7 @@
         <mapperTableEntries name="DECEASED_DT" type="id_Date" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_KEY_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REC_EFF_DTM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="REC_EFF_DTM" type="id_Date" nullable="true"/>
         <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK_Target" type="id_String" nullable="true"/>
