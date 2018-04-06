@@ -235,11 +235,13 @@
       <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="HashOpt" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="row1.MEMB_KEYID+(row1.OPFROMDT==null?null:row1.OPFROMDT.toString())+(row1.HP_MAINTCODE==null?99999:Integer.toString(row1.HP_MAINTCODE)) " type="id_String"/>
+        <mapperTableEntries name="var2" expression="MD5.getHashString(Var.var1) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="tLog">
         <mapperTableEntries name="MEMB_HPHISTS_SK" expression="row1.MEMB_HPHISTS_SK " type="id_Long"/>
@@ -247,6 +249,7 @@
         <mapperTableEntries name="OPFROMDT" expression="row1.OPFROMDT " type="id_Date"/>
         <mapperTableEntries name="HP_MAINTCODE" expression="row1.HP_MAINTCODE " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="OPT" expression="Var.var1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HashOpt" expression="Var.var2" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MEMB_HPHISTS_SK" type="id_Long"/>
@@ -288,6 +291,8 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="OPT"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HashOpt"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -308,6 +313,7 @@
       <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="HashOpt" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
@@ -315,6 +321,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="tLog" lineStyle="0" metaname="tLog" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="HashOpt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLog" show="false"/>
   </connection>
