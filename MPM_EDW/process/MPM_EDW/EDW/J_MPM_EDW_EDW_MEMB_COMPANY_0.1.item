@@ -885,17 +885,17 @@
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row2.MD5_HK == null" activateExpressionFilter="true">
-        <mapperTableEntries name="LAST_NAME" expression="row1.LASTNM  LookupEDW.LASTNM " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIRST_NAME" expression="row1.FIRSTNM  LookupEDW.FIRSTNM " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MIDDLE_NAME" expression="row1.MI  LookupEDW.MI " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DOB" expression="row1.BIRTH  LookupEDW.BIRTH " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GENDER" expression="row1.SEX  LookupEDW.SEX " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBER_SSN" expression="row1.MEMBSSN  LookupEDW.MEMBSSN " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DECEASED_DT" expression="row1.DEATHDATE  LookupEDW.DEATHDATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="row1.MEMB_KEYID  LookupEDW.MEMB_KEYID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="SRC_MEMBER_ID" expression="row1.MEMBID  LookupEDW.MEMBID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LAST_NAME" expression="LookupEDW.LASTNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIRST_NAME" expression="LookupEDW.FIRSTNM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MIDDLE_NAME" expression="LookupEDW.MI " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOB" expression="LookupEDW.BIRTH " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GENDER" expression="LookupEDW.SEX " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBER_SSN" expression="LookupEDW.MEMBSSN " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DECEASED_DT" expression="LookupEDW.DEATHDATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="LookupEDW.MEMB_KEYID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SRC_MEMBER_ID" expression="LookupEDW.MEMBID " type="id_String" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" expression="" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="MD5_HK" expression=" LookupEDW.MD5_HK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MD5_HK" expression="LookupEDW.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="LookupEDW.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_Update" expressionFilter="row2.MD5_HK != null" activateExpressionFilter="true">
