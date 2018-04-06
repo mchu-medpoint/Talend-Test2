@@ -220,18 +220,6 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tLog" name="tLog">
-      <column comment="" key="true" length="19" name="MEMB_HPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="OPFROMDT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="HP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -244,10 +232,6 @@
         <mapperTableEntries name="var2" expression="MD5.getHashString(Var.var1) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="tLog">
-        <mapperTableEntries name="MEMB_HPHISTS_SK" expression="row1.MEMB_HPHISTS_SK " type="id_Long"/>
-        <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_String"/>
-        <mapperTableEntries name="OPFROMDT" expression="row1.OPFROMDT " type="id_Date"/>
-        <mapperTableEntries name="HP_MAINTCODE" expression="row1.HP_MAINTCODE " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="OPT" expression="Var.var1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="HashOpt" expression="Var.var2" type="id_String" nullable="true"/>
       </outputTables>
@@ -281,14 +265,6 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_HPHISTS_SK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_KEYID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OPFROMDT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HP_MAINTCODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="OPT"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="HashOpt"/>
@@ -298,18 +274,6 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tLog" name="tLogRow_1">
-      <column comment="" key="true" length="19" name="MEMB_HPHISTS_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="OPFROMDT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="HP_MAINTCODE" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
