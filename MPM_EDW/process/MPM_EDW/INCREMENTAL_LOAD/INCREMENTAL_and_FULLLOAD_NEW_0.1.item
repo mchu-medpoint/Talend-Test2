@@ -118,7 +118,7 @@
     <routinesParameter id="_Br9D8BvsEeiXROaUviyM_A" name="SQLike"/>
     <routinesParameter id="_Btq7MBvsEeiXROaUviyM_A" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2336" posY="544">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="if (globalMap.get(&quot;delta_date_new&quot;) == null) {&#xA;&#x9;globalMap.put(&quot;delta_date_new&quot;, globalMap.get(&quot;delta_date&quot;) ) ;&#xA;}&#xA;&#xA;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -151,7 +151,7 @@
     <elementParameter field="TEXT" name="LABEL" value="CONN_EZCAP_SQL"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="50" offsetLabelY="37" posX="160" posY="640">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="50" offsetLabelY="37" posX="384" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3" show="false"/>
@@ -224,7 +224,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="-50" offsetLabelY="0" posX="416" posY="704">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="-50" offsetLabelY="0" posX="640" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3" show="false"/>
