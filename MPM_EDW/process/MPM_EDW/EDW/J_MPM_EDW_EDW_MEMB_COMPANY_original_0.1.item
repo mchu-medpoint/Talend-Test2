@@ -1291,7 +1291,7 @@
         <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row4" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row4" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="CACHE_OR_RELOAD">
         <mapperTableEntries name="LAST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="MIDDLE_NAME" type="id_String" nullable="true"/>
