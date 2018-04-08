@@ -1367,7 +1367,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;&#x9;&#x9;MEMBER.LAST_NAME,&#xA;&#x9;&#x9;MEMBER.FIRST_NAME,&#xA;&#x9;&#x9;MEMBER.MIDDLE_NAME,&#xA;&#x9;&#x9;MEMBER.DOB,&#xA;&#x9;&#x9;MEMBER.GENDER,&#xA;&#x9;&#x9;MEMBER.MEMBER_SSN,&#xA;&#x9;&#x9;MEMBER.DECEASED_DT,&#xA;&#x9;&#x9;MEMBER.SRC_MEMBER_KEY_ID,&#xA;&#x9;&#x9;MEMBER.SRC_MEMBER_ID,&#xA;&#x9;&#x9;MEMBER.BATCH_SK,&#xA;&#x9;&#x9;MEMBER.MD5_HK,&#xA;&#x9;&#x9;MEMBER.MD5_COMPARE_HK&#xA;FROM&#x9;EDW.MEMBER&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;&#x9;MEMBER.LAST_NAME,&#xD;&#xA;&#x9;&#x9;MEMBER.FIRST_NAME,&#xD;&#xA;&#x9;&#x9;MEMBER.MIDDLE_NAME,&#xD;&#xA;&#x9;&#x9;MEMBER.DOB,&#xD;&#xA;&#x9;&#x9;MEMBER.GENDER,&#xD;&#xA;&#x9;&#x9;MEMBER.MEMBER_SSN,&#xD;&#xA;&#x9;&#x9;MEMBER.DECEASED_DT,&#xD;&#xA;&#x9;&#x9;MEMBER.SRC_MEMBER_KEY_ID,&#xD;&#xA;&#x9;&#x9;MEMBER.SRC_MEMBER_ID,&#xD;&#xA;&#x9;&#x9;MEMBER.BATCH_SK,&#xD;&#xA;&#x9;&#x9;REC_EFF_DTM,&#xD;&#xA;&#x9;&#x9;MEMBER.MD5_HK,&#xD;&#xA;&#x9;&#x9;MEMBER.MD5_COMPARE_HK&#xD;&#xA;FROM&#x9;EDW.MEMBER&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
