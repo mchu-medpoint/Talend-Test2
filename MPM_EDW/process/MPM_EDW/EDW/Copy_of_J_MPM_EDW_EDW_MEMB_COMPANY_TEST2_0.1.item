@@ -809,39 +809,6 @@
       <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
-    <metadata connector="FLOW" label="MEMBER" name="SQL_Update">
-      <column comment="" key="false" length="45" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="45" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="45" name="MIDDLE_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GENDER" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="9" name="MEMBER_SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="DECEASED_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SRC_MEMBER_KEY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="SRC_MEMBER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="-1" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
-      <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
     <metadata connector="FLOW" label="AR_MEMBER" name="a">
       <column comment="" key="false" length="45" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -886,20 +853,6 @@
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row2.MD5_HK == null" activateExpressionFilter="true">
-        <mapperTableEntries name="LAST_NAME" expression="DELTA.LASTNM " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FIRST_NAME" expression="DELTA.FIRSTNM " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MIDDLE_NAME" expression="DELTA.MI " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DOB" expression="DELTA.BIRTH " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GENDER" expression="DELTA.SEX " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBER_SSN" expression="DELTA.MEMBSSN " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DECEASED_DT" expression="DELTA.DEATHDATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="DELTA.MEMB_KEYID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="SRC_MEMBER_ID" expression="DELTA.MEMBID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="MD5_HK" expression="DELTA.MD5_HK " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MD5_COMPARE_HK" expression="DELTA.MD5_COMPARE_HK " type="id_String" nullable="true"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="SQL_Update" expressionFilter="row2.MD5_HK != null &amp;&amp; row2.MD5_COMPARE_HK !=  DELTA.MD5_COMPARE_HK" activateExpressionFilter="true">
         <mapperTableEntries name="LAST_NAME" expression="DELTA.LASTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="DELTA.FIRSTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="MIDDLE_NAME" expression="DELTA.MI " type="id_String" nullable="true"/>
