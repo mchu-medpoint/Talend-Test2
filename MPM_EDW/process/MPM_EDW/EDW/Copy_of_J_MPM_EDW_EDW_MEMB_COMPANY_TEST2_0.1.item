@@ -1280,7 +1280,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
+      <column comment="" key="true" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
@@ -1755,7 +1755,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
+      <column comment="" key="true" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
@@ -1788,7 +1788,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
+      <column comment="" key="true" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="32" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
