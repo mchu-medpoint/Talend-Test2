@@ -899,7 +899,7 @@
         <mapperTableEntries name="MD5_HK" expression="DELTA.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="DELTA.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="SQL_Update" expressionFilter="row2.MD5_HK != null" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="SQL_Update" expressionFilter="row2.MD5_HK != null &amp;&amp; row2.MD5_COMPARE_HK !=  DELTA.MD5_COMPARE_HK" activateExpressionFilter="true">
         <mapperTableEntries name="LAST_NAME" expression="DELTA.LASTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="DELTA.FIRSTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="MIDDLE_NAME" expression="DELTA.MI " type="id_String" nullable="true"/>
@@ -913,7 +913,7 @@
         <mapperTableEntries name="MD5_HK" expression="DELTA.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="DELTA.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="a" expressionFilter="row2.MD5_HK != null" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="a" expressionFilter="row2.MD5_HK != null &amp;&amp; row2.MD5_COMPARE_HK !=  DELTA.MD5_COMPARE_HK" activateExpressionFilter="true">
         <mapperTableEntries name="LAST_NAME" expression="DELTA.LASTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="DELTA.FIRSTNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="MIDDLE_NAME" expression="DELTA.MI " type="id_String" nullable="true"/>
