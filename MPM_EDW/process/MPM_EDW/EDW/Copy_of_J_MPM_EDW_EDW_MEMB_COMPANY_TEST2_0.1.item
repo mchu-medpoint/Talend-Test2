@@ -990,7 +990,7 @@
       <column comment="" key="false" length="-1" name="next_updated_at" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="864">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_4" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1003,7 +1003,7 @@
     <elementParameter field="TEXT" name="USER" value="&quot;highpoint&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="ZtF6Zj7GA0FZag71xL6oiQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMBER&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
@@ -1447,7 +1447,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="672">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1504" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1617,7 +1617,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1504" posY="608">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1504" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1924,11 +1924,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="EDW_UPDATE" lineStyle="0" metaname="EDW_UPDATE" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_4" target="tMSSqlOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="EDW_UPDATE" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="SQL_ARCH_TARGET" lineStyle="0" metaname="SQL_ARCH_TARGET" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_4" target="tMSSqlOutput_2">
+  <connection connectorName="FLOW" label="SQL_ARCH_TARGET" lineStyle="0" metaname="SQL_ARCH_TARGET" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_4" target="tMSSqlOutput_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="REC_EFF_DTM"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -1936,6 +1932,10 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="SQL_ARCH_TARGET" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="EDW_UPDATE" lineStyle="0" metaname="EDW_UPDATE" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_4" target="tMSSqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="EDW_UPDATE" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tMSSqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_4" target="tMap_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
