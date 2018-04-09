@@ -472,7 +472,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="50" offsetLabelY="-64" posX="288" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String load = context.MPM_EDW_LoadType;&#xA;globalMap.put(&quot;load&quot;,load);&#xA;&#xA;System.out.println(load);&#xA;&#xA;System.out.println(globalMap.get(&quot;load&quot;));&#xA;&#xA;String Query = &quot;&quot;;&#xA;if (globalMap.get(&quot;load&quot;).equals(&quot;Baseline&quot;))&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT COMP.MEMB_KEYID,COMP.MEMB_MPI_NO,COMP.COMPANY_ID,COMP.PCPFROMDT,COMP.PCPTHRUDT,COMP.OPFROMDT,COMP.OPTHRUDT,COMP.HPFROMDT,COMP.HPCODE,COMP.OPT,COMP.LASTCHANGEDATE,CONT.HPNAME AS HEALTH_PLAN_NAME,CONT.LOBID as LOB_CD,(select code_descr from LAND.VW_COMMON_CODES where category_name='LOB' and common_code_id = CONT.LOBID) as LOB_NAME FROM LAND.MEMB_COMPANY_V COMP INNER JOIN  LAND.HP_CONTRACTS CONT on CONT.COMPANY_ID=COMP.COMPANY_ID and CONT.HPCODE=COMP.HPCODE  where HPFROMDT >= DATEADD(year, -7, GETDATE())&quot;;&#xA;&#x9;}&#xA;else&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT COMP.MEMB_KEYID,COMP.MEMB_MPI_NO,COMP.COMPANY_ID,COMP.PCPFROMDT,COMP.PCPTHRUDT,COMP.OPFROMDT,COMP.OPTHRUDT,COMP.HPFROMDT,COMP.HPCODE,COMP.OPT,COMP.LASTCHANGEDATE,CONT.HPNAME AS HEALTH_PLAN_NAME,CONT.LOBID as LOB_CD,(select code_descr from LAND.VW_COMMON_CODES where category_name='LOB' and common_code_id = CONT.LOBID) as LOB_NAME FROM LAND.MEMB_COMPANY_V COMP INNER JOIN  LAND.HP_CONTRACTS CONT on CONT.COMPANY_ID=COMP.COMPANY_ID and CONT.HPCODE=COMP.HPCODE WHERE LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;;&#xA;&#x9;}&#xA;&#xA;globalMap.put(&quot;Query&quot;,Query);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String load = context.MPM_EDW_LoadType;&#xA;globalMap.put(&quot;load&quot;,load);&#xA;&#xA;System.out.println(load);&#xA;&#xA;System.out.println(globalMap.get(&quot;load&quot;));&#xA;&#xA;String Query = &quot;&quot;;&#xA;if (globalMap.get(&quot;load&quot;).equals(&quot;Baseline&quot;))&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT COMP.MEMB_KEYID,COMP.MEMB_MPI_NO,COMP.COMPANY_ID,COMP.PCPFROMDT,COMP.PCPTHRUDT,COMP.OPFROMDT,COMP.OPTHRUDT,COMP.HPFROMDT,COMP.HPCODE,COMP.OPT,COMP.LASTCHANGEDATE,CONT.HPNAME AS HEALTH_PLAN_NAME,CONT.LOBID as LOB_CD,(select code_descr from LAND.VW_COMMON_CODES where category_name='LOB' and common_code_id = CONT.LOBID) as LOB_NAME,MEM.MEMBER_SK FROM LAND.MEMB_COMPANY_V COMP INNER JOIN  LAND.HP_CONTRACTS CONT on CONT.COMPANY_ID=COMP.COMPANY_ID and CONT.HPCODE=COMP.HPCODE  INNER JOIN  EDW.MEMBER MEM on COMP.MEMB_KEYID=MEM.SRC_MEMBER_KEY_ID where HPFROMDT >= DATEADD(year, -7, GETDATE())&quot;;&#xA;&#x9;}&#xA;else&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT COMP.MEMB_KEYID,COMP.MEMB_MPI_NO,COMP.COMPANY_ID,COMP.PCPFROMDT,COMP.PCPTHRUDT,COMP.OPFROMDT,COMP.OPTHRUDT,COMP.HPFROMDT,COMP.HPCODE,COMP.OPT,COMP.LASTCHANGEDATE,CONT.HPNAME AS HEALTH_PLAN_NAME,CONT.LOBID as LOB_CD,(select code_descr from LAND.VW_COMMON_CODES where category_name='LOB' and common_code_id = CONT.LOBID) as LOB_NAME,MEM.MEMBER_SK FROM LAND.MEMB_COMPANY_V COMP INNER JOIN  LAND.HP_CONTRACTS CONT on CONT.COMPANY_ID=COMP.COMPANY_ID and CONT.HPCODE=COMP.HPCODE INNER JOIN  EDW.MEMBER MEM on COMP.MEMB_KEYID=MEM.SRC_MEMBER_KEY_ID WHERE LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;;&#xA;&#x9;}&#xA;&#xA;globalMap.put(&quot;Query&quot;,Query);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
@@ -653,6 +653,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LOB_NAME"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEMBER_SK"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -689,6 +691,7 @@
       <column comment="" key="false" length="40" name="HPNAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="40" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LOBID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="45" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MEMBER_SK" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
@@ -739,6 +742,7 @@
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="45" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MEMBER_SK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -765,6 +769,7 @@
         <mapperTableEntries name="LOB_NAME" expression="row1.LOB_NAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_HK" expression="Var.varMD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="Var.varMD5_COMPARE_HK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBER_SK" expression="row1.MEMBER_SK " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MEMB_KEYID" type="id_String"/>
@@ -781,6 +786,7 @@
         <mapperTableEntries name="HPNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LOBID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LOB_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBER_SK" type="id_Integer" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -978,6 +984,7 @@
         <mapperTableEntries name="LOB_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBER_SK" type="id_Integer" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MD5_HK" expression="out1.MD5_HK " type="id_String" nullable="true" operator="="/>
@@ -2340,6 +2347,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="LASTCHANGEDATE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MEMBER_SK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
@@ -2362,6 +2372,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="LOB_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MEMBER_SK"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
