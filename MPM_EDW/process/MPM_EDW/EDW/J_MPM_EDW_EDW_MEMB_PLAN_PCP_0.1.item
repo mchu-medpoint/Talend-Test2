@@ -602,13 +602,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_5" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_KcGd0CypEeiJetnqWhFd7A" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;MPMEDWDEVQA1&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;LAND&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;mpm_edw&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
@@ -2243,7 +2241,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;&#x9;&#x9;MEMBER_PLAN_PCP.MD5_HK,&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.MD5_COMPARE_HK&#xA;FROM&#x9;EDW.MEMBER_PLAN_PCP&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;&#x9;&#x9;MD5_HK,&#xA;&#x9;&#x9;MD5_COMPARE_HK&#xA;FROM&#x9;EDW.MEMBER_PLAN_PCP&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
