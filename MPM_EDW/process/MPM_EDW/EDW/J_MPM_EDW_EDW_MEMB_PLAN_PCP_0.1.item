@@ -815,7 +815,7 @@
       <column comment="" key="false" length="45" name="HEALTH_PLAN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="LOB_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="LOB_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -870,7 +870,7 @@
       <column comment="" key="false" length="45" name="HEALTH_PLAN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="LOB_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="LOB_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -927,7 +927,7 @@
         <mapperTableEntries name="IPA_CD" expression="out1.COMPANY_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="HEALTH_PLAN_CD" expression="out1.HPCODE " type="id_String" nullable="true"/>
         <mapperTableEntries name="HEALTH_PLAN_NAME" expression="out1.HPNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOB_CD" expression="out1.LOBID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOB_CD" expression="out1.LOBID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LOB_NAME" expression="out1.LOB_NAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="AID_GROUP_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="OPTION_CD" expression="out1.OPT " type="id_String" nullable="true"/>
@@ -943,11 +943,11 @@
         <mapperTableEntries name="MD5_HK" expression="out1.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="out1.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="SQL_UPDATE" expressionFilter="row2.MD5_HK != null &amp;&amp; row2.MD5_COMPARE_HK !=  DELTA.MD5_COMPARE_HK" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="SQL_UPDATE" expressionFilter="row2.MD5_HK != null &amp;&amp; row2.MD5_COMPARE_HK !=  out1.MD5_COMPARE_HK" activateExpressionFilter="true">
         <mapperTableEntries name="IPA_CD" expression="out1.COMPANY_ID  " type="id_String" nullable="true"/>
         <mapperTableEntries name="HEALTH_PLAN_CD" expression="out1.HPCODE  " type="id_String" nullable="true"/>
         <mapperTableEntries name="HEALTH_PLAN_NAME" expression="out1.HPNAME  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOB_CD" expression="out1.LOBID  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOB_CD" expression="out1.LOBID  " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LOB_NAME" expression="out1.LOB_NAME  " type="id_String" nullable="true"/>
         <mapperTableEntries name="AID_GROUP_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="OPTION_CD" expression="out1.OPT  " type="id_String" nullable="true"/>
@@ -1226,7 +1226,7 @@
       <column comment="" key="false" length="45" name="HEALTH_PLAN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="LOB_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="LOB_CD" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1284,7 +1284,7 @@
       <column comment="" key="false" length="45" name="HEALTH_PLAN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="LOB_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="LOB_CD" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1519,7 +1519,7 @@
         <mapperTableEntries name="IPA_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="HEALTH_PLAN_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="HEALTH_PLAN_NAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOB_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOB_CD" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LOB_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="AID_GROUP_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="OPTION_CD" type="id_String" nullable="true"/>
