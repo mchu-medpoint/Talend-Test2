@@ -2120,6 +2120,7 @@
       <relatedItems xmi:id="_UbxGljwAEeiBPafYaSbkHQ" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_UbxGlzwAEeiBPafYaSbkHQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_UbxGmDwAEeiBPafYaSbkHQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TQMRIDw1EeiBPafYaSbkHQ" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_euOe4DwuEeiBPafYaSbkHQ">
       <baseItem xmi:id="_euQ7IDwuEeiBPafYaSbkHQ" id="_et0PMDwuEeiBPafYaSbkHQ" version="0.1" type="job"/>
