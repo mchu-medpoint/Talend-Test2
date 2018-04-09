@@ -136,7 +136,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#x9; COMP.MEMB_KEYID&#xD;&#xA;&#x9;,MEM.MEMBER_SK AS MEMBER_SK&#xD;&#xA;&#x9;,CONTINFO.SEQUENCE&#xD;&#xA;&#x9;,CONTINFO.COUNTY&#xD;&#xA;&#x9;,(select code_descr from LAND.VW_COMMON_CODES where category_name='COUNTYCODES' and code=CONTINFO.COUNTY) as COUNTY_NAME&#xD;&#xA;&#x9;,CONTINFO.CONTACT_TYPE&#xD;&#xA;&#x9;,CONTINFO.ADDRESSTYPE&#xD;&#xA;&#x9;,(select code_descr from LAND.VW_COMMON_CODES where category_name='PROVADDTYPES' and code=CONTINFO.ADDRESSTYPE) as ADDRESS_TYPE_DESCR&#xD;&#xA;&#x9;,CONTINFO.STREET&#xD;&#xA;&#x9;,CONTINFO.STREET2&#xD;&#xA;&#x9;,CONTINFO.CITY&#xD;&#xA;&#x9;,CONTINFO.STATE&#xD;&#xA;&#x9;,CONTINFO.PHONE&#xD;&#xA;&#x9;,CONTINFO.ZIP&#xD;&#xA;FROM LAND.MEMB_COMPANY_V COMP &#xD;&#xA;LEFT OUTER JOIN LAND.MEMB_CONTACT_INFORMATION CONTINFO on CONTINFO.memb_keyid=COMP.memb_keyid &#xD;&#xA;INNER JOIN EDW.MEMBER MEM ON COMP.MEMB_KEYID = MEM.SRC_MEMBER_KEY_ID&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;  SELECT&#xD;&#xA;&#x9; COMP.MEMB_KEYID&#xD;&#xA;&#x9;,CONTINFO.SEQUENCE&#xD;&#xA;&#x9;,CONTINFO.COUNTY&#xD;&#xA;&#x9;&#x9;,CONTINFO.CONTACT_TYPE&#xD;&#xA;&#x9;,CONTINFO.ADDRESSTYPE&#xD;&#xA;&#x9;&#x9;,CONTINFO.STREET&#xD;&#xA;&#x9;,CONTINFO.STREET2&#xD;&#xA;&#x9;,CONTINFO.CITY&#xD;&#xA;&#x9;,CONTINFO.STATE&#xD;&#xA;&#x9;,CONTINFO.PHONE&#xD;&#xA;&#x9;,CONTINFO.ZIP&#xD;&#xA;FROM LAND.MEMB_COMPANY_V COMP &#xD;&#xA;LEFT OUTER JOIN LAND.MEMB_CONTACT_INFORMATION CONTINFO on CONTINFO.memb_keyid=COMP.memb_keyid &quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -148,19 +148,13 @@
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="MEMB_KEYID"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMBER_SK"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SEQUENCE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="COUNTY"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTY_NAME"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CONTACT_TYPE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESSTYP"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESS_TYPE_DESCR"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="STREET"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -181,21 +175,18 @@
       <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="MEMBER_SK" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="SEQUENCE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="COUNTY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="45" name="COUNTY_NAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="45" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="CONTACT_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="80" name="ADDRESSTYP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="45" name="ADDRESS_TYPE_DESCR" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="45" usefulColumn="true"/>
       <column comment="" key="false" length="80" name="STREET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -287,7 +278,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="EDW_MEMBER_ADD">
         <mapperTableEntries name="MEMBER_SK" expression="row1.MEMBER_SK " type="id_Integer" nullable="true"/>
@@ -311,13 +302,10 @@
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MEMB_KEYID" type="id_String"/>
-        <mapperTableEntries name="MEMBER_SK" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SEQUENCE" type="id_Integer"/>
         <mapperTableEntries name="COUNTY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COUNTY_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONTACT_TYPE" type="id_String" nullable="true"/>
         <mapperTableEntries name="ADDRESSTYP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADDRESS_TYPE_DESCR" type="id_String" nullable="true"/>
         <mapperTableEntries name="STREET" type="id_String" nullable="true"/>
         <mapperTableEntries name="STREET2" type="id_String" nullable="true"/>
         <mapperTableEntries name="CITY" type="id_String" nullable="true"/>
