@@ -230,7 +230,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MEMBER_ADDRESS" name="EDW_MEMBER_ADD">
-      <column comment="" key="false" length="19" name="MEMBER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="19" name="MEMBER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="IPA_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -290,7 +290,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="EDW_MEMBER_ADD">
-        <mapperTableEntries name="MEMBER_SK" expression="row1.MEMBER_SK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEMBER_SK" expression="row1.MEMBER_SK " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="IPA_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="SEQUENCE" expression="row1.SEQUENCE" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CONTACT_TYPE_CD" expression="row1.CONTACT_TYPE " type="id_String" nullable="true"/>
@@ -459,7 +459,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MEMBER_ADDRESS" name="tMSSqlOutput_1">
-      <column comment="" key="false" length="19" name="MEMBER_SK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="19" name="MEMBER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="IPA_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -516,7 +516,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="MEMBER_ADDRESS" name="REJECT">
-      <column comment="" key="false" length="19" name="MEMBER_SK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="19" name="MEMBER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="IPA_CD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
