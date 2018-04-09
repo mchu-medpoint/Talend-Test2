@@ -1535,8 +1535,7 @@
         <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="MEMBER_PLAN_PCP_SK" type="id_Long"/>
+      <inputTables sizeState="INTERMEDIATE" name="row4" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="RELOAD">
         <mapperTableEntries name="MEMBER_SK" type="id_Long" nullable="true"/>
         <mapperTableEntries name="IPA_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="HEALTH_PLAN_CD" type="id_String" nullable="true"/>
@@ -1555,7 +1554,7 @@
         <mapperTableEntries name="SRC_MEMBER_MPI_NO" type="id_String" nullable="true"/>
         <mapperTableEntries name="BATCH_SK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MD5_COMPARE_HK" expression="SQL_UPDATE.MD5_HK " type="id_String" nullable="true" operator="="/>
       </inputTables>
     </nodeData>
   </node>
@@ -2106,14 +2105,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;mpm_edw&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;highpoint&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="ZtF6Zj7GA0FZag71xL6oiQ=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_N4d1EDgwEeijw7E8e9JY9Q - MEMBER_PLAN_PCP" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMBER_PLAN_PCP&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT EDW.MEMBER_PLAN_PCP.MEMBER_PLAN_PCP_SK,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.MEMBER_SK,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.IPA_CD,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.HEALTH_PLAN_CD,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.HEALTH_PLAN_NAME,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.LOB_CD,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.LOB_NAME,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.AID_GROUP_CD,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.OPTION_CD,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.OPTION_FROM_DTM,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.OPTION_THRU_DTM,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.HP_FROM_DTM,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.PCP_ID,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.PCP_FROM_DTM,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.PCP_THRU_DTM,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.SRC_MEMBER_KEY_ID,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.SRC_MEMBER_MPI_NO,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.BATCH_SK,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.MD5_HK,&#xA;&#x9;&#x9;EDW.MEMBER_PLAN_PCP.MD5_COMPARE_HK&#xA;FROM&#x9;EDW.MEMBER_PLAN_PCP&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.MEMBER_SK,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.IPA_CD,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.HEALTH_PLAN_CD,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.HEALTH_PLAN_NAME,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.LOB_CD,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.LOB_NAME,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.AID_GROUP_CD,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.OPTION_CD,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.OPTION_FROM_DTM,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.OPTION_THRU_DTM,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.HP_FROM_DTM,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.PCP_ID,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.PCP_FROM_DTM,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.PCP_THRU_DTM,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.SRC_MEMBER_KEY_ID,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.SRC_MEMBER_MPI_NO,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.BATCH_SK,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.MD5_HK,&#xD;&#xA;&#x9;&#x9;MEMBER_PLAN_PCP.MD5_COMPARE_HK&#xD;&#xA;FROM&#x9;EDW.MEMBER_PLAN_PCP&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2123,8 +2120,6 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MEMBER_PLAN_PCP_SK"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MEMBER_SK"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="IPA_CD"/>
@@ -2167,9 +2162,6 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="MEMBER_PLAN_PCP" name="tMSSqlInput_2">
-      <column comment="" key="true" length="19" name="MEMBER_PLAN_PCP_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="19" name="MEMBER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
