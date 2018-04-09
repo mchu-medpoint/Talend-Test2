@@ -617,7 +617,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#xD;&#xA;&#x9;&#x9;COMP.MEMB_KEYID,&#xD;&#xA;&#x9;&#x9;COMP.MEMB_MPI_NO,&#xD;&#xA;&#x9;&#x9;COMP.COMPANY_ID,&#xD;&#xA;&#x9;&#x9;COMP.PCPFROMDT,&#xD;&#xA;&#x9;&#x9;COMP.PCPTHRUDT,&#xD;&#xA;&#x9;&#x9;COMP.OPFROMDT,&#xD;&#xA;&#x9;&#x9;COMP.OPTHRUDT,&#xD;&#xA;&#x9;&#x9;COMP.HPFROMDT,&#xD;&#xA;&#x9;&#x9;COMP.HPCODE,&#xD;&#xA;&#x9;&#x9;COMP.OPT,&#xD;&#xA;&#x9;&#x9;CONT.HPNAME AS HEALTH_PLAN_NAME,&#xD;&#xA;&#x9;&#x9;CONT.LOBID as LOB_CD,&#xD;&#xA;(select code_descr from LAND.VW_COMMON_CODES where category_name='LOB' and common_code_id = CONT.LOBID) as LOB_NAME&#xD;&#xA;FROM LAND.MEMB_COMPANY_V COMP &#xD;&#xA;&#x9;INNER JOIN  LAND.HP_CONTRACTS CONT on &#xD;&#xA;&#x9;CONT.COMPANY_ID=COMP.COMPANY_ID and CONT.HPCODE=COMP.HPCODE&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#xD;&#xA;&#x9;&#x9;COMP.MEMB_KEYID,&#xD;&#xA;&#x9;&#x9;COMP.MEMB_MPI_NO,&#xD;&#xA;&#x9;&#x9;COMP.COMPANY_ID,&#xD;&#xA;&#x9;&#x9;COMP.PCPFROMDT,&#xD;&#xA;&#x9;&#x9;COMP.PCPTHRUDT,&#xD;&#xA;&#x9;&#x9;COMP.OPFROMDT,&#xD;&#xA;&#x9;&#x9;COMP.OPTHRUDT,&#xD;&#xA;&#x9;&#x9;COMP.HPFROMDT,&#xD;&#xA;&#x9;&#x9;COMP.HPCODE,&#xD;&#xA;&#x9;&#x9;COMP.OPT,&#xD;&#xA;&#x9;&#x9;COMP.LASTCHANGEDATE,&#xD;&#xA;&#x9;&#x9;CONT.HPNAME AS HEALTH_PLAN_NAME,&#xD;&#xA;&#x9;&#x9;CONT.LOBID as LOB_CD,&#xD;&#xA;&#x9;&#x9;(select code_descr from LAND.VW_COMMON_CODES where category_name='LOB' and common_code_id = CONT.LOBID) as LOB_NAME&#xD;&#xA;FROM LAND.MEMB_COMPANY_V COMP &#xD;&#xA;&#x9;INNER JOIN  LAND.HP_CONTRACTS CONT on &#xD;&#xA;&#x9;CONT.COMPANY_ID=COMP.COMPANY_ID and CONT.HPCODE=COMP.HPCODE&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -646,6 +646,8 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="HPCODE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="OPT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LASTCHANGEDATE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="HPNAME"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -685,6 +687,7 @@
       <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="-1" name="LASTCHANGEDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="HPNAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="40" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LOBID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="45" usefulColumn="true"/>
@@ -756,6 +759,7 @@
         <mapperTableEntries name="HPFROMDT" type="id_Date" nullable="true"/>
         <mapperTableEntries name="HPCODE" type="id_String"/>
         <mapperTableEntries name="OPT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LASTCHANGEDATE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="HPNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LOBID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LOB_NAME" type="id_String" nullable="true"/>
@@ -1975,6 +1979,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="COMPANY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LASTCHANGEDATE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
