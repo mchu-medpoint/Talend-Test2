@@ -247,7 +247,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="HPNAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LOBID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOBID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="45" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -265,7 +265,7 @@
         <mapperTableEntries name="HPCODE" expression="row1.HPCODE " type="id_String"/>
         <mapperTableEntries name="OPT" expression="row1.OPT " type="id_String" nullable="true"/>
         <mapperTableEntries name="HPNAME" expression="row1.HPNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOBID" expression="row1.LOBID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOBID" expression="row1.LOBID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LOB_NAME" expression="row1.LOB_NAME " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -359,7 +359,7 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="HPNAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LOBID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOBID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="45" usefulColumn="true"/>
     </metadata>
   </node>
