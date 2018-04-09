@@ -281,12 +281,12 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="EDW_MEMBER_ADD">
-        <mapperTableEntries name="MEMBER_SK" expression="row1.MEMBER_SK " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="MEMBER_SK" expression="" type="id_Long" nullable="true"/>
         <mapperTableEntries name="IPA_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="SEQUENCE" expression="row1.SEQUENCE" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CONTACT_TYPE_CD" expression="row1.CONTACT_TYPE " type="id_String" nullable="true"/>
         <mapperTableEntries name="ADDRESS_TYPE_CD" expression="row1.ADDRESSTYP " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADDRESS_TYPE_DESCR" expression="row1.ADDRESS_TYPE_DESCR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADDRESS_TYPE_DESCR" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="STREET_LINE_1" expression="row1.STREET " type="id_String" nullable="true"/>
         <mapperTableEntries name="STREET_LINE_2" expression="row1.STREET2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CITY" expression="row1.CITY" type="id_String" nullable="true"/>
@@ -294,7 +294,7 @@
         <mapperTableEntries name="ZIP" expression="row1.ZIP" type="id_String" nullable="true"/>
         <mapperTableEntries name="PHONE" expression="row1.PHONE" type="id_String" nullable="true"/>
         <mapperTableEntries name="COUNTY_CD" expression="row1.COUNTY " type="id_String" nullable="true"/>
-        <mapperTableEntries name="COUNTY_NAME" expression="row1.COUNTY_NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="COUNTY_NAME" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="row1.MEMB_KEYID " type="id_String" nullable="true"/>
         <mapperTableEntries name="BATCH_SK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
