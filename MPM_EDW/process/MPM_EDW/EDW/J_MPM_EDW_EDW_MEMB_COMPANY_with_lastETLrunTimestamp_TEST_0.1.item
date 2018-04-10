@@ -1352,7 +1352,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_4" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;MPMEDWDEVQA1&quot;"/>
@@ -1620,7 +1619,6 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1504" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
@@ -1926,19 +1924,18 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="SQL_ARCH_TARGET" lineStyle="0" metaname="SQL_ARCH_TARGET" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_4" target="tMSSqlOutput_2">
+  <connection connectorName="FLOW" label="EDW_UPDATE" lineStyle="0" metaname="EDW_UPDATE" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_4" target="tMSSqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="EDW_UPDATE" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="SQL_ARCH_TARGET" lineStyle="0" metaname="SQL_ARCH_TARGET" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_4" target="tMSSqlOutput_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="REC_EFF_DTM"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="SQL_ARCH_TARGET" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="EDW_UPDATE" lineStyle="0" metaname="EDW_UPDATE" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_4" target="tMSSqlOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="EDW_UPDATE" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tMSSqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_4" target="tMap_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1947,7 +1944,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
   <subjob>
@@ -2006,11 +2002,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
