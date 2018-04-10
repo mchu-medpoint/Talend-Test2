@@ -2197,6 +2197,8 @@
       <relatedItems xmi:id="_gZmlZzxfEei4IfpIgo0SaA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_gZmlaDxfEei4IfpIgo0SaA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_gZmlaTxfEei4IfpIgo0SaA" id="_N4d1EDgwEeijw7E8e9JY9Q - MEMBER" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_QrRUIDxzEei4IfpIgo0SaA" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
+      <relatedItems xmi:id="_QrRUITxzEei4IfpIgo0SaA" id="_KcGd0CypEeiJetnqWhFd7A - AR_MEMBER_PLAN_PCP" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3tunkDxpEei4IfpIgo0SaA">
       <baseItem xmi:id="_3tunkTxpEei4IfpIgo0SaA" id="_3suiADxpEei4IfpIgo0SaA" version="0.1" type="job"/>
