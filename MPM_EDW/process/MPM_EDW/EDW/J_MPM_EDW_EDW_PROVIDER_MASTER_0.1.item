@@ -630,7 +630,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="PROV_COMPANY_V" name="tMSSqlInput_6">
-      <column comment="" key="false" length="25" name="NPINO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="NPINO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -658,9 +658,9 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="row1.NPINO==null?&quot;-1&quot;:row1.NPINO " type="id_String"/>
+        <mapperTableEntries name="var1" expression="row1.NPINO " type="id_String"/>
         <mapperTableEntries name="varMD5_HK" expression="MD5.getHashString(Var.var1) " type="id_String"/>
-        <mapperTableEntries name="var2" expression="row1.NPINO==null?&quot;-1&quot;:row1.NPINO " type="id_String"/>
+        <mapperTableEntries name="var2" expression="row1.NPINO " type="id_String"/>
         <mapperTableEntries name="varMD5_COMPARE_HK" expression="MD5.getHashString(Var.var2) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1">
@@ -669,7 +669,7 @@
         <mapperTableEntries name="NPINO" expression="row1.NPINO.substring(0,10) " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="NPINO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPINO" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
