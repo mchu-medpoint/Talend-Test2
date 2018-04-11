@@ -754,99 +754,23 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LASTNAME"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MI"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FULLNAME"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="REV_FULLNAME"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SUFFIX"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BIRTHDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SEX"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EMAIL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ETHNICITY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CONTACT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ASSOCIATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REMARK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CREATEBY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CREATEDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LASTCHANGEBY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LASTCHANGEDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PROVID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COMPANY_ID"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ACCOUNT"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SUBACCT"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CLASS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CLASSDESC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CONTRACT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FROMDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TERMDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MAXENROLL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUTPATDISCOUNT"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PAYMENT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WITHSET"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WITHSETDESC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CARRIER"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOCALITY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FLAGGEDDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUTLDSTATUS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUTLDDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUTLDCODE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PROVTYPE"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NPINO"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USERFIELD1"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USERFIELD2"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PROVSTATUS"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PROVSTATUSDESC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISTEMPPROVIDER"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISDRG"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ISAPC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACTIVE_FLAG"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REC_EFF_DTM"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REC_TERM_DTM"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
@@ -864,55 +788,10 @@
       <column comment="" key="false" length="40" name="LASTNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="30" name="MI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="128" name="FULLNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="128" name="REV_FULLNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="25" name="SUFFIX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="60" name="EMAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="ETHNICITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="CONTACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="ASSOCIATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="REMARK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CREATEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CREATEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="LASTCHANGEBY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="LASTCHANGEDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="25" name="PROVID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="COMPANY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="ACCOUNT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -921,52 +800,7 @@
       <column comment="" key="false" length="10" name="SUBACCT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="50" name="_CLASS" nullable="true" originalDbColumnName="CLASS" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="CLASSDESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="CONTRACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="FROMDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="TERMDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="MAXENROLL" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="OUTPATDISCOUNT" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="PAYMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="WITHSET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="WITHSETDESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CARRIER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="LOCALITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="FLAGGEDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="OUTLDSTATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="OUTLDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="OUTLDCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="25" name="PROVTYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -975,34 +809,10 @@
       <column comment="" key="false" length="25" name="NPINO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="USERFIELD1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="USERFIELD2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="1" name="PROVSTATUS" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="PROVSTATUSDESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ISTEMPPROVIDER" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ISDRG" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ISAPC" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ACTIVE_FLAG" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="REC_TERM_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -1021,121 +831,87 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="255" name="MEMB_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="MEMB_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="PROV_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="COMPANY_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="PCPFROMDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="30" name="FIRSTNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="PCPTHRUDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="40" name="LASTNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="OPFROMDT" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="128" name="REV_FULLNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="OPTHRUDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="25" name="PROVID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="23" name="HPFROMDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="10" name="ACCOUNT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="HPCODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="SUBACCT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="25" name="OPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="50" name="PAYMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="-1" name="LASTCHANGEDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="HPNAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="40" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LOBID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="45" name="LOB_NAME" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="45" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PROVTYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="NPINO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="PROVSTATUS" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PROVSTATUSDESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MEMBER_SK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="row1.MEMB_KEYID+row1.MEMB_MPI_NO " type="id_String"/>
+        <mapperTableEntries name="var1" expression="row1.PROV_KEYID+row1.PROV_MPI_NO " type="id_String"/>
         <mapperTableEntries name="varMD5_HK" expression="MD5.getHashString(Var.var1) " type="id_String"/>
-        <mapperTableEntries name="var2" expression="row1.COMPANY_ID+row1.HPCODE+row1.OPT+(row1.OPFROMDT==null?null:row1.OPFROMDT.toString())+(row1.OPTHRUDT==null?null:row1.OPTHRUDT.toString())+(row1.HPFROMDT==null?null:row1.HPFROMDT.toString())+&#xD;&#xA;(row1.PCPFROMDT==null?null:row1.PCPFROMDT.toString())+(row1.PCPTHRUDT==null?null:row1.PCPTHRUDT.toString())+row1.MEMB_KEYID+row1.MEMB_MPI_NO " type="id_String"/>
+        <mapperTableEntries name="var2" expression="row1.PROV_KEYID+row1.PROV_MPI_NO+row1.FIRSTNAME+row1.LASTNAME+row1.REV_FULLNAME+row1.PROVID+row1.ACCOUNT+row1.SUBACCT+row1.PAYMENT+row1.PROVTYPE+row1.NPINO+row1.PROVSTATUS+row1.PROVSTATUSDESC " type="id_String"/>
         <mapperTableEntries name="varMD5_COMPARE_HK" expression="MD5.getHashString(Var.var2) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_String"/>
-        <mapperTableEntries name="MEMB_MPI_NO" expression="row1.MEMB_MPI_NO " type="id_String"/>
-        <mapperTableEntries name="COMPANY_ID" expression="row1.COMPANY_ID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCPFROMDT" expression="row1.PCPFROMDT " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PCPTHRUDT" expression="row1.PCPTHRUDT " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OPFROMDT" expression="row1.OPFROMDT " type="id_Date"/>
-        <mapperTableEntries name="OPTHRUDT" expression="row1.OPTHRUDT " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HPFROMDT" expression="row1.HPFROMDT " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HPCODE" expression="row1.HPCODE " type="id_String"/>
-        <mapperTableEntries name="OPT" expression="row1.OPT " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HPNAME" expression="row1.HPNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOBID" expression="row1.LOBID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOB_NAME" expression="row1.LOB_NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID " type="id_String"/>
+        <mapperTableEntries name="PROV_MPI_NO" expression="row1.PROV_MPI_NO " type="id_String"/>
+        <mapperTableEntries name="FIRSTNAME" expression="row1.FIRSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LASTNAME" expression="row1.LASTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REV_FULLNAME" expression="row1.REV_FULLNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVID" expression="row1.PROVID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACCOUNT" expression="row1.ACCOUNT " type="id_String"/>
+        <mapperTableEntries name="SUBACCT" expression="row1.SUBACCT " type="id_String"/>
+        <mapperTableEntries name="PAYMENT" expression="row1.PAYMENT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVTYPE" expression="row1.PROVTYPE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPINO" expression="row1.NPINO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVSTATUS" expression="row1.PROVSTATUS " type="id_String"/>
+        <mapperTableEntries name="PROVSTATUSDESC" expression="row1.PROVSTATUSDESC " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_HK" expression="Var.varMD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="Var.varMD5_COMPARE_HK " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBER_SK" expression="row1.MEMBER_SK " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PROV_KEYID" type="id_String"/>
         <mapperTableEntries name="PROV_MPI_NO" type="id_String"/>
         <mapperTableEntries name="FIRSTNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FULLNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULLNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUFFIX" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BIRTHDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="SEX" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EMAIL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ETHNICITY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONTACT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ASSOCIATE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REMARK" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CREATEBY" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="CREATEDATE" type="id_Date"/>
-        <mapperTableEntries name="LASTCHANGEBY" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LASTCHANGEDATE" type="id_Date"/>
         <mapperTableEntries name="PROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COMPANY_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACCOUNT" type="id_String"/>
         <mapperTableEntries name="SUBACCT" type="id_String"/>
-        <mapperTableEntries name="_CLASS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CLASSDESC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONTRACT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FROMDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="TERMDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="MAXENROLL" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="OUTPATDISCOUNT" type="id_Integer"/>
         <mapperTableEntries name="PAYMENT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WITHSET" type="id_String" nullable="true"/>
-        <mapperTableEntries name="WITHSETDESC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CARRIER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOCALITY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FLAGGEDDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OUTLDSTATUS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OUTLDDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OUTLDCODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="PROVTYPE" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPINO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="USERFIELD1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="USERFIELD2" type="id_String" nullable="true"/>
         <mapperTableEntries name="PROVSTATUS" type="id_String"/>
         <mapperTableEntries name="PROVSTATUSDESC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ISTEMPPROVIDER" type="id_Boolean"/>
-        <mapperTableEntries name="ISDRG" type="id_Boolean"/>
-        <mapperTableEntries name="ISAPC" type="id_Boolean"/>
-        <mapperTableEntries name="ACTIVE_FLAG" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="REC_EFF_DTM" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="REC_TERM_DTM" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1329,23 +1105,21 @@
         <mapperTableEntries name="MD5_COMPARE_HK" expression="out1.MD5_COMPARE_HK  " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="MEMB_KEYID" type="id_String"/>
-        <mapperTableEntries name="MEMB_MPI_NO" type="id_String"/>
-        <mapperTableEntries name="COMPANY_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCPFROMDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PCPTHRUDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OPFROMDT" type="id_Date"/>
-        <mapperTableEntries name="OPTHRUDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HPFROMDT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HPCODE" type="id_String"/>
-        <mapperTableEntries name="OPT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LASTCHANGEDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="HPNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOBID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOB_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROV_KEYID" type="id_String"/>
+        <mapperTableEntries name="PROV_MPI_NO" type="id_String"/>
+        <mapperTableEntries name="FIRSTNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LASTNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="REV_FULLNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACCOUNT" type="id_String"/>
+        <mapperTableEntries name="SUBACCT" type="id_String"/>
+        <mapperTableEntries name="PAYMENT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVTYPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPINO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVSTATUS" type="id_String"/>
+        <mapperTableEntries name="PROVSTATUSDESC" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MEMBER_SK" type="id_Integer" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PROVIDER_DETAIL_SK" type="id_Long"/>
@@ -2878,6 +2652,45 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="MEMBER_SK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PAYMENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUBACCT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROVID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FIRSTNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROVSTATUSDESC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROVTYPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROVSTATUS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROV_MPI_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REV_FULLNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROV_KEYID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LASTNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NPINO"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
