@@ -818,9 +818,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="FLOW" label="PROVIDER_MASTER" name="EDW_UPDATE">
-      <column comment="" key="true" length="19" name="PROVIDER_MASTER_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="NPI_NO_MASTER" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -865,10 +862,9 @@
         <mapperTableEntries name="REC_TERM_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="EDW_UPDATE">
-        <mapperTableEntries name="PROVIDER_MASTER_SK" type="id_Long"/>
-        <mapperTableEntries name="NPI_NO_MASTER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPI_NO_MASTER" expression="SQL_UPDATE.NPI_NO_MASTER " type="id_String" nullable="true"/>
         <mapperTableEntries name="BATCH_SK" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REC_EFF_DTM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REC_EFF_DTM" expression="SQL_UPDATE.REC_EFF_DTM " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MD5_HK" expression="SQL_UPDATE.MD5_HK " type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="SQL_UPDATE.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
@@ -880,9 +876,7 @@
         <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PROVIDER_MASTER_SK" type="id_Long"/>
         <mapperTableEntries name="NPI_NO_MASTER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BATCH_SK" type="id_String" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" type="id_Date" nullable="true"/>
         <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
@@ -1315,14 +1309,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;mpm_edw&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;highpoint6&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/QQEozRnyRj2g=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_KcGd0CypEeiJetnqWhFd7A - PROVIDER_MASTER" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;PROVIDER_MASTER&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT PROVIDER_MASTER.PROVIDER_MASTER_SK,&#xA;&#x9;&#x9;PROVIDER_MASTER.NPI_NO_MASTER,&#xA;&#x9;&#x9;PROVIDER_MASTER.BATCH_SK,&#xA;&#x9;&#x9;PROVIDER_MASTER.REC_EFF_DTM,&#xA;&#x9;&#x9;PROVIDER_MASTER.MD5_HK,&#xA;&#x9;&#x9;PROVIDER_MASTER.MD5_COMPARE_HK&#xA;FROM&#x9;PROVIDER_MASTER&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;&#x9;&#x9;PROVIDER_MASTER.NPI_NO_MASTER,&#xA;&#x9;&#x9;PROVIDER_MASTER.REC_EFF_DTM,&#xA;&#x9;&#x9;PROVIDER_MASTER.MD5_HK,&#xA;&#x9;&#x9;PROVIDER_MASTER.MD5_COMPARE_HK&#xA;FROM&#x9;PROVIDER_MASTER&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1332,11 +1324,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROVIDER_MASTER_SK"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NPI_NO_MASTER"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_SK"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="REC_EFF_DTM"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -1348,13 +1336,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="PROVIDER_MASTER" name="tMSSqlInput_2">
-      <column comment="" key="true" length="19" name="PROVIDER_MASTER_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="NPI_NO_MASTER" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="BATCH_SK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -1389,11 +1371,9 @@
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="PROVIDER_MASTER_SK" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="NPI_NO_MASTER" show="false"/>
     <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
     <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_KcGd0CypEeiJetnqWhFd7A - PROVIDER_MASTER" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1406,11 +1386,6 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROVIDER_MASTER_SK"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NPI_NO_MASTER"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -1445,9 +1420,6 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="PROVIDER_MASTER" name="tMSSqlOutput_2">
-      <column comment="" key="true" length="19" name="PROVIDER_MASTER_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="NPI_NO_MASTER" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1466,9 +1438,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="PROVIDER_MASTER" name="REJECT">
-      <column comment="" key="true" length="19" name="PROVIDER_MASTER_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="10" name="NPI_NO_MASTER" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
