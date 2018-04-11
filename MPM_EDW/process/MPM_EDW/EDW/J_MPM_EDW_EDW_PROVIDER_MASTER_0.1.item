@@ -657,12 +657,7 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="row1.NPINO==null?null:row1.NPINO " type="id_String"/>
-        <mapperTableEntries name="varMD5_HK" expression="MD5.getHashString(Var.var1) " type="id_String"/>
-        <mapperTableEntries name="var2" expression="row1.NPINO==null?null:row1.NPINO " type="id_String"/>
-        <mapperTableEntries name="varMD5_COMPARE_HK" expression="MD5.getHashString(Var.var2) " type="id_String"/>
-      </varTables>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="MD5_HK" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="" type="id_String" nullable="true"/>
