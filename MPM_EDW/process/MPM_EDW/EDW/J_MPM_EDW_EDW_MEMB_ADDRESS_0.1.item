@@ -236,7 +236,7 @@
         <mapperTableEntries name="SEQUENCE" expression="row3.SEQUENCE " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CONTACT_TYPE_CD" expression="row3.CONTACT_TYPE " type="id_String" nullable="true"/>
         <mapperTableEntries name="ADDRESS_TYPE_CD" expression="row3.ADDRESSTYPE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ADDRESS_TYPE_DESCR" expression="row1.ADDRESS_TYPE_DESC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADDRESS_TYPE_DESCR" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="STREET_LINE_1" expression="row3.STREET " type="id_String" nullable="true"/>
         <mapperTableEntries name="STREET_LINE_2" expression="row3.STREET2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CITY" expression="row3.CITY " type="id_String" nullable="true"/>
