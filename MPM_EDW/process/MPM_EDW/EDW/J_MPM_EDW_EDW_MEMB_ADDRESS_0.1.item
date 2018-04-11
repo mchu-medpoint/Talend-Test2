@@ -261,7 +261,7 @@
         <mapperTableEntries name="MEMBER_SK" expression="" type="id_Long"/>
         <mapperTableEntries name="SRC_MEMBER_KEY_ID" expression="row1.MEMB_KEYID " type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row3" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row3" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="RELOAD">
         <mapperTableEntries name="MEMB_CONTACT_INFORMATION_SK" type="id_Long"/>
         <mapperTableEntries name="SEQUENCE" type="id_Integer"/>
         <mapperTableEntries name="MEMB_KEYID" expression="row1.MEMB_KEYID " type="id_String" operator="="/>
