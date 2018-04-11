@@ -664,8 +664,8 @@
         <mapperTableEntries name="varMD5_COMPARE_HK" expression="MD5.getHashString(Var.var2) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="MD5_HK" expression="Var.varMD5_HK " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MD5_COMPARE_HK" expression="Var.varMD5_COMPARE_HK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MD5_HK" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MD5_COMPARE_HK" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPINO" expression="row1.NPINO.substring(0,10) " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
