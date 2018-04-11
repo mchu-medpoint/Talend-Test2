@@ -1262,7 +1262,7 @@
         <mapperTableEntries name="REV_FULL_NAME" expression="row4.REV_FULL_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPI_NO" expression="row4.NPI_NO" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACCOUNT_CD" expression="row4.ACCOUNT_CD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SUB_ACCOUNT_CD" expression="row4..SUB_ACCOUNT_CD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUB_ACCOUNT_CD" expression="row4.SUB_ACCOUNT_CD " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACCOUNT_DESCR" expression="row4.ACCOUNT_DESCR" type="id_String" nullable="true"/>
         <mapperTableEntries name="PROVIDER_STATUS_CD" expression="row4.PROVIDER_STATUS_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="PROVIDER_STATUS_DESCR" expression="row4.PROVIDER_STATUS_DESCR" type="id_String" nullable="true"/>
