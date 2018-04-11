@@ -769,10 +769,10 @@
       <column comment="" key="false" length="23" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="32" name="MD5_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -1023,10 +1023,10 @@
       <column comment="" key="false" length="23" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="32" name="MD5_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -1041,10 +1041,10 @@
       <column comment="" key="false" length="23" name="REC_EFF_DTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="32" name="MD5_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
