@@ -525,7 +525,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="SELECT DISTINCT&#xD;&#xA;e.SEQUENCE,&#xD;&#xA;a.MEMB_KEYID,&#xD;&#xA;e.COUNTY,&#xD;&#xA;e.CONTACT_TYPE,&#xD;&#xA;e.ADDRESSTYPE,&#xD;&#xA;e.STREET,&#xD;&#xA;e.STREET2,&#xD;&#xA;e.CITY,&#xD;&#xA;e.STATE,&#xD;&#xA;e.PHONE,&#xD;&#xA;e.ZIP,&#xD;&#xA;M.MEMBER_SK&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;FROM LAND.MEMB_COMPANY_V a&#xD;&#xA;INNER JOIN EDW.MEMBER M ON a.MEMB_KEYID = M.SRC_MEMBER_KEY_ID&#xD;&#xA;LEFT OUTER JOIN LAND.MEMB_CONTACT_INFORMATION e on e.memb_keyid=a.memb_keyid "/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#xD;&#xA;e.SEQUENCE,&#xD;&#xA;a.MEMB_KEYID,&#xD;&#xA;e.COUNTY,&#xD;&#xA;e.CONTACT_TYPE,&#xD;&#xA;e.ADDRESSTYPE,&#xD;&#xA;e.STREET,&#xD;&#xA;e.STREET2,&#xD;&#xA;e.CITY,&#xD;&#xA;e.STATE,&#xD;&#xA;e.PHONE,&#xD;&#xA;e.ZIP,&#xD;&#xA;M.MEMBER_SK&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;FROM LAND.MEMB_COMPANY_V a&#xD;&#xA;INNER JOIN EDW.MEMBER M ON a.MEMB_KEYID = M.SRC_MEMBER_KEY_ID&#xD;&#xA;LEFT OUTER JOIN LAND.MEMB_CONTACT_INFORMATION e on e.memb_keyid=a.memb_keyid&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
