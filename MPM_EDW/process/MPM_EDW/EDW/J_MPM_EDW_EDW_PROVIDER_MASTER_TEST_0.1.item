@@ -181,16 +181,11 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="row1.NPINO " type="id_String"/>
-        <mapperTableEntries name="var2" expression="MD5.getHashString(row1.NPINO) " type="id_String"/>
-        <mapperTableEntries name="var3" expression="row1.NPINO " type="id_String"/>
-        <mapperTableEntries name="var4" expression="MD5.getHashString(row1.NPINO) " type="id_String"/>
-      </varTables>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="MD5_HK" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="MD5_COMPARE_HK" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPINO" expression="row1.NPINO.substring(0,10) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPINO" expression="row1.NPINO " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="NPINO" type="id_String" nullable="true"/>
