@@ -1168,9 +1168,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="FLOW" label="PROVIDER_DETAIL" name="EDW_UPDATE">
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1261,7 +1258,6 @@
         <mapperTableEntries name="MD5_COMPARE_HK" expression="row4.MD5_COMPARE_HK" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="EDW_UPDATE">
-        <mapperTableEntries name="PROVIDER_MASTER_SK" expression="SQL_UPDATE.PROVIDER_MASTER_SK " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LAST_NAME" expression="SQL_UPDATE.LAST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="SQL_UPDATE.FIRST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULL_NAME" expression="SQL_UPDATE.REV_FULL_NAME" type="id_String" nullable="true"/>
@@ -1789,7 +1785,7 @@
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
     <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="PROVIDER_MASTER_SK" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="LAST_NAME" show="false"/>
     <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
     <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -1804,11 +1800,6 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROVIDER_MASTER_SK"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LAST_NAME"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -1918,9 +1909,6 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="PROVIDER_DETAIL" name="tMSSqlOutput_1">
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1984,9 +1972,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="PROVIDER_DETAIL" name="REJECT">
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
