@@ -138,7 +138,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT PROV_COMPANY_V.PROV_KEYID,PROV_COMPANY_V.PROV_MPI_NO,PROV_COMPANY_V.FIRSTNAME,PROV_COMPANY_V.LASTNAME,PROV_COMPANY_V.REV_FULLNAME,PROV_COMPANY_V.LASTCHANGEDATE,PROV_COMPANY_V.PROVID,PROV_COMPANY_V.ACCOUNT,PROV_COMPANY_V.SUBACCT,PROV_COMPANY_V.PAYMENT,PROV_COMPANY_V.PROVTYPE,PROV_COMPANY_V.NPINO,PROV_COMPANY_V.PROVSTATUS,PROV_COMPANY_V.PROVSTATUSDESC FROM LAND.PROV_COMPANY_V&quot;;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT top 100 PROV_COMPANY_V.PROV_KEYID,PROV_COMPANY_V.PROV_MPI_NO,PROV_COMPANY_V.FIRSTNAME,PROV_COMPANY_V.LASTNAME,PROV_COMPANY_V.REV_FULLNAME,PROV_COMPANY_V.LASTCHANGEDATE,PROV_COMPANY_V.PROVID,PROV_COMPANY_V.ACCOUNT,PROV_COMPANY_V.SUBACCT,PROV_COMPANY_V.PAYMENT,PROV_COMPANY_V.PROVTYPE,PROV_COMPANY_V.NPINO,PROV_COMPANY_V.PROVSTATUS,PROV_COMPANY_V.PROVSTATUSDESC FROM LAND.PROV_COMPANY_V&quot;;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -223,107 +223,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_Ugr1cD3yEeiANqn80ecnqw-tMap_5-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="255" name="PROV_KEYID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="PROV_MPI_NO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="FIRSTNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="40" name="LASTNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="128" name="REV_FULLNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="PROVID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ACCOUNT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="SUBACCT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="PAYMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="PROVTYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="25" name="NPINO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="PROVSTATUS" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="PROVSTATUSDESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="32" name="MD5_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
-      <column comment="" key="false" length="32" name="MD5_COMPARE_HK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="32" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LASTCHANGEDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="row1.PROV_KEYID+row1.PROV_MPI_NO " type="id_String"/>
-        <mapperTableEntries name="varMD5_HK" expression="MD5.getHashString(Var.var1) " type="id_String"/>
-        <mapperTableEntries name="var2" expression="row1.PROV_KEYID+row1.PROV_MPI_NO+row1.FIRSTNAME+row1.LASTNAME+row1.REV_FULLNAME+row1.PROVID+row1.ACCOUNT+row1.SUBACCT+row1.PAYMENT+row1.PROVTYPE+row1.NPINO+row1.PROVSTATUS+row1.PROVSTATUSDESC " type="id_String"/>
-        <mapperTableEntries name="varMD5_COMPARE_HK" expression="MD5.getHashString(Var.var2) " type="id_String"/>
-      </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="PROV_KEYID" expression="row1.PROV_KEYID " type="id_String"/>
-        <mapperTableEntries name="PROV_MPI_NO" expression="row1.PROV_MPI_NO " type="id_String"/>
-        <mapperTableEntries name="FIRSTNAME" expression="row1.FIRSTNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LASTNAME" expression="row1.LASTNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="REV_FULLNAME" expression="row1.REV_FULLNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVID" expression="row1.PROVID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACCOUNT" expression="row1.ACCOUNT " type="id_String"/>
-        <mapperTableEntries name="SUBACCT" expression="row1.SUBACCT " type="id_String"/>
-        <mapperTableEntries name="PAYMENT" expression="row1.PAYMENT " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVTYPE" expression="row1.PROVTYPE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPINO" expression="row1.NPINO " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVSTATUS" expression="row1.PROVSTATUS " type="id_String"/>
-        <mapperTableEntries name="PROVSTATUSDESC" expression="row1.PROVSTATUSDESC " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MD5_HK" expression="Var.varMD5_HK " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MD5_COMPARE_HK" expression="Var.varMD5_COMPARE_HK " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LASTCHANGEDATE" expression="row1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PROV_KEYID" type="id_String"/>
-        <mapperTableEntries name="PROV_MPI_NO" type="id_String"/>
-        <mapperTableEntries name="FIRSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LASTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="REV_FULLNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LASTCHANGEDATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PROVID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACCOUNT" type="id_String"/>
-        <mapperTableEntries name="SUBACCT" type="id_String"/>
-        <mapperTableEntries name="PAYMENT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVTYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPINO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVSTATUS" type="id_String"/>
-        <mapperTableEntries name="PROVSTATUSDESC" type="id_String" nullable="true"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="256">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -336,9 +236,6 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Route flow"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="to_agg">
-      <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-    </metadata>
     <metadata connector="FLOW" label="PROVIDER_DETAIL" name="SQL_INSERT">
       <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -402,14 +299,14 @@
       </column>
       <additionalProperties key="Comment" value=""/>
     </metadata>
+    <metadata connector="FLOW" name="tlog">
+      <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="&quot;1&quot;" type="id_String"/>
       </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="to_agg">
-        <mapperTableEntries name="updated_at" expression="" type="id_Date" nullable="true"/>
-      </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="out1.MD5_HK == null">
         <mapperTableEntries name="PROVIDER_MASTER_SK" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LAST_NAME" expression="out1.LASTNAME " type="id_String" nullable="true"/>
@@ -429,8 +326,11 @@
         <mapperTableEntries name="SRC_PROVIDER_MPI_NO" expression="out1.PROV_MPI_NO " type="id_String" nullable="true"/>
         <mapperTableEntries name="BATCH_SK" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="MD5_HK" expression="out1.MD5_HK " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MD5_COMPARE_HK" expression="out1.MD5_COMPARE_HK " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MD5_HK" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MD5_COMPARE_HK" expression="" type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="tlog">
+        <mapperTableEntries name="updated_at" type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PROV_KEYID" type="id_String"/>
@@ -438,6 +338,7 @@
         <mapperTableEntries name="FIRSTNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LASTNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULLNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LASTCHANGEDATE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="PROVID" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACCOUNT" type="id_String"/>
         <mapperTableEntries name="SUBACCT" type="id_String"/>
@@ -446,9 +347,6 @@
         <mapperTableEntries name="NPINO" type="id_String" nullable="true"/>
         <mapperTableEntries name="PROVSTATUS" type="id_String"/>
         <mapperTableEntries name="PROVSTATUSDESC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MD5_HK" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MD5_COMPARE_HK" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LASTCHANGEDATE" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -746,85 +644,17 @@
       <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_4" target="tMap_5">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="LASTCHANGEDATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tMap_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="MD5_HK"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOBID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="HPNAME"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LOB_NAME"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="MEMBER_SK"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PAYMENT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="SUBACCT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PROVID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FIRSTNAME"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PROVSTATUSDESC"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PROVTYPE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PROVSTATUS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PROV_MPI_NO"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="REV_FULLNAME"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="ACCOUNT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PROV_KEYID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LASTNAME"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="NPINO"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="LASTCHANGEDATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="tMSSqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_4" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="to_agg" lineStyle="0" metaname="to_agg" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="to_agg" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="SQL_INSERT" lineStyle="0" metaname="SQL_INSERT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tMSSqlOutput_3">
+  <connection connectorName="FLOW" label="SQL_INSERT" lineStyle="0" metaname="SQL_INSERT" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tMSSqlOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="SQL_INSERT" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="tlog" lineStyle="0" metaname="tlog" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tlog" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_4" show="false"/>
