@@ -360,7 +360,7 @@
         <mapperTableEntries name="LAST_NAME" expression="out1.LASTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="out1.FIRSTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULL_NAME" expression="out1.REV_FULLNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPI_NO" expression="out1.NPINO.substring(0,10)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPI_NO" expression="out1.NPINO " type="id_String" nullable="true"/>
         <mapperTableEntries name="IPA_CD" expression="out1.COMPANY_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACCOUNT_CD" expression="out1.ACCOUNT " type="id_String" nullable="true"/>
         <mapperTableEntries name="SUB_ACCOUNT_CD" expression="out1.SUBACCT " type="id_String" nullable="true"/>
