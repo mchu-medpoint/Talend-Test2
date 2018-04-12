@@ -2304,7 +2304,6 @@
       <relatedItems xmi:id="_dG1tdz26EeitnajVhWXtLQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_dG1teD26EeitnajVhWXtLQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_YF964T3CEeitnajVhWXtLQ" id="_KcGd0CypEeiJetnqWhFd7A - PROVIDER_DETAIL" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Hlr2ED3bEeiANqn80ecnqw" id="_KcGd0CypEeiJetnqWhFd7A - AR_PROVIDER_DETAIL" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_UisnoD3yEeiANqn80ecnqw">
       <baseItem xmi:id="_UisnoT3yEeiANqn80ecnqw" id="_Ugr1cD3yEeiANqn80ecnqw" version="0.1" type="job"/>

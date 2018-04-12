@@ -466,8 +466,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String load = context.MPM_EDW_LoadType;&#xA;globalMap.put(&quot;load&quot;,load);&#xA;&#xA;System.out.println(load);&#xA;&#xA;System.out.println(globalMap.get(&quot;load&quot;));&#xA;&#xA;String Query = &quot;&quot;;&#xA;if (globalMap.get(&quot;load&quot;).equals(&quot;Baseline&quot;))&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT PROV_COMPANY_V.PROV_KEYID,PROV_COMPANY_V.PROV_MPI_NO,PROV_COMPANY_V.FIRSTNAME,PROV_COMPANY_V.LASTNAME,PROV_COMPANY_V.REV_FULLNAME,PROV_COMPANY_V.LASTCHANGEDATE,PROV_COMPANY_V.PROVID,PROV_COMPANY_V.ACCOUNT,PROV_COMPANY_V.SUBACCT,PROV_COMPANY_V.PAYMENT,PROV_COMPANY_V.PROVTYPE,PROV_COMPANY_V.NPINO,PROV_COMPANY_V.PROVSTATUS,PROV_COMPANY_V.PROVSTATUSDESC FROM EDW.PROV_COMPANY_V&quot;;&#xA;&#x9;}&#xA;else&#xA;&#x9;{&#xA;&#x9;&#x9;Query = &quot;SELECT PROV_COMPANY_V.PROV_KEYID,PROV_COMPANY_V.PROV_MPI_NO,PROV_COMPANY_V.FIRSTNAME,PROV_COMPANY_V.LASTNAME,PROV_COMPANY_V.REV_FULLNAME,PROV_COMPANY_V.LASTCHANGEDATE,PROV_COMPANY_V.PROVID,PROV_COMPANY_V.ACCOUNT,PROV_COMPANY_V.SUBACCT,PROV_COMPANY_V.PAYMENT,PROV_COMPANY_V.PROVTYPE,PROV_COMPANY_V.NPINO,PROV_COMPANY_V.PROVSTATUS,PROV_COMPANY_V.PROVSTATUSDESC FROM EDW.PROV_COMPANY_V WHERE COMP.LASTCHANGEDATE > '&quot;+globalMap.get(&quot;delta_date&quot;)+&quot;'&quot;;&#xA;&#x9;}&#xA;&#xA;globalMap.put(&quot;Query&quot;,Query);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:SCHEMA_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_KcGd0CypEeiJetnqWhFd7A - PROVIDER_DETAIL" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="PROVIDER_DETAIL" name="tJava_3">
       <column comment="" key="true" length="19" name="PROVIDER_DETAIL_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
@@ -880,7 +878,7 @@
       <column comment="" key="false" length="-1" name="LASTCHANGEDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="row1.PROV_KEYID+row1.PROV_MPI_NO " type="id_String"/>
         <mapperTableEntries name="varMD5_HK" expression="MD5.getHashString(Var.var1) " type="id_String"/>
@@ -940,9 +938,6 @@
       <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="PROVIDER_DETAIL" name="SQL_INSERT">
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1003,7 +998,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="FLOW" name="SQL_UPDATE">
-      <column comment="" defaultValue="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="150" name="REV_FULL_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1033,7 +1027,6 @@
         <mapperTableEntries name="updated_at" expression="out1.LASTCHANGEDATE " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row2.MD5_HK == null" activateExpressionFilter="true">
-        <mapperTableEntries name="PROVIDER_MASTER_SK" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LAST_NAME" expression="out1.LASTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="out1.FIRSTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULL_NAME" expression="out1.REV_FULLNAME " type="id_String" nullable="true"/>
@@ -1055,7 +1048,6 @@
         <mapperTableEntries name="MD5_COMPARE_HK" expression="out1.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_UPDATE" expressionFilter="row2.MD5_HK != null &amp;&amp; row2.MD5_COMPARE_HK !=  out1.MD5_COMPARE_HK" activateExpressionFilter="true">
-        <mapperTableEntries name="PROVIDER_MASTER_SK" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LAST_NAME" expression="out1.LASTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="out1.FIRSTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULL_NAME" expression="out1.REV_FULLNAME " type="id_String" nullable="true"/>
@@ -1113,15 +1105,6 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="AR_PROVIDER_DETAIL" name="SQL_ARCH_TARGET">
-      <column comment="" key="true" length="19" name="AR_PROVIDER_DETAIL_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PROVIDER_DETAIL_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1256,9 +1239,6 @@
         <mapperTableEntries name="var1" expression="&quot;0&quot;" type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_ARCH_TARGET">
-        <mapperTableEntries name="AR_PROVIDER_DETAIL_SK" type="id_Long"/>
-        <mapperTableEntries name="PROVIDER_DETAIL_SK" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="PROVIDER_MASTER_SK" expression="row4.PROVIDER_MASTER_SK" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LAST_NAME" expression="row4.LAST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="row4.FIRST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULL_NAME" expression="row4.REV_FULL_NAME" type="id_String" nullable="true"/>
@@ -1304,7 +1284,6 @@
         <mapperTableEntries name="MD5_COMPARE_HK" expression="SQL_UPDATE.MD5_COMPARE_HK " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="SQL_UPDATE" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PROVIDER_MASTER_SK" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LAST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULL_NAME" type="id_String" nullable="true"/>
@@ -1368,7 +1347,7 @@
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="PROVIDER_MASTER_SK" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="LAST_NAME" show="false"/>
     <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
     <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -1383,11 +1362,6 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROVIDER_MASTER_SK"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LAST_NAME"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -1492,9 +1466,6 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="PROVIDER_DETAIL" name="tMSSqlOutput_3">
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1555,9 +1526,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="PROVIDER_DETAIL" name="REJECT">
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -2102,11 +2070,9 @@
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="AR_PROVIDER_DETAIL_SK" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="LAST_NAME" show="false"/>
     <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
     <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_KcGd0CypEeiJetnqWhFd7A - AR_PROVIDER_DETAIL" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2119,21 +2085,6 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="AR_PROVIDER_DETAIL_SK"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROVIDER_DETAIL_SK"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROVIDER_MASTER_SK"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LAST_NAME"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -2243,15 +2194,6 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="AR_PROVIDER_DETAIL" name="tMSSqlOutput_2">
-      <column comment="" key="true" length="19" name="AR_PROVIDER_DETAIL_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PROVIDER_DETAIL_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -2315,15 +2257,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="AR_PROVIDER_DETAIL" name="REJECT">
-      <column comment="" key="true" length="19" name="AR_PROVIDER_DETAIL_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PROVIDER_DETAIL_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="19" name="PROVIDER_MASTER_SK" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="50" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
