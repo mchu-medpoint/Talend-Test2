@@ -345,13 +345,13 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="&quot;1&quot;" type="id_String"/>
-        <mapperTableEntries name="var2" expression="" type="id_String"/>
+        <mapperTableEntries name="var2" expression="out1.NPINO.substring(0,10) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="out1.MD5_HK == null">
         <mapperTableEntries name="LAST_NAME" expression="out1.LASTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" expression="out1.FIRSTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="REV_FULL_NAME" expression="out1.REV_FULLNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPI_NO" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPI_NO" expression="Var.var2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="IPA_CD" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACCOUNT_CD" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="SUB_ACCOUNT_CD" expression="" type="id_String" nullable="true"/>
