@@ -525,7 +525,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="SELECT DISTINCT&#xD;&#xA;e.SEQUENCE,&#xD;&#xA;a.MEMB_KEYID,&#xD;&#xA;e.COUNTY,&#xD;&#xA;e.CONTACT_TYPE,&#xD;&#xA;e.ADDRESSTYPE,&#xD;&#xA;e.STREET,&#xD;&#xA;e.STREET2,&#xD;&#xA;e.CITY,&#xD;&#xA;e.STATE,&#xD;&#xA;e.PHONE,&#xD;&#xA;e.ZIP,&#xD;&#xA;M.MEMBER_SK,&#xD;&#xA;(select code_descr from LAND.VW_COMMON_CODES where category_name='PROVADDTYPES' and code=e.ADDRESSTYPE) ,&#xD;&#xA;&#xD;&#xA;(select code_descr from mpm_edw.LAND.VW_COMMON_CODES where category_name='COUNTYCODES' and code=e.COUNTY)&#xD;&#xA;&#xD;&#xA;FROM LAND.MEMB_COMPANY_V a&#xD;&#xA;INNER JOIN EDW.MEMBER M ON a.MEMB_KEYID = M.SRC_MEMBER_KEY_ID&#xD;&#xA;LEFT OUTER JOIN LAND.MEMB_CONTACT_INFORMATION e on e.memb_keyid=a.memb_keyid "/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="SELECT DISTINCT&#xD;&#xA;e.SEQUENCE,&#xD;&#xA;a.MEMB_KEYID,&#xD;&#xA;e.COUNTY,&#xD;&#xA;e.CONTACT_TYPE,&#xD;&#xA;e.ADDRESSTYPE,&#xD;&#xA;e.STREET,&#xD;&#xA;e.STREET2,&#xD;&#xA;e.CITY,&#xD;&#xA;e.STATE,&#xD;&#xA;e.PHONE,&#xD;&#xA;e.ZIP,&#xD;&#xA;M.MEMBER_SK&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;FROM LAND.MEMB_COMPANY_V a&#xD;&#xA;INNER JOIN EDW.MEMBER M ON a.MEMB_KEYID = M.SRC_MEMBER_KEY_ID&#xD;&#xA;LEFT OUTER JOIN LAND.MEMB_CONTACT_INFORMATION e on e.memb_keyid=a.memb_keyid "/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -559,10 +559,6 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MEMBER_SK"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn1"/>
-      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -579,8 +575,6 @@
       <column comment="y" key="false" length="25" name="PHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="y" key="false" length="25" name="ZIP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="MEMBER_SK" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="255" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
@@ -650,8 +644,8 @@
         <mapperTableEntries name="PHONE" expression="row2.PHONE " type="id_String" nullable="true"/>
         <mapperTableEntries name="ZIP" expression="row2.ZIP " type="id_String" nullable="true"/>
         <mapperTableEntries name="MEMBER_SK" expression="row2.MEMBER_SK " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="ADDRESS_TYPE_DESCR" expression="row2.ADDRESS_TYPE_DESCR  row2.newColumn " type="id_String" nullable="true"/>
-        <mapperTableEntries name="COUNTY_NAME" expression="row2.COUNTY_NAME  row2.newColumn1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADDRESS_TYPE_DESCR" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COUNTY_NAME" expression="" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SEQUENCE" type="id_Integer"/>
@@ -666,8 +660,6 @@
         <mapperTableEntries name="PHONE" type="id_String" nullable="true"/>
         <mapperTableEntries name="ZIP" type="id_String" nullable="true"/>
         <mapperTableEntries name="MEMBER_SK" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="newColumn" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn1" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
