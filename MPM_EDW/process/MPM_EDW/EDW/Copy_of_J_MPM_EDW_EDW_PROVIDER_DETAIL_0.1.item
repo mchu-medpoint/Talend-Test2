@@ -364,7 +364,7 @@
         <mapperTableEntries name="PROVIDER_TYPE" expression="out1.PROVTYPE " type="id_String" nullable="true"/>
         <mapperTableEntries name="PAYMENT_CD" expression="out1.PAYMENT " type="id_String" nullable="true"/>
         <mapperTableEntries name="PAYMENT_DESCR" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SRC_PROVIDER_ID" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SRC_PROVIDER_ID" expression="out1.PROVID " type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_PROVIDER_KEY_ID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_PROVIDER_MPI_NO" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="BATCH_SK" expression="" type="id_String" nullable="true"/>
