@@ -282,7 +282,7 @@
       <column comment="" key="false" length="255" name="SRC_PROVIDER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SRC_PROVIDER_KEY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="SRC_PROVIDER_KEY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="SRC_PROVIDER_MPI_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -365,8 +365,8 @@
         <mapperTableEntries name="PAYMENT_CD" expression="out1.PAYMENT " type="id_String" nullable="true"/>
         <mapperTableEntries name="PAYMENT_DESCR" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="SRC_PROVIDER_ID" expression="out1.PROVID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="SRC_PROVIDER_KEY_ID" expression="out1.PROV_KEYID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="SRC_PROVIDER_MPI_NO" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SRC_PROVIDER_KEY_ID" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SRC_PROVIDER_MPI_NO" expression="out1.PROV_MPI_NO " type="id_String" nullable="true"/>
         <mapperTableEntries name="BATCH_SK" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MD5_HK" expression="" type="id_String" nullable="true"/>
@@ -680,7 +680,7 @@
       <column comment="" key="false" length="255" name="SRC_PROVIDER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SRC_PROVIDER_KEY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="SRC_PROVIDER_KEY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="SRC_PROVIDER_MPI_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -743,7 +743,7 @@
       <column comment="" key="false" length="255" name="SRC_PROVIDER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="SRC_PROVIDER_KEY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="25" name="SRC_PROVIDER_KEY_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="255" name="SRC_PROVIDER_MPI_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
