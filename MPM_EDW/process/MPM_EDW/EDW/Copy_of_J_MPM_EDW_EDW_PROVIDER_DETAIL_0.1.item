@@ -345,7 +345,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="&quot;1&quot;" type="id_String"/>
-        <mapperTableEntries name="var2" expression="out1.NPINO.substring(0,10) " type="id_String"/>
+        <mapperTableEntries name="var2" expression="" type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="out1.MD5_HK == null">
         <mapperTableEntries name="LAST_NAME" expression="out1.LASTNAME " type="id_String" nullable="true"/>
