@@ -359,8 +359,8 @@
         <mapperTableEntries name="ACCOUNT_CD" expression="out1.ACCOUNT " type="id_String" nullable="true"/>
         <mapperTableEntries name="SUB_ACCOUNT_CD" expression="out1.SUBACCT " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACCOUNT_DESCR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVIDER_STATUS_CD" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PROVIDER_STATUS_DESCR" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVIDER_STATUS_CD" expression="out1.PROVSTATUS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROVIDER_STATUS_DESCR" expression="out1.PROVSTATUSDESC " type="id_String" nullable="true"/>
         <mapperTableEntries name="PROVIDER_TYPE" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="PAYMENT_CD" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="PAYMENT_DESCR" expression="" type="id_String" nullable="true"/>
