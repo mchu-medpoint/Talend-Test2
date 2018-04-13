@@ -1066,8 +1066,8 @@
         <mapperTableEntries name="LastChangeDate" type="id_Date" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="common_type_id" expression="row1.common_type_id " type="id_Integer" operator="="/>
-        <mapperTableEntries name="common_category_id" expression="row1.common_category_id " type="id_Integer" operator="="/>
+        <mapperTableEntries name="common_type_id" expression="row1.common_type_id " type="id_String" operator="="/>
+        <mapperTableEntries name="common_category_id" expression="row1.common_category_id " type="id_String" operator="="/>
       </inputTables>
     </nodeData>
   </node>
@@ -1194,10 +1194,10 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="VW_COMMON_TYPES" name="tMSSqlInput_2">
-      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
