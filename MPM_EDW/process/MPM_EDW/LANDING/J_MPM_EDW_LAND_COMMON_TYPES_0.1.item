@@ -824,13 +824,13 @@
       <column comment="" key="false" length="-1" name="updated_at" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="VW_COMMON_TYPES" name="SQL_INSERT">
-      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="moduleid" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="moduleid" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="type_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -866,25 +866,25 @@
       <column comment="" key="false" length="10" name="Version" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isDefault" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isDefault" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isEditable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isEditable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isSelectable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isSelectable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isSystemDefined" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isSystemDefined" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LastChangeBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LastChangeBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LastChangeDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -902,13 +902,13 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="FLOW" label="VW_COMMON_TYPES" name="SQL_Update">
-      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="moduleid" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="moduleid" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="type_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -941,28 +941,28 @@
       <column comment="" key="false" length="23" name="To_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="Version" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="Version" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isDefault" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isDefault" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isEditable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isEditable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isSelectable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isSelectable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isSystemDefined" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isSystemDefined" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LastChangeBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LastChangeBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LastChangeDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -988,9 +988,9 @@
         <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE  row1.LastChangeDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row2.common_type_id == null" activateExpressionFilter="true">
-        <mapperTableEntries name="common_type_id" expression="row1.common_type_id" type="id_Integer"/>
-        <mapperTableEntries name="common_category_id" expression="row1.common_category_id" type="id_Integer"/>
-        <mapperTableEntries name="moduleid" expression="row1.moduleid" type="id_Integer"/>
+        <mapperTableEntries name="common_type_id" expression="row1.common_type_id" type="id_String"/>
+        <mapperTableEntries name="common_category_id" expression="row1.common_category_id" type="id_String"/>
+        <mapperTableEntries name="moduleid" expression="row1.moduleid" type="id_String"/>
         <mapperTableEntries name="type_code" expression="row1.type_code" type="id_String" nullable="true"/>
         <mapperTableEntries name="type_descr" expression="row1.type_descr" type="id_String" nullable="true"/>
         <mapperTableEntries name="category_name" expression="row1.category_name" type="id_String" nullable="true"/>
@@ -1002,22 +1002,22 @@
         <mapperTableEntries name="From_Date" expression="row1.From_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="To_Date" expression="row1.To_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Version" expression="row1.Version" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="isDefault" expression="row1.isDefault" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isEditable" expression="row1.isEditable" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isSelectable" expression="row1.isSelectable" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isSystemDefined" expression="row1.isSystemDefined" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="CreatedBy" expression="row1.CreatedBy" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="isDefault" expression="row1.isDefault" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isEditable" expression="row1.isEditable" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isSelectable" expression="row1.isSelectable" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isSystemDefined" expression="row1.isSystemDefined" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedBy" expression="row1.CreatedBy" type="id_String" nullable="true"/>
         <mapperTableEntries name="CreatedDate" expression="row1.CreatedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LastChangeBy" expression="row1.LastChangeBy" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LastChangeBy" expression="row1.LastChangeBy" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastChangeDate" expression="row1.LastChangeDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="ACTIVE_FLAG" expression="Var.var1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
         <mapperTableEntries name="REC_TERM_DTM" expression="" type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_Update" expressionFilter="row2.common_type_id  != null" activateExpressionFilter="true">
-        <mapperTableEntries name="common_type_id" expression="row1.common_type_id" type="id_Integer"/>
-        <mapperTableEntries name="common_category_id" expression="row1.common_category_id" type="id_Integer"/>
-        <mapperTableEntries name="moduleid" expression="row1.moduleid" type="id_Integer"/>
+        <mapperTableEntries name="common_type_id" expression="row1.common_type_id" type="id_String"/>
+        <mapperTableEntries name="common_category_id" expression="row1.common_category_id" type="id_String"/>
+        <mapperTableEntries name="moduleid" expression="row1.moduleid" type="id_String"/>
         <mapperTableEntries name="type_code" expression="row1.type_code" type="id_String" nullable="true"/>
         <mapperTableEntries name="type_descr" expression="row1.type_descr" type="id_String" nullable="true"/>
         <mapperTableEntries name="category_name" expression="row1.category_name" type="id_String" nullable="true"/>
@@ -1028,14 +1028,14 @@
         <mapperTableEntries name="CURRHIST" expression="row1.CURRHIST" type="id_String" nullable="true"/>
         <mapperTableEntries name="From_Date" expression="row1.From_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="To_Date" expression="row1.To_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Version" expression="row1.Version" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="isDefault" expression="row1.isDefault" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isEditable" expression="row1.isEditable" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isSelectable" expression="row1.isSelectable" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isSystemDefined" expression="row1.isSystemDefined" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="CreatedBy" expression="row1.CreatedBy" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Version" expression="row1.Version" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isDefault" expression="row1.isDefault" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isEditable" expression="row1.isEditable" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isSelectable" expression="row1.isSelectable" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isSystemDefined" expression="row1.isSystemDefined" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedBy" expression="row1.CreatedBy" type="id_String" nullable="true"/>
         <mapperTableEntries name="CreatedDate" expression="row1.CreatedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LastChangeBy" expression="row1.LastChangeBy" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LastChangeBy" expression="row1.LastChangeBy" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastChangeDate" expression="row1.LastChangeDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="ACTIVE_FLAG" expression="Var.var1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
@@ -1370,13 +1370,13 @@
     <elementParameter field="TEXT" name="LABEL" value="INSERT"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="VW_COMMON_TYPES" name="tMSSqlOutput_1">
-      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="moduleid" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="moduleid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="type_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1412,25 +1412,25 @@
       <column comment="" key="false" length="10" name="Version" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isDefault" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isDefault" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isEditable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isEditable" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isSelectable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isSelectable" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isSystemDefined" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isSystemDefined" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LastChangeBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LastChangeBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LastChangeDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -1448,13 +1448,13 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="VW_COMMON_TYPES" name="REJECT">
-      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_type_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="common_category_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="moduleid" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="moduleid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="type_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1490,25 +1490,25 @@
       <column comment="" key="false" length="10" name="Version" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isDefault" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isDefault" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isEditable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isEditable" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isSelectable" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isSelectable" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="1" name="isSystemDefined" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+      <column comment="" key="false" length="1" name="isSystemDefined" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="CreatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LastChangeBy" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LastChangeBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="23" name="LastChangeDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -1756,9 +1756,9 @@
         <mapperTableEntries name="REC_TERM_DTM" expression="row4.REC_TERM_DTM" type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="SQL_Update" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="common_type_id" type="id_Integer"/>
-        <mapperTableEntries name="common_category_id" type="id_Integer"/>
-        <mapperTableEntries name="moduleid" type="id_Integer"/>
+        <mapperTableEntries name="common_type_id" type="id_String"/>
+        <mapperTableEntries name="common_category_id" type="id_String"/>
+        <mapperTableEntries name="moduleid" type="id_String"/>
         <mapperTableEntries name="type_code" type="id_String" nullable="true"/>
         <mapperTableEntries name="type_descr" type="id_String" nullable="true"/>
         <mapperTableEntries name="category_name" type="id_String" nullable="true"/>
@@ -1769,14 +1769,14 @@
         <mapperTableEntries name="CURRHIST" type="id_String" nullable="true"/>
         <mapperTableEntries name="From_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="To_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Version" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="isDefault" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isEditable" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isSelectable" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isSystemDefined" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="CreatedBy" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Version" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isDefault" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isEditable" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isSelectable" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isSystemDefined" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedBy" type="id_String" nullable="true"/>
         <mapperTableEntries name="CreatedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LastChangeBy" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LastChangeBy" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastChangeDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="ACTIVE_FLAG" type="id_String" nullable="true"/>
         <mapperTableEntries name="REC_EFF_DTM" type="id_Date" nullable="true"/>
