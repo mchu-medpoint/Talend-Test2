@@ -2398,7 +2398,6 @@
       <relatedItems xmi:id="_WY31UD7SEeiItP_UiYqH8A" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_WY31UT7SEeiItP_UiYqH8A" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_WY31Uj7SEeiItP_UiYqH8A" id="_3uHDgBwnEeiTHIRHeuHqBQ - MEMB_HPHISTS_TEST" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_fW-mgD7XEeiItP_UiYqH8A" id="_KcGd0CypEeiJetnqWhFd7A" version="Latest" type="property"/>
       <relatedItems xmi:id="_eG0kwD9cEeiMM77xlB1w3Q" id="_KcGd0CypEeiJetnqWhFd7A - AR_VW_COMMON_TYPES" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
