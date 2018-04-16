@@ -985,7 +985,7 @@
         <mapperTableEntries name="var1" expression="&quot;1&quot;" type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="to_agg">
-        <mapperTableEntries name="updated_at" expression="row1.LASTCHANGEDATE  row1.LastChangeDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="updated_at" expression="row1.LastChangeDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="SQL_INSERT" expressionFilter="row2.common_type_id == null" activateExpressionFilter="true">
         <mapperTableEntries name="common_type_id" expression="row1.common_type_id" type="id_String"/>
