@@ -2399,8 +2399,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_WZ98sEGfEeiW5bfwI1XFjA">
       <baseItem xmi:id="_WZ98sUGfEeiW5bfwI1XFjA" id="_WYcSsEGfEeiW5bfwI1XFjA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_WZ98skGfEeiW5bfwI1XFjA" id="_T14fIDSVEeiA5eC6W0k7dg" version="Latest" type="property"/>
-      <relatedItems xmi:id="_WZ98s0GfEeiW5bfwI1XFjA" id="_3uHDgBwnEeiTHIRHeuHqBQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_WZ98tEGfEeiW5bfwI1XFjA" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_WZ98tUGfEeiW5bfwI1XFjA" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_WZ98tkGfEeiW5bfwI1XFjA" id="TalendString" version="Latest" type="routine"/>
@@ -2419,7 +2417,6 @@
       <relatedItems xmi:id="_WZ98w0GfEeiW5bfwI1XFjA" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_WZ98xEGfEeiW5bfwI1XFjA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_WZ98xUGfEeiW5bfwI1XFjA" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_WZ98xkGfEeiW5bfwI1XFjA" id="_3uHDgBwnEeiTHIRHeuHqBQ - DELTA_LOAD" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
