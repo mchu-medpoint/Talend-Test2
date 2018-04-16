@@ -2059,7 +2059,7 @@
         <mapperTableEntries name="PATIENTCITY" expression="row1.PATIENTCITY " type="id_String" nullable="true"/>
         <mapperTableEntries name="PATIENTSTATE" expression="row1.PATIENTSTATE " type="id_String" nullable="true"/>
         <mapperTableEntries name="PATIENTZIP" expression="row1.PATIENTZIP " type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSUREDDOB" expression="row1.INSUREDDOB " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSUREDDOB" expression="" type="id_Date" nullable="true"/>
         <mapperTableEntries name="REFERRINGPROVNM" expression="row1.REFERRINGPROVNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="ORDERINGPROVNM" expression="row1.ORDERINGPROVNM " type="id_String" nullable="true"/>
         <mapperTableEntries name="SUPERVISINGPROVNM" expression="row1.SUPERVISINGPROVNM " type="id_String" nullable="true"/>
