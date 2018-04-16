@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_nHUzYEG2EeiW5bfwI1XFjA" name="EZCAP_SLMS6" id="_S1huIEG2EeiW5bfwI1XFjA" label="EZCAP_SLMS6" dataPackage="_nJR7MEG2EeiW5bfwI1XFjA" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://EZCAP-SQL-DEV:1433/SLMS6;" dbVersionString="JTDS" Port="1433" Username="highpoint3" Password="ylFMkJUtDUBRATNbDwkcRQ==" ServerName="EZCAP-SQL-DEV" DatasourceName="" FileFieldName="" SID="SLMS6" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+    <taggedValue xmi:id="_nHUzYUG2EeiW5bfwI1XFjA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_nHXPoEG2EeiW5bfwI1XFjA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_nHcIIEG2EeiW5bfwI1XFjA" tag="Status" value=""/>
+    <taggedValue xmi:id="_nHcIIUG2EeiW5bfwI1XFjA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_nHcIIkG2EeiW5bfwI1XFjA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_nHcII0G2EeiW5bfwI1XFjA" tag="Description" value=""/>
+    <taggedValue xmi:id="_nHcIJEG2EeiW5bfwI1XFjA" tag="Author" value=""/>
+    <taggedValue xmi:id="_nHcIJUG2EeiW5bfwI1XFjA" tag="otherParameter"/>
+    <taggedValue xmi:id="_nHxfUEG2EeiW5bfwI1XFjA" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_nHxfUUG2EeiW5bfwI1XFjA" tag="DB ProductVersion" value="10.50.6220"/>
+    <taggedValue xmi:id="_nHxfUkG2EeiW5bfwI1XFjA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_nHUzYkG2EeiW5bfwI1XFjA" key="CONN_PARA_KEY_USERNAME" value="highpoint3"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_nJR7MEG2EeiW5bfwI1XFjA" name="SLMS6" dataManager="_nHUzYEG2EeiW5bfwI1XFjA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_nJR7MUG2EeiW5bfwI1XFjA" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
