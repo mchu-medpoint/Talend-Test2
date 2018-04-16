@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_iVu3MEG3EeiW5bfwI1XFjA" name="LAND_TABLES" id="_PUhQEEG3EeiW5bfwI1XFjA" label="LAND_TABLES" dataPackage="_iWwx8EG3EeiW5bfwI1XFjA" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://MPMEDWDEVQA1:1433/mpm_edw;" dbVersionString="JTDS" Port="1433" Username="highpoint3" Password="ylFMkJUtDUBRATNbDwkcRQ==" ServerName="MPMEDWDEVQA1" DatasourceName="" FileFieldName="" SID="mpm_edw" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="LAND">
+    <taggedValue xmi:id="_iVu3MUG3EeiW5bfwI1XFjA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_iVx6gEG3EeiW5bfwI1XFjA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_iVyhkEG3EeiW5bfwI1XFjA" tag="Status" value=""/>
+    <taggedValue xmi:id="_iVyhkUG3EeiW5bfwI1XFjA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_iVyhkkG3EeiW5bfwI1XFjA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_iVyhk0G3EeiW5bfwI1XFjA" tag="Description" value=""/>
+    <taggedValue xmi:id="_iVyhlEG3EeiW5bfwI1XFjA" tag="Author" value=""/>
+    <taggedValue xmi:id="_iVyhlUG3EeiW5bfwI1XFjA" tag="otherParameter"/>
+    <taggedValue xmi:id="_iWGqoEG3EeiW5bfwI1XFjA" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_iWGqoUG3EeiW5bfwI1XFjA" tag="DB ProductVersion" value="13.00.4001"/>
+    <taggedValue xmi:id="_iWGqokG3EeiW5bfwI1XFjA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_iVu3MkG3EeiW5bfwI1XFjA" key="CONN_PARA_KEY_USERNAME" value="highpoint3"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_iWwx8EG3EeiW5bfwI1XFjA" name="mpm_edw" dataManager="_iVu3MEG3EeiW5bfwI1XFjA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_iWwx8UG3EeiW5bfwI1XFjA" name="LAND"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
