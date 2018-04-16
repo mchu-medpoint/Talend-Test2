@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_-mKcYEG2EeiW5bfwI1XFjA" name="EZCAP_EPISOURCE" id="_08E8sEG2EeiW5bfwI1XFjA" label="EZCAP_EPISOURCE" dataPackage="_-oD50EG2EeiW5bfwI1XFjA" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://EZCAP-SQL-DEV:1433/EPISOURCE;" dbVersionString="JTDS" Port="1433" Username="highpoint3" Password="ylFMkJUtDUBRATNbDwkcRQ==" ServerName="EZCAP-SQL-DEV" DatasourceName="" FileFieldName="" SID="EPISOURCE" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+    <taggedValue xmi:id="_-mKcYUG2EeiW5bfwI1XFjA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_-mZF4EG2EeiW5bfwI1XFjA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_-ma7EEG2EeiW5bfwI1XFjA" tag="Status" value=""/>
+    <taggedValue xmi:id="_-ma7EUG2EeiW5bfwI1XFjA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_-ma7EkG2EeiW5bfwI1XFjA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_-ma7E0G2EeiW5bfwI1XFjA" tag="Description" value=""/>
+    <taggedValue xmi:id="_-ma7FEG2EeiW5bfwI1XFjA" tag="Author" value=""/>
+    <taggedValue xmi:id="_-ma7FUG2EeiW5bfwI1XFjA" tag="otherParameter"/>
+    <taggedValue xmi:id="_-m1KwEG2EeiW5bfwI1XFjA" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_-m1KwUG2EeiW5bfwI1XFjA" tag="DB ProductVersion" value="10.50.6220"/>
+    <taggedValue xmi:id="_-m1KwkG2EeiW5bfwI1XFjA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_-mKcYkG2EeiW5bfwI1XFjA" key="CONN_PARA_KEY_USERNAME" value="highpoint3"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_-oD50EG2EeiW5bfwI1XFjA" name="EPISOURCE" dataManager="_-mKcYEG2EeiW5bfwI1XFjA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-oD50UG2EeiW5bfwI1XFjA" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
