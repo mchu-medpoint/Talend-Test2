@@ -2437,6 +2437,25 @@
       <relatedItems xmi:id="_mMp-IEG6EeiW5bfwI1XFjA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_mMp-IUG6EeiW5bfwI1XFjA" id="_S1huIEG2EeiW5bfwI1XFjA - GRIEVANCE_LETTER_TRACKING" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_9gXVIEG6EeiW5bfwI1XFjA">
+      <baseItem xmi:id="_9gXVIUG6EeiW5bfwI1XFjA" id="_9gBW4EG6EeiW5bfwI1XFjA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_9gXVIkG6EeiW5bfwI1XFjA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVI0G6EeiW5bfwI1XFjA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVJEG6EeiW5bfwI1XFjA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVJUG6EeiW5bfwI1XFjA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVJkG6EeiW5bfwI1XFjA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVJ0G6EeiW5bfwI1XFjA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVKEG6EeiW5bfwI1XFjA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVKUG6EeiW5bfwI1XFjA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVKkG6EeiW5bfwI1XFjA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVK0G6EeiW5bfwI1XFjA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVLEG6EeiW5bfwI1XFjA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVLUG6EeiW5bfwI1XFjA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVLkG6EeiW5bfwI1XFjA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVL0G6EeiW5bfwI1XFjA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVMEG6EeiW5bfwI1XFjA" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9gXVMUG6EeiW5bfwI1XFjA" id="_S1huIEG2EeiW5bfwI1XFjA - GRIEVANCE_LETTER_TRACKING" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_BnD84BvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84RvsEeiXROaUviyM_A" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BnD84hvsEeiXROaUviyM_A" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
